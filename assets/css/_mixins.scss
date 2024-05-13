@@ -1,0 +1,277 @@
+@import "variables";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+/*====== font-size values ======*/
+
+@mixin font-sizes() {
+  $font-size-list: 10 12 16 20 24 30 50;
+  @each $value in $font-size-list {
+    .fs-#{$value} {
+      font-size: #{$value}px;
+    }
+  }
+}
+@include font-sizes();
+@mixin padding() {
+  $padding-list: 5 10 12 16 20 25 30 40;
+  @each $value in $padding-list {
+    .p-#{$value} {
+      padding: #{$value}px;
+    }
+  }
+  @each $value in $padding-list {
+    .pt-#{$value} {
+      padding-top: #{$value}px;
+    }
+  }
+  @each $value in $padding-list {
+    .pr-#{$value} {
+      padding-right: #{$value}px;
+    }
+  }
+  @each $value in $padding-list {
+    .pb-#{$value} {
+      padding-bottom: #{$value}px;
+    }
+  }
+  @each $value in $padding-list {
+    .pl-#{$value} {
+      padding-left: #{$value}px;
+    }
+  }
+}
+@include padding();
+/*====== margin values ======*/
+@mixin margin-utilities() {
+  $margin-list: 5 10 12 16 20 25 30 40;
+  @each $value in $margin-list {
+    .m-#{$value} {
+      margin: #{$value}px;
+    }
+  }
+  @each $value in $margin-list {
+    .mt-#{$value} {
+      margin-top: #{$value}px;
+    }
+  }
+  @each $value in $margin-list {
+    .mr-#{$value} {
+      margin-right: #{$value}px;
+    }
+  }
+  @each $value in $margin-list {
+    .mb-#{$value} {
+      margin-bottom: #{$value}px;
+    }
+  }
+  @each $value in $margin-list {
+    .ml-#{$value} {
+      margin-left: #{$value}px;
+    }
+  }
+}
+@include margin-utilities();
+/*====== Display flex values ======*/
+$display-values: (
+  "d-flex": flex,
+  "d-inline-flex": inline-flex,
+);
+$flex-direction-values: (
+  "flex-row": row,
+  "flex-row-reverse": row-reverse,
+  "flex-column": column,
+  "flex-wrap": wrap,
+  "flex-column-reverse": column-reverse,
+);
+$justify-content-values: (
+  "justify-content-start": flex-start,
+  "justify-content-end": flex-end,
+  "justify-content-center": center,
+  "justify-content-between": space-between,
+  "justify-content-around": space-around,
+);
+$align-items-values: (
+  "align-items-start": flex-start,
+  "align-items-end": flex-end,
+  "align-items-center": center,
+  "align-items-baseline": baseline,
+  "align-items-stretch": stretch,
+);
+$align-self-values: (
+  "align-self-start": flex-start,
+  "align-self-end": flex-end,
+  "align-self-center": center,
+  "align-self-baseline": baseline,
+  "align-self-stretch": stretch,
+);
+@mixin flex-utilities() {
+  @each $class, $value in $display-values {
+    .#{$class} {
+      display: $value;
+    }
+  }
+  @each $class, $value in $flex-direction-values {
+    .#{$class} {
+      flex-direction: $value;
+    }
+  }
+  @each $class, $value in $justify-content-values {
+    .#{$class} {
+      justify-content: $value;
+    }
+  }
+  @each $class, $value in $align-items-values {
+    .#{$class} {
+      align-items: $value;
+    }
+  }
+  @each $class, $value in $align-self-values {
+    .#{$class} {
+      align-self: $value;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    @each $class, $value in $flex-direction-values {
+      .#{$class}-sm {
+        flex-direction: $value;
+      }
+    }
+    $width-list: 25 50 75 100;
+    @each $value in $width-list {
+      .w-sm-#{$value} {
+        width: #{$value + "%"};
+      }
+    }
+    $top-list: 25 50 75 100;
+    @each $value in $top-list {
+      .top-sm-#{$value} {
+        top: #{$value + "%"};
+      }
+    }
+
+    $font-size-list: 30 50;
+    $mobile-font-size-list: 24 30;
+    @each $value in $font-size-list {
+      .fs-#{$value}-sm {
+        font-size: #{$value}px;
+        @if $value == 30 {
+          font-size: nth($mobile-font-size-list, 2) px;
+        } @else if $value == 50 {
+          font-size: nth($mobile-font-size-list, 1) px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    @each $class, $value in $flex-direction-values {
+      .#{$class}-md {
+        flex-wrap: $value;
+      }
+    }
+
+    $top-list: 25 50 75 100;
+    @each $value in $top-list {
+      .top-md-#{$value} {
+        top: #{$value + "%"};
+      }
+    }
+  }
+  @media screen and (min-width: 993px) {
+    $top-list: 25 50 75 100;
+    @each $value in $top-list {
+      .top-lg-#{$value} {
+        top: #{$value + "%"};
+      }
+    }
+  }
+}
+@include flex-utilities();
+/*======height values======*/
+@mixin height() {
+  $height-list: 30 40 60 130 150 190 200 210 550;
+  @each $value in $height-list {
+    .h-#{$value} {
+      height: #{$value}px;
+    }
+  }
+}
+@include height();
+/*======width values======*/
+@mixin width() {
+  $width-list: 20 40 110 160 200 400;
+  @each $value in $width-list {
+    .w-#{$value} {
+      width: #{$value}px;
+    }
+  }
+}
+@include width();
+
+/*======gap values======*/
+@mixin gap() {
+  $gap-list: 1 2 3 4 5 10 20 30 40 50;
+  @each $value in $gap-list {
+    .gap-#{$value} {
+      gap: #{$value}px;
+    }
+  }
+}
+@include gap();
+
+/*====== font-weight ======*/
+
+@mixin font-weight-utilities() {
+  $font-weight-list: 300 400 500 600 700 900;
+  @each $value in $font-weight-list {
+    .font-#{$value} {
+      font-weight: $value;
+    }
+  }
+}
+@include font-weight-utilities();
+/*======colors values======*/
+$color-values: (
+  $primary-bg-color: #ffffff,
+  $clicked-red: #af102b,
+  $red: #c41230,
+  $text-white: #fdfcf9,
+  $strip-green: #55733b,
+  $button-green: #073b25,
+  $sidebar-green: #062e1d,
+  $brown: #7b5120,
+);
+
+
+// @mixin color-utilities() {
+//   @each $class, $value in $color-values {
+//     .#{"" + $class} {
+//       color: $value;
+//     }
+//     .bg-#{"" + $class} {
+//       background-color: $value;
+//     }
+//   }
+// }
+
+// @include color-utilities();
+// $font-families: (
+//   "light": 300,
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+//   "bolder": 900,
+// );
+// @mixin font-face() {
+//   @each $font-name, $font-weight in $font-families {
+//     @font-face {
+//       font-family: "Roboto #{$font-name}";
+//       src: url("/assets/fonts/Roboto-#{$font-name}.ttf") format("truetype");
+//       font-weight: $font-weight;
+//     }
+//   }
+// }
+// @include font-face();

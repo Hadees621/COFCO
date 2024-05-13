@@ -1,0 +1,26 @@
+/*======Sass Variables======*/
+/*======font family======*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+$primary-bg-color: #ffffff;
+$clicked-red: #af102b;
+$red: #c41230;
+$text-white: #fdfcf9;
+$strip-green: #55733b;
+$button-green: #073b25;
+$sidebar-green: #062e1d;
+$brown: #7b5120;
+
+$primary-color: #fff;
+$light-gray: #eaebee;
+$golden-brown: #b79248;
+$dark-blue: #031428;
+$spacing: 2rem;
+$dark-gray: #2a2e30;
+$dark-color: #000000;
+$font-size: 20px;
