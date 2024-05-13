@@ -233,7 +233,9 @@ $align-self-values: (
   }
 }
 @include font-weight-utilities();
+
 /*======colors values======*/
+
 $color-values: (
   $primary-bg-color: #ffffff,
   $clicked-red: #af102b,
@@ -244,7 +246,6 @@ $color-values: (
   $sidebar-green: #062e1d,
   $brown: #7b5120,
 );
-
 
 // @mixin color-utilities() {
 //   @each $class, $value in $color-values {
