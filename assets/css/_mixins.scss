@@ -247,32 +247,31 @@ $color-values: (
   $brown: #7b5120,
 );
 
-// @mixin color-utilities() {
-//   @each $class, $value in $color-values {
-//     .#{"" + $class} {
-//       color: $value;
-//     }
-//     .bg-#{"" + $class} {
-//       background-color: $value;
-//     }
-//   }
-// }
+//////////////////
 
-// @include color-utilities();
-// $font-families: (
-//   "light": 300,
-//   "regular": 400,
-//   "medium": 500,
-//   "bold": 700,
-//   "bolder": 900,
-// );
-// @mixin font-face() {
-//   @each $font-name, $font-weight in $font-families {
-//     @font-face {
-//       font-family: "Roboto #{$font-name}";
-//       src: url("/assets/fonts/Roboto-#{$font-name}.ttf") format("truetype");
-//       font-weight: $font-weight;
-//     }
-//   }
-// }
-// @include font-face();
+// Define a mixin for hover}ffect
+@mixin hoverEffect($hoverBgColor) {
+  &:hover {
+    border: 1px solid white;
+    background-color: $hoverBgColor; // Use the passed hover background color
+    color: black;
+  }
+}
+
+// Define your navbar-tab class
+.navbar-tab {
+  padding: 8px 20px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &.shop:hover {
+    @include hoverEffect($red);
+  }
+
+  &.about-us:hover {
+    @include hoverEffect($button-green);
+  }
+  &.sign-up:hover {
+    @include hoverEffect($brown);
+  }
+}

@@ -17,7 +17,6 @@
     font-family: "Open Sans", sans-serif;
     background-color: $primary-bg-color;
     font-size: 16px;
-    color: $dark-color;
   }
   h1 {
     color: red;
@@ -200,4 +199,92 @@
   .footer-terms {
     padding: 20px 60px 0px 60px;
   }
+}
+
+/////////////////
+
+.banner {
+  background-color: primary-bg-color;
+  padding: 100px;
+  gap: 70px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.flex-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-border {
+  border: 2px solid #b7b7b7;
+}
+
+.navbar {
+  background-image: url("/assets/images/Asset\ 5.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.content-container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.navbar-tab {
+  padding: 8px 20px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid white;
+    background-color: $red;
+    color: black;
+  }
+}
+
+.form-control::placeholder {
+  color: $button-green;
+  padding-left: 27px;
+  font-weight: bold;
+}
+
+.search-icon {
+  position: absolute;
+  margin-right: 10px;
+  left: 10px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $button-green;
+  cursor: pointer;
+}
+
+.navbar-search {
+  width: 270px;
+  height: 35px;
+}
+
+.cart {
+  padding: 12px;
+  background-color: $red;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+} 
+
+.count {
+  font-size: 8px;
+  border-radius: 60px;
+  padding: 5px;
+  background-color: white;
+  right: 210px;
 }
