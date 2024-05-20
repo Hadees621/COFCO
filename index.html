@@ -1,18 +1,172 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
-    <link rel="stylesheet" href="assets/css/style.css.map" />
+
+
+
     <title>COFCO</title>
 </head>
 
 <body>
-    <h1 class="font-900">COFCO</h1>
 
+    <!-- Top -->
+
+    <!-- <div class="banner d-flex w-full">
+        <div class="flex-middle w-full banner-border">
+            <img src="/assets/images/Asset 1.png" alt="" class="w-50 " />
+        </div>
+        <div class="flex-middle w-full">
+            <img src="/assets/images/Asset 2.png" alt="" class="w-full h-full" />
+        </div>
+    </div> -->
+
+    <!-- Top Ends -->
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="content-container">
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <img src="/assets/images/Asset 3.png" alt="logo" class="w-25 my-3" />
+
+                <div class="d-flex m-2">
+
+                    <!-- Shop -->
+                    <div class="rounded-pill text-white navbar-tab flex-middle" id="shopDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                            <path fill="white" d="m7 10l5 5l5-5z" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-full w-100 " aria-labelledby="shopDropdown">
+                        <div
+                            class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
+                            <p class="cursor-pointer">
+                                New Customers
+                            </p>
+                            <p class="cursor-pointer">
+                                Choice Veg Boxes
+                            </p>
+                            <p class="cursor-pointer">
+                                Original Veg Boxes
+                            </p>
+                            <p class="cursor-pointer">
+                                OriginalPLUS+ Veg Boxes
+                            </p>
+                            <p class="cursor-pointer">
+                                Specific & Specialist Items
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- About Us -->
+                    <div class="rounded-pill text-white navbar-tab flex-middle about-us" id="aboutUsDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                            <path fill="white" d="m7 10l5 5l5-5z" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-full w-100" aria-labelledby="aboutUsDropdown">
+                        <div
+                            class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
+                            <p class="cursor-pointer">
+                                How It Works
+                            </p>
+                            <p class="cursor-pointer">
+                                Our Produce & Products Deliveries
+                            </p>
+                            <p class="cursor-pointer">
+                                FAQs
+                            </p>
+                            <p class="cursor-pointer">
+                                Why Choose Us?
+                            </p>
+                            <p class="cursor-pointer">
+                                Our Ethics & Sourcing Latest News
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
+
+                </div>
+
+                <!-- Search Bar -->
+                <div class="position-relative d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path fill="#073b25"
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91 3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                        <path fill="none" d="M0 0h24v24H0z" />
+                    </svg>
+                    <input type="text" class="form-control rounded-pill ml-4 navbar-search"
+                        placeholder="Search for products">
+                </div>
+
+                <div class="text-white flex-middle cart position-relative">
+                    <img src="assets/images/cart.png" alt="" class="" />
+                </div>
+
+                <div class="position-absolute count">12</div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Navbar Ends -->
+
+
+    <div class="strip flex-middle">
+        <h7> Monthly Special:
+            <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
+            </h7>
+        </h7>
+    </div>
+
+    <!-- Banner -->
+
+    <div class="homepage-banner">
+        <img src="/assets/images/Asset 4.png" alt="banner" class="homepage-banner w-100" />
+        <div class="text-overlay">
+            <h1 class="banner-overlay-heading1">
+                Sustainably Grown
+                Locally Delivered
+                Organic Vegetables
+            </h1>
+            <div class="banner-overlay-text d-inline-block">
+                Welcome to Cambridge Organic - Delivering Organic
+                <span class="underline">Veg Boxes</span> in the Cambridgeshire area, with
+                <span class="underline">sustainably sourced produce </span> from
+                <span class="underline">local farms</span>.
+            </div>
+
+            <div class="google-reviews align-content-start w-100">
+                <img src="/assets/images/google.png" class="" />
+            </div>
+
+            <button class="banner-overlay-button flex-middle gap-2">
+                <img src="assets/images/cart.png" alt="" />
+                <div class="flex-middle"> Start Shopping</div>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Banner Ends -->
+
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
