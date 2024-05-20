@@ -18,9 +18,7 @@
     background-color: $primary-bg-color;
     font-size: 16px;
   }
-  h1 {
-    color: red;
-  }
+
   .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -322,8 +320,60 @@
 
 .underline {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.homepage-banner {
+  background-image: url("/assets/images/Asset\ 4.png");
+  background-size: cover;
+  background-position: start;
+  position: relative;
+  opacity: 2.9;
+
+  .text-overlay {
+    max-width: 350px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: start;
+    display: inline-block;
+  }
+}
+
+.banner-overlay-heading1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.banner-overlay-text {
+  font-size: 14px;
+}
+
+.banner-overlay-button {
+  background-color: #c41230;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  border: none;
+}
+
+.google-reviews {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  padding: 18px 0 22px 0;
+}
+
+.google-reviews img.re {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
 }
