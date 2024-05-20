@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,43 +14,93 @@
 
 <body>
 
-    <!-- Banner -->
-    <div class="banner d-flex w-full">
+    <!-- Top -->
+
+    <!-- <div class="banner d-flex w-full">
         <div class="flex-middle w-full banner-border">
             <img src="/assets/images/Asset 1.png" alt="" class="w-50 " />
         </div>
         <div class="flex-middle w-full">
             <img src="/assets/images/Asset 2.png" alt="" class="w-full h-full" />
         </div>
-    </div>
-        
+    </div> -->
+
+    <!-- Top Ends -->
+
     <!-- Navbar -->
 
     <nav class="navbar">
 
-        <div class="content-container text-danger">
+        <div class="content-container">
 
             <div class="d-flex justify-content-between align-items-center mt-3">
-                <img src="/assets/images/Asset 3.png" alt="logo" class="w-25" />
+                <img src="/assets/images/Asset 3.png" alt="logo" class="w-25 my-3" />
 
                 <div class="d-flex m-2">
 
-                    <div class="rounded-pill text-white navbar-tab flex-middle">
+                    <!-- Shop -->
+                    <div class="rounded-pill text-white navbar-tab flex-middle" id="shopDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Shop
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
                             <path fill="white" d="m7 10l5 5l5-5z" />
                         </svg>
                     </div>
+                    <div class="dropdown-menu dropdown-menu-full w-100 " aria-labelledby="shopDropdown">
+                        <div
+                            class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
+                            <p class="cursor-pointer">
+                                New Customers
+                            </p>
+                            <p class="cursor-pointer">
+                                Choice Veg Boxes
+                            </p>
+                            <p class="cursor-pointer">
+                                Original Veg Boxes
+                            </p>
+                            <p class="cursor-pointer">
+                                OriginalPLUS+ Veg Boxes
+                            </p>
+                            <p class="cursor-pointer">
+                                Specific & Specialist Items
+                            </p>
+                        </div>
+                    </div>
 
-                    <div class="rounded-pill text-white navbar-tab flex-middle about-us">
+                    <!-- About Us -->
+                    <div class="rounded-pill text-white navbar-tab flex-middle about-us" id="aboutUsDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
                             <path fill="white" d="m7 10l5 5l5-5z" />
                         </svg>
                     </div>
 
-                    <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
 
+                    <div class="dropdown-menu dropdown-menu-full w-100" aria-labelledby="aboutUsDropdown">
+                        <div
+                            class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
+                            <p class="cursor-pointer">
+                                How It Works
+                            </p>
+                            <p class="cursor-pointer">
+                                Our Produce & Products Deliveries
+                            </p>
+                            <p class="cursor-pointer">
+                                FAQs
+                            </p>
+                            <p class="cursor-pointer">
+                                Why Choose Us?
+                            </p>
+                            <p class="cursor-pointer">
+                                Our Ethics & Sourcing Latest News
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
                 </div>
 
                 <!-- Search Bar -->
@@ -66,15 +115,30 @@
                         placeholder="Search for products">
                 </div>
 
-                <div class="text-white flex-middle cart position-relativeś">
+                <div class="text-white flex-middle cart position-relative">
                     <img src="assets/images/cart.png" alt="" class="" />
                 </div>
+
                 <div class="position-absolute count">12</div>
+
             </div>
 
         </div>
 
     </nav>
+
+    <!-- Navbar Ends -->
+
+
+
+    <!-- Banner -->
+
+    <div class="homepage-banner">
+        <!-- <img src="/assets/images/Asset 4.png" alt="banner" class="homepage-banner w-100 " /> -->
+    </div>
+
+    <!-- Banner Ends -->
+
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
