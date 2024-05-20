@@ -249,29 +249,24 @@ $color-values: (
 
 //////////////////
 
-// Define a mixin for hover}ffect
-@mixin hoverEffect($hoverBgColor) {
-  &:hover {
-    border: 1px solid white;
-    background-color: $hoverBgColor; // Use the passed hover background color
-    color: black;
-  }
-}
-
-// Define your navbar-tab class
 .navbar-tab {
   padding: 8px 20px;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 
-  &.shop:hover {
+  &.shop:hover,
+  &.shop.show {
     @include hoverEffect($red);
   }
 
-  &.about-us:hover {
+  &.about-us:hover,
+  &.about-us.show {
     @include hoverEffect($button-green);
   }
-  &.sign-up:hover {
+
+  &.sign-up:hover,
+  &.sign-up.show {
     @include hoverEffect($brown);
   }
 }

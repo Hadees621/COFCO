@@ -246,8 +246,32 @@
 
   &:hover {
     border: 1px solid white;
-    background-color: $red;
+    background-color: #c41230;
     color: black;
+  }
+
+  &:active {
+    border: 1px solid white;
+    background-color: va;
+    color: black;
+  }
+}
+
+.tab-content {
+  display: none;
+  color: white;
+  font-size: 15px;
+
+  &.active {
+    display: block;
+  }
+
+  p {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -279,7 +303,7 @@
   border-radius: 30px;
   border: 1px solid white;
   cursor: pointer;
-} 
+}
 
 .count {
   font-size: 8px;
@@ -287,4 +311,19 @@
   padding: 5px;
   background-color: white;
   right: 210px;
+}
+
+.strip {
+  background-color: #55733b;
+  font-size: 11px;
+  padding: 7px;
+  color: #f8f9f7;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

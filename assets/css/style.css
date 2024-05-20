@@ -884,6 +884,8 @@
   padding: 20px 60px 0px 60px;
 }
 
+/* /////////////////// */
+
 .banner {
   background-color: primary-bg-color;
   padding: 100px;
@@ -976,7 +978,7 @@
 } /*# sourceMappingURL=style.css.map */
 
 .count {
-  font-size: 8px;
+  font-size: 8px;    
   border-radius: 60px;
   padding: 5px;
   background-color: white;
@@ -987,39 +989,20 @@
   background-image: url("/assets/images/Asset\ 5.png");
   background-size: cover;
   background-position: center;
-  position: absolute;
-  top: -10;
+  /* position: absolute; */
+  top: 100%;
   left: 0;
   width: 100%;
   z-index: 1000;
   background-color: #5d6162;
 }
 
-.dropdown-menu-full::after {
+/* .dropdown-menu-full::after {
   display: none;
-}
+} */
 .line {
   color: white;
   border: white;
-}
-
-.tab-content {
-  font-size: 10px;
-  display: none;
-  color: white;
-  font-size: 15px;
-
-  &.active {
-    display: block;
-  }
-
-  p {
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .homepage-banner {
