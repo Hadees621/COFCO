@@ -104,6 +104,10 @@
     height: 65px;
     width: 215px !important;
   }
+  @media (min-width: 769px) {
+    height: 55px;
+    width: 235px !important;
+  }
 }
 
 .hamburger {
@@ -145,6 +149,10 @@
     background-color: va;
     color: black;
   }
+
+  // @media (max-width: 769px) {
+  //   display: none;
+  // }
 }
 
 .tab-content {
@@ -360,4 +368,20 @@
 
 .text-white {
   color: white !important;
+}
+
+.hide-on-large-screen {
+  display: block;
+
+  @media (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+.hide-on-small-screen {
+  display: block;
+
+  @media (max-width: 768px) {
+    display: none !important;
+  }
 }

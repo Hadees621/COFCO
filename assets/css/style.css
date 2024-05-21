@@ -745,6 +745,12 @@
     width: 215px !important;
   }
 }
+@media (min-width: 769px) {
+  .navbar-logo {
+    height: 55px;
+    width: 235px !important;
+  }
+}
 
 .hamburger {
   background-color: #073b25;
@@ -1016,4 +1022,22 @@
 
 .text-white {
   color: white !important;
+}
+
+.hide-on-large-screen {
+  display: block;
+}
+@media (min-width: 769px) {
+  .hide-on-large-screen {
+    display: none !important;
+  }
+}
+
+.hide-on-small-screen {
+  display: block;
+}
+@media (max-width: 768px) {
+  .hide-on-small-screen {
+    display: none !important;
+  }
 }/*# sourceMappingURL=style.css.map */
