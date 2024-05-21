@@ -224,49 +224,55 @@ $align-self-values: (
 
 /*====== font-weight ======*/
 
-// @mixin font-weight-utilities() {
-//   $font-weight-list: 300 400 500 600 700 900;
-//   @each $value in $font-weight-list {
-//     .font-#{$value} {
-//       font-weight: $value;
-//     }
-//   }
-// }
-// @include font-weight-utilities();
+@mixin font-weight-utilities() {
+  $font-weight-list: 300 400 500 600 700 900;
+  @each $value in $font-weight-list {
+    .font-#{$value} {
+      font-weight: $value;
+    }
+  }
+}
+@include font-weight-utilities();
 
-// /*======colors values======*/
+/*======colors values======*/
 
-// $color-values: (
-//   $primary-bg-color: #ffffff,
-//   $clicked-red: #af102b,
-//   $red: #c41230,
-//   $text-white: #fdfcf9,
-//   $strip-green: #55733b,
-//   $button-green: #073b25,
-//   $sidebar-green: #062e1d,
-//   $brown: #7b5120,
-// );
+$color-values: (
+  $primary-bg-color: #ffffff,
+  $clicked-red: #af102b,
+  $red: #c41230,
+  $text-white: #fdfcf9,
+  $strip-green: #55733b,
+  $button-green: #073b25,
+  $sidebar-green: #062e1d,
+  $brown: #7b5120,
+);
 
-// //////////////////
+//////////////////
+@mixin hoverEffect($hoverBgColor) {
+  &:hover {
+    border: 1px solid white;
+    background-color: $hoverBgColor;
+    color: black;
+  }
+}
+.navbar-tab {
+  padding: 8px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 
-// .navbar-tab {
-//   padding: 8px 20px;
-//   background-color: transparent;
-//   cursor: pointer;
-//   transition: background-color 0.3s, color 0.3s, border 0.3s;
+  &.shop:hover,
+  &.shop.show {
+    @include hoverEffect($red);
+  }
 
-//   &.shop:hover,
-//   &.shop.show {
-//     @include hoverEffect($red);
-//   }
+  &.about-us:hover,
+  &.about-us.show {
+    @include hoverEffect($button-green);
+  }
 
-//   &.about-us:hover,
-//   &.about-us.show {
-//     @include hoverEffect($button-green);
-//   }
-
-//   &.sign-up:hover,
-//   &.sign-up.show {
-//     @include hoverEffect($brown);
-//   }
-// }
+  &.sign-up:hover,
+  &.sign-up.show {
+    @include hoverEffect($brown);
+  }
+}
