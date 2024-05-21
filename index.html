@@ -130,61 +130,27 @@
             <!-- tabs -->
             <div class="d-flex m-2 hide-on-small-screen tabs">
 
-                <!-- Shop -->
-                <div class="rounded-pill text-white navbar-tab flex-middle" id="shopDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- Shop Tab Header -->
+                <div class="rounded-pill text-white navbar-tab flex-middle" id="shop-tab" data-bs-toggle="tab"
+                    data-bs-target="#shop-content" type="button" role="tab" aria-controls="shop" aria-selected="true">
                     Shop
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
                         <path fill="white" d="m7 10l5 5l5-5z" />
                     </svg>
                 </div>
-                <div class="dropdown-menu dropdown-menu-full w-100 " aria-labelledby="shopDropdown">
-                    <div class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
-                        <p class="cursor-pointer">
-                            New Customers
-                        </p>
-                        <p class="cursor-pointer">
-                            Choice Veg Boxes
-                        </p>
-                        <p class="cursor-pointer">
-                            Original Veg Boxes
-                        </p>
-                        <p class="cursor-pointer">
-                            OriginalPLUS+ Veg Boxes
-                        </p>
-                        <p class="cursor-pointer">
-                            Specific & Specialist Items
-                        </p>
-                    </div>
-                </div>
 
-                <!-- About Us -->
-                <div class="rounded-pill text-white navbar-tab flex-middle about-us" id="aboutUsDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- About Us Tab Header -->
+                <div class="rounded-pill text-white navbar-tab flex-middle" id="aboutUs-tab" data-bs-toggle="tab"
+                    data-bs-target="#aboutUs-content" type="button" role="tab" aria-controls="aboutUs"
+                    aria-selected="false">
                     About Us
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
                         <path fill="white" d="m7 10l5 5l5-5z" />
                     </svg>
                 </div>
-                <div class="dropdown-menu dropdown-menu-full w-100" aria-labelledby="aboutUsDropdown">
-                    <div class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
-                        <p class="cursor-pointer">
-                            How It Works
-                        </p>
-                        <p class="cursor-pointer">
-                            Our Produce & Products Deliveries
-                        </p>
-                        <p class="cursor-pointer">
-                            FAQs
-                        </p>
-                        <p class="cursor-pointer">
-                            Why Choose Us?
-                        </p>
-                        <p class="cursor-pointer">
-                            Our Ethics & Sourcing Latest News
-                        </p>
-                    </div>
-                </div>
+
+                <!-- Tab Content Container -->
+
 
                 <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
 
@@ -227,43 +193,42 @@
     <!-- Navbar Ends -->
 
     <!-- strip -->
-    <!-- <div class="strip flex-middle">
+    <div class="strip flex-middle">
         <h7> Monthly Special:
             <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
             </h7>
         </h7>
-       </div> -->
+    </div>
     <!-- strip -->
 
     <!-- Banner -->
-    <!--  <div class="homepage-banner hidde">
-            <img src="/assets/images/Asset 4.png" alt="banner" class="homepage-banner w-100" />
-            <div class="text-overlay hidden">
-                <h1 class="banner-overlay-heading1">
-                    Sustainably Grown
-                    Locally Delivered
-                    Organic Vegetables
-                </h1>
-                <div class="banner-overlay-text d-inline-block hidden">
-                    Welcome to Cambridge Organic - Delivering Organic
-                    <span class="underline">Veg Boxes</span> in the Cambridgeshire area, with
-                    <span class="underline">sustainably sourced produce </span> from
-                    <span class="underline">local farms</span>.
-                </div>
-
-                <div class="google-reviews align-content-start w-100">
-                    <img src="/assets/images/google.png" class="" />
-                </div>
-
-                <button class="banner-overlay-button flex-middle gap-2">
-                    <img src="assets/images/cart.png" alt="" />
-                    <div class="flex-middle"> Start Shopping</div>
-                </button>
-
+    <!-- <div class="homepage-banner hidde">
+        <img src="/assets/images/Asset 4.png" alt="banner" class="homepage-banner w-100" />
+        <div class="text-overlay hide-on-small-screen">
+            <h1 class="banner-overlay-heading1">
+                Sustainably Grown
+                Locally Delivered
+                Organic Vegetables
+            </h1>
+            <div class="banner-overlay-text d-inline-block hidden">
+                Welcome to Cambridge Organic - Delivering Organic
+                <span class="underline">Veg Boxes</span> in the Cambridgeshire area, with
+                <span class="underline">sustainably sourced produce </span> from
+                <span class="underline">local farms</span>.
             </div>
-        </div> -->
-    <!-- Banner Ends -->
 
+            <div class="google-reviews align-content-start w-100">
+                <img src="/assets/images/google.png" class="" />
+            </div>
+
+            <button class="banner-overlay-button flex-middle gap-2">
+                <img src="assets/images/cart.png" alt="" />
+                <div class="flex-middle"> Start Shopping</div>
+            </button>
+
+        </div>
+    </div> -->
+    <!-- Banner Ends -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
