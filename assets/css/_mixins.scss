@@ -248,6 +248,7 @@ $color-values: (
 );
 
 //////////////////
+
 @mixin hoverEffect($hoverBgColor) {
   &:hover {
     border: 1px solid white;
