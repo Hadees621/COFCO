@@ -49,13 +49,7 @@
     height: 16px;
     background: $dark-color;
   }
-  .hero-image {
-    background-image: url("../assests/section/top.jpg");
-    height: 70vh;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-  }
+
   .hero-image-text {
     max-width: 1200px;
     width: 100%;
@@ -136,22 +130,6 @@
     text-decoration: underline;
   }
 
-  // books auther and title
-  .bookauther_title h3 {
-    color: #b79248;
-    text-decoration: underline;
-  }
-  // submit online section
-  .submit-online-section {
-    background-image: url("../assests/section/section6.png");
-    height: 220px;
-    max-width: 1180px;
-    width: 100%;
-    margin: auto;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-  }
   .submit-online-text {
     max-width: 400px;
     width: 100%;
@@ -205,6 +183,11 @@
   background-color: primary-bg-color;
   padding: 100px;
   gap: 70px;
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+    gap: 30px;
+  }
 }
 
 .w-full {
@@ -226,15 +209,38 @@
 }
 
 .navbar {
-  background-image: url("/assets/images/Asset\ 5.png");
+  background-image: url("/assets/images/Asset 5.png");
   background-size: cover;
   background-position: center;
-  // height: 100%;
+
+  @media (min-width: 426px) and (max-width: 768px) {
+    padding: 6px 15px;
+  }
+}
+
+.navbar-logo {
+  @media (min-width: 426px) and (max-width: 768px) {
+    height: 65px;
+    width: 260px !important;
+  }
+}
+
+.hamburger {
+  background-color: transparent;
+  border-radius: 120px;
+  padding: 6px 11px;
+  color: whitesmoke;
+  font-size: 12px;
 }
 
 .content-container {
   margin: auto;
   max-width: 1000px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 
 .navbar-tab {
@@ -293,6 +299,11 @@
 .navbar-search {
   width: 270px;
   height: 35px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 30px;
+  }
 }
 
 .cart {
@@ -301,6 +312,10 @@
   border-radius: 30px;
   border: 1px solid white;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 7px;
+  }
 }
 
 .count {
@@ -308,7 +323,19 @@
   border-radius: 60px;
   padding: 5px;
   background-color: white;
-  right: 210px;
+  right: 30px;
+  color: red;
+
+  @media (max-width: 425px) {
+    font-size: 7px;
+    border-radius: 60px;
+    padding: 4px;
+    right: 1px;
+  }
+
+  @media (max-width: 768px) {
+    right: 34px;
+  }
 }
 
 .strip {
@@ -316,6 +343,11 @@
   font-size: 11px;
   padding: 7px;
   color: #f8f9f7;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
 
 .underline {
@@ -328,11 +360,15 @@
 }
 
 .homepage-banner {
-  background-image: url("/assets/images/Asset\ 4.png");
+  background-image: url("/assets/images/Asset 4.png");
   background-size: cover;
   background-position: start;
   position: relative;
   opacity: 2.9;
+
+  @media (max-width: 768px) {
+    background-position: center;
+  }
 
   .text-overlay {
     max-width: 350px;
@@ -344,16 +380,32 @@
     font-size: 24px;
     text-align: start;
     display: inline-block;
+
+    @media (max-width: 768px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 90%;
+    }
   }
 }
 
 .banner-overlay-heading1 {
   font-size: 35px;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 }
 
 .banner-overlay-text {
   font-size: 14px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .banner-overlay-button {
@@ -364,6 +416,11 @@
   padding: 8px 14px;
   margin-top: 10px;
   border: none;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
 .google-reviews {
@@ -372,8 +429,268 @@
   align-items: flex-start;
   height: 100%;
   padding: 18px 0 22px 0;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding: 10px 0;
+  }
 }
 
 .google-reviews img.re {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
 }
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Mobile Specific Styles */
+// @media (max-width: 768px) {
+//   .navbar {
+//     flex-direction: column;
+//   }
+
+//   .navbar .d-flex {
+//     flex-direction: column;
+//     width: 100%;
+//   }
+
+//   .navbar .navbar-tab {
+//     width: 100%;
+//     text-align: center;
+//   }
+
+//   .navbar .dropdown-menu {
+//     width: 100%;
+//   }
+
+//   .dropdown-menu-full {
+//     width: 100%;
+//   }
+
+//   .dropdown-menu .tab-content {
+//     flex-direction: column;
+//   }
+
+//   .navbar-search {
+//     margin-left: 0;
+//     margin-right: 0;
+//     width: 100%;
+//   }
+
+//   .banner-overlay-heading1,
+//   .banner-overlay-text,
+//   .banner-overlay-button {
+//     text-align: center;
+//     margin: 0 auto;
+//   }
+
+//   .text-overlay {
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     max-width: 80%;
+//   }
+
+//   .banner-overlay-heading1 {
+//     font-size: 24px;
+//   }
+
+//   .banner-overlay-text {
+//     font-size: 14px;
+//   }
+
+//   .banner-overlay-button {
+//     padding: 10px 20px;
+//   }
+
+//   .google-reviews {
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .strip {
+//     text-align: center;
+//   }
+// }
+
+// .banner {
+//   background-color: primary-bg-color;
+//   padding: 100px;
+//   gap: 70px;
+// }
+
+// .w-full {
+//   width: 100%;
+// }
+
+// .h-full {
+//   height: 100%;
+// }
+
+// .flex-middle {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .banner-border {
+//   border: 2px solid #b7b7b7;
+// }
+
+// .navbar {
+//   background-image: url("/assets/images/Asset\ 5.png");
+//   background-size: cover;
+//   background-position: center;
+//   // height: 100%;
+// }
+
+// .content-container {
+//   margin: auto;
+//   max-width: 1000px;
+// }
+
+// .navbar-tab {
+//   padding: 8px 20px;
+//   background-color: transparent;
+//   cursor: pointer;
+
+//   &:hover {
+//     border: 1px solid white;
+//     background-color: #c41230;
+//     color: black;
+//   }
+
+//   &:active {
+//     border: 1px solid white;
+//     background-color: va;
+//     color: black;
+//   }
+// }
+
+// .tab-content {
+//   display: none;
+//   color: white;
+//   font-size: 15px;
+
+//   &.active {
+//     display: block;
+//   }
+
+//   p {
+//     cursor: pointer;
+
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+// }
+
+// .form-control::placeholder {
+//   color: $button-green;
+//   padding-left: 27px;
+//   font-weight: bold;
+// }
+
+// .search-icon {
+//   position: absolute;
+//   margin-right: 10px;
+//   left: 10px;
+//   right: 12px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   fill: $button-green;
+//   cursor: pointer;
+// }
+
+// .navbar-search {
+//   width: 270px;
+//   height: 35px;
+// }
+
+// .cart {
+//   padding: 12px;
+//   background-color: $red;
+//   border-radius: 30px;
+//   border: 1px solid white;
+//   cursor: pointer;
+// }
+
+// .count {
+//   font-size: 8px;
+//   border-radius: 60px;
+//   padding: 5px;
+//   background-color: white;
+//   right: 210px;
+// }
+
+// .strip {
+//   background-color: #55733b;
+//   font-size: 11px;
+//   padding: 7px;
+//   color: #f8f9f7;
+// }
+
+// .underline {
+//   text-decoration: underline;
+//   cursor: pointer;
+// }
+
+// .cursor-pointer {
+//   cursor: pointer;
+// }
+
+// .homepage-banner {
+//   background-image: url("/assets/images/Asset\ 4.png");
+//   background-size: cover;
+//   background-position: start;
+//   position: relative;
+//   opacity: 2.9;
+
+//   .text-overlay {
+//     max-width: 350px;
+//     position: absolute;
+//     top: 40%;
+//     left: 30%;
+//     transform: translate(-50%, -50%);
+//     color: white;
+//     font-size: 24px;
+//     text-align: start;
+//     display: inline-block;
+//   }
+// }
+
+// .banner-overlay-heading1 {
+//   font-size: 35px;
+//   font-weight: 500;
+// }
+
+// .banner-overlay-text {
+//   font-size: 14px;
+// }
+
+// .banner-overlay-button {
+//   background-color: #c41230;
+//   border-radius: 20px;
+//   color: white;
+//   font-size: 13px;
+//   padding: 8px 14px;
+//   margin-top: 10px;
+//   border: none;
+// }
+
+// .google-reviews {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   height: 100%;
+//   padding: 18px 0 22px 0;
+// }
+
+// .google-reviews img.re {
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
+// }
