@@ -867,6 +867,11 @@
   font-size: 12px;
   gap: 6px;
 }
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
 
 .content-container {
   margin: auto;

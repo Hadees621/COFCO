@@ -232,6 +232,10 @@
   color: white;
   font-size: 12px;
   gap: 6px;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
 
 .content-container {
