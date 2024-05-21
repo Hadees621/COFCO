@@ -855,7 +855,7 @@
 @media (min-width: 426px) and (max-width: 768px) {
   .navbar-logo {
     height: 65px;
-    width: 260px !important;
+    width: 215px !important;
   }
 }
 
@@ -937,6 +937,11 @@
   fill: #073b25;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .search-icon {
+    margin: 1px 8px;
+  }
+}
 
 .navbar-search {
   width: 270px;
@@ -946,6 +951,8 @@
   .navbar-search {
     width: 100%;
     height: 30px;
+    padding: 6px 15px;
+    margin: 10px;
   }
 }
 
@@ -989,11 +996,13 @@
   font-size: 11px;
   padding: 7px;
   color: #f8f9f7;
+  margin: auto;
 }
 @media (max-width: 768px) {
   .strip {
     font-size: 10px;
-    padding: 5px;
+    padding: 8px;
+    text-align: center;
   }
 }
 

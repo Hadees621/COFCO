@@ -221,7 +221,7 @@
 .navbar-logo {
   @media (min-width: 426px) and (max-width: 768px) {
     height: 65px;
-    width: 260px !important;
+    width: 215px !important;
   }
 }
 
@@ -300,6 +300,10 @@
   transform: translateY(-50%);
   fill: $button-green;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin: 1px 8px;
+  }
 }
 
 .navbar-search {
@@ -309,6 +313,8 @@
   @media (max-width: 768px) {
     width: 100%;
     height: 30px;
+    padding: 6px 15px;
+    margin: 10px;
   }
 }
 
@@ -349,10 +355,12 @@
   font-size: 11px;
   padding: 7px;
   color: #f8f9f7;
+  margin: auto;
 
   @media (max-width: 768px) {
     font-size: 10px;
-    padding: 5px;
+    padding: 8px;
+    text-align: center;
   }
 }
 
