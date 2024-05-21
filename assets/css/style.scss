@@ -226,11 +226,12 @@
 }
 
 .hamburger {
-  background-color: transparent;
+  background-color: $button-green;
   border-radius: 120px;
-  padding: 6px 11px;
-  color: whitesmoke;
+  padding: 7px 12px;
+  color: white;
   font-size: 12px;
+  gap: 6px;
 }
 
 .content-container {
@@ -277,6 +278,11 @@
       text-decoration: underline;
     }
   }
+}
+
+.bg-dropdown-bg-green {
+  background-color: #062e1d !important;
+  color: white;
 }
 
 .form-control::placeholder {
@@ -448,6 +454,23 @@
   display: block;
 }
 
+.off-canvas {
+  background-color: $button-green;
+  @media (min-width: 426px) and (max-width: 768px) {
+    width: 350px !important;
+  }
+}
+
+.off-canvas-lists {
+  padding: 3px 30px;
+}
+
+.text-white {
+  color: white !important;
+}
+
+/////////////////////
+///
 /* Mobile Specific Styles */
 // @media (max-width: 768px) {
 //   .navbar {
@@ -581,13 +604,13 @@
 //     display: block;
 //   }
 
-//   p {
-//     cursor: pointer;
+// p {
+//   cursor: pointer;
 
-//     &:hover {
-//       text-decoration: underline;
-//     }
+//   &:hover {
+//     text-decoration: underline;
 //   }
+// }
 // }
 
 // .form-control::placeholder {

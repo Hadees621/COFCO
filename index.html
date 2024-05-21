@@ -29,7 +29,7 @@
 
     <nav class="navbar navbar-dark bg-dark fixed-top flex-middle">
         <div class="container-fluid gap-2">
-            <button class="navbar-togler border roundedflex-middle hamburger" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-togler border flex-middle hamburger" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
                 Menu
@@ -42,49 +42,101 @@
                 <div class="position-absolute count">12</div>
             </div>
 
-
             <!-- offcanvas -->
-
-            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            <div class="offcanvas offcanvas-start text-bg-dark off-canvas w-75" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
-                <!-- <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                <div class="offcanvas-header m-2">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
-                </div> -->
+                </div>
 
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    New Customers
+                                </p>
+                                <p class="cursor-pointer">
+                                    Choice Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Original Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    OriginalPLUS+ Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Specific & Specialist Items
+                                </p>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    How It Works
+                                </p>
+                                <p class="cursor-pointer">
+                                    Our Produce & Products Deliveries
+                                </p>
+                                <p class="cursor-pointer">
+                                    FAQs
+                                </p>
+                                <p class="cursor-pointer">
+                                    Why Choose Us?
+                                </p>
+                                <p class="cursor-pointer">
+                                    Our Ethics & Sourcing Latest News
+                                </p>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sign In / Up
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Additional Helpful Links
+                            </a>
+                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    New Customers
+                                </p>
+                                <p class="cursor-pointer">
+                                    Choice Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Original Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    OriginalPLUS+ Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Specific & Specialist Items
+                                </p>
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
+
         </div>
     </nav>
+
+
     <!-- <nav class="navbar">
         <div class="container">
             <div class="navbar-contents w-100">

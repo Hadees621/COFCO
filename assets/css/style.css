@@ -860,11 +860,12 @@
 }
 
 .hamburger {
-  background-color: transparent;
+  background-color: #073b25;
   border-radius: 120px;
-  padding: 6px 11px;
-  color: whitesmoke;
+  padding: 7px 12px;
+  color: white;
   font-size: 12px;
+  gap: 6px;
 }
 
 .content-container {
@@ -907,6 +908,11 @@
 }
 .tab-content p:hover {
   text-decoration: underline;
+}
+
+.bg-dropdown-bg-green {
+  background-color: #062e1d !important;
+  color: white;
 }
 
 .form-control::-moz-placeholder {
@@ -1092,6 +1098,23 @@
 
 .show {
   display: block;
+}
+
+.off-canvas {
+  background-color: #073b25;
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .off-canvas {
+    width: 350px !important;
+  }
+}
+
+.off-canvas-lists {
+  padding: 3px 30px;
+}
+
+.text-white {
+  color: white !important;
 }
 
 /* Mobile Specific Styles *//*# sourceMappingURL=style.css.map */
