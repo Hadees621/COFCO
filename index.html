@@ -6,223 +6,193 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
-
     <title>COFCO</title>
 </head>
 
 <body>
 
+
     <!-- Top -->
-
-    <!-- <div class="banner d-flex w-full">
-        <div class="flex-middle w-full banner-border">
-            <img src="/assets/images/Asset 1.png" alt="" class="w-50 " />
-        </div>
-        <div class="flex-middle w-full">
-            <img src="/assets/images/Asset 2.png" alt="" class="w-full h-full" />
-        </div>
-    </div> -->
-
+    <!-- <div class="banner d-flex w-full hide-on-small-screen">
+            <div class="flex-middle w-full banner-border">
+                <img src="/assets/images/Asset 1.png" alt="" class="w-50 " />
+            </div>
+            <div class="flex-middle w-full">
+                <img src="/assets/images/Asset 2.png" alt="" class="w-full h-full" />
+            </div>
+        </div> -->
     <!-- Top Ends -->
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark flex-middle">
 
-    <div>
+        <div class="container gap-2 ">
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-dark bg-dark flex-middle">
+            <!-- Offcanvas -->
 
-            <div class="container gap-2 ">
-
-                <!-- Offcanvas -->
-
-                <button class="navbar-togler border flex-middle hamburger" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                    Menu
-                </button>
-                <div class="offcanvas offcanvas-start text-bg-dark off-canvas w-75" tabindex="-1"
-                    id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header m-2">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                        <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Shop
-                                </a>
-                                <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                    <p class="cursor-pointer">
-                                        New Customers
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Choice Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Original Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        OriginalPLUS+ Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Specific & Specialist Items
-                                    </p>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About Us
-                                </a>
-                                <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                    <p class="cursor-pointer">
-                                        How It Works
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Our Produce & Products Deliveries
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        FAQs
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Why Choose Us?
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Our Ethics & Sourcing Latest News
-                                    </p>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Sign In / Up
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Additional Helpful Links
-                                </a>
-                                <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                    <p class="cursor-pointer">
-                                        New Customers
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Choice Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Original Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        OriginalPLUS+ Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Specific & Specialist Items
-                                    </p>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <button class="navbar-togler border flex-middle hamburger" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+                Menu
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark off-canvas w-75" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header m-2">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-
-                <!-- Offcanvas Ends -->
-
-
-                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
-
-                <!-- tabs -->
-                <div class="d-flex m-2">
-
-                    <!-- Shop -->
-                    <div class="rounded-pill text-white navbar-tab flex-middle" id="shopDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Shop
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
-                            <path fill="white" d="m7 10l5 5l5-5z" />
-                        </svg>
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-full w-100 " aria-labelledby="shopDropdown">
-                        <div
-                            class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
-                            <p class="cursor-pointer">
-                                New Customers
-                            </p>
-                            <p class="cursor-pointer">
-                                Choice Veg Boxes
-                            </p>
-                            <p class="cursor-pointer">
-                                Original Veg Boxes
-                            </p>
-                            <p class="cursor-pointer">
-                                OriginalPLUS+ Veg Boxes
-                            </p>
-                            <p class="cursor-pointer">
-                                Specific & Specialist Items
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- About Us -->
-                    <div class="rounded-pill text-white navbar-tab flex-middle about-us" id="aboutUsDropdown"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About Us
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
-                            <path fill="white" d="m7 10l5 5l5-5z" />
-                        </svg>
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-full w-100" aria-labelledby="aboutUsDropdown">
-                        <div
-                            class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
-                            <p class="cursor-pointer">
-                                How It Works
-                            </p>
-                            <p class="cursor-pointer">
-                                Our Produce & Products Deliveries
-                            </p>
-                            <p class="cursor-pointer">
-                                FAQs
-                            </p>
-                            <p class="cursor-pointer">
-                                Why Choose Us?
-                            </p>
-                            <p class="cursor-pointer">
-                                Our Ethics & Sourcing Latest News
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
-
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    New Customers
+                                </p>
+                                <p class="cursor-pointer">
+                                    Choice Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Original Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    OriginalPLUS+ Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Specific & Specialist Items
+                                </p>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    How It Works
+                                </p>
+                                <p class="cursor-pointer">
+                                    Our Produce & Products Deliveries
+                                </p>
+                                <p class="cursor-pointer">
+                                    FAQs
+                                </p>
+                                <p class="cursor-pointer">
+                                    Why Choose Us?
+                                </p>
+                                <p class="cursor-pointer">
+                                    Our Ethics & Sourcing Latest News
+                                </p>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sign In / Up
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Additional Helpful Links
+                            </a>
+                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    New Customers
+                                </p>
+                                <p class="cursor-pointer">
+                                    Choice Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Original Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    OriginalPLUS+ Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Specific & Specialist Items
+                                </p>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <!-- tabs ends -->
-
-                <!-- search for lg screen  -->
-                <div class="position-relative d-flex align-items-center hide-on-small-screen">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="#073b25"
-                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-                        <path fill="none" d="M0 0h24v24H0z" />
-                    </svg>
-                    <input type="text" class="form-control rounded-pill ml-4 navbar-search"
-                        placeholder="Search for products">
-                </div>
-                <!-- search for lg screen  -->
-
-                <!-- cart -->
-                <div class="text-white flex-middle cart position-relative ">
-                    <img src="assets/images/cart.png" alt="" class="" />
-                    <div class="position-absolute count">12</div>
-                </div>
-                <!-- cart -->
-
             </div>
 
-            <!-- Search bar for small screen  -->
-            <div class="position-relative d-flex align-items-center w-100 hide-on-large-screen">
+            <!-- Offcanvas Ends -->
+
+            <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
+
+            <!-- tabs -->
+            <div class="d-flex m-2 hide-on-small-screen tabs">
+
+                <!-- Shop -->
+                <div class="rounded-pill text-white navbar-tab flex-middle" id="shopDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                        <path fill="white" d="m7 10l5 5l5-5z" />
+                    </svg>
+                </div>
+                <div class="dropdown-menu dropdown-menu-full w-100 " aria-labelledby="shopDropdown">
+                    <div class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
+                        <p class="cursor-pointer">
+                            New Customers
+                        </p>
+                        <p class="cursor-pointer">
+                            Choice Veg Boxes
+                        </p>
+                        <p class="cursor-pointer">
+                            Original Veg Boxes
+                        </p>
+                        <p class="cursor-pointer">
+                            OriginalPLUS+ Veg Boxes
+                        </p>
+                        <p class="cursor-pointer">
+                            Specific & Specialist Items
+                        </p>
+                    </div>
+                </div>
+
+                <!-- About Us -->
+                <div class="rounded-pill text-white navbar-tab flex-middle about-us" id="aboutUsDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    About Us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                        <path fill="white" d="m7 10l5 5l5-5z" />
+                    </svg>
+                </div>
+                <div class="dropdown-menu dropdown-menu-full w-100" aria-labelledby="aboutUsDropdown">
+                    <div class="d-flex justify-content-between tab-content active content-container flex-middle mt-3">
+                        <p class="cursor-pointer">
+                            How It Works
+                        </p>
+                        <p class="cursor-pointer">
+                            Our Produce & Products Deliveries
+                        </p>
+                        <p class="cursor-pointer">
+                            FAQs
+                        </p>
+                        <p class="cursor-pointer">
+                            Why Choose Us?
+                        </p>
+                        <p class="cursor-pointer">
+                            Our Ethics & Sourcing Latest News
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
+
+            </div>
+            <!-- tabs ends -->
+
+            <!-- search for lg screen  -->
+            <div class="position-relative d-flex align-items-center hide-on-small-screen">
                 <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="#073b25"
                         d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
@@ -231,14 +201,30 @@
                 <input type="text" class="form-control rounded-pill ml-4 navbar-search"
                     placeholder="Search for products">
             </div>
-            <!-- Search bar for small screen  -->
+            <!-- search for lg screen  -->
 
-    </div>
+            <!-- cart -->
+            <div class="text-white flex-middle cart position-relative ">
+                <img src="assets/images/cart.png" alt="" class="" />
+                <div class="position-absolute count">12</div>
+            </div>
+            <!-- cart -->
 
+        </div>
+
+        <!-- Search bar for small screen  -->
+        <div class="position-relative d-flex align-items-center w-100 hide-on-large-screen">
+            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#073b25"
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                <path fill="none" d="M0 0h24v24H0z" />
+            </svg>
+            <input type="text" class="form-control rounded-pill ml-4 navbar-search" placeholder="Search for products">
+        </div>
+        <!-- Search bar for small screen  -->
 
     </nav>
     <!-- Navbar Ends -->
-
 
     <!-- strip -->
     <!-- <div class="strip flex-middle">
@@ -246,9 +232,8 @@
             <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
             </h7>
         </h7>
-    </div> -->
+       </div> -->
     <!-- strip -->
-
 
     <!-- Banner -->
     <!--  <div class="homepage-banner hidde">
@@ -279,7 +264,6 @@
         </div> -->
     <!-- Banner Ends -->
 
-    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -291,8 +275,8 @@
             });
         });
     </script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
@@ -324,8 +308,3 @@
         </h7>
     </h7>
 </div> -->
-
-
-
-<!-- Search Bar -->
-<!-- > -->
