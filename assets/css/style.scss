@@ -156,12 +156,25 @@
 }
 
 .content-container {
-  margin: auto;
-  max-width: 1000px;
+  // margin: auto;/
+  // max-width: 1000px;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-    padding: 0 10px;
+  @media (min-width: 426px) and (max-width: 768px) {
+    padding: 6px 15px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1320px) {
+    font-size: 12px;
+    padding: 10px 50px;
+  }
+  @media (min-width: 1320px) and (max-width: 1600px) {
+    font-size: 18px;
+    padding: 10px 160px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 25px;
+    padding: 10px 80px;
   }
 }
 
@@ -604,5 +617,29 @@
 
 .profile {
   font-size: 10px;
-  // height: 60px;
+}
+
+.breadcrumb {
+  color: black;
+  border-bottom: black 1px solid !important;
+}
+
+.bread {
+  font-size: 11px;
+  color: black;
+  cursor: pointer;
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: inherit;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: inherit;
 }

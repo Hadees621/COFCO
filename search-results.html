@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
+
     <title>COFCO</title>
 </head>
 
@@ -13,8 +14,9 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark flex-middle">
+
         <!-- Nav tabs -->
-        <div class="container gap-2 ">
+        <div class="container gap-2">
 
             <!-- Offcanvas -->
 
@@ -202,6 +204,7 @@
             </div>
 
         </div>
+
     </nav>
     <!-- Navbar Ends -->
 
@@ -262,6 +265,13 @@
     </div>
     <!-- strip -->
 
+    <div aria-label="breadcrumb" class="border-black bread">
+        <ol class="breadcrumb content-container border">
+            <li class="breadcrumb-item bread"><a href="#">Home</a></li>
+            <li class="breadcrumb-item bread">Library</li>
+        </ol>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const menuButton = document.querySelector('.navbar-tab');
@@ -272,6 +282,7 @@
             });
         });
     </script>
+
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

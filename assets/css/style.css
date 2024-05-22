@@ -853,14 +853,27 @@
   }
 }
 
-.content-container {
-  margin: auto;
-  max-width: 1000px;
-}
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .content-container {
-    max-width: 100%;
-    padding: 0 10px;
+    padding: 6px 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1320px) {
+  .content-container {
+    font-size: 12px;
+    padding: 10px 50px;
+  }
+}
+@media (min-width: 1320px) and (max-width: 1600px) {
+  .content-container {
+    font-size: 18px;
+    padding: 10px 160px;
+  }
+}
+@media (min-width: 1600px) {
+  .content-container {
+    font-size: 25px;
+    padding: 10px 80px;
   }
 }
 
@@ -1371,4 +1384,28 @@
 
 .profile {
   font-size: 10px;
+}
+
+.breadcrumb {
+  color: black;
+  border-bottom: black 1px solid !important;
+}
+
+.bread {
+  font-size: 11px;
+  color: black;
+  cursor: pointer;
+}
+.bread:active {
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: inherit;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */
