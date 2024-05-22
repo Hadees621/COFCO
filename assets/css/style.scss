@@ -392,6 +392,15 @@
       text-align: center;
       max-width: 90%;
     }
+    @media (min-width: 769px) and (max-width: 1320px) {
+      max-width: 300px;
+    }
+    @media (min-width: 1320px) and (max-width: 1600px) {
+      max-width: 350px;
+    }
+    @media (min-width: 1600px) {
+      max-width: 600px;
+    }
   }
 }
 
@@ -399,16 +408,29 @@
   font-size: 35px;
   font-weight: 500;
 
-  @media (max-width: 768px) {
-    font-size: 25px;
+  @media (min-width: 769px) and (max-width: 1320px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1320px) and (max-width: 1600px) {
+    font-size: 34px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 65px;
   }
 }
 
 .banner-overlay-text {
   font-size: 14px;
 
-  @media (max-width: 768px) {
+  @media (min-width: 769px) and (max-width: 1320px) {
     font-size: 12px;
+  }
+  @media (min-width: 1320px) and (max-width: 1600px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1600px) {
+    font-size: 29px;
   }
 }
 
@@ -425,23 +447,38 @@
     font-size: 12px;
     padding: 6px 12px;
   }
+  @media (min-width: 1600px) {
+    border-radius: 50px;
+    font-size: 18px;
+    width: 230px;
+    height: 50px;
+  }
 }
 
 .google-reviews {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
   padding: 18px 0 22px 0;
 
-  @media (max-width: 768px) {
-    justify-content: center;
+  @media (min-width: 769px) and (max-width: 1320px) {
+    justify-content: start;
     padding: 10px 0;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 29px;
   }
 }
 
 .google-reviews img.re {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 1600px) {
+    width: 200px;
+  }
 }
 
 .hidden {
@@ -497,4 +534,13 @@
   width: 1px;
   height: 27px;
   background-color: white;
+
+  @media (min-width: 769px) and (max-width: 1320px) {
+    top: 36px !important;
+    height: 20px;
+  }
+  @media (min-width: 1600px) {
+    top: 66px !important;
+    height: 80px;
+  }
 }
