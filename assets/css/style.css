@@ -885,21 +885,49 @@
   }
 }
 
+.tabs {
+  border: none;
+}
 @media (min-width: 2000px) {
   .tabs {
     gap: 50px;
   }
 }
 
+.nav-tabs .nav-link.active {
+  background-color: 0;
+}
+.nav-tabs .nav-link.active.shop {
+  background-color: #af102b;
+}
+.nav-tabs .nav-link.active.about-us {
+  background-color: #073b25;
+}
+
 .tab-content {
   background-image: url("/assets/images/Asset 6.png");
   background-size: cover;
   background-position: center;
+  width: 100%;
   color: white;
-  font-size: 15px;
 }
-.tab-content.active {
-  display: block;
+@media (min-width: 769px) and (max-width: 1320px) {
+  .tab-content {
+    font-size: 12px;
+    padding: 0px 40px;
+  }
+}
+@media (min-width: 1320px) and (max-width: 1600px) {
+  .tab-content {
+    font-size: 18px;
+    padding: 0px 70px;
+  }
+}
+@media (min-width: 1600px) {
+  .tab-content {
+    font-size: 22px;
+    padding: 0px 200px;
+  }
 }
 .tab-content p {
   cursor: pointer;

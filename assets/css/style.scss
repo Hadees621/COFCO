@@ -188,22 +188,41 @@
 }
 
 .tabs {
+  border: none;
   @media (min-width: 2000px) {
     gap: 50px;
   }
 }
 
+.nav-tabs .nav-link.active {
+  background-color: blue($color: #000000);
+  &.shop {
+    background-color: $clicked-red;
+  }
+  &.about-us {
+    background-color: $button-green;
+  }
+}
+
 .tab-content {
-  // display: none;
   background-image: url("/assets/images/Asset 6.png");
   background-size: cover;
   background-position: center;
-
+  width: 100%;
   color: white;
-  font-size: 15px;
 
-  &.active {
-    display: block;
+  @media (min-width: 769px) and (max-width: 1320px) {
+    font-size: 12px;
+    padding: 0px 40px;
+  }
+  @media (min-width: 1320px) and (max-width: 1600px) {
+    font-size: 18px;
+    padding: 0px 70px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 22px;
+    padding: 0px 200px;
   }
 
   p {
