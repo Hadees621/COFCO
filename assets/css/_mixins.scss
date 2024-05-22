@@ -249,6 +249,13 @@ $color-values: (
 
 //////////////////
 
+@mixin hoverEffect($hoverBgColor) {
+  &:hover {
+    border: 1px solid white;
+    background-color: $hoverBgColor;
+    color: black;
+  }
+}
 .navbar-tab {
   padding: 8px 20px;
   background-color: transparent;
