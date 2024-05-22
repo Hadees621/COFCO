@@ -1216,4 +1216,20 @@
   .hide-on-small-screen {
     display: none !important;
   }
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 46px;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 27px;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
