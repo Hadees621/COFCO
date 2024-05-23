@@ -853,6 +853,18 @@
   }
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.text-boldest {
+  font-weight: 900;
+}
+
 @media (min-width: 426px) and (max-width: 768px) {
   .content-container {
     padding: 6px 15px;
@@ -875,6 +887,10 @@
     font-size: 25px;
     padding: 10px 80px;
   }
+}
+
+.text-black {
+  color: black;
 }
 
 .navbar-tab {
@@ -917,7 +933,7 @@
   background-color: #073b25;
 }
 
-.tab-content {
+.navbar__tab__content {
   background-image: url("/assets/images/Asset 6.png");
   background-size: cover;
   background-position: center;
@@ -925,27 +941,27 @@
   color: white;
 }
 @media (min-width: 769px) and (max-width: 1320px) {
-  .tab-content {
+  .navbar__tab__content {
     font-size: 11px;
     padding: 0px 50px;
   }
 }
 @media (min-width: 1320px) and (max-width: 1600px) {
-  .tab-content {
+  .navbar__tab__content {
     font-size: 14px;
     padding: 0px 90px;
   }
 }
 @media (min-width: 1600px) {
-  .tab-content {
+  .navbar__tab__content {
     font-size: 22px;
     padding: 0px 200px;
   }
 }
-.tab-content p {
+.navbar__tab__content p {
   cursor: pointer;
 }
-.tab-content p:hover {
+.navbar__tab__content p:hover {
   text-decoration: underline;
 }
 
@@ -1408,4 +1424,60 @@
 .breadcrumb-item a {
   text-decoration: none;
   color: inherit;
+}
+
+.search-results {
+  font: bolder;
+  font-size: 40px;
+}
+
+.text-small {
+  font-size: 10px;
+}
+
+.text-w-600 {
+  font-weight: 600;
+}
+
+.internal-tab {
+  font-size: 15px;
+  padding: 7px 45px;
+  border: 1px solid #f1f1f1 !important;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 600;
+}
+.internal-tab:hover {
+  color: black;
+  border: none;
+  text-decoration: underline;
+  background-color: #f1f1f1;
+}
+
+.internal-tab.active {
+  background-color: #f1f1f1 !important;
+  text-decoration: underline;
+  font-weight: 600;
+  color: black;
+  border: none;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+
+.view-product {
+  background-color: #af102b;
+  font-size: 14px;
+  padding: 6px 30px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.border-y {
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
 }/*# sourceMappingURL=style.css.map */
