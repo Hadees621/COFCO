@@ -698,6 +698,7 @@
   width: 150px;
   height: 150px;
 }
+
 .view-product {
   background-color: $clicked-red;
   font-size: 14px;
@@ -713,8 +714,14 @@
   border-top: 1px solid #dee2e6;
 }
 
-// .product-padding{
-//   padding-left: 10px;
-//   padding-right: 10px;
-//   padding-top: 5px;
-// }
+.internal-tabs-container {
+  gap: 12px;
+
+  @media (min-width: 1440px) and (max-width: 1600px) {
+    gap: 62px !important;
+  }
+
+  @media (min-width: 1600px) {
+    gap: 162px !important;
+  }
+}

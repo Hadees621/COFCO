@@ -451,46 +451,60 @@
   .flex-row-sm {
     flex-direction: row;
   }
+
   .flex-row-reverse-sm {
     flex-direction: row-reverse;
   }
+
   .flex-column-sm {
     flex-direction: column;
   }
+
   .flex-wrap-sm {
     flex-direction: wrap;
   }
+
   .flex-column-reverse-sm {
     flex-direction: column-reverse;
   }
+
   .w-sm-25 {
     width: 25%;
   }
+
   .w-sm-50 {
     width: 50%;
   }
+
   .w-sm-75 {
     width: 75%;
   }
+
   .w-sm-100 {
     width: 100%;
   }
+
   .top-sm-25 {
     top: 25%;
   }
+
   .top-sm-50 {
     top: 50%;
   }
+
   .top-sm-75 {
     top: 75%;
   }
+
   .top-sm-100 {
     top: 100%;
   }
+
   .fs-30-sm {
     font-size: 30px;
     font-size: 30 px;
   }
+
   .fs-50-sm {
     font-size: 50px;
     font-size: 24 px;
@@ -500,27 +514,35 @@
   .flex-row-md {
     flex-wrap: row;
   }
+
   .flex-row-reverse-md {
     flex-wrap: row-reverse;
   }
+
   .flex-column-md {
     flex-wrap: column;
   }
+
   .flex-wrap-md {
     flex-wrap: wrap;
   }
+
   .flex-column-reverse-md {
     flex-wrap: column-reverse;
   }
+
   .top-md-25 {
     top: 25%;
   }
+
   .top-md-50 {
     top: 50%;
   }
+
   .top-md-75 {
     top: 75%;
   }
+
   .top-md-100 {
     top: 100%;
   }
@@ -529,12 +551,15 @@
   .top-lg-25 {
     top: 25%;
   }
+
   .top-lg-50 {
     top: 50%;
   }
+
   .top-lg-75 {
     top: 75%;
   }
+
   .top-lg-100 {
     top: 100%;
   }
@@ -696,9 +721,11 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "Open Sans";
-  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 400;
+  * {
+    font-family: "Open Sans";
+    src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
 }
 * body {
   font-family: "Open Sans", sans-serif;
@@ -970,22 +997,12 @@
   color: white;
 }
 
-.form-control::-moz-placeholder {
-  color: #073b25;
-  padding-left: 27px;
-  font-weight: bold;
-}
-
 .form-control::placeholder {
   color: #073b25;
   padding-left: 27px;
   font-weight: bold;
 }
 @media (min-width: 2000px) {
-  .form-control::-moz-placeholder {
-    font-size: 17px;
-    margin: 22px;
-  }
   .form-control::placeholder {
     font-size: 17px;
     margin: 22px;
@@ -1375,14 +1392,6 @@
   }
 }
 
-.internal-navbar-search::-moz-placeholder {
-  font-size: 17px;
-  font-weight: 600;
-  padding-left: 20px;
-  color: #073b25;
-  padding: 0px 30px;
-}
-
 .internal-navbar-search::placeholder {
   font-size: 17px;
   font-weight: 600;
@@ -1494,4 +1503,4 @@
   .internal-tabs-container {
     gap: 162px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
