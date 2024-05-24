@@ -1593,3 +1593,17 @@
     padding: 10px 380px !important;
   }
 }
+
+.product-image {
+  width: 445px !important;
+  height: 330px !important;
+}
+
+.product-title {
+  font-size: 32px;
+}
+
+.products-buttons {
+  height: 40px;
+  font-size: 12px;
+}
