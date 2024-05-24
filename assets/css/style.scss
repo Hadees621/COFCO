@@ -361,25 +361,6 @@
   }
 }
 
-.strip {
-  background-color: #55733b;
-  font-size: 11px;
-  padding: 7px;
-  color: #f8f9f7;
-  margin: auto;
-
-  @media (max-width: 768px) {
-    font-size: 10px;
-    padding: 8px;
-    text-align: center;
-  }
-  @media (min-width: 1600px) {
-    font-size: 15px;
-    padding: 11px;
-    text-align: center;
-  }
-}
-
 .underline {
   text-decoration: underline;
   cursor: pointer;
@@ -571,25 +552,16 @@
   }
 }
 
-//  internal pages
+.strip {
+  @include strip(#55733b);
+}
 
 .red-strip {
-  background-color: $clicked-red;
-  font-size: 11px;
-  padding: 7px;
-  color: #f8f9f7;
-  margin: auto;
+  @include strip($clicked-red);
+}
 
-  @media (max-width: 768px) {
-    font-size: 10px;
-    padding: 8px;
-    text-align: center;
-  }
-  @media (min-width: 1600px) {
-    font-size: 15px;
-    padding: 11px;
-    text-align: center;
-  }
+.orange-strip {
+  @include strip(#e87635);
 }
 
 .internal-navbar-search {
@@ -722,6 +694,38 @@
   }
 
   @media (min-width: 1600px) {
-    gap: 162px !important;
+    gap: 262px !important;
   }
+}
+
+.tabs-padding {
+  @media (min-width: 1600px) {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.last-images {
+  height: 90px;
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    height: 93px;
+  }
+
+  @media (min-width: 1440px) and (max-width: 1600px) {
+    height: 110px;
+  }
+
+  @media (min-width: 1600px) {
+    height: 180px;
+  }
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
