@@ -1551,4 +1551,36 @@
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+}
+
+.footer {
+  background-color: #073b25;
+  font-size: 11px;
+}
+
+.footer-logos {
+  height: 20px;
+  height: 20px;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .footer-padding {
+    padding: 6px 15px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1320px) {
+  .footer-padding {
+    padding: 10px 50px !important;
+  }
+}
+@media (min-width: 1320px) and (max-width: 1600px) {
+  .footer-padding {
+    padding: 10px 160px !important;
+  }
+}
+@media (min-width: 1600px) {
+  .footer-padding {
+    font-size: 14px;
+    padding: 10px 380px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
