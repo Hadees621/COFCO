@@ -247,7 +247,7 @@
         <div>
             <img src="/assets/images/product-details/Asset 1.png" class="product-image" />
         </div>
-        <div class="w-full ml-5">
+        <div class="w-full mr-l-5">
             <div>
                 <p class="text-bold product-title" style="border-color: #F7F8F7;">Fitzbilies Granola · 400g</p>
             </div>
@@ -300,12 +300,112 @@
                 </p>
             </div>
 
-            <div class="">
+            <div class="in-stock-button text-white flex-middle gap-2 mt-4">
+                <img src="/assets/images/product-details/Asset 13.png" style="width: 13px;" />
                 In stock
             </div>
 
-        </div>
+            <div class="mt-4 d-flex justify-content-between px-">
+                <div class="product-price p-1"> £5.25 </div>
+                <div class="border quantity-selector">
+                    <label for="quantity" class="product-nested-titles p-1"> Quantity </label>
+                    <select name="quantity" id="quantity" class="border-none">
+                        <option value="volvo">1</option>
+                        <option value="saab">2</option>
+                        <option value="mercedes">3</option>
+                        <option value="audi">4</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="add-to-order-button text-white">
+                        Add to your order
+                    </button>
+                </div>
+            </div>
 
+        </div>
+    </div>
+
+
+    <!-- Slider area -->
+    <div class="pt-5"
+        style="background-image: url('/assets/images/product-details/Asset 5.png'); background-size: cover; background-position: center; width: 100%; height: 80vh;">
+        <div class="text-center">
+            <h1 class="pt-4 text-bold">Additional Items of Interest</h1>
+            <h5 class="text-bold">Based on your selection, see what other products may be of interest to you:
+            </h5>
+            <div class="slider-container d-flex mt-5" style="align-items: start;">
+                <div class="slider">
+                    <div class="slider-wrapper d-flex">
+                        <div class="slide">
+                            <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
+                                class="slider-product-image">
+                            <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
+                                Sourdough Breadrolls</h3>
+                            <p class="product-price">£4.40</p>
+                            <button class="view-button text-white mt-3">
+                                View more...
+                            </button>
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/images/product-details/Asset 3.png" alt="Product 2"
+                                class="slider-product-image">
+                            <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
+                                Sourdough Breadrolls</h3>
+                            <p class="product-price">£4.40</p>
+                            <button class="view-button text-white mt-3">
+                                View more...
+                            </button>
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/images/product-details/Asset 4.png" alt="Product 3"
+                                class="slider-product-image">
+                            <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
+                                Sourdough Breadrolls</h3>
+                            <p class="product-price">£4.40</p>
+                            <button class="view-button text-white mt-3">
+                                View more...
+                            </button>
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
+                                class="slider-product-image">
+                            <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
+                                Sourdough Breadrolls</h3>
+                            <p class="product-price">£4.40</p>
+                            <button class="view-button text-white mt-3">
+                                View more...
+                            </button>
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
+                                class="slider-product-image">
+                            <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
+                                Sourdough Breadrolls</h3>
+                            <p class="product-price">£4.40</p>
+                            <button class="view-button text-white mt-3">
+                                View more...
+                            </button>
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
+                                class="slider-product-image">
+                            <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
+                                Sourdough Breadrolls</h3>
+                            <p class="product-price">£4.40</p>
+                            <button class="view-button text-white mt-3">
+                                View more...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="next" onclick="moveSlide(1)">
+                        <img src="/assets/images/product-details/Asset 6.png" alt="Next" class="mt-3" />
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Companies -->
@@ -365,7 +465,29 @@
     </script>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let currentSlide = 0;
 
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+
+            currentSlide += direction;
+
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            }
+
+            const offset = -currentSlide * 100 / 3;
+            sliderWrapper.style.transform = `translateX(${offset}%)`;
+        }
+
+
+    </script>
 
 </body>
 
