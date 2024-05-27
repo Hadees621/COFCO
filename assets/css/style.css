@@ -1522,6 +1522,9 @@ p {
   }
 }
 
+.tabs-padding {
+  padding: 20px 30px;
+}
 @media (min-width: 1600px) {
   .tabs-padding {
     padding-left: 300px;
@@ -1574,18 +1577,18 @@ p {
 }
 @media (min-width: 769px) and (max-width: 1320px) {
   .footer-padding {
-    padding: 10px 50px !important;
+    padding: 20px 50px !important;
   }
 }
 @media (min-width: 1320px) and (max-width: 1600px) {
   .footer-padding {
-    padding: 10px 160px !important;
+    padding: 25px 160px !important;
   }
 }
 @media (min-width: 1600px) {
   .footer-padding {
     font-size: 14px;
-    padding: 10px 380px !important;
+    padding: 25px 380px !important;
   }
 }
 
@@ -1832,4 +1835,14 @@ button.next img {
   border-radius: 30px;
   font-size: 13px;
   border: none;
+}
+
+.detail-page-hover {
+  transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.detail-page-hover:hover {
+  background-color: #094d30;
+  color: white;
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */
