@@ -621,6 +621,10 @@ p {
   &:active {
     text-decoration: underline;
   }
+
+  @media (min-width: 1600px) {
+    font-size: 21px;
+  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -1080,11 +1084,15 @@ button.next img {
 }
 
 .slider-background {
-  height: 70vh;
+  // height: 70vh;
   background-position: center;
   width: 100% !important;
-  @media (min-width: 769px) and (max-width: 1320px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     height: 70vh;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1319) {
+    height: 65vh;
   }
   @media (min-width: 1320px) and (max-width: 1600px) {
     height: 80vh;
@@ -1098,16 +1106,15 @@ button.next img {
 .Additional-Items {
   @media (min-width: 1600px) {
     font-size: 60px !important;
-    margin: 30px ;
+    margin: 30px;
     margin-top: 70px;
   }
 }
 
-.Based-on-your{
+.Based-on-your {
   @media (min-width: 1600px) {
     font-size: 30px !important;
-    margin: 30px ;
-  margin-bottom: 60px;
+    margin: 30px;
+    margin-bottom: 60px;
   }
-
 }
