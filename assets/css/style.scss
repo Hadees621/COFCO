@@ -367,7 +367,6 @@ p {
 
 .underline {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .cursor-pointer {
@@ -1091,11 +1090,11 @@ button.next img {
     height: 70vh;
   }
 
-  @media (min-width: 1025px) and (max-width: 1319) {
-    height: 65vh;
+  @media (min-width: 1025px) and (max-width: 1439) {
+    height: 68vh;
   }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    height: 80vh;
+  @media (min-width: 1440px) and (max-width: 1600px) {
+    height: 68vh;
   }
   @media (min-width: 1600px) {
     height: 60vh;
@@ -1117,4 +1116,53 @@ button.next img {
     margin: 30px;
     margin-bottom: 60px;
   }
+}
+
+.modal-cross-button {
+  background-color: black;
+  border-radius: 370px;
+  color: white;
+  padding: 1px;
+  font-size: 30px;
+  border: none !important;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-input {
+  width: 300px;
+  height: 35px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  border: 2px solid #bfc6c3;
+}
+
+.cart-dropdown {
+  width: 190px !important;
+  right: 0;
+  left: auto;
+}
+
+.cart-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  left: auto;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.dropdown-checkout-button {
+  background-color: $clicked-red;
+  padding: 4px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  border: none;
+  font: bold;
 }
