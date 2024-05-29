@@ -1931,24 +1931,20 @@ button.next img {
   background-position: center;
   width: 100% !important;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 869px) and (max-width: 1024px) {
   .slider-background {
-    height: 70vh;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1439) {
-  .slider-background {
-    height: 68vh;
+    height: 90vh;
   }
 }
 @media (min-width: 1440px) and (max-width: 1600px) {
   .slider-background {
-    height: 68vh;
+    height: 70vh;
   }
 }
 @media (min-width: 1600px) {
   .slider-background {
-    height: 60vh;
+    height: 70vh;
+    padding-top: 60px;
     margin-top: 60px;
   }
 }
