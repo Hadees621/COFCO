@@ -367,7 +367,6 @@ p {
 
 .underline {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .cursor-pointer {
@@ -1091,11 +1090,11 @@ button.next img {
     height: 70vh;
   }
 
-  @media (min-width: 1025px) and (max-width: 1319) {
+  @media (min-width: 1025px) and (max-width: 1439) {
     height: 65vh;
   }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    height: 80vh;
+  @media (min-width: 1440px) and (max-width: 1600px) {
+    height: 66vh;
   }
   @media (min-width: 1600px) {
     height: 60vh;
@@ -1117,4 +1116,13 @@ button.next img {
     margin: 30px;
     margin-bottom: 60px;
   }
+}
+
+.modal-cross-button {
+  background-color: black;
+  border-radius: 370px;
+  color: white;
+  padding: 1px;
+  font-size: 30px;
+  border: none !important;
 }

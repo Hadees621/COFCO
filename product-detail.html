@@ -323,11 +323,41 @@
                     </select>
                 </div>
                 <div>
-                    <button class="add-to-order-button text-white">
+                    <button class="add-to-order-button text-white" data-toggle="modal"
+                        data-target="#findDeliveryDayModal">
                         Add to your order
                     </button>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="findDeliveryDayModal" tabindex="-1" role="dialog"
+                aria-labelledby="findDeliveryDayModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close " data-dismiss="modal" aria-label="Close" style="border-radius: 20px;">
+                                <!-- <span aria-hidden="true" class="modal-cross-button">&times;</span> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round"
+                                        d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Enter your Postcode below and discover when
+                            our delivery team are in your area:
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
@@ -469,7 +499,9 @@
             });
         });
     </script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
