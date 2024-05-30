@@ -2132,3 +2132,8 @@ button.next img {
     gap: 300px;
   }
 }
+
+.modal-content2 {
+  width: 120%;
+  margin: auto;
+}
