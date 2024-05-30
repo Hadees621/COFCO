@@ -2078,3 +2078,57 @@ button.next img {
     width: 30px;
   }
 }
+
+.counter-btn {
+  font-size: 50px;
+  color: #af102b;
+}
+
+.modal-content {
+  width: 78%;
+  margin: auto;
+}
+@media (min-width: 1600px) {
+  .modal-content {
+    width: 130%;
+  }
+}
+
+.green-modal-buttons {
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid #55733b;
+  padding: 10px 20px;
+  color: black;
+}
+.green-modal-buttons:hover {
+  background-color: #55733b;
+  color: white;
+}
+@media (min-width: 1600px) {
+  .green-modal-buttons {
+    width: 130%;
+  }
+}
+
+.cancel-button {
+  font-size: 14px;
+  padding: 8px 36px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #153d37;
+  color: black;
+}
+@media (min-width: 1600px) {
+  .cancel-button {
+    padding: 8px 36px;
+    font-size: 25px;
+    border-radius: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .green-buttons-container {
+    gap: 300px;
+  }
+}
