@@ -1763,7 +1763,7 @@ p {
 }
 @media (min-width: 1600px) {
   .product-nested-description {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -1922,24 +1922,20 @@ button.next img {
   background-position: center;
   width: 100% !important;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 869px) and (max-width: 1024px) {
   .slider-background {
-    height: 70vh;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1439) {
-  .slider-background {
-    height: 68vh;
+    height: 90vh;
   }
 }
 @media (min-width: 1440px) and (max-width: 1600px) {
   .slider-background {
-    height: 68vh;
+    height: 70vh;
   }
 }
 @media (min-width: 1600px) {
   .slider-background {
-    height: 60vh;
+    height: 70vh;
+    padding-top: 60px;
     margin-top: 60px;
   }
 }
@@ -2007,4 +2003,123 @@ button.next img {
   font-size: 12px;
   border: none;
   font: bold;
+}
+
+.edit-contents-button {
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #dd3333;
+  color: #dd3333;
+}
+@media (min-width: 1600px) {
+  .edit-contents-button {
+    padding: 8px 36px;
+    font-size: 25px;
+    border-radius: 40px;
+  }
+}
+
+.product-table {
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  font-weight: 900;
+}
+
+.product-table th,
+.product-table td {
+  padding: 0px 22px 0px 0px;
+  text-align: left;
+}
+
+.points-button {
+  text-align: center;
+  font-size: 12px;
+  height: 25px;
+  width: 85px;
+  border-radius: 25px;
+  padding: px;
+  background-color: transparent;
+  border: 1px solid #eff1f1;
+}
+@media (min-width: 1600px) {
+  .points-button {
+    height: 45px;
+    width: 165px;
+    font-size: 22px;
+  }
+}
+
+.small-icons {
+  width: 17px;
+}
+@media (min-width: 869px) and (max-width: 1024px) {
+  .small-icons {
+    width: 17px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1439) {
+  .small-icons {
+    width: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .small-icons {
+    width: 30px;
+  }
+}
+
+.counter-btn {
+  font-size: 50px;
+  color: #af102b;
+}
+
+.modal-content {
+  width: 78%;
+  margin: auto;
+}
+@media (min-width: 1600px) {
+  .modal-content {
+    width: 130%;
+  }
+}
+
+.green-modal-buttons {
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid #55733b;
+  padding: 10px 20px;
+  color: black;
+}
+.green-modal-buttons:hover {
+  background-color: #55733b;
+  color: white;
+}
+@media (min-width: 1600px) {
+  .green-modal-buttons {
+    width: 130%;
+  }
+}
+
+.cancel-button {
+  font-size: 14px;
+  padding: 8px 36px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #153d37;
+  color: black;
+}
+@media (min-width: 1600px) {
+  .cancel-button {
+    padding: 8px 36px;
+    font-size: 25px;
+    border-radius: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .green-buttons-container {
+    gap: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
