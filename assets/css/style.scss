@@ -1284,3 +1284,50 @@ button.next img {
   //   width: 130%;
   // }
 }
+
+.text-center {
+  text-align: center;
+}
+
+.manage-account-button {
+  font-size: 14px;
+  padding: 2px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #153d37;
+  color: black;
+}
+
+.profile-icon {
+  width: 35px;
+}
+
+.points-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .points-info-table {
+    border-collapse: collapse;
+
+    td {
+      padding: 5px 10px;
+    }
+
+    .points-value {
+      font-weight: bold;
+      color: #c41230;
+    }
+  }
+}
+.point-button {
+  background-color: #c41230;
+  padding: 8px 36px;
+  border-radius: 30px;
+  font-size: 17px;
+  border: none;
+  @media (min-width: 1600px) {
+    padding: 12px 46px;
+    font-size: 25px;
+  }
+}
