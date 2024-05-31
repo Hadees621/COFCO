@@ -1198,7 +1198,7 @@ button.next img {
   text-align: center;
   font-size: 12px;
   height: 25px;
-  width: 85px;
+  width: 90px;
   border-radius: 25px;
   padding: px;
   background-color: transparent;
@@ -1313,12 +1313,11 @@ button.next img {
     td {
       padding: 5px 10px;
     }
-
-    .points-value {
-      font-weight: bold;
-      color: #c41230;
-    }
   }
+}
+.points-value {
+  font-weight: bold;
+  color: #c41230;
 }
 .point-button {
   background-color: #c41230;
@@ -1330,4 +1329,62 @@ button.next img {
     padding: 12px 46px;
     font-size: 25px;
   }
+}
+
+.quantity-table {
+  font-size: 12px;
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 2px;
+  }
+
+  .product-nested-titles {
+    margin: 0;
+  }
+
+  .points-value {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .flex-middle {
+    display: flex;
+    align-items: center;
+
+    .small-icons {
+      width: 17px;
+      margin-right: 5px;
+
+      @media (min-width: 869px) and (max-width: 1024px) {
+        width: 17px;
+      }
+
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        width: 30px;
+      }
+
+      @media (min-width: 1600px) {
+        width: 30px;
+      }
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+  }
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+
+.setting-icons{
+  width: 12px;
 }

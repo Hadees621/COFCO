@@ -2037,7 +2037,7 @@ button.next img {
   text-align: center;
   font-size: 12px;
   height: 25px;
-  width: 85px;
+  width: 90px;
   border-radius: 25px;
   padding: px;
   background-color: transparent;
@@ -2157,7 +2157,8 @@ button.next img {
 .points-container .points-info-table td {
   padding: 5px 10px;
 }
-.points-container .points-info-table .points-value {
+
+.points-value {
   font-weight: bold;
   color: #c41230;
 }
@@ -2174,4 +2175,58 @@ button.next img {
     padding: 12px 46px;
     font-size: 25px;
   }
+}
+
+.quantity-table {
+  font-size: 12px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.quantity-table td {
+  padding: 2px;
+}
+.quantity-table .product-nested-titles {
+  margin: 0;
+}
+.quantity-table .points-value {
+  margin: 0;
+  font-weight: bold;
+}
+.quantity-table .flex-middle {
+  display: flex;
+  align-items: center;
+}
+.quantity-table .flex-middle .small-icons {
+  width: 17px;
+  margin-right: 5px;
+}
+@media (min-width: 869px) and (max-width: 1024px) {
+  .quantity-table .flex-middle .small-icons {
+    width: 17px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .quantity-table .flex-middle .small-icons {
+    width: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .quantity-table .flex-middle .small-icons {
+    width: 30px;
+  }
+}
+.quantity-table .flex-middle .underline {
+  text-decoration: underline;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.setting-icons {
+  width: 12px;
 }/*# sourceMappingURL=style.css.map */
