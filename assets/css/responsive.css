@@ -18,9 +18,7 @@
   }
 }
 
-/* /////// */
-
-/* ///// */
+/* //////// */
 
 @media (min-width: 769px) and (max-width: 1023px) {
 }
@@ -40,6 +38,11 @@
   .product-image {
     width: 440px !important;
     height: 300px !important;
+  }
+
+  .product-detail-image {
+    width: 440px !important;
+    height: 350px !important;
   }
 }
 
@@ -62,6 +65,11 @@
   .product-image {
     width: 540px !important;
     height: 400px !important;
+  }
+
+  .product-detail-image {
+    width: 500px !important;
+    height: 370px !important;
   }
 }
 
@@ -87,5 +95,10 @@
   .product-image {
     width: 640px !important;
     height: 500px !important;
+  }
+
+  .product-detail-image {
+    width: 700px !important;
+    height: 600px !important;
   }
 }
