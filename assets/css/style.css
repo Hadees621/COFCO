@@ -858,15 +858,15 @@ p {
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .text-bolder {
-  font-weight: bolder;
+  font-weight: bolder !important;
 }
 
 .text-boldest {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -1464,6 +1464,11 @@ p {
 .text-small {
   font-size: 10px;
 }
+@media (min-width: 1600px) {
+  .text-small {
+    font-size: 15px;
+  }
+}
 
 .text-w-600 {
   font-weight: 600;
@@ -1763,7 +1768,7 @@ p {
 }
 @media (min-width: 1600px) {
   .product-nested-description {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -2141,9 +2146,20 @@ button.next img {
   border: 1px solid #153d37;
   color: black;
 }
+@media (min-width: 1600px) {
+  .manage-account-button {
+    font-size: 22px;
+    border-radius: 40px;
+  }
+}
 
 .profile-icon {
   width: 35px;
+}
+@media (min-width: 1600px) {
+  .profile-icon {
+    width: 45px;
+  }
 }
 
 .points-container {
@@ -2154,6 +2170,11 @@ button.next img {
 .points-container .points-info-table {
   border-collapse: collapse;
 }
+@media (min-width: 1600px) {
+  .points-container .points-info-table {
+    margin-top: 16px;
+  }
+}
 .points-container .points-info-table td {
   padding: 5px 10px;
 }
@@ -2161,6 +2182,11 @@ button.next img {
 .points-value {
   font-weight: bold;
   color: #c41230;
+}
+@media (min-width: 1600px) {
+  .points-value {
+    font-size: 20px;
+  }
 }
 
 .point-button {
@@ -2179,8 +2205,13 @@ button.next img {
 
 .quantity-table {
   font-size: 12px;
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
+}
+@media (min-width: 1600px) {
+  .quantity-table {
+    width: 60%;
+  }
 }
 .quantity-table td {
   padding: 2px;
@@ -2230,9 +2261,76 @@ button.next img {
 .setting-icons {
   width: 12px;
 }
+@media (min-width: 1600px) {
+  .setting-icons {
+    width: 15px;
+  }
+}
 
 .order-details-product-image {
   width: 250px;
   height: 150px;
   margin: 10px;
+}
+
+.pr-1 {
+  padding-right: 5px;
+}
+
+.pr-2 {
+  padding-right: 10px;
+}
+
+.pr-3 {
+  padding-right: 15px;
+}
+
+.pr-4 {
+  padding-right: 20px;
+}
+
+.pr-5 {
+  padding-right: 25px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+@media (min-width: 1600px) {
+  .pointsAndShoppingTitle {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .LongUserName {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title-points-cart {
+    font-size: 25px;
+    font-weight: 200px;
+    margin-top: 10px;
+  }
+}
+
+.order-details-product-image {
+  width: 250px !important;
+  height: 150px !important;
+  margin-top: 5px;
+}
+@media (min-width: 1600px) {
+  .order-details-product-image {
+    width: 330px !important;
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .order-details-left-side {
+    padding: 3px 13px;
+  }
 }/*# sourceMappingURL=style.css.map */
