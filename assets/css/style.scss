@@ -862,15 +862,6 @@ p {
   height: 150px !important;
 }
 
-// .product-image {
-//   width: 445px !important;
-//   height: 330px !important;
-//   @media (min-width: 1600px) {
-//     width: 800px !important;
-//     height: 680px !important;
-//   }
-// }
-
 .product-title {
   font-size: 32px;
   @media (min-width: 1600px) {
@@ -904,15 +895,12 @@ p {
 .product-nested-titles {
   font-weight: 600;
   font-size: 16px;
-
-  
 }
 
 .product-nested-description {
   font-weight: 600;
   font-size: 12px;
   @media (min-width: 1600px) {
-   
   }
 }
 
@@ -1011,20 +999,6 @@ p {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slider {
   overflow: hidden;
   flex: 1;
@@ -1078,7 +1052,6 @@ button.next img {
   transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
 }
 
-
 .detail-page-hover:hover {
   background-color: #094d30;
   color: white;
@@ -1089,7 +1062,6 @@ button.next img {
   // height: 70vh;
   background-position: center;
   width: 100% !important;
-
 }
 
 .Additional-Items {
