@@ -241,20 +241,6 @@ p {
   width: 100%;
   color: white;
 
-  @media (min-width: 769px) and (max-width: 1320px) {
-    font-size: 11px;
-    padding: 0px 50px;
-  }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    font-size: 14px;
-    padding: 0px 90px;
-  }
-
-  @media (min-width: 1600px) {
-    font-size: 22px;
-    padding: 0px 200px;
-  }
-
   p {
     cursor: pointer;
 
@@ -296,7 +282,6 @@ p {
 
   @media (min-width: 1600px) {
     margin: 3px 6px;
-    // padding: ;
   }
 }
 
@@ -579,11 +564,11 @@ p {
   }
 
   @media (min-width: 769px) and (max-width: 1320px) {
-    width: 200px !important;
+    width: 120px !important;
   }
 
-  @media (min-width: 2000px) {
-    height: 48px;
+  @media (min-width: 1600px) {
+    height: 54px;
     width: 350px !important;
   }
 }
@@ -1028,6 +1013,20 @@ p {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider {
   overflow: hidden;
   flex: 1;
@@ -1080,6 +1079,7 @@ button.next img {
 .detail-page-hover {
   transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
 }
+
 
 .detail-page-hover:hover {
   background-color: #094d30;
@@ -1481,5 +1481,12 @@ button.next img {
 .order-details-left-side {
   @media (min-width: 1600px) {
     padding: 3px 13px;
+  }
+}
+
+.authenticated-navbar-portion {
+  font-size: 10px;
+  @media (min-width: 1600px) {
+    font-size: 20px;
   }
 }

@@ -1,0 +1,19 @@
+@media (min-width: 769px) and (max-width: 1320px) {
+  .navbar__tab__content {
+    font-size: 11px;
+    padding: 0px 50px;
+  }
+}
+@media (min-width: 1320px) and (max-width: 1600px) {
+  .navbar__tab__content {
+    font-size: 14px;
+    padding: 0px 90px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar__tab__content {
+    font-size: 22px;
+    padding: 0px 200px;
+  }
+}
