@@ -821,29 +821,6 @@ p {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 426px) and (max-width: 768px) {
-  .navbar {
-    padding: 6px 15px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1320px) {
-  .navbar {
-    font-size: 12px;
-    padding: 10px 50px;
-  }
-}
-@media (min-width: 1320px) and (max-width: 1600px) {
-  .navbar {
-    font-size: 18px;
-    padding: 10px 140px;
-  }
-}
-@media (min-width: 1600px) {
-  .navbar {
-    font-size: 25px;
-    padding: 10px 80px;
-  }
-}
 
 @media (min-width: 426px) and (max-width: 768px) {
   .navbar-logo {
@@ -896,30 +873,6 @@ p {
   font-weight: 900 !important;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-  .content-container {
-    padding: 6px 15px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1320px) {
-  .content-container {
-    font-size: 12px;
-    padding: 10px 50px;
-  }
-}
-@media (min-width: 1320px) and (max-width: 1600px) {
-  .content-container {
-    font-size: 18px;
-    padding: 10px 160px;
-  }
-}
-@media (min-width: 1600px) {
-  .content-container {
-    font-size: 25px;
-    padding: 10px 0px;
-  }
-}
-
 .text-black {
   color: black;
 }
@@ -947,11 +900,6 @@ p {
 
 .tabs {
   border: none;
-}
-@media (min-width: 2000px) {
-  .tabs {
-    gap: 50px;
-  }
 }
 
 .nav-tabs .nav-link.active {
@@ -1407,11 +1355,6 @@ p {
 
 .text-small {
   font-size: 10px;
-}
-@media (min-width: 1600px) {
-  .text-small {
-    font-size: 15px;
-  }
 }
 
 .text-w-600 {
