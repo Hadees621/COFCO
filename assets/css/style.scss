@@ -326,28 +326,7 @@ p {
   right: 30px;
   color: red;
 
-  @media (max-width: 425px) {
-    font-size: 7px;
-    border-radius: 60px;
-    padding: 4px;
-    right: 1px;
-  }
 
-  @media (max-width: 768px) {
-    right: 34px;
-  }
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    right: 40px;
-  }
-
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    right: 40px;
-  }
-
-  @media (min-width: 2000px) {
-    right: 40px;
-  }
 }
 
 .underline {
