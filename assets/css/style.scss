@@ -325,8 +325,6 @@ p {
   background-color: white;
   right: 30px;
   color: red;
-
-
 }
 
 .underline {
@@ -569,21 +567,6 @@ p {
 
 .profile {
   font-size: 10px;
-}
-
-.breadcrumb {
-  color: black;
-}
-
-.bread {
-  border-bottom: black 1px solid !important;
-  font-size: 11px;
-  color: black;
-  cursor: pointer;
-
-  &:active {
-    text-decoration: underline;
-  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
