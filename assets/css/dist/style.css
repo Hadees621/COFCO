@@ -916,7 +916,7 @@ p {
 @media (min-width: 1600px) {
   .content-container {
     font-size: 25px;
-    padding: 10px 80px;
+    padding: 10px 0px;
   }
 }
 
@@ -1420,21 +1420,16 @@ p {
 
 .breadcrumb {
   color: black;
-  border-bottom: black 1px solid !important;
 }
 
 .bread {
+  border-bottom: black 1px solid !important;
   font-size: 11px;
   color: black;
   cursor: pointer;
 }
 .bread:active {
   text-decoration: underline;
-}
-@media (min-width: 1600px) {
-  .bread {
-    font-size: 21px;
-  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -1519,8 +1514,8 @@ p {
 
 @media (min-width: 1600px) {
   .tabs-padding {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 250px;
+    padding-right: 250px;
   }
 }
 
@@ -1736,6 +1731,17 @@ p {
   font-weight: 600;
   font-size: 12px;
 }
+
+.product-Quantity {
+  font-weight: 600;
+  font-size: 12px;
+}
+@media (min-width: 1600px) {
+  .product-Quantity {
+    font-size: 18px;
+  }
+}
+
 .in-stock-button {
   text-align: center;
   font-size: 12px;
@@ -2005,21 +2011,6 @@ button.next img {
 
 .small-icons {
   width: 17px;
-}
-@media (min-width: 869px) and (max-width: 1024px) {
-  .small-icons {
-    width: 17px;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1439) {
-  .small-icons {
-    width: 30px;
-  }
-}
-@media (min-width: 1600px) {
-  .small-icons {
-    width: 30px;
-  }
 }
 
 .counter-btn {
