@@ -2283,4 +2283,11 @@ select {
 .week-option:hover {
   background-color: #55733b;
   color: white;
+}
+
+.disabled {
+  background-color: white !important;
+  color: #edb7c6 !important;
+  border: 1px solid #edb7c6 !important;
+  cursor: default !important;
 }/*# sourceMappingURL=style.css.map */
