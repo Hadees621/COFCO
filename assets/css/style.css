@@ -1986,11 +1986,6 @@ button.next img {
 .profile-icon {
   width: 35px;
 }
-@media (min-width: 1600px) {
-  .profile-icon {
-    width: 45px;
-  }
-}
 
 .points-container {
   display: flex;
@@ -2025,12 +2020,6 @@ button.next img {
   border-radius: 30px;
   font-size: 17px;
   border: none;
-}
-@media (min-width: 1600px) {
-  .point-button {
-    padding: 12px 46px;
-    font-size: 25px;
-  }
 }
 
 .quantity-table {
@@ -2136,14 +2125,6 @@ button.next img {
 @media (min-width: 1600px) {
   .LongUserName {
     font-size: 45px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .title-points-cart {
-    font-size: 25px;
-    font-weight: 200px;
-    margin-top: 10px;
   }
 }
 

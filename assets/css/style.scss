@@ -920,16 +920,6 @@ p {
     font-size: 12px;
     width: 75%;
   }
-
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    // font-size: 18px;
-    // padding: 10px 140px;
-  }
-
-  @media (min-width: 1600px) {
-    // font-size: 25px;
-    // padding: 10px 80px;
-  }
 }
 
 .slider {
@@ -1184,9 +1174,6 @@ button.next img {
 
 .profile-icon {
   width: 35px;
-  @media (min-width: 1600px) {
-    width: 45px;
-  }
 }
 
 .points-container {
@@ -1205,6 +1192,7 @@ button.next img {
     }
   }
 }
+
 .points-value {
   font-weight: bold;
   color: #c41230;
@@ -1220,10 +1208,6 @@ button.next img {
   border-radius: 30px;
   font-size: 17px;
   border: none;
-  @media (min-width: 1600px) {
-    padding: 12px 46px;
-    font-size: 25px;
-  }
 }
 
 .quantity-table {
@@ -1297,6 +1281,11 @@ button.next img {
   margin: 10px;
 }
 
+.order-details-product-image2 {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
 .pr-1 {
   padding-right: 5px;
 }
@@ -1333,25 +1322,6 @@ button.next img {
   }
 }
 
-.title-points-cart {
-  @media (min-width: 1600px) {
-    font-size: 25px;
-    font-weight: 200px;
-    margin-top: 10px;
-  }
-}
-
-.order-details-product-image {
-  width: 250px !important;
-  height: 150px !important;
-  margin-top: 5px;
-
-  @media (min-width: 1600px) {
-    width: 330px !important;
-    height: 200px !important;
-  }
-}
-
 .order-details-left-side {
   @media (min-width: 1600px) {
     padding: 3px 13px;
@@ -1364,10 +1334,6 @@ button.next img {
     font-size: 20px;
   }
 }
-
-//////
-///
-///
 
 .empty-selection-button {
   background-color: #073b25;
@@ -1448,6 +1414,5 @@ select {
 .table-container::-webkit-scrollbar-thumb {
   padding-left: 20px;
   background-color: #888;
-  // border-radius: 1px;
   border: 2px solid #ccc;
 }
