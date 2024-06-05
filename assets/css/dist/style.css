@@ -2230,7 +2230,7 @@ select {
 
 .sign {
   font-weight: bolder;
-  font-size: 23px;
+  font-size: 22px;
   margin-left: 8px;
 }
 
@@ -2239,4 +2239,26 @@ select {
   height: 120px;
   overflow-y: auto;
   background-color: #fff;
+  padding-right: 15px;
+}
+
+.trap:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.trap:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  padding-left: 20px;
+  background-color: #888;
+  border: 2px solid #ccc;
 }
