@@ -1726,6 +1726,7 @@ p {
     width: 75%;
   }
 }
+
 .slider {
   overflow: hidden;
   flex: 1;
@@ -2092,6 +2093,12 @@ button.next img {
   margin: 10px;
 }
 
+.order-details-product-image2 {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
+
 .pr-1 {
   padding-right: 5px;
 }
@@ -2125,18 +2132,6 @@ button.next img {
 @media (min-width: 1600px) {
   .LongUserName {
     font-size: 45px;
-  }
-}
-
-.order-details-product-image {
-  width: 250px !important;
-  height: 150px !important;
-  margin-top: 5px;
-}
-@media (min-width: 1600px) {
-  .order-details-product-image {
-    width: 330px !important;
-    height: 200px !important;
   }
 }
 
@@ -2233,4 +2228,59 @@ select {
   padding-left: 20px;
   background-color: #888;
   border: 2px solid #ccc;
+}
+
+.order-details-edit-modal-content {
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+}
+
+.month-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-weight: bolder;
+}
+
+.month-nav {
+  color: white;
+  background-color: #c41230;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0px 5px;
+}
+
+.month-display {
+  margin: 30px 10px;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.week-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.week-option {
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 6px;
+  margin: 4px 0;
+  width: 45%;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.week-option:hover {
+  background-color: #55733b;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
