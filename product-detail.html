@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
 
     <title>COFCO</title>
 </head>
@@ -162,7 +164,7 @@
             <div class="dropdown show">
                 <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/images/cart.png" alt="" class="" />
+                    <img src="assets/images/cart.png" alt="" class="cart-image" />
                     <div class="position-absolute count">12</div>
                 </div>
                 <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
@@ -170,7 +172,7 @@
                         <h7>1x Fitzbilies Granola · 400g</h7>
                         <h7>1x Fitzbilies Granola · 400g</h7>
                         <h7>1x Fitzbilies Granola · 400g</h7>
-                        <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                        <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
                         <div class="flex-middle m-3">
                             <button class="dropdown-checkout-button text-white">
                                 checkout
@@ -250,20 +252,21 @@
     </div>
 
     <!-- breadcrumb -->
-    <div aria-label="breadcrumb" class="border-black bread ">
-        <ol class="breadcrumb content-container border footer-padding text-bold">
-            <li class="breadcrumb-item bread"><a href="#"> Start</a></li>
-            <li class="breadcrumb-item bread">Shop</li>
-            <li class="breadcrumb-item bread">Groceries</li>
-            <li class="breadcrumb-item bread"><a href="#">Breakfast Cereal & Treats</a></li>
-            <li class="breadcrumb-item bread">Fitzbilies Granola · 400g</li>
+    <div aria-label="breadcrumb" class="breadcrumb-position">
+        <ol class="d-flex text-bold">
+            <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
+            <li class="breadcrumb-item bread border-none cursor-pointer">Shop</li>
+            <li class="breadcrumb-item bread border-none cursor-pointer">Groceries</li>
+            <li class="breadcrumb-item bread border-none cursor-pointer"><a href="#">Breakfast Cereal & Treats</a></li>
+            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Fitzbilies Granola · 400g</li>
         </ol>
     </div>
 
+
     <!-- Middle -->
-    <div class="d-flex content-container tabs-padding">
+    <div class="d-flex content-container tabs-padding mt-4">
         <div>
-            <img src="/assets/images/product-details/Asset 1.png" class="product-image" />
+            <img src="/assets/images/product-details/Asset 1.png" class="product-detail-image" />
         </div>
         <div class="w-full mr-l-5 ">
             <div>
@@ -271,16 +274,16 @@
             </div>
             <div class="d-flex mt-2">
                 <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                    <img src="/assets/images/search-results/ex.png" style="width: 15px;" />
+                    <img src="/assets/images/search-results/ex.png" class="small-icons" />
                     <h6 class="mt-2 product-buttons-tab">Not Organic</h6>
                 </div>
                 <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer" data-toggle="modal"
                     data-target="#MondayModal">
                     <h6 class="mt-2 product-buttons-tab underline"> Fitzbilies Bakery (UK)</h6>
                 </div>
-                <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                    <img src="/assets/images/product-details/Asset 15.png" style="width: 15px;" />
-                    <h6 class="mt-2 product-buttons-tab">Source: UK & International</h6>
+                <div class="d-flex gap-2 flex-middle border px-3 w-full products-buttons">
+                    <img src="/assets/images/product-details/Asset 15.png" class="small-icons" />
+                    <h6 class="mt-2 product-buttons-tab px-2">Source: UK & International</h6>
                 </div>
             </div>
             <div>
@@ -320,14 +323,14 @@
             </div>
 
             <div class="in-stock-button text-white flex-middle gap-2 mt-4">
-                <img src="/assets/images/product-details/Asset 13.png" style="width: 13px;" />
+                <img src="/assets/images/product-details/Asset 13.png" class="small-icons" />
                 In stock
             </div>
 
             <div class="mt-4 d-flex justify-content-between px-">
                 <div class="product-price p-1"> £5.25 </div>
                 <div class="border quantity-selector">
-                    <label for="quantity" class="product-nested-titles p-1"> Quantity </label>
+                    <label for="quantity" class="product-Quantity p-1"> Quantity </label>
                     <select name="quantity" id="quantity" class="border-none">
                         <option value="volvo">1</option>
                         <option value="saab">2</option>
@@ -384,61 +387,18 @@
                                 Or <a class="underline"> sign in</a> to your account
                             </h7>
                         </div>
-
                     </div>
                 </div>
             </div>
-
-
-            <!-- Monday Modal -->
-            <div class="modal fade" id="MondayModal" tabindex="-1" role="dialog" aria-labelledby="MondayModalTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content" style="background-color: #f0f0f0;">
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close"
-                                style="border-radius: 20px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    class="modal-cross-button">
-                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
-                            <img src="/assets/images/product-details/modal.png" />
-                            <h1 class="text-bold mt-4" style="font-size: 35px;">
-                                Monday
-                            </h1>
-                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
-                                We deliver to your area every Monday.
-                                The next time we can deliver to you is on DD / MM.s
-                            </h7>
-                            <br />
-                            <div class="mt-3">
-                                <h7 class=" text-bold" style="font-size: 13px; color: #153D37;">
-                                    Check out by 00:00pm on DD / MM
-                                    and we’ll deliver the next day.
-                                </h7>
-                            </div>
-                            <br />
-                            <button class="add-to-order-button text-white" data-toggle="modal"
-                                data-target="#findDeliveryDayModal">
-                                Continue Shopping...
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
     </div>
 
     <!-- Slider area -->
-    <div class="pt-5 slider-background"
+    <div class="slider-background"
         style="background-image: url('/assets/images/product-details/Asset 5.png'); background-size: cover;">
         <div class="text-center">
-            <h1 class="pt-4 text-bold Additional-Items">Additional Items of Interest</h1>
+            <h1 class=" text-bold Additional-Items">Additional Items of Interest</h1>
             <h5 class="text-bold Based-on-your">Based on your selection, see what other products may be of interest to
                 you:
             </h5>
