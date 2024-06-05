@@ -1726,6 +1726,7 @@ p {
     width: 75%;
   }
 }
+
 .slider {
   overflow: hidden;
   flex: 1;
@@ -2092,6 +2093,12 @@ button.next img {
   margin: 10px;
 }
 
+.order-details-product-image2 {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
+
 .pr-1 {
   padding-right: 5px;
 }
@@ -2125,18 +2132,6 @@ button.next img {
 @media (min-width: 1600px) {
   .LongUserName {
     font-size: 45px;
-  }
-}
-
-.order-details-product-image {
-  width: 250px !important;
-  height: 150px !important;
-  margin-top: 5px;
-}
-@media (min-width: 1600px) {
-  .order-details-product-image {
-    width: 330px !important;
-    height: 200px !important;
   }
 }
 
