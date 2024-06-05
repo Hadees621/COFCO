@@ -351,7 +351,8 @@
                             </td>
                             <td class="flex-middle text-bold gap-2 text-small">
                                 <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small text-start w-100">Edit Quantity</p>
+                                <p class="underline text-small text-start w-100 cursor-pointer" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg2">Edit Quantity</p>
                             </td>
                         </tr>
                         <tr>
@@ -507,6 +508,7 @@
                     </div>
                 </div>
 
+                <!-- Modal -->
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
                     aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
                     <div class="modal-dialog modal-lg">
@@ -554,6 +556,62 @@
                                     <button class="add-to-order-button text-white" data-toggle="modal"
                                         data-target="#findDeliveryDayModal">
                                         Confirm Selection
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog"
+                    aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content order-details-edit-modal-content modal-contentt"
+                            style="background-color: #F2F2F2;">
+
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                    style="border-radius: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="modal-cross-button">
+                                        <path fill="none" stroke="white" stroke-linecap="round"
+                                            d="m6 6l12 12m0-12L6 18" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-body" style="max-width: 600px; margin: auto;">
+                                <h1 class="text-bold" style="font-size: 35px;">
+                                    Please select your future <br />
+                                    Choice Box contents
+                                </h1>
+                                <h7 class="mt-5 text-bold" style="font-size: 13px; color: #C61A37;">
+                                    Please follow the link below to confirm your Choice Box contents
+                                </h7>
+
+                                <div class="d-flex gap- align-items-start mr-l-3 mt-4" style="max-width: 400px;">
+                                    <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;">
+                                    <p class="product-nested-description text-bold text-center">
+                                        You will be asked two working days before your next
+                                        Vegetable Box delivery for confirmation of content.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex mx-auto gap-4 my-3">
+                                <div>
+                                    <button class="cancel-button font-bold" data-toggle="modal"
+                                        data-target=".bd-example-modal-lg2">
+                                        Cancel
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="add-to-order-button text-white" data-toggle="modal"
+                                        data-target="#findDeliveryDayModal">
+                                        Modify Choice Box
                                     </button>
                                 </div>
                             </div>
