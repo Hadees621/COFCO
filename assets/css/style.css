@@ -1310,22 +1310,11 @@ p {
   font-size: 17px;
   border: none;
 }
-@media (min-width: 1600px) {
-  .add-to-order-button {
-    padding: 12px 46px;
-    font-size: 25px;
-  }
-}
 
 .product-price {
   font-size: 20px;
   color: #042114;
   font-weight: bold;
-}
-@media (min-width: 1600px) {
-  .product-price {
-    font-size: 30px;
-  }
 }
 
 .text-center {
@@ -1346,21 +1335,6 @@ p {
 
 .text-center {
   text-align: center;
-}
-
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-}
-@media (min-width: 769px) and (max-width: 1320px) {
-  .slider-container {
-    font-size: 12px;
-    width: 75%;
-  }
 }
 
 .slider {
@@ -1413,7 +1387,7 @@ button.next img {
 }
 
 .detail-page-hover {
-  transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+  transition: background-color 0.3s ease;
 }
 
 .detail-page-hover:hover {
@@ -1425,22 +1399,6 @@ button.next img {
 .slider-background {
   background-position: center;
   width: 100% !important;
-}
-
-@media (min-width: 1600px) {
-  .Additional-Items {
-    font-size: 60px !important;
-    margin: 30px;
-    margin-top: 70px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .Based-on-your {
-    font-size: 30px !important;
-    margin: 30px;
-    margin-bottom: 60px;
-  }
 }
 
 .modal-cross-button {
