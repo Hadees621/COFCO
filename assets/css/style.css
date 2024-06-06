@@ -1555,11 +1555,6 @@ button.next img {
   font-weight: bold;
   color: #c41230;
 }
-@media (min-width: 1600px) {
-  .points-value {
-    font-size: 20px;
-  }
-}
 
 .point-button {
   background-color: #c41230;
@@ -1573,11 +1568,6 @@ button.next img {
   font-size: 12px;
   width: 50%;
   border-collapse: collapse;
-}
-@media (min-width: 1600px) {
-  .quantity-table {
-    width: 60%;
-  }
 }
 .quantity-table td {
   padding: 2px;
@@ -1627,11 +1617,6 @@ button.next img {
 .setting-icons {
   width: 12px;
 }
-@media (min-width: 1600px) {
-  .setting-icons {
-    width: 15px;
-  }
-}
 
 .order-details-product-image {
   width: 250px;
@@ -1675,25 +1660,8 @@ button.next img {
   }
 }
 
-@media (min-width: 1600px) {
-  .LongUserName {
-    font-size: 45px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .order-details-left-side {
-    padding: 3px 13px;
-  }
-}
-
 .authenticated-navbar-portion {
   font-size: 10px;
-}
-@media (min-width: 1600px) {
-  .authenticated-navbar-portion {
-    font-size: 20px;
-  }
 }
 
 .empty-selection-button {

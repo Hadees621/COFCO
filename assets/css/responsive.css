@@ -292,6 +292,30 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .LongUserName {
+    font-size: 45px;
+  }
+
+  .order-details-left-side {
+    padding: 3px 13px;
+  }
+
+  .authenticated-navbar-portion {
+    font-size: 20px;
+  }
+
+  .setting-icons {
+    width: 15px;
+  }
+
+  .quantity-table {
+    width: 60%;
+  }
+
+  .points-value {
+    font-size: 20px;
+  }
+
   .points-info-table {
     margin-top: 16px;
   }

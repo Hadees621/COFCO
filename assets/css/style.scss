@@ -808,10 +808,6 @@ button.next img {
 .points-value {
   font-weight: bold;
   color: #c41230;
-
-  @media (min-width: 1600px) {
-    font-size: 20px;
-  }
 }
 
 .point-button {
@@ -826,10 +822,6 @@ button.next img {
   font-size: 12px;
   width: 50%;
   border-collapse: collapse;
-
-  @media (min-width: 1600px) {
-    width: 60%;
-  }
 
   td {
     padding: 2px;
@@ -881,10 +873,6 @@ button.next img {
 
 .setting-icons {
   width: 12px;
-
-  @media (min-width: 1600px) {
-    width: 15px;
-  }
 }
 
 .order-details-product-image {
@@ -898,6 +886,7 @@ button.next img {
   height: 150px;
   margin: 10px;
 }
+
 .pr-1 {
   padding-right: 5px;
 }
@@ -928,23 +917,8 @@ button.next img {
   }
 }
 
-.LongUserName {
-  @media (min-width: 1600px) {
-    font-size: 45px;
-  }
-}
-
-.order-details-left-side {
-  @media (min-width: 1600px) {
-    padding: 3px 13px;
-  }
-}
-
 .authenticated-navbar-portion {
   font-size: 10px;
-  @media (min-width: 1600px) {
-    font-size: 20px;
-  }
 }
 
 .empty-selection-button {
