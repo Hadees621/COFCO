@@ -1087,8 +1087,8 @@ p {
 }
 
 .internal-tab {
-  font-size: 15px;
-  padding: 7px 45px;
+  font-size: 12px;
+  padding: 7px 22px;
   border: 1px solid #f1f1f1 !important;
   cursor: pointer;
   background-color: transparent;
