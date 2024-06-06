@@ -38,13 +38,16 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  
+  .hamburger {
+    display: none;
+  }
+
   .order-details-product-image2 {
     width: 250px !important;
     height: 200px !important;
     margin-top: 5px;
   }
-  
+
   .points-container {
     .points-info-table {
       width: 550px;
@@ -140,7 +143,6 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
- 
   .order-details-product-image2 {
     width: 350px !important;
     height: 250px !important;
@@ -468,5 +470,42 @@
     font-size: 20px;
     padding: 10px 0px;
     padding: 0px 230px;
+  }
+}
+
+/* ////////////////// */
+
+.navbar-logo {
+  @media (min-width: 426px) and (max-width: 768px) {
+    height: 65px;
+    width: 240px !important;
+  }
+
+  @media (min-width: 769px) and (max-width: 1320px) {
+    height: 43px;
+    width: 170px !important;
+  }
+
+  @media (min-width: 1320px) and (max-width: 1600px) {
+    height: 55px;
+    width: 230px !important;
+  }
+
+  @media (min-width: 1600px) {
+    height: 95px;
+    width: 430px !important;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: 1441px) {
+    max-width: 1450px;
+  }
+  @media (min-width: 2000px) {
+    max-width: 1800px;
   }
 }
