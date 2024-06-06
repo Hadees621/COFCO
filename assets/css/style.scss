@@ -307,27 +307,6 @@ p {
   @include strip(#e87635);
 }
 
-.internal-navbar-search {
-  width: 120px;
-  height: 40px;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 30px;
-    padding: 6px 15px;
-    margin: 10px;
-  }
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    width: 120px !important;
-  }
-
-  @media (min-width: 1600px) {
-    height: 54px;
-    width: 350px !important;
-  }
-}
-
 .internal-navbar-search::placeholder {
   font-size: 17px;
   font-weight: 600;
@@ -409,43 +388,8 @@ p {
   border-top: 1px solid #dee2e6;
 }
 
-.internal-tabs-container {
-  gap: 12px;
-
-  @media (min-width: 1440px) and (max-width: 1600px) {
-    gap: 62px !important;
-  }
-
-  @media (min-width: 1600px) {
-    gap: 262px !important;
-  }
-}
-
-.tabs-padding {
-  @media (min-width: 1600px) {
-    padding-left: 250px;
-    padding-right: 250px;
-  }
-}
-
 .m-auto {
   margin: auto;
-}
-
-.last-images {
-  height: 90px;
-
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    height: 93px;
-  }
-
-  @media (min-width: 1440px) and (max-width: 1600px) {
-    height: 110px;
-  }
-
-  @media (min-width: 1600px) {
-    height: 180px;
-  }
 }
 
 .py-5 {
@@ -461,24 +405,6 @@ p {
 .footer-logos {
   height: 20px;
   height: 20px;
-}
-
-.footer-padding {
-  @media (min-width: 426px) and (max-width: 768px) {
-    padding: 6px 15px !important;
-  }
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    padding: 20px 50px !important;
-  }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    padding: 25px 160px !important;
-  }
-
-  @media (min-width: 1600px) {
-    font-size: 14px;
-    padding: 25px 380px !important;
-  }
 }
 
 .mr-l-1 {
@@ -590,9 +516,9 @@ p {
 
 .product-title {
   font-size: 32px;
-  @media (min-width: 1600px) {
-    font-size: 62px;
-  }
+  // @media (min-width: 1600px) {
+  //   font-size: 62px;
+  // }
 }
 
 .products-buttons {
