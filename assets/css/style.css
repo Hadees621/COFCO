@@ -880,11 +880,6 @@ p {
   border: 1px solid white;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .cart {
-    padding: 7px;
-  }
-}
 
 .count {
   font-size: 8px;
@@ -949,11 +944,6 @@ p {
 
 .google-reviews img.re {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 1600px) {
-  .google-reviews img.re {
-    width: 200px;
-  }
 }
 
 .hidden {
