@@ -292,8 +292,46 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
- 
- 
+  .points-info-table {
+    margin-top: 16px;
+  }
+
+  .manage-account-button {
+    font-size: 22px;
+    border-radius: 40px;
+  }
+
+  .green-buttons-container {
+    gap: 300px;
+  }
+
+  .cancel-button {
+    padding: 8px 36px;
+    font-size: 25px;
+    border-radius: 40px;
+  }
+
+  .green-modal-buttons {
+    font-size: 23px;
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 130%;
+  }
+
+  .points-button {
+    height: 45px;
+    width: 165px;
+    font-size: 22px;
+  }
+
+  .edit-contents-button {
+    padding: 8px 36px;
+    font-size: 25px;
+    border-radius: 40px;
+  }
+
   .Additional-Items {
     font-size: 60px !important;
     margin: 30px;

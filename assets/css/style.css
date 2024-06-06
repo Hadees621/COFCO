@@ -1458,13 +1458,6 @@ button.next img {
   border: 1px solid #dd3333;
   color: #dd3333;
 }
-@media (min-width: 1600px) {
-  .edit-contents-button {
-    padding: 8px 36px;
-    font-size: 25px;
-    border-radius: 40px;
-  }
-}
 
 .product-table {
   border-collapse: separate;
@@ -1488,13 +1481,6 @@ button.next img {
   background-color: transparent;
   border: 1px solid #eff1f1;
 }
-@media (min-width: 1600px) {
-  .points-button {
-    height: 45px;
-    width: 165px;
-    font-size: 22px;
-  }
-}
 
 .small-icons {
   width: 17px;
@@ -1509,11 +1495,6 @@ button.next img {
   width: 78%;
   margin: auto;
 }
-@media (min-width: 1600px) {
-  .modal-content {
-    width: 130%;
-  }
-}
 
 .green-modal-buttons {
   font-size: 13px;
@@ -1526,11 +1507,6 @@ button.next img {
   background-color: #55733b;
   color: white;
 }
-@media (min-width: 1600px) {
-  .green-modal-buttons {
-    width: 130%;
-  }
-}
 
 .cancel-button {
   font-size: 14px;
@@ -1539,19 +1515,6 @@ button.next img {
   background-color: transparent;
   border: 1px solid #153d37;
   color: black;
-}
-@media (min-width: 1600px) {
-  .cancel-button {
-    padding: 8px 36px;
-    font-size: 25px;
-    border-radius: 40px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .green-buttons-container {
-    gap: 300px;
-  }
 }
 
 .modal-content2 {
@@ -1571,12 +1534,6 @@ button.next img {
   border: 1px solid #153d37;
   color: black;
 }
-@media (min-width: 1600px) {
-  .manage-account-button {
-    font-size: 22px;
-    border-radius: 40px;
-  }
-}
 
 .profile-icon {
   width: 35px;
@@ -1589,11 +1546,6 @@ button.next img {
 }
 .points-container .points-info-table {
   border-collapse: collapse;
-}
-@media (min-width: 1600px) {
-  .points-container .points-info-table {
-    margin-top: 16px;
-  }
 }
 .points-container .points-info-table td {
   padding: 5px 10px;
