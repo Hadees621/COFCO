@@ -1,31 +1,33 @@
-/* @media (min-width: 769px) and (max-width: 1320px) { */
-/* .navbar__tab__content {
-    font-size: 11px;
-    padding: 0px 50px;
-  }
-}
-@media (min-width: 1320px) and (max-width: 1600px) {
-  .navbar__tab__content {
-    font-size: 14px;
-    padding: 0px 90px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .navbar__tab__content {
-    font-size: 22px;
-    padding: 0px 200px;
-  } */
-/* } */
-
 /* //////// */
+@import "variables";
+@import "mixins";
+
 @media (min-width: 426px) and (max-width: 768px) {
   .navbar {
     padding: 6px 15px;
   }
+
+  .search-icon {
+    margin: 1px 8px;
+  }
+
+  .navbar-search {
+    width: 100%;
+    height: 35px;
+    padding: 6px 15px;
+    margin: 10px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .navbar-search {
+    width: 200px !important;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   .navbar {
     font-size: 12px;
     padding: 10px 30px;
@@ -143,6 +145,15 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .navbar-search {
+    width: 300px !important;
+    height: 40px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   .order-details-product-image2 {
     width: 350px !important;
     height: 250px !important;
@@ -260,6 +271,28 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .navbar-search {
+    width: 400px !important;
+    height: 50px;
+  }
+
+  .search-icon {
+    margin: 0px 16px 0px 6px !important;
+  }
+
+  .form-control::placeholder {
+    font-size: 17px;
+    margin: 22px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar-tab {
+    padding: 12px 30px;
+  }
+
   .order-details-product {
     width: 35px;
     margin-top: 10px;
@@ -507,5 +540,25 @@
   }
   @media (min-width: 2000px) {
     max-width: 1800px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1320px) {
+  .navbar__tab__content {
+    font-size: 11px;
+    /* padding: 0px 50px; */
+  }
+}
+@media (min-width: 1320px) and (max-width: 1600px) {
+  .navbar__tab__content {
+    font-size: 14px;
+    /* padding: 0px 90px; */
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar__tab__content {
+    font-size: 22px;
+    padding: 0px 400px;
   }
 }
