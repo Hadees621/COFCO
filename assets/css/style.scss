@@ -269,9 +269,6 @@ p {
 
 .off-canvas {
   background-color: $button-green;
-  @media (min-width: 426px) and (max-width: 768px) {
-    width: 350px !important;
-  }
 }
 
 .off-canvas-lists {

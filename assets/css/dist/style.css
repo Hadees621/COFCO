@@ -978,11 +978,6 @@ p {
 .off-canvas {
   background-color: #073b25;
 }
-@media (min-width: 426px) and (max-width: 768px) {
-  .off-canvas {
-    width: 350px !important;
-  }
-}
 
 .off-canvas-lists {
   padding: 3px 30px;
