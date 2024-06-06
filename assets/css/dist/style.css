@@ -899,7 +899,7 @@ p {
 }
 
 .tabs {
-  border: none;
+  border: transparent;
 }
 
 .nav-tabs .nav-link.active {
