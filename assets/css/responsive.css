@@ -292,6 +292,26 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .quantity-selector {
+    padding: 8px 13px 0px 13px !important;
+    font-size: 19px !important;
+  }
+
+  .product-Quantity {
+    font-weight: 600;
+    font-size: 25px !important;
+  }
+
+  .in-stock-button {
+    height: 45px;
+    width: 165px;
+    font-size: 22px;
+  }
+
+  .products-buttons {
+    height: 63px;
+  }
+
   .product-title {
     font-size: 62px;
   }
@@ -546,6 +566,26 @@
 }
 
 /* ////////////////// */
+
+.product-Quantity {
+  font-size: 18px;
+}
+
+.product-buttons-tab {
+  font-weight: 600;
+  font-size: 11px;
+
+  @media (min-width: 769px) and (max-width: 1320px) {
+    font-size: 9px;
+  }
+  @media (min-width: 1320px) and (max-width: 1600px) {
+    font-size: 11px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 25px;
+  }
+}
 
 .navbar-logo {
   @media (min-width: 426px) and (max-width: 768px) {
