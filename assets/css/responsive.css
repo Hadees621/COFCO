@@ -48,6 +48,11 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .nav-link.active::after {
+    top: 47px !important;
+    height: 23px;
+  }
+
   .navbar-search {
     width: 220px !important;
   }
@@ -157,6 +162,10 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .nav-link.active::after {
+    top: 46px !important;
+    height: 26px;
+  }
   .navbar-search {
     width: 300px !important;
     height: 40px;
@@ -283,6 +292,11 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .nav-link.active::after {
+    top: 60px !important;
+    height: 40px;
+  }
+
   .google-reviews img.re {
     width: 200px;
   }
@@ -627,6 +641,22 @@
   }
   @media (min-width: 1600px) {
     font-size: 29px;
+  }
+}
+
+.hide-on-large-screen {
+  display: block;
+
+  @media (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+.hide-on-small-screen {
+  display: block;
+
+  @media (max-width: 768px) {
+    display: none !important;
   }
 }
 

@@ -987,24 +987,6 @@ p {
   color: white !important;
 }
 
-.hide-on-large-screen {
-  display: block;
-}
-@media (min-width: 769px) {
-  .hide-on-large-screen {
-    display: none !important;
-  }
-}
-
-.hide-on-small-screen {
-  display: block;
-}
-@media (max-width: 768px) {
-  .hide-on-small-screen {
-    display: none !important;
-  }
-}
-
 .nav-link {
   position: relative;
   padding-bottom: 10px;
@@ -1019,18 +1001,6 @@ p {
   width: 1px;
   height: 27px;
   background-color: white;
-}
-@media (min-width: 769px) and (max-width: 1320px) {
-  .nav-link.active::after {
-    top: 36px !important;
-    height: 20px;
-  }
-}
-@media (min-width: 1600px) {
-  .nav-link.active::after {
-    top: 66px !important;
-    height: 80px;
-  }
 }
 
 .strip {

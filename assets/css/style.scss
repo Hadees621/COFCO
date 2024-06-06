@@ -279,22 +279,6 @@ p {
   color: white !important;
 }
 
-.hide-on-large-screen {
-  display: block;
-
-  @media (min-width: 769px) {
-    display: none !important;
-  }
-}
-
-.hide-on-small-screen {
-  display: block;
-
-  @media (max-width: 768px) {
-    display: none !important;
-  }
-}
-
 .nav-link {
   position: relative;
   padding-bottom: 10px;
@@ -309,15 +293,6 @@ p {
   width: 1px;
   height: 27px;
   background-color: white;
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    top: 36px !important;
-    height: 20px;
-  }
-  @media (min-width: 1600px) {
-    top: 66px !important;
-    height: 80px;
-  }
 }
 
 .strip {
