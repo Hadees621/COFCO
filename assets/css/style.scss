@@ -46,17 +46,6 @@
 
 /////////////////
 
-.banner {
-  background-color: primary-bg-color;
-  padding: 100px;
-  gap: 70px;
-
-  @media (max-width: 768px) {
-    padding: 50px 20px;
-    gap: 30px;
-  }
-}
-
 .w-full {
   width: 100%;
 }
@@ -909,12 +898,6 @@ button.next img {
 
 .text-10 {
   font-size: 10px;
-}
-
-.pointsAndShoppingTitle {
-  @media (min-width: 1600px) {
-    font-size: 65px;
-  }
 }
 
 .authenticated-navbar-portion {

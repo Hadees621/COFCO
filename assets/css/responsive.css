@@ -292,6 +292,10 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .pointsAndShoppingTitle {
+    font-size: 65px;
+  }
+
   .LongUserName {
     font-size: 45px;
   }
@@ -650,7 +654,16 @@
   }
 }
 
-/* ////////////////// */
+.banner {
+  background-color: primary-bg-color;
+  padding: 100px;
+  gap: 70px;
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+    gap: 30px;
+  }
+}
 
 .slider-container {
   display: flex;
