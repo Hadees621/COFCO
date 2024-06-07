@@ -856,6 +856,17 @@ p {
   cursor: pointer;
 }
 
+.internal-navbar-search-icon {
+  position: absolute;
+  margin-right: 10px;
+  left: 10px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #073b25;
+  cursor: pointer;
+}
+
 .navbar-search {
   width: 270px;
   height: 35px;

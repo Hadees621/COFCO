@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
+            <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo-auth" />
             <div class="d-flex m-2 hide-on-small-screen ">
 
                 <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2" id="myTab" role="tablist">
@@ -145,45 +145,78 @@
                         </div>
                     </li>
 
-                    <li>
-                        <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
+
+                    <!-- search for lg screen  -->
+                    <li class="nav-item ">
+                        <div class="position-relative d-flex align-items-center hide-on-small-screen">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="internal-navbar-search-icon" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="#073b25"
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                                <path fill="none" d="M0 0h24v24H0z" />
+                            </svg>
+                            <input type="text" class="form-control rounded-pill ml-4 internal-navbar-search"
+                                placeholder="Search ">
+                        </div>
                     </li>
+
                 </ul>
 
             </div>
 
-            <!-- search for lg screen  -->
-            <div class="position-relative d-flex align-items-center  hide-on-small-screen">
-                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#073b25"
-                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-                    <path fill="none" d="M0 0h24v24H0z" />
-                </svg>
-                <input type="text" class="form-control rounded-pill navbar-search" placeholder="Search for products"
-                    style="background-color: #F2F2F2;">
-            </div>
+            <div class="d-flex gap-4 p-3" style="background-color: #042114;">
 
-            <!-- cart -->
-            <div class="dropdown show">
-                <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/images/cart.png" alt="" class="cart-image" />
-                    <div class="position-absolute count">12</div>
+                <div class="text-white flex-middle d-grid profile gap-2">
+                    <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
+                        <img src="/assets/images/search-results/Asset 15.png" />
+                        <h7 class="w-100 cursor-pointer">
+                            LongUserName000999
+                        </h7>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div>
+                            <img src="/assets/images/search-results/Asset 16.png" />
+                            <h7 class="underline cursor-pointer">
+                                Manage Account
+                            </h7>
+                        </div>
+                        <div>
+                            <img src="/assets/images/search-results/Asset 17.png" />
+                            <h7 class="underline cursor-pointer">
+                                sign out
+                            </h7>
+                        </div>
+                    </div>
                 </div>
-                <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
-                    <div class="d-grid text-center">
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
-                        <div class="flex-middle m-3">
-                            <button class="dropdown-checkout-button text-white">
-                                checkout
-                            </button>
+
+                <!-- cart -->
+                <div class="text-white flex-middle position-relative cursor-pointer">
+                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
+                </div>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="" class="" />
+                        <div class="position-absolute count">12</div>
+                    </div>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <h7>1x Fitzbilies Granola · 400g</h7>
+                            <h7>1x Fitzbilies Granola · 400g</h7>
+                            <h7>1x Fitzbilies Granola · 400g</h7>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <button class="dropdown-checkout-button text-white">
+                                    checkout
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Search bar for small screen  -->
@@ -206,26 +239,32 @@
     <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
 
         <div class="tab-pane active main-container " id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle py-3 shop-tab">
-                <p class="cursor-pointer">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
+                <p class="cursor-pointer detail-page-hover">
                     New Customers
                 </p>
-                <p class="cursor-pointer">
+                <p class="cursor-pointer detail-page-hover">
                     Choice Veg Boxes
                 </p>
-                <p class="cursor-pointer">
-                    Original Veg Boxes
+                <p class="cursor-pointer detail-page-hover">
+                    Additional Fruit & Veg
                 </p>
-                <p class="cursor-pointer">
-                    OriginalPLUS+ Veg Boxes
+                <p class="cursor-pointer detail-page-hover">
+                    Fresh Goods
                 </p>
-                <p class="cursor-pointer">
-                    Specific & Specialist Items
+                <p class="cursor-pointer detail-page-hover">
+                    Groceries
+                </p>
+                <p class="cursor-pointer detail-page-hover">
+                    Drinks
+                </p>
+                <p class="cursor-pointer detail-page-hover">
+                    Household
                 </p>
             </div>
         </div>
         <div class="tab-pane main-container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle pt-3 pb-3 shop-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
                 <p class="cursor-pointer">
                     How It Works
                 </p>
