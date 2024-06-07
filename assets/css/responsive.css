@@ -792,52 +792,10 @@
 .product-buttons-tab {
   font-weight: 600;
   font-size: 11px;
-
-  /* @media (min-width: 769px) and (max-width: 1320px) {
-    font-size: 9px;
-  }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    font-size: 11px;
-  }
-
-  @media (min-width: 1600px) {
-    font-size: 25px;
-  } */
 }
-
-/* .navbar-logo {
-  @media (min-width: 426px) and (max-width: 768px) {
-    height: 65px;
-    width: 240px !important;
-  }
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    height: 43px;
-    width: 170px !important;
-  }
-
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    height: 55px;
-    width: 230px !important;
-  }
-
-  @media (min-width: 1600px) {
-    height: 95px;
-    width: 430px !important;
-  }
-} */
 
 .container {
   max-width: 1200px;
-  /* padding: 0 15px; */
-  /* margin: 0 auto; */
-
-  /* @media (min-width: 1441px) {
-    max-width: 1450px;
-  }
-  @media (min-width: 2000px) {
-    max-width: 1800px;
-  } */
 }
 
 .homepage-banner {
@@ -852,62 +810,10 @@
   }
 
   .text-overlay {
-    max-width: 350px;
     position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
     text-align: start;
     display: inline-block;
-
-    @media (max-width: 768px) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      max-width: 90%;
-    }
-    @media (min-width: 769px) and (max-width: 1320px) {
-      max-width: 300px;
-    }
-    @media (min-width: 1320px) and (max-width: 1600px) {
-      max-width: 350px;
-    }
-    @media (min-width: 1600px) {
-      max-width: 600px;
-    }
-  }
-}
-
-.banner-overlay-heading1 {
-  font-size: 35px;
-  font-weight: 500;
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    font-size: 24px;
-  }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    font-size: 34px;
-  }
-
-  @media (min-width: 1600px) {
-    font-size: 65px;
-  }
-}
-
-.banner-overlay-text {
-  font-size: 14px;
-
-  @media (min-width: 769px) and (max-width: 1320px) {
-    font-size: 12px;
-  }
-  @media (min-width: 1320px) and (max-width: 1600px) {
-    font-size: 14px;
-  }
-  @media (min-width: 1600px) {
-    font-size: 29px;
   }
 }
 
@@ -994,13 +900,6 @@
     /* padding: 0px 90px; */
   }
 }
-
-/* @media (min-width: 1600px) {
-  .navbar__tab__content {
-    font-size: 22px;
-    padding: 0px 400px;
-  }
-} */
 
 /* ////////////// */
 
