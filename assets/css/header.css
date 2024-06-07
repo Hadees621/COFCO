@@ -114,13 +114,92 @@
     right: 38px;
     border-radius: 30px;
   }
+
+  .strip-content {
+    font-size: 13px !important;
+    font-weight: 500;
+    padding-top: 4px;
+  }
+
+  .shop-tab {
+    p {
+      font-size: 14px;
+      font-weight: 60px;
+    }
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
   .main-container {
     max-width: 1200px !important;
-    background-color: blue !important;
+    /* background-color: blue !important; */
     margin: auto;
+  }
+
+  .navbar-logo {
+    height: 60px;
+    width: 230px !important;
+  }
+
+  .navbar-search {
+    width: 240px;
+    padding: 8px 25px;
+    margin: 10px;
+  }
+
+  .search-icon {
+    margin: 1px 12px;
+  }
+
+  .navbar-search::placeholder {
+    font-size: 16px !important;
+    font-weight: 600;
+    margin: 8px 10px 0px 0px !important;
+  }
+
+  .navbar-tab {
+    padding: 8px 25px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .nav-link.active::after {
+    top: 40px !important;
+    height: 28px;
+  }
+
+  .count {
+    font-size: 8px;
+    right: 38px;
+    border-radius: 30px;
+  }
+
+  .strip-content {
+    font-size: 13px !important;
+    font-weight: 500;
+    padding-top: 4px;
+  }
+
+  .shop-tab {
+    p {
+      font-size: 14px;
+      font-weight: 60px;
+    }
+  }
+
+  .cart-dropdown {
+    width: 260px !important;
+    right: 0;
+    top: 53px;
+    left: auto;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 10px;
+  }
+
+  .order-added {
+    font-size: 11px;
+    text-align: center;
   }
 }
 
