@@ -92,6 +92,10 @@
     /* border: 1px solid white; */
   }
 
+  .tabs-padding {
+    padding: 15px 0px;
+  }
+
   .internal-navbar-search {
     width: 130px;
     padding: 6px;
@@ -188,6 +192,11 @@
     max-width: 1200px !important;
     /* background-color: blue !important; */
     margin: auto;
+  }
+
+  .tabs-padding {
+    padding: 15px 0px;
+    font-size: 12px;
   }
 
   .internal-navbar-search {
@@ -301,6 +310,11 @@
     max-width: 1400px !important;
     /* background-color: green !important; */
     margin: auto;
+  }
+
+  .tabs-padding {
+    padding: 20px 0px;
+    font-size: 15px;
   }
 
   .internal-navbar-search {
