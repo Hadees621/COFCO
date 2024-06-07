@@ -70,10 +70,64 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .main-container {
+    max-width: 1050px !important;
+    margin: auto;
+    /* background-color: red !important; */
+    /* border: 1px solid white; */
+  }
+
+  .navbar-logo {
+    height: 55px;
+    width: 210px !important;
+  }
+
+  .navbar-search {
+    width: 240px;
+    padding: 6px 20px;
+    margin: 10px;
+  }
+
+  .search-icon {
+    margin: 1px 12px;
+  }
+
+  .navbar-search::placeholder {
+    font-size: 16px !important;
+    font-weight: 600;
+    margin: 8px 10px 0px 0px !important;
+  }
+
+  .navbar-tab {
+    padding: 6px 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .nav-link.active::after {
+    top: 34px !important;
+    height: 28px;
+  }
+
+  .count {
+    font-size: 8px;
+    right: 38px;
+    border-radius: 30px;
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .main-container {
+    max-width: 1200px !important;
+    background-color: blue !important;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .main-container {
+    max-width: 1300px !important;
+    background-color: green !important;
+    margin: auto;
+  }
 }
