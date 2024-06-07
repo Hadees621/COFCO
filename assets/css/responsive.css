@@ -995,12 +995,12 @@
   }
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .navbar__tab__content {
     font-size: 22px;
     padding: 0px 400px;
   }
-}
+} */
 
 /* ////////////// */
 
