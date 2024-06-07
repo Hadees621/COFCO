@@ -761,8 +761,8 @@
 } */
 
 .banner {
-  background-color: primary-bg-color;
-  padding: 100px;
+  background-color: #ffffff;
+  padding: 100px 0px;
   gap: 70px;
 
   @media (max-width: 768px) {
