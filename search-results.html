@@ -225,9 +225,8 @@
         </div>
     </nav>
 
-
     <!-- Tabs content -->
-    <div class="tab-content  navbar__tab__content content-container hide-on-small-screen border-top">
+    <div class="tab-content  navbar__tab__content content-container-search-results hide-on-small-screen border-top">
         <div class="w-100 tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="d-flex justify-content-between tab-content active flex-middle px-5">
                 <p class="cursor-pointer detail-page-hover pt-3 pb-3">
@@ -292,18 +291,18 @@
     </div>
 
     <!-- Middle -->
-    <div class="content-container">
+    <div class="content-container-search-results">
         <h1 class="flex-middle search-results text-bold">Search Results: “Carrot”</h1>
 
-        <div class="d-flex align-items-center border-top pt-4 tabs-padding">
+        <div class="d-flex align-items-center border-top pt-4 tabs-paddin">
             <img src="/assets/images/search-results/ex.png" style="width: 15px;" />
             <p class="text-small refine-small-text text-w-600 m-2">Please use the filters below to refine your search
             </p>
         </div>
 
         <!-- Tabs -->
-        <ul class="nav nav-tabs d-flex flex-middle hide-on-small-screen tabs internal-tabs-container" id="myTab"
-            role="tablist">
+        <ul class="nav nav-tabs d-flex justify-content-between hide-on-small-screen tabs internal-tabs-container my-4"
+            id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <div class="nav-link rounded-pill flex-middle text-black internal-tab" id="products-tab"
                     data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="products"
@@ -334,9 +333,8 @@
         </ul>
 
         <!-- Tabs content -->
-        <div class="tab-content hide-on-small-screen p-3 border-bottom">
-            <div class="w-100 tab-pane active tabs-padding" id="products" role="tabpanel"
-                aria-labelledby="products-tab">
+        <div class="tab-content hide-on-small-screen pb-4 border-bottom">
+            <div class="w-100 tab-pane active " id="products" role="tabpanel" aria-labelledby="products-tab">
                 <div class="d-flex justify-content-between active flex-middle pt-3 text-black">
                     <div class="d-flex tab-content-products">
                         <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
@@ -352,7 +350,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 tab-pane tabs-padding" id="growers" role="tabpanel" aria-labelledby="growers-tab">
+            <div class="w-100 tab-pane " id="growers" role="tabpanel" aria-labelledby="growers-tab">
                 <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
                     <div class="d-grid gap-3">
                         <div class="d-flex tab-content-products">
@@ -384,7 +382,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 tab-pane tabs-padding" id="veg" role="tabpanel" aria-labelledby="veg-tab">
+            <div class="w-100 tab-pane" id="veg" role="tabpanel" aria-labelledby="veg-tab">
                 <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
                     <div class="d-grid gap-3">
                         <div class="d-flex tab-content-products">
@@ -444,7 +442,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 tab-pane tabs-padding" id="news" role="tabpanel" aria-labelledby="news-tab">
+            <div class="w-100 tab-pane " id="news" role="tabpanel" aria-labelledby="news-tab">
                 <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
 
                     <div class="d-grid gap-3">
@@ -491,6 +489,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Common Footer Area -->
@@ -551,7 +550,11 @@
         });
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </body>
 

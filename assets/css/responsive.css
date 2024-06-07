@@ -28,6 +28,10 @@
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .content-container-search-results {
+    padding: 0px 0px;
+  }
+
   .navbar-search {
     width: 200px !important;
   }
@@ -48,6 +52,43 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .products-detail-area {
+    max-width: 700px;
+  }
+  .products-buttons {
+    height: 35px;
+  }
+
+  .product-price {
+    font-size: 24px;
+  }
+
+  .edit-contents-button {
+    padding: 8px 22px;
+    font-size: 15px;
+    border-radius: 40px;
+  }
+
+  .add-to-order-button {
+    padding: 9px 22px;
+    font-size: 15px;
+  }
+
+  .product-buttons-tab {
+    font-size: 11px !important;
+  }
+
+  .internal-tab {
+    font-size: 16px;
+    padding: 7px 25px;
+  }
+
+  .search-results {
+    font: bolder;
+    font-size: 40px;
+    margin: 20px;
+  }
+
   .nav-link.active::after {
     top: 47px !important;
     height: 23px;
@@ -99,8 +140,8 @@
   }
 
   .product-image {
-    width: 440px !important;
-    height: 300px !important;
+    width: 400px !important;
+    height: 250px !important;
   }
 
   .product-detail-image {
@@ -156,12 +197,54 @@
     padding: 0px 130px;
   }
 
+  .content-container-search-results {
+    padding: 0px 100px;
+  }
+
   .content-container {
     padding: 0px 90px;
   }
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .products-detail-area {
+    max-width: 650px;
+  }
+
+  .products-buttons {
+    height: 45px;
+  }
+
+  .product-price {
+    font-size: 34px;
+  }
+
+  .edit-contents-button {
+    padding: 11px 30px;
+    font-size: 24px;
+    border-radius: 40px;
+  }
+
+  .add-to-order-button {
+    padding: 12px 40px;
+    font-size: 24px;
+  }
+
+  .product-buttons-tab {
+    font-size: 15px !important;
+  }
+
+  .internal-tab {
+    font-size: 20px;
+    padding: 7px 30px;
+  }
+
+  .search-results {
+    font: bolder;
+    font-size: 40px;
+    margin: 20px;
+  }
+
   .nav-link.active::after {
     top: 46px !important;
     height: 26px;
@@ -232,8 +315,8 @@
   }
 
   .product-image {
-    width: 540px !important;
-    height: 400px !important;
+    width: 520px !important;
+    height: 380px !important;
   }
 
   .product-detail-image {
@@ -281,6 +364,10 @@
     padding: 10px 30px;
   }
 
+  .content-container-search-results {
+    padding: 10px 150px;
+  }
+
   .content-container {
     padding: 10px 82px;
   }
@@ -292,6 +379,37 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .breadcrumb-position {
+    font-size: 12px;
+    padding: 10px 130px -0px 1230px;
+    border-bottom: 1px solid black;
+  }
+
+  .products-detail-area {
+    max-width: 950px;
+  }
+
+  .products-buttons {
+    height: 45px;
+  }
+
+  .product-price {
+    font-size: 34px;
+  }
+
+  .product-image {
+    width: 780px !important;
+    height: 600px !important;
+  }
+
+  .product-buttons-tab {
+    font-size: 24px !important;
+  }
+
+  .content-container-search-results {
+    padding: 0px 250px;
+  }
+
   .pointsAndShoppingTitle {
     font-size: 65px;
   }
@@ -405,8 +523,8 @@
     font-size: 62px;
   }
 
-  .tabs-padding {
-    padding-left: 250px;
+  .tabs-padding-prod {
+    padding-left: 400px;
     padding-right: 250px;
   }
 
@@ -526,15 +644,6 @@
     padding-top: 20px;
   }
 
-  .product-buttons-tab {
-    font-size: 18px;
-  }
-
-  .product-image {
-    width: 640px !important;
-    height: 500px !important;
-  }
-
   .product-detail-image {
     width: 700px !important;
     height: 600px !important;
@@ -608,7 +717,7 @@
   .breadcrumb-position {
     padding: 200px;
     font-size: 19px;
-    padding: 20px 200px 0px 220px;
+    padding: 20px 200px 0px 370px;
     border-bottom: 1px solid black;
   }
 
@@ -634,8 +743,8 @@
   }
 
   .internal-tab {
-    font-size: 25px;
-    padding: 7px 45px;
+    font-size: 34px;
+    padding: 12px 55px;
   }
 
   .tab-content-products-description {
@@ -687,7 +796,7 @@
   font-weight: 600;
   font-size: 11px;
 
-  @media (min-width: 769px) and (max-width: 1320px) {
+  /* @media (min-width: 769px) and (max-width: 1320px) {
     font-size: 9px;
   }
   @media (min-width: 1320px) and (max-width: 1600px) {
@@ -696,7 +805,7 @@
 
   @media (min-width: 1600px) {
     font-size: 25px;
-  }
+  } */
 }
 
 .navbar-logo {
@@ -839,18 +948,6 @@
   @media (min-width: 1600px) {
     height: 54px;
     width: 350px !important;
-  }
-}
-
-.internal-tabs-container {
-  gap: 12px;
-
-  @media (min-width: 1440px) and (max-width: 1600px) {
-    gap: 62px !important;
-  }
-
-  @media (min-width: 1600px) {
-    gap: 262px !important;
   }
 }
 

@@ -1087,8 +1087,8 @@ p {
 }
 
 .internal-tab {
-  font-size: 15px;
-  padding: 7px 45px;
+  font-size: 12px;
+  padding: 7px 22px;
   border: 1px solid #f1f1f1 !important;
   cursor: pointer;
   background-color: transparent;
@@ -1249,7 +1249,7 @@ p {
 }
 
 .product-title {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .products-buttons {
@@ -1376,12 +1376,12 @@ button.next img {
 
 .detail-page-hover {
   transition: background-color 0.3s ease;
+  padding: 15px;
 }
 
 .detail-page-hover:hover {
   background-color: #094d30;
   color: white;
-  padding: 15px;
 }
 
 .slider-background {
@@ -1702,7 +1702,6 @@ select {
   height: 120px;
   overflow-y: auto;
   background-color: #fff;
-  padding-right: 15px;
 }
 
 .trap:nth-child(odd) {
