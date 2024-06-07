@@ -1702,7 +1702,6 @@ select {
   height: 120px;
   overflow-y: auto;
   background-color: #fff;
-  padding-right: 15px;
 }
 
 .trap:nth-child(odd) {
