@@ -139,20 +139,20 @@
   }
 
   .banner-overlay-heading1 {
-    font-size: 22px !important;
-    font-weight: 600;
+    font-size: 29px !important;
+    font-weight: 500;
   }
 
   .banner-overlay-text {
-    font-size: 11px !important;
+    font-size: 10px !important;
     font-weight: 500;
   }
 
   .text-overlay {
     max-width: 280px;
     top: 10%;
-    left: 8%;
-    font-size: 24px;
+    left: 11%;
+    font-size: 28px;
   }
 
   .navbar-logo {
@@ -271,12 +271,12 @@
   }
 
   .banner-overlay-heading1 {
-    font-size: 40px !important;
-    font-weight: 600;
+    font-size: 42px !important;
+    font-weight: 500;
   }
 
   .banner-overlay-text {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 500;
   }
 
@@ -423,8 +423,8 @@
   }
 
   .banner-overlay-heading1 {
-    font-size: 45px !important;
-    font-weight: 600;
+    font-size: 48px !important;
+    font-weight: 500;
   }
 
   .banner-overlay-text {
