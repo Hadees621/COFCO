@@ -15,6 +15,7 @@
 
 <body>
 
+
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark flex-middle">
 
@@ -293,242 +294,17 @@
     </div>
 
     <!-- breadcrumb -->
-    <div class="breadcrumb-position">
-        <ol class="d-flex text-bold main-container">
-            <li class="breadcrumb-item cursor-pointer"><a href="#">Home</a></li>
-            <li class="cursor-pointer underline breadcrumb-item bread border-none">Library</li>
+    <div aria-label="breadcrumb" class="breadcrumb-position">
+        <ol class="d-flex text-bold main-container ">
+            <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
+            <li class="breadcrumb-item bread border-none cursor-pointer">Shop</li>
+            <li class="breadcrumb-item bread border-none cursor-pointer">Groceries</li>
+            <li class="breadcrumb-item bread border-none cursor-pointer"><a href="#">Breakfast Cereal & Treats</a></li>
+            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Fitzbilies Granola · 400g</li>
         </ol>
     </div>
 
-    <!-- Middle -->
-    <div class="main-container">
-        <h1 class="flex-middle search-results text-bold">Search Results: “Carrot”</h1>
 
-        <div class="d-flex align-items-center border-top pt-4 tabs-paddin">
-            <img src="/assets/images/search-results/ex.png" style="width: 15px;" />
-            <p class="text-small refine-small-text text-w-600 m-2">Please use the filters below to refine your search
-            </p>
-        </div>
-
-        <!-- Tabs -->
-        <ul class="nav nav-tabs d-flex justify-content-between hide-on-small-screen tabs internal-tabs-container my-4"
-            id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <div class="nav-link rounded-pill flex-middle text-black internal-tab" id="products-tab"
-                    data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="products"
-                    aria-selected="true">
-                    Products (2)
-                </div>
-            </li>
-            <li class="nav-item" role="presentation">
-                <div class="nav-link rounded-pill flex-middle text-black internal-tab" id="growers-tab"
-                    data-bs-toggle="tab" data-bs-target="#growers" type="button" role="tab" aria-controls="growers"
-                    aria-selected="false">
-                    Growers & Producers (14)
-                </div>
-            </li>
-            <li class="nav-item" role="presentation">
-                <div class="nav-link rounded-pill flex-middle text-black internal-tab" id="veg-tab" data-bs-toggle="tab"
-                    data-bs-target="#veg" type="button" role="tab" aria-controls="veg" aria-selected="false">
-                    All About Veg (6)
-                </div>
-            </li>
-            <li class="nav-item" role="presentation">
-                <div class="nav-link rounded-pill flex-middle text-black internal-tab" id="news-tab"
-                    data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news"
-                    aria-selected="false">
-                    News & Info (18)
-                </div>
-            </li>
-        </ul>
-
-        <!-- Tabs content -->
-        <div class="tab-content hide-on-small-screen pb-4 border-bottom">
-            <div class="w-100 tab-pane active " id="products" role="tabpanel" aria-labelledby="products-tab">
-                <div class="d-flex justify-content-between active flex-middle pt-3 text-black">
-                    <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                        <div class="p-3">
-                            <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots </h5>
-                            <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                information...</h6>
-                            <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <button class="view-product ">
-                                View Product
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 tab-pane " id="growers" role="tabpanel" aria-labelledby="growers-tab">
-                <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
-                    <div class="d-grid gap-3">
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 tab-pane" id="veg" role="tabpanel" aria-labelledby="veg-tab">
-                <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
-                    <div class="d-grid gap-3">
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 tab-pane " id="news" role="tabpanel" aria-labelledby="news-tab">
-                <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
-
-                    <div class="d-grid gap-3">
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                        <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
-                            <div class="p-3">
-                                <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
-                                </h5>
-                                <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
-                                    information...</h6>
-                                <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Companies -->
-    <div class="d-flex main-container m-auto gap-5 justify-content-between tabs-padding py-5">
-        <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images">
-        </div>
-
-    </div>
-
-    <!-- Orange strip -->
-    <div class="orange-strip flex-middle main-">
-        <h7 class="underline cursor-pointer"> Sign Up To The Cambridge Organic Food Mailing List
-        </h7>
-    </div>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="main-container text-white d-flex justify-content-between tabs-padding">
             <div>
@@ -549,6 +325,7 @@
         </div>
     </footer>
 
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const menuButton = document.querySelector('.navbar-tab');
@@ -565,7 +342,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 </body>
 
 </html>

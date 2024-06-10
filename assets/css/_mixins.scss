@@ -281,7 +281,7 @@ $color-values: (
 @mixin strip($background-color) {
   background-color: $background-color;
   font-size: 11px;
-  padding: 7px;
+  padding: 5px;
   color: #f8f9f7;
   margin: auto;
 

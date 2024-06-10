@@ -157,14 +157,20 @@ p {
   color: $button-green;
   padding-left: 27px;
   font-weight: bold;
-
-  // @media (min-width: 2000px) {
-  //   font-size: 17px;
-  //   margin: 22px;
-  // }
 }
 
 .search-icon {
+  position: absolute;
+  margin-right: 10px;
+  left: 10px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $button-green;
+  cursor: pointer;
+}
+
+.internal-navbar-search-icon {
   position: absolute;
   margin-right: 10px;
   left: 10px;
@@ -262,6 +268,10 @@ p {
 
 .off-canvas-lists {
   padding: 3px 30px;
+  padding-bottom: 12px;
+  p {
+    margin: 10px 0px;
+  }
 }
 
 .text-white {
@@ -1045,4 +1055,20 @@ select {
   color: #edb7c6 !important;
   border: 1px solid #edb7c6 !important;
   cursor: default !important;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.product-Quantity {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
 }
