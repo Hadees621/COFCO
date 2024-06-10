@@ -18,6 +18,11 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  button.next img {
+    width: 100px;
+    height: 183px;
+  }
+
   .products-detail-area {
     max-width: 700px;
   }
@@ -122,6 +127,11 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  button.next img {
+    width: 125px;
+    height: 216px;
+  }
+
   .products-detail-area {
     max-width: 650px;
   }
@@ -243,6 +253,11 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  button.next img {
+    width: 130px;
+    height: 220px;
+  }
+
   .products-detail-area {
     max-width: 950px;
   }
