@@ -30,7 +30,6 @@
             <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
                 id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header m-2">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
                     <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -41,7 +40,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Shop
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     New Customers
                                 </p>
@@ -57,14 +56,14 @@
                                 <p class="cursor-pointer">
                                     Specific & Specialist Items
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     How It Works
                                 </p>
@@ -80,7 +79,7 @@
                                 <p class="cursor-pointer">
                                     Our Ethics & Sourcing Latest News
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
@@ -93,7 +92,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Additional Helpful Links
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     New Customers
                                 </p>
@@ -109,7 +108,7 @@
                                 <p class="cursor-pointer">
                                     Specific & Specialist Items
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -164,11 +163,12 @@
 
             <!-- cart -->
             <div class="dropdown show">
-                <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/images/cart.png" alt="" class="cart-image" />
+
+                <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                     <div class="position-absolute count">12</div>
-                </div>
+                </a>
                 <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
                     <div class="d-grid text-center">
                         <h7>1x Fitzbilies Granola · 400g</h7>
@@ -275,7 +275,7 @@
     <section>
         <div class="d-flex main-container tabs-padding mt-4">
             <div>
-                <img src="/assets/images/product-details/Asset 1.png" class="product-image" />
+                <img src="/assets/images/product-details/Asset 1.png" class="product-image" alt="assets" />
             </div>
             <div class="w-full mr-l-5">
                 <div>
@@ -283,7 +283,7 @@
                 </div>
                 <div class="d-flex mt-2">
                     <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                        <img src="/assets/images/search-results/ex.png" style="width: 15px;" />
+                        <img src="/assets/images/search-results/ex.png" style="width: 15px;" alt="assets" />
                         <h6 class="mt-2 product-buttons-tab">Not Organic</h6>
                     </div>
                     <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer"
@@ -291,7 +291,7 @@
                         <h6 class="mt-2 product-buttons-tab underline"> Fitzbilies Bakery (UK)</h6>
                     </div>
                     <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                        <img src="/assets/images/product-details/Asset 15.png" class="small-icons" />
+                        <img src="/assets/images/product-details/Asset 15.png" class="small-icons" alt="assets" />
                         <h6 class="mt-2 product-buttons-tab">Source: UK & International</h6>
                     </div>
                 </div>
@@ -332,7 +332,7 @@
                 </div>
 
                 <div class="in-stock-button text-white flex-middle gap-2 mt-4">
-                    <img src="/assets/images/product-details/Asset 13.png" style="width: 13px;" />
+                    <img src="/assets/images/product-details/Asset 13.png" style="width: 13px;" alt="assets" />
                     In stock
                 </div>
 
@@ -372,7 +372,7 @@
                             </div>
                             <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
 
-                                <img src="/assets/images/product-details/modal.png" />
+                                <img src="/assets/images/product-details/modal.png" alt="assets" />
                                 <h1 class="text-bold mt-4" style="font-size: 35px;">
                                     Find out your <br />
                                     delivery day
@@ -418,7 +418,7 @@
                                 </button>
                             </div>
                             <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
-                                <img src="/assets/images/product-details/modal.png" />
+                                <img src="/assets/images/product-details/modal.png" alt="assets" />
                                 <h1 class="text-bold mt-4" style="font-size: 35px;">
                                     Monday
                                 </h1>
@@ -521,8 +521,7 @@
                 </div>
                 <div class="button-container">
                     <button class="next" onclick="moveSlide(1)">
-                        <img src="/assets/images/product-details/Asset 6.png" alt="Next"
-                            class="mt-3" />
+                        <img src="/assets/images/product-details/Asset 6.png" alt="Next" class="mt-3" />
                     </button>
                 </div>
             </div>
@@ -532,19 +531,19 @@
     <!-- Companies -->
     <div class="d-flex main-container m-auto gap-5 justify-content-between tabs-padding py-5">
         <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 11.png" class="last-images" alt="assets">
         </div>
 
     </div>
@@ -569,50 +568,21 @@
                 </p>
             </div>
             <div class="d-flex gap-2">
-                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" />
-                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" />
-                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" />
+                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
             </div>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.querySelector('.navbar-tab');
-            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-            menuButton.addEventListener('click', function () {
-                dropdownMenus.forEach(menu => menu.classList.toggle('active'));
-            });
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        let currentSlide = 0;
 
-        function moveSlide(direction) {
-            const slides = document.querySelectorAll('.slide');
-            const totalSlides = slides.length;
-            const sliderWrapper = document.querySelector('.slider-wrapper');
+    <script src="assets/js/script.js"></script>
 
-            currentSlide += direction;
-
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-
-            const offset = -currentSlide * 100 / 3;
-            sliderWrapper.style.transform = `translateX(${offset}%)`;
-        }
-
-
-    </script>
 
 </body>
 
