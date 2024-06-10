@@ -360,15 +360,22 @@
     margin: auto;
   }
 
+  .product-buttons-tab {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .product-title {
+    font-size: 45px;
+  }
+
   slider-background {
-    height: 84vh;
-    margin-top: 25px;
-    padding-top: 10px;
+    height: 10vh !important;
   }
 
   .product-image {
-    width: 630px !important;
-    height: 400px !important;
+    width: 600px !important;
+    height: 500px !important;
   }
 
   .breadcrumb-position {
