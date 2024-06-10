@@ -554,33 +554,6 @@
   }
 }
 
-.banner {
-  background-color: #ffffff;
-  padding: 100px 0px;
-  gap: 70px;
-
-  @media (max-width: 768px) {
-    padding: 50px 20px;
-    gap: 30px;
-  }
-}
-
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-}
-
-.product-Quantity {
-  font-size: 18px;
-}
-
-.container {
-  max-width: 1200px;
-}
-
 .homepage-banner {
   background-image: url("/assets/images/Asset 4.png");
   background-size: cover;
@@ -629,5 +602,16 @@
 
   @media (min-width: 1600px) {
     height: 180px;
+  }
+}
+
+.banner {
+  background-color: #ffffff;
+  padding: 100px 0px;
+  gap: 70px;
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+    gap: 30px;
   }
 }

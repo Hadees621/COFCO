@@ -1800,4 +1800,20 @@ select {
   color: #edb7c6 !important;
   border: 1px solid #edb7c6 !important;
   cursor: default !important;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.product-Quantity {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
 }/*# sourceMappingURL=style.css.map */
