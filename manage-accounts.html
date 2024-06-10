@@ -31,7 +31,6 @@
                 <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
                     id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header m-2">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
                         <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -42,7 +41,7 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Shop
                                 </a>
-                                <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                     <p class="cursor-pointer">
                                         New Customers
                                     </p>
@@ -58,14 +57,14 @@
                                     <p class="cursor-pointer">
                                         Specific & Specialist Items
                                     </p>
-                                </ul>
+                                </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     About Us
                                 </a>
-                                <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                     <p class="cursor-pointer">
                                         How It Works
                                     </p>
@@ -81,7 +80,7 @@
                                     <p class="cursor-pointer">
                                         Our Ethics & Sourcing Latest News
                                     </p>
-                                </ul>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
@@ -94,7 +93,7 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Additional Helpful Links
                                 </a>
-                                <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                     <p class="cursor-pointer">
                                         New Customers
                                     </p>
@@ -110,7 +109,7 @@
                                     <p class="cursor-pointer">
                                         Specific & Specialist Items
                                     </p>
-                                </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -170,20 +169,20 @@
 
                     <div class="text-white flex-middle d-grid profile gap-2">
                         <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
-                            <img src="/assets/images/search-results/Asset 15.png" />
+                            <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
                             <h7 class="w-100 cursor-pointer">
                                 LongUserName000999
                             </h7>
                         </div>
                         <div class="d-flex gap-2">
                             <div>
-                                <img src="/assets/images/search-results/Asset 16.png" />
+                                <img src="/assets/images/search-results/Asset 16.png" alt="assets" />
                                 <h7 class="underline cursor-pointer">
                                     Manage Account
                                 </h7>
                             </div>
                             <div>
-                                <img src="/assets/images/search-results/Asset 17.png" />
+                                <img src="/assets/images/search-results/Asset 17.png" alt="assets" />
                                 <h7 class="underline cursor-pointer">
                                     sign out
                                 </h7>
@@ -198,11 +197,11 @@
 
                     <!-- cart -->
                     <div class="dropdown show">
-                        <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/images/cart.png" alt="" class="" />
+                            <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                             <div class="position-absolute count">12</div>
-                        </div>
+                        </a>
                         <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
                             <div class="d-grid">
                                 <h7>1x Fitzbilies Granola · 400g</h7>
@@ -316,16 +315,16 @@
 
                 <div class="d-flex justify-content-between py-4 border-bottom">
                     <div class="flex-middle gap-3">
-                        <img src="/assets/images/order-details/Asset 1.png" class="profile-icon" />
+                        <img src="/assets/images/order-details/Asset 1.png" class="profile-icon" alt="assets0" />
                         <h1 class="text-bold LongUserName">LongUserName000999</h1>
                     </div>
                     <div class="d-flex gap-4">
                         <button class="manage-account-button flex-middle gap-2">
-                            <img src="/assets/images/order-details/Asset 2.png" class="small-icons" />
+                            <img src="/assets/images/order-details/Asset 2.png" class="small-icons" alt="assets0" />
                             <p class="text-bold">Manage Account</p>
                         </button>
                         <button class="manage-account-button flex-middle gap-2">
-                            <img src="/assets/images/order-details/Asset 3.png" class="small-icons" />
+                            <img src="/assets/images/order-details/Asset 3.png" class="small-icons" alt="assets0" />
                             <p class="text-bold">Sign Out</p>
                         </button>
                     </div>
@@ -334,7 +333,7 @@
                 <div class="py-2 mt-5">
                     <div class="d-flex justify-content-between align-content-center">
                         <div class="d-flex justify-content-start gap-3 align-items-center">
-                            <img src="/assets/images/order-details/Asset 5.png" />
+                            <img src="/assets/images/order-details/Asset 5.png" alt="assets" />
                             <h4 class="text-bold title-points-cart mt-2">Shopping Cart</h4>
                         </div>
                         <div>
@@ -355,7 +354,8 @@
                                     <td class="product-nested-description">Total Future Scheduled Products In Cart </td>
                                     <td><span class="points-value">1</span></td>
                                     <td class="flex-middle text-bold gap-2 text-small">
-                                        <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
+                                        <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                            alt="assets" />
                                         <p class="underline text-small text-start w-100 cursor-pointer">View & Edit
                                             Future
                                             Shopping Cart</p>
@@ -371,12 +371,12 @@
                 <div class="py-2 mt-5">
                     <div class="d-flex justify-content-between align-content-center">
                         <div class="d-flex justify-content- gap-3 align-items-center">
-                            <img src="/assets/images/manage-accounts/Layer 4.png" />
+                            <img src="/assets/images/manage-accounts/Layer 4.png" alt="assets" />
                             <h4 class="text-bold title-points-cart mt-2">Deliveries</h4>
                         </div>
                         <div>
                             <button class="manage-account-button flex-middle gap-2 mt-3">
-                                <img src="/assets/images/order-details/Asset 6.png" class="small-icons" />
+                                <img src="/assets/images/order-details/Asset 6.png" class="small-icons" alt="assets" />
                                 <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
                             </button>
                         </div>
@@ -412,7 +412,7 @@
                 <div class="py-2 mt-5">
                     <div class="d-flex justify-content-between align-content-center">
                         <div class="d-flex justify-content- gap-3 align-items-center">
-                            <img src="/assets/images/order-details/Asset 5.png" />
+                            <img src="/assets/images/order-details/Asset 5.png" alt="assets" />
                             <h4 class="text-bold title-points-cart mt-2">Payments / Your Address(es) / Your Contact
                                 Details
                             </h4>
@@ -432,7 +432,8 @@
                                     </td>
                                     <td>
                                         <button class="manage-account-button flex-middle gap-2 mt-3">
-                                            <img src="/assets/images/order-details/Asset 6.png" class="small-icons" />
+                                            <img src="/assets/images/order-details/Asset 6.png" class="small-icons"
+                                                alt="assets" />
                                             <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
                                         </button>
                                     </td>
@@ -460,19 +461,19 @@
         <!-- Companies -->
         <div class="d-flex main-container-details m-auto gap-5 justify-content-between py-5">
             <div>
-                <img src="/assets/images/search-results/Asset 7.png" class="last-images">
+                <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
             </div>
             <div>
-                <img src="/assets/images/search-results/Asset 8.png" class="last-images">
+                <img src="/assets/images/search-results/Asset 8.png" class="last-images " alt="assets">
             </div>
             <div>
-                <img src="/assets/images/search-results/Asset 9.png" class="last-images">
+                <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
             </div>
             <div>
-                <img src="/assets/images/search-results/Asset 10.png" class="last-images">
+                <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
             </div>
             <div>
-                <img src="/assets/images/search-results/Asset 11.png" class="last-images">
+                <img src="/assets/images/search-results/Asset 11.png" class="last-images" alt="assets">
             </div>
 
         </div>
@@ -497,72 +498,20 @@
                     </p>
                 </div>
                 <div class="d-flex gap-2">
-                    <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" />
-                    <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" />
-                    <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" />
+                    <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
+                    <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
+                    <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
                 </div>
             </div>
         </footer>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuButton = document.querySelector('.navbar-tab');
-                const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-                menuButton.addEventListener('click', function () {
-                    dropdownMenus.forEach(menu => menu.classList.toggle('active'));
-                });
-            });
-        </script>
-        <script>
-            let currentSlide = 0;
-
-            function moveSlide(direction) {
-                const slides = document.querySelectorAll('.slide');
-                const totalSlides = slides.length;
-                const sliderWrapper = document.querySelector('.slider-wrapper');
-
-                currentSlide += direction;
-
-                if (currentSlide < 0) {
-                    currentSlide = totalSlides - 1;
-                } else if (currentSlide >= totalSlides) {
-                    currentSlide = 0;
-                }
-
-                const offset = -currentSlide * 100 / 3;
-                sliderWrapper.style.transform = `translateX(${offset}%)`;
-            }
-
-
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var counterValue = document.getElementById('counter-value');
-                var incrementButton = document.getElementById('increment');
-                var decrementButton = document.getElementById('decrement');
-
-                var count = 0;
-
-                incrementButton.addEventListener('click', function () {
-                    count++;
-                    counterValue.textContent = count;
-                });
-
-                decrementButton.addEventListener('click', function () {
-                    if (count > 0) {
-                        count--;
-                        counterValue.textContent = count;
-                    }
-                });
-            });
-        </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
