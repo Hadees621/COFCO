@@ -88,8 +88,11 @@
   .main-container {
     max-width: 1050px !important;
     margin: auto;
-    /* background-color: red !important; */
-    /* border: 1px solid white; */
+  }
+
+  .main-container-details {
+    max-width: 1100px !important;
+    margin: auto;
   }
 
   .slider-background {
@@ -212,10 +215,13 @@
 @media (min-width: 1440px) and (max-width: 1599px) {
   .main-container {
     max-width: 1200px !important;
-    /* background-color: blue !important; */
     margin: auto;
   }
 
+  .main-container-details {
+    max-width: 1300px !important;
+    margin: auto;
+  }
   .slider-background {
     height: 84vh;
     margin-top: 25px;
@@ -356,7 +362,11 @@
 @media (min-width: 1600px) and (max-width: 2560px) {
   .main-container {
     max-width: 1400px !important;
-    /* background-color: green !important; */
+    margin: auto;
+  }
+
+  .main-container-details {
+    max-width: 1850px !important;
     margin: auto;
   }
 
