@@ -1009,7 +1009,7 @@ p {
 .strip {
   background-color: #55733b;
   font-size: 11px;
-  padding: 7px;
+  padding: 5px;
   color: #f8f9f7;
   margin: auto;
 }
@@ -1031,7 +1031,7 @@ p {
 .red-strip {
   background-color: #af102b;
   font-size: 11px;
-  padding: 7px;
+  padding: 5px;
   color: #f8f9f7;
   margin: auto;
 }
@@ -1053,7 +1053,7 @@ p {
 .orange-strip {
   background-color: #e87635;
   font-size: 11px;
-  padding: 7px;
+  padding: 5px;
   color: #f8f9f7;
   margin: auto;
 }
