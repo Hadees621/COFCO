@@ -39,7 +39,6 @@
             <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
                 id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header m-2">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
                     <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -50,7 +49,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Shop
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     New Customers
                                 </p>
@@ -66,14 +65,14 @@
                                 <p class="cursor-pointer">
                                     Specific & Specialist Items
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     How It Works
                                 </p>
@@ -89,7 +88,7 @@
                                 <p class="cursor-pointer">
                                     Our Ethics & Sourcing Latest News
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
@@ -102,7 +101,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Additional Helpful Links
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     New Customers
                                 </p>
@@ -118,7 +117,7 @@
                                 <p class="cursor-pointer">
                                     Specific & Specialist Items
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -173,11 +172,11 @@
 
             <!-- cart -->
             <div class="dropdown show">
-                <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/images/cart.png" alt="" class="cart-image" />
+                <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                     <div class="position-absolute count">12</div>
-                </div>
+                </a>
                 <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
                     <div class="d-grid text-center">
                         <h7>1x Fitzbilies Granola · 400g</h7>
@@ -281,7 +280,7 @@
             </div>
 
             <div class="google-reviews align-content-start">
-                <img src="/assets/images/google.png" class="" />
+                <img src="/assets/images/google.png" class="" alt="assets" />
             </div>
 
             <button class="banner-overlay-button flex-middle gap-2">
@@ -292,22 +291,13 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.querySelector('.navbar-tab');
-            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-            menuButton.addEventListener('click', function () {
-                dropdownMenus.forEach(menu => menu.classList.toggle('active'));
-            });
-        });
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
