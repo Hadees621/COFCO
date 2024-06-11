@@ -163,22 +163,23 @@
 
             <!-- cart -->
             <div class="dropdown show">
-
                 <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                     <div class="position-absolute count">12</div>
                 </a>
                 <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
-                    <div class="d-grid text-center">
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
+                    <div class="d-grid">
+                        <p>1x Fitzbilies Granola · 400g</p>
+                        <p>1x Fitzbilies Granola · 400g</p>
+                        <p>1x Fitzbilies Granola · 400g</p>
+                        <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
                         <div class="flex-middle m-3">
-                            <button class="dropdown-checkout-button text-white">
-                                checkout
-                            </button>
+                            <a href="/order-details.html">
+                                <button class="dropdown-checkout-button text-white">
+                                    checkout
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -270,7 +271,6 @@
         </ol>
     </div>
 
-
     <!-- Middle -->
     <section>
         <div class="d-flex main-container tabs-padding mt-4">
@@ -286,8 +286,7 @@
                         <img src="/assets/images/search-results/ex.png" style="width: 15px;" alt="assets" />
                         <h6 class="mt-2 product-buttons-tab">Not Organic</h6>
                     </div>
-                    <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer"
-                        data-toggle="modal" data-target="#MondayModal">
+                    <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer">
                         <h6 class="mt-2 product-buttons-tab underline"> Fitzbilies Bakery (UK)</h6>
                     </div>
                     <div class="d-flex gap-2 flex-middle border w-full products-buttons">
@@ -377,17 +376,16 @@
                                     Find out your <br />
                                     delivery day
                                 </h1>
-                                <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                <p class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
                                     Enter your Postcode below and discover when <br />
                                     our delivery team are in your area:
-                                </h7>
+                                </p>
                                 <input type="text" class="modal-input mt-3"
                                     placeholder="Enter your postcode (e.g. CB2 VEG)">
                                 <br />
                                 <br />
-
                                 <button class="add-to-order-button text-white" data-toggle="modal"
-                                    data-target="#findDeliveryDayModal">
+                                    data-target="#MondayModal" data-dismiss="modal" aria-label="Close">
                                     Enter
                                 </button>
                                 <br />
@@ -434,8 +432,7 @@
                                     </h7>
                                 </div>
                                 <br />
-                                <button class="add-to-order-button text-white" data-toggle="modal"
-                                    data-target="#findDeliveryDayModal">
+                                <button class="add-to-order-button text-white" data-dismiss="modal">
                                     Continue Shopping...
                                 </button>
                             </div>
