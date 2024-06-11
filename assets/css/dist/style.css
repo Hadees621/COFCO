@@ -1078,7 +1078,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   font-weight: bolder;
 }
 
@@ -1092,7 +1092,7 @@ select {
 
 .month-display {
   margin: 30px 10px;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 600;
 }
 
