@@ -200,8 +200,8 @@
 
   .strip-content {
     font-size: 11px !important;
-    font-weight: 500;
-    padding-top: 4px;
+    font-weight: 600;
+    padding-top: 3px;
   }
 
   .shop-tab {
@@ -332,6 +332,7 @@
   }
 
   .strip-content {
+    font-size: 12px !important;
     font-size: 12px !important;
     font-weight: 500;
     padding-top: 4px;
@@ -490,8 +491,9 @@
 
   .strip-content {
     font-size: 15px !important;
+    font-size: 15px !important;
     font-weight: 600;
-    padding-top: 4px;
+    padding-top: 3px;
   }
 
   .shop-tab {
