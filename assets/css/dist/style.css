@@ -862,7 +862,8 @@ button.next img {
   border-radius: 20px;
   background-color: transparent;
   border: 1px solid #153d37;
-  color: black;
+  color: black !important;
+  text-decoration: none !important;
 }
 
 .profile-icon {
@@ -932,10 +933,6 @@ button.next img {
     width: 30px;
   }
 }
-.quantity-table .flex-middle .underline {
-  text-decoration: underline;
-}
-
 .text-start {
   text-align: start;
 }
@@ -1162,5 +1159,5 @@ ul {
 .auth-area-p a:visited,
 .auth-area-p a:active {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none !important;
 }
