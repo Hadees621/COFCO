@@ -61,7 +61,7 @@
   }
 
   .strip-content {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .count {
@@ -333,6 +333,7 @@
 
   .strip-content {
     font-size: 12px !important;
+    font-size: 12px !important;
     font-weight: 500;
     padding-top: 4px;
   }
@@ -489,6 +490,7 @@
   }
 
   .strip-content {
+    font-size: 15px !important;
     font-size: 15px !important;
     font-weight: 600;
     padding-top: 3px;
