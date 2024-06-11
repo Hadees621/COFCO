@@ -1020,7 +1020,6 @@ select {
   border: none;
   font-size: 18px;
   cursor: pointer;
-  padding: 0px 5px;
 }
 
 .month-display {
@@ -1092,4 +1091,11 @@ ul {
 .auth-area-p a:active {
   color: inherit;
   text-decoration: none !important;
+}
+.rotate-left {
+  transform: rotate(-90deg);
+}
+
+.rotate-right {
+  transform: rotate(90deg);
 }

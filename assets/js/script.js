@@ -48,3 +48,62 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// JavaScript to handle month navigation and week selection
+const monthDisplay = document.getElementById("monthDisplay");
+const weekSelector = document.getElementById("weekSelector");
+
+let currentMonthIndex = 0;
+
+const months = [
+  "January 2024",
+  "February 2024",
+  "March 2024",
+  "April 2024",
+  "May 2024",
+  "June 2024",
+  "July 2024",
+  "August 2024",
+  "September 2024",
+  "October 2024",
+  "November 2024",
+  "December 2024",
+];
+
+const weeks = [
+  "Monday 1 to Saturday 6",
+  "Monday 7 to Saturday 13",
+  "Monday 14 to Saturday 20",
+  "Monday 21 to Saturday 27",
+];
+
+function updateMonthDisplay() {
+  monthDisplay.textContent = months[currentMonthIndex];
+  updateWeekOptions();
+}
+
+function updateWeekOptions() {
+  weekSelector.innerHTML = "";
+  weeks.forEach((week) => {
+    const weekButton = document.createElement("button");
+    weekButton.className = "week-option";
+    weekButton.textContent = week;
+    weekSelector.appendChild(weekButton);
+  });
+}
+
+document.getElementById("prevMonth").addEventListener("click", () => {
+  if (currentMonthIndex > 0) {
+    currentMonthIndex--;
+    updateMonthDisplay();
+  }
+});
+
+document.getElementById("nextMonth").addEventListener("click", () => {
+  if (currentMonthIndex < months.length - 1) {
+    currentMonthIndex++;
+    updateMonthDisplay();
+  }
+});
+
+updateMonthDisplay();
