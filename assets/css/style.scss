@@ -1077,3 +1077,18 @@ ol,
 ul {
   padding-left: 0rem !important;
 }
+
+.auth-area-p {
+  font-size: 10px;
+}
+
+.auth-area-p a {
+  color: inherit;
+}
+
+.auth-area-p a:hover,
+.auth-area-p a:visited,
+.auth-area-p a:active {
+  color: inherit;
+  text-decoration: underline;
+}
