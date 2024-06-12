@@ -2,6 +2,12 @@
 @import "mixins";
 
 @media (min-width: 312px) and (max-width: 768px) {
+  button.next img {
+    width: 60px;
+    height: 150px;
+    margin-top: 10px !important;
+  }
+
   .add-to-order-button {
     padding: 10px 22px;
     font-size: 11px;
