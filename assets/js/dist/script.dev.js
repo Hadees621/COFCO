@@ -13,22 +13,96 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var currentSlide = 0;
 
+function cloneSlides() {
+  var slides = document.querySelectorAll(".slide");
+  var sliderWrapper = document.querySelector(".slider-wrapper");
+  slides.forEach(function (slide) {
+    var cloneFirst = slide.cloneNode(true);
+    var cloneLast = slide.cloneNode(true);
+    sliderWrapper.appendChild(cloneFirst);
+    sliderWrapper.insertBefore(cloneLast, sliderWrapper.firstChild);
+  });
+}
+
 function moveSlide(direction) {
   var slides = document.querySelectorAll(".slide");
-  var totalSlides = slides.length;
+  var totalSlides = slides.length / 3;
   var sliderWrapper = document.querySelector(".slider-wrapper");
+  var screenWidth = window.innerWidth;
+  var slidesVisible, offsetValue;
+
+  if (screenWidth >= 312 && screenWidth <= 768) {
+    slidesVisible = 1;
+    offsetValue = 33.33;
+  } else if (screenWidth >= 769 && screenWidth <= 1023) {
+    slidesVisible = 1;
+    offsetValue = 33.33;
+  } else if (screenWidth >= 1024 && screenWidth <= 1439) {
+    slidesVisible = 3;
+    offsetValue = 100;
+  } else if (screenWidth >= 1440 && screenWidth <= 1599) {
+    slidesVisible = 3;
+    offsetValue = 100;
+  } else if (screenWidth >= 1600 && screenWidth <= 2560) {
+    slidesVisible = 3;
+    offsetValue = 100;
+  } else {
+    slidesVisible = 3;
+    offsetValue = 33.33;
+  }
+
   currentSlide += direction;
 
   if (currentSlide < 0) {
-    currentSlide = totalSlides - 1;
-  } else if (currentSlide >= totalSlides) {
-    currentSlide = 0;
+    currentSlide = totalSlides - slidesVisible;
+    sliderWrapper.style.transition = "none";
+
+    var _offset = -currentSlide * offsetValue / slidesVisible;
+
+    sliderWrapper.style.transform = "translateX(".concat(_offset, "%)");
+    setTimeout(function () {
+      sliderWrapper.style.transition = "transform 0.5s ease";
+      currentSlide = totalSlides - slidesVisible * 2;
+      var offset = -currentSlide * offsetValue / slidesVisible;
+      sliderWrapper.style.transform = "translateX(".concat(offset, "%)");
+    }, 0);
+    return;
+  } else if (currentSlide >= totalSlides * 2) {
+    currentSlide = totalSlides;
+    sliderWrapper.style.transition = "none";
+
+    var _offset2 = -currentSlide * offsetValue / slidesVisible;
+
+    sliderWrapper.style.transform = "translateX(".concat(_offset2, "%)");
+    setTimeout(function () {
+      sliderWrapper.style.transition = "transform 0.5s ease";
+      currentSlide = 0;
+      var offset = -currentSlide * offsetValue / slidesVisible;
+      sliderWrapper.style.transform = "translateX(".concat(offset, "%)");
+    }, 0);
+    return;
   }
 
-  var offset = -currentSlide * 100 / 3;
+  var offset = -currentSlide * offsetValue / slidesVisible;
   sliderWrapper.style.transform = "translateX(".concat(offset, "%)");
-} // Counter script
+}
 
+cloneSlides();
+window.addEventListener("resize", function () {
+  moveSlide(0);
+});
+cloneSlides();
+window.addEventListener("resize", function () {
+  moveSlide(0);
+});
+cloneSlides();
+window.addEventListener("resize", function () {
+  moveSlide(0);
+});
+window.addEventListener("resize", function () {
+  moveSlide(0);
+}); // Slider script ends
+// Counter script
 
 document.addEventListener("DOMContentLoaded", function () {
   var counterValue = document.getElementById("counter-value");

@@ -11,22 +11,101 @@ document.addEventListener("DOMContentLoaded", function () {
 // Slider script
 let currentSlide = 0;
 
+function cloneSlides() {
+  const slides = document.querySelectorAll(".slide");
+  const sliderWrapper = document.querySelector(".slider-wrapper");
+
+  slides.forEach((slide) => {
+    const cloneFirst = slide.cloneNode(true);
+    const cloneLast = slide.cloneNode(true);
+    sliderWrapper.appendChild(cloneFirst);
+    sliderWrapper.insertBefore(cloneLast, sliderWrapper.firstChild);
+  });
+}
+
 function moveSlide(direction) {
   const slides = document.querySelectorAll(".slide");
-  const totalSlides = slides.length;
+  const totalSlides = slides.length / 3;
   const sliderWrapper = document.querySelector(".slider-wrapper");
+
+  const screenWidth = window.innerWidth;
+  let slidesVisible, offsetValue;
+
+  if (screenWidth >= 312 && screenWidth <= 768) {
+    slidesVisible = 1;
+    offsetValue = 33.33;
+  } else if (screenWidth >= 769 && screenWidth <= 1023) {
+    slidesVisible = 1;
+    offsetValue = 33.33;
+  } else if (screenWidth >= 1024 && screenWidth <= 1439) {
+    slidesVisible = 3;
+    offsetValue = 100;
+  } else if (screenWidth >= 1440 && screenWidth <= 1599) {
+    slidesVisible = 3;
+    offsetValue = 100;
+  } else if (screenWidth >= 1600 && screenWidth <= 2560) {
+    slidesVisible = 3;
+    offsetValue = 100;
+  } else {
+    slidesVisible = 3;
+    offsetValue = 33.33;
+  }
 
   currentSlide += direction;
 
   if (currentSlide < 0) {
-    currentSlide = totalSlides - 1;
-  } else if (currentSlide >= totalSlides) {
-    currentSlide = 0;
+    currentSlide = totalSlides - slidesVisible;
+    sliderWrapper.style.transition = "none";
+    const offset = (-currentSlide * offsetValue) / slidesVisible;
+    sliderWrapper.style.transform = `translateX(${offset}%)`;
+    setTimeout(() => {
+      sliderWrapper.style.transition = "transform 0.5s ease";
+      currentSlide = totalSlides - slidesVisible * 2;
+      const offset = (-currentSlide * offsetValue) / slidesVisible;
+      sliderWrapper.style.transform = `translateX(${offset}%)`;
+    }, 0);
+    return;
+  } else if (currentSlide >= totalSlides * 2) {
+    currentSlide = totalSlides;
+    sliderWrapper.style.transition = "none";
+    const offset = (-currentSlide * offsetValue) / slidesVisible;
+    sliderWrapper.style.transform = `translateX(${offset}%)`;
+    setTimeout(() => {
+      sliderWrapper.style.transition = "transform 0.5s ease";
+      currentSlide = 0;
+      const offset = (-currentSlide * offsetValue) / slidesVisible;
+      sliderWrapper.style.transform = `translateX(${offset}%)`;
+    }, 0);
+    return;
   }
 
-  const offset = (-currentSlide * 100) / 3;
+  const offset = (-currentSlide * offsetValue) / slidesVisible;
   sliderWrapper.style.transform = `translateX(${offset}%)`;
 }
+
+cloneSlides();
+
+window.addEventListener("resize", () => {
+  moveSlide(0);
+});
+
+cloneSlides();
+
+window.addEventListener("resize", () => {
+  moveSlide(0);
+});
+
+cloneSlides();
+
+window.addEventListener("resize", () => {
+  moveSlide(0);
+});
+
+window.addEventListener("resize", () => {
+  moveSlide(0);
+});
+
+// Slider script ends
 
 // Counter script
 document.addEventListener("DOMContentLoaded", function () {
