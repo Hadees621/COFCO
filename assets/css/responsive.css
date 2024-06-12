@@ -11,6 +11,11 @@
     width: 200px;
   }
 
+  .slider-product-image {
+    width: 250px !important;
+    height: 150px !important;
+  }
+
   .product-buttons-tab {
     font-size: 8px !important;
     font-weight: 500;
