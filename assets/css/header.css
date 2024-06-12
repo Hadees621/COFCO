@@ -77,7 +77,7 @@
   }
 
   .strip-content {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .count {
@@ -91,9 +91,39 @@
     height: 45px;
     width: 175px !important;
   }
+
+  .breadcrumb-position {
+    font-size: 10px;
+    font-weight: 500px;
+    padding: 6px 0px !important;
+    border-bottom: 1px solid black;
+
+    ol {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .main-container {
+    margin: 0 14px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .main-container {
+    margin: 0 14px;
+  }
+
+  .hamburger {
+    gap: 10px;
+    width: 110px;
+    font-size: 15px;
+  }
+
+  .navbar-logo-auth {
+    height: 70px;
+    width: 250px !important;
+  }
+
   .search-icon {
     margin: 2px 12px;
   }
@@ -126,6 +156,17 @@
   .navbar-logo {
     height: 55px;
     width: 220px !important;
+  }
+
+  .breadcrumb-position {
+    font-size: 13px;
+    font-weight: 500px;
+    padding: 6px 0px !important;
+    border-bottom: 1px solid black;
+
+    ol {
+      margin-bottom: 0px !important;
+    }
   }
 }
 
