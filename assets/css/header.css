@@ -1,4 +1,17 @@
 @media (min-width: 312px) and (max-width: 768px) {
+  .tabs-padding {
+    display: grid !important;
+    padding: 20px 0px;
+    gap: 25px;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .last-images {
+    height: 50px !important;
+  }
+
   .navbar-logo-auth {
     height: 55px;
     width: 190px !important;
@@ -104,13 +117,22 @@
   }
 
   .main-container {
-    margin: 0 14px;
+    margin: 0 14px !important;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .main-container {
-    margin: 0 14px;
+    margin: 0 14px !important;
+  }
+
+  .tabs-padding {
+    display: grid !important;
+    padding: 20px 0px;
+    gap: 20px;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .hamburger {
