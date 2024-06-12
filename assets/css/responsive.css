@@ -2,6 +2,14 @@
 @import "mixins";
 
 @media (min-width: 220px) and (max-width: 299px) {
+  .companies-container {
+    display: flex !important;
+    margin: auto;
+    gap: 25px;
+    justify-content: start;
+    padding: 25px 0;
+  }
+
   button.next img {
     width: 60px;
     height: 150px;
@@ -91,7 +99,16 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 767px) {
+  .companies-container {
+    display: flex !important;
+    margin: auto;
+    gap: 25px;
+    justify-content: start;
+    padding: 25px 0;
+    flex-wrap: wrap;
+  }
+
   button.next img {
     width: 60px;
     height: 150px;
@@ -181,7 +198,16 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .companies-container {
+    display: flex !important;
+    margin: auto;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 25px 0;
+    flex-wrap: wrap;
+  }
+
   .add-to-order-button {
     padding: 8px 42px;
     font-size: 15px;
@@ -233,6 +259,15 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .companies-container {
+    display: flex !important;
+    margin: auto;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 25px 0;
+    flex-wrap: wrap;
+  }
+
   button.next img {
     width: 100px;
     height: 183px;
@@ -351,6 +386,14 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .companies-container {
+    display: flex !important;
+    margin: auto;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 25px 0;
+    flex-wrap: wrap;
+  }
   button.next img {
     width: 125px;
     height: 216px;
@@ -481,6 +524,15 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .companies-container {
+    display: flex !important;
+    margin: auto;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 25px 0;
+    flex-wrap: wrap;
+  }
+
   button.next img {
     width: 130px;
     height: 220px;
