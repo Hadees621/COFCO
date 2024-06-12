@@ -494,6 +494,7 @@ p {
 }
 
 .footer-logos {
+  cursor: pointer;
   height: 20px;
   height: 20px;
 }
