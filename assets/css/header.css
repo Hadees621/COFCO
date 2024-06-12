@@ -1,4 +1,55 @@
 @media (min-width: 312px) and (max-width: 768px) {
+  .navbar-logo-auth {
+    height: 55px;
+    width: 190px !important;
+  }
+
+  .order-added {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .cart {
+    padding: 6px;
+    background-color: #c41230;
+    border-radius: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+  .cart-dropdown {
+    width: 190px !important;
+    right: -5;
+    top: 42px;
+    left: auto;
+    font-size: 12px;
+  }
+
+  .cart-image {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+  }
+
+  .internal-cart {
+    border-radius: 30px;
+    height: 33px;
+    width: 33px;
+  }
+
+  .auth-area-p {
+    font-size: 13px;
+  }
+
+  .hamburger {
+    width: 75px;
+    font-size: 11px;
+  }
+
+  .container {
+    padding: 0 !important;
+  }
+
   .internal-navbar-search {
     width: 100%;
     height: 30px;
@@ -17,6 +68,7 @@
   .search-icon {
     margin: 1px 8px;
   }
+
   .navbar-search {
     width: 100%;
     height: 40px;
@@ -30,16 +82,9 @@
 
   .count {
     font-size: 7px;
-    right: 38px;
-    border-radius: 30px;
-  }
-
-  .cart-dropdown {
-    width: 190px !important;
-    right: 0;
-    top: 53px;
-    left: auto;
-    font-size: 12px;
+    right: 27px;
+    border-radius: 10px;
+    padding: 3px;
   }
 
   .navbar-logo {
