@@ -513,14 +513,14 @@
                         <div class="mt-4 d-flex justify-content-between px-">
                             <div class="product-price p-1"> £12.25 </div>
                             <div>
-                                <button class="edit-contents-button" data-target=".bd-example-modal-lg2"
+                                <button class="edit-contents-button" data-target=".edit-contents-modal"
                                     data-toggle="modal">
                                     Edit Contents
                                 </button>
                             </div>
                             <div>
                                 <button class="add-to-order-button text-white" data-toggle="modal"
-                                    data-target=".bd-example-modal-lg">
+                                    data-target=".add-to-with-counter-modal">
                                     Add to your order
                                 </button>
                             </div>
@@ -528,8 +528,8 @@
                     </div>
                 </div>
 
-                <!-- Edit Contents Modal -->
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                <!-- add-to-with-counter Modal -->
+                <div class="modal fade add-to-with-counter-modal" tabindex="-1" role="dialog"
                     aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content modal-contentt" style="background-color: #F2F2F2;">
@@ -646,8 +646,8 @@
                     </div>
                 </div>
 
-                <!-- Add Choice Modal -->
-                <div class="modal Add-Choice-Modal border fade bd-example-modal-lg2" tabindex="-1" role="dialog"
+                <!-- Edit contents Modal -->
+                <div class="modal Add-Choice-Modal border fade edit-contents-modal" tabindex="-1" role="dialog"
                     aria-labelledby="AddChoiceModal" aria-hidden="true" style="margin: auto; ">
                     <div class="modal-dialog modal-lg" style="max-width: 950px !important;">
                         <div class=" modal-body modal-content" style="background-color: #F2F2F2; margin: auto;">
@@ -662,7 +662,8 @@
                                 </button>
                             </div>
 
-                            <div class="p-5">
+                            <!-- p-5 -->
+                            <div class="p-2 table-with-border">
 
                                 <h1 class=" text-bold" style="font-size: 30px;">
                                     Your Choice Vegetable Box · Small
@@ -998,22 +999,23 @@
                                 </table>
                             </div>
 
-                            <div class="d-flex mx-auto gap-2 mb-5 border-danger border-2 mt-5">
+                            <!-- d-flex mx-auto -->
+                            <div class=" gap-2 mb-5 mt-5 button-container">
                                 <div>
-                                    <button class=" cancel-button close text-bold" data-dismiss="modal"
-                                        style="font-size: 12px; padding: 7px 36px;">
+                                    <!-- style="font-size: 12px; padding: 7px 36px;" -->
+                                    <button class=" cancel-button close text-bold" data-dismiss="modal">
                                         Cancel
                                     </button>
                                 </div>
                                 <div>
-                                    <button class="add-to-order-button text-white"
-                                        style="font-size: 13px;  padding: 7px 36px;">
+                                    <!-- style="" -->
+                                    <button class="add-to-order-button text-white">
                                         Buy Extra Points
                                     </button>
                                 </div>
                                 <div>
-                                    <button class="add-to-order-button text-white"
-                                        style="font-size: 13px;  padding: 7px 36px;">
+                                    <!-- style="" -->
+                                    <button class="add-to-order-button text-white">
                                         Update this week’s Veg Box contents
                                     </button>
                                 </div>

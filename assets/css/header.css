@@ -1,4 +1,39 @@
 @media (min-width: 312px) and (max-width: 768px) {
+  .add-to-with-counter-modal {
+    .modal-content {
+      width: 100%;
+    }
+
+    .green-modal-buttons {
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+
+  .edit-contents-modal {
+    .modal-body {
+      width: 100%;
+      padding: 0 !important;
+    }
+
+    td {
+      padding: 8px 4px;
+      font-size: 11px;
+    }
+
+    .button-container {
+      display: grid;
+    }
+
+    .table-with-border {
+      padding: 10px !important;
+    }
+
+    .empty-selection-button {
+      font-size: 10px;
+    }
+  }
+
   .slider-background {
     height: 100%;
     margin-top: 25px;
@@ -128,6 +163,37 @@
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .edit-contents-modal {
+    .modal-body {
+      width: 100%;
+      padding: 0 !important;
+      margin: 15px;
+    }
+
+    @media (min-width: 450px) and (max-width: 800px) {
+      .edit-contents-modal {
+        width: 50%;
+
+        .modal-body {
+          width: 50%;
+          padding: 0 !important;
+        }
+      }
+    }
+    .table-with-border {
+      padding: 45px !important;
+    }
+
+    td {
+      padding: 8px 4px;
+      font-size: 11px;
+    }
+
+    .button-container {
+      display: grid;
+    }
+  }
+
   .slider-background {
     height: 100%;
     margin-top: 25px;
@@ -205,6 +271,27 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .edit-contents-modal {
+    .cancel-button {
+      font-size: 12px;
+      padding: 7px 36px;
+    }
+
+    .button-container {
+      display: flex;
+      margin: auto;
+    }
+
+    .add-to-order-button {
+      font-size: 13px;
+      padding: 7px 36px;
+    }
+
+    .table-with-border {
+      padding: 30px !important;
+    }
+  }
+
   .main-container {
     max-width: 1050px !important;
     margin: auto;
@@ -333,6 +420,23 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .edit-contents-modal {
+    .cancel-button {
+      font-size: 12px;
+      padding: 7px 36px;
+    }
+
+    .button-container {
+      display: flex;
+      margin: auto;
+    }
+
+    .add-to-order-button {
+      font-size: 13px;
+      padding: 7px 36px;
+    }
+  }
+
   .main-container {
     max-width: 1200px !important;
     margin: auto;
@@ -482,6 +586,23 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .edit-contents-modal {
+    .cancel-button {
+      font-size: 12px;
+      padding: 7px 36px;
+    }
+
+    .button-container {
+      display: flex;
+      margin: auto;
+    }
+
+    .add-to-order-button {
+      font-size: 13px;
+      padding: 7px 36px;
+    }
+  }
+
   .main-container {
     max-width: 1400px !important;
     margin: auto;
