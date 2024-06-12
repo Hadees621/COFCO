@@ -1,4 +1,10 @@
 @media (min-width: 312px) and (max-width: 768px) {
+  .slider-background {
+    height: 100%;
+    margin-top: 25px;
+    padding-top: 10px;
+  }
+
   .tabs-padding {
     display: grid !important;
     padding: 20px 0px;
@@ -122,6 +128,12 @@
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .slider-background {
+    height: 100%;
+    margin-top: 25px;
+    padding-top: 10px;
+  }
+
   .main-container {
     margin: 0 14px !important;
   }
@@ -204,9 +216,9 @@
   }
 
   .slider-background {
-    height: 84vh;
+    height: 85%;
     margin-top: 25px;
-    padding-top: 10px;
+    padding-top: 45px !important;
   }
 
   .product-image {
@@ -332,9 +344,9 @@
   }
 
   .slider-background {
-    height: 84vh;
-    margin-top: 25px;
-    padding-top: 10px;
+    height: 70%;
+    margin-top: 35px;
+    padding-top: 50px !important;
   }
 
   .product-image {
@@ -489,8 +501,10 @@
     font-size: 45px;
   }
 
-  slider-background {
-    height: 10vh !important;
+  .slider-background {
+    height: 55%;
+    margin-top: 85px;
+    padding-top: 55px !important;
   }
 
   .product-image {
