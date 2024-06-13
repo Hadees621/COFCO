@@ -166,7 +166,6 @@
                         </div>
                     </li>
 
-
                     <!-- search for lg screen  -->
                     <li class="nav-item ">
                         <div class="position-relative d-flex align-items-center hide-on-small-screen">
@@ -183,6 +182,42 @@
 
                 </ul>
 
+            </div>
+
+            <!-- Small Auth section  -->
+            <div class="d-flex gap-3 hide-on-large-screen">
+
+                <!-- cart -->
+                <a href="/order-details.html" aria-label="Order Details">
+                    <div class="text-white flex-middle position-relative cursor-pointer">
+                        <img src="assets/images/search-results/Asset 2.png" alt="Cart" class="internal-cart" />
+                    </div>
+                </a>
+
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Auth section  -->
@@ -248,7 +283,7 @@
         </div>
 
         <!-- Search bar for small screen  -->
-        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen px-">
+        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen">
             <div class="position-absolute bottom-0 top-0">
                 <svg xmlns="http://www.w3.org/2000/svg" class="search-icon " width="24" height="24" viewBox="0 0 24 24">
                     <path fill="#073b25"
@@ -257,8 +292,6 @@
                 </svg>
             </div>
             <input type="text" class="pl-3 form-control rounded-pill navbar-search" placeholder="Search for products">
-        </div>
-
         </div>
 
     </nav>

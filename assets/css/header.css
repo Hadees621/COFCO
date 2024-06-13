@@ -160,6 +160,10 @@
   .main-container {
     margin: 0 14px !important;
   }
+
+  .main-container-details {
+    margin: 0 14px !important;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
@@ -218,7 +222,7 @@
   }
 
   .navbar-logo-auth {
-    height: 55px;
+    /* height: 55px; */
     width: 190px !important;
   }
 
@@ -309,6 +313,11 @@
     height: 45px;
     width: 175px !important;
   }
+  
+  .navbar-logo-auth {
+    height: 45px;
+    width: 175px !important;
+  }
 
   .breadcrumb-position {
     font-size: 7px;
@@ -322,6 +331,10 @@
   }
 
   .main-container {
+    margin: 0 14px !important;
+  }
+
+  .main-container-details {
     margin: 0 14px !important;
   }
 }
@@ -365,6 +378,10 @@
   }
 
   .main-container {
+    margin: 0 14px !important;
+  }
+
+  .main-container-details {
     margin: 0 14px !important;
   }
 
