@@ -1198,4 +1198,15 @@ ul {
   color: white !important;
   text-decoration: none !important;
   padding: 15px;
+}
+
+.off-canvas-lists a {
+  text-decoration: none !important;
+}
+.off-canvas-lists a p {
+  color: white !important;
+}
+
+.underline-none {
+  text-decoration: none !important;
 }/*# sourceMappingURL=style.css.map */
