@@ -127,8 +127,21 @@
   .select-future-box-modal {
     .modal-body {
       .modal-title {
-        font-size: 200px !important;
+        font-size: 16px !important;
       }
+    }
+
+    .cancel-button {
+      font-size: 11px;
+      padding: 6px 31px;
+      border-radius: 20px;
+      background-color: transparent;
+      border: 1px solid #153d37;
+      color: black;
+    }
+    .add-to-order-button {
+      padding: 10px 22px;
+      font-size: 8px;
     }
   }
 
