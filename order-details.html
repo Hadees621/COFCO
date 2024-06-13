@@ -863,8 +863,8 @@
 
             <!-- MODALS -->
 
-            <!-- Delivery frequency Modal -->
-            <div class="modal fade delivery-frequency-modal" id="deliveryFrequencyModal" tabindex="-1" role="dialog"
+            <!-- add-to-with-counter Modal -->
+            <div class="modal fade add-to-with-counter-modal" id="deliveryFrequencyModal" tabindex="-1" role="dialog"
                 aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content modal-contentt" style="background-color: #F2F2F2;">
@@ -886,12 +886,12 @@
                             </h7>
                             <div class="counter mt-3 flex-middle gap-5">
                                 <button style="border: none; background-color: transparent;">
-                                    <p class="cursor-pointer flex-middle counter-btn" id="decrement">-</p>
+                                    <p class="cursor-poiter flex-middle counter-btn" id="decrement">-</p>
                                 </button>
                                 <span id="counter-value" class="mx-3"
                                     style="font-size: 45px; font-weight: 600;">0</span>
                                 <button style="border: none; background-color: transparent;">
-                                    <p class="cursor-pointer flex-middle counter-btn" id="increment">+</p>
+                                    <p class="cursor-poiter flex-middle counter-btn" id="increment">+</p>
                                 </button>
                             </div>
                         </div>
@@ -921,12 +921,14 @@
                         </div>
                         <div class="d-flex mx-auto gap-4 mb-5">
                             <div>
-                                <button class="cancel-button font-bold" data-dismiss="modal" aria-label="Close">
+                                <button class="cancel-button font-bold" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg">
                                     Cancel
                                 </button>
                             </div>
                             <div>
-                                <button class="add-to-order-button text-white">
+                                <button class="add-to-order-button text-white" data-toggle="modal"
+                                    data-target="#findDeliveryDayModal">
                                     Confirm Selection
                                 </button>
                             </div>
@@ -1305,60 +1307,6 @@
 
             </div>
 
-            <!-- Select future box Modal -->
-            <div class="modal fade select-future-box-modal" tabindex="-1" role="dialog"
-                aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content order-details-edit-modal-content modal-contentt"
-                        style="background-color: #F2F2F2;">
-
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
-                                style="border-radius: 20px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    class="modal-cross-button">
-                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="modal-body" style="max-width: 600px; margin: auto;">
-                            <h1 class="text-bold" style="font-size: 35px;">
-                                Please select your future <br />
-                                Choice Box contents
-                            </h1>
-                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #C61A37;">
-                                Please follow the link below to confirm your Choice Box contents
-                            </h7>
-
-                            <div class="d-flex gap- align-items-start mr-l-3 mt-4" style="max-width: 400px;">
-                                <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;" alt="asset">
-                                <p class="product-nested-description text-bold text-center">
-                                    You will be asked two working days before your next
-                                    Vegetable Box delivery for confirmation of content.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div class="d-flex mx-auto gap-4 my-3">
-                            <div>
-                                <button class="cancel-button font-bold" data-dismiss="modal" aria-label="Close">
-                                    Cancel
-                                </button>
-                            </div>
-                            <div>
-                                <button class="add-to-order-button text-white" data-toggle="modal"
-                                    data-target="edit-contents-modal">
-                                    Modify Choice Box
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
             <!-- Find Delivery Day Modal -->
             <div class="modal fade" id="findDeliveryDayModal" tabindex="-1" role="dialog"
                 aria-labelledby="findDeliveryDayModalTitle" aria-hidden="true">
@@ -1435,10 +1383,66 @@
                                 </h7>
                             </div>
                             <br />
-                            <button class="add-to-order-button text-white">
+                            <button class="add-to-order-button text-white" data-toggle="modal"
+                                data-target="#findDeliveryDayModal">
                                 Continue Shopping...
                             </button>
+
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select future box Modal -->
+            <div class="modal fade select-future-box-modal" tabindex="-1" role="dialog"
+                aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content order-details-edit-modal-content modal-contentt"
+                        style="background-color: #F2F2F2;">
+
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="modal-body" style="max-width: 600px; margin: auto;">
+                            <h1 class="text-bold" style="font-size: 35px;">
+                                Please select your future <br />
+                                Choice Box contents
+                            </h1>
+                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #C61A37;">
+                                Please follow the link below to confirm your Choice Box contents
+                            </h7>
+
+                            <div class="d-flex gap- align-items-start mr-l-3 mt-4" style="max-width: 400px;">
+                                <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;" alt="asset">
+                                <p class="product-nested-description text-bold text-center">
+                                    You will be asked two working days before your next
+                                    Vegetable Box delivery for confirmation of content.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex mx-auto gap-4 my-3">
+                            <div>
+                                <button class="cancel-button font-bold" data-dismiss="modal" aria-label="Close">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div>
+                                <button class="add-to-order-button text-white" data-toggle="modal"
+                                    data-target="edit-contents-modal">
+                                    Modify Choice Box
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
