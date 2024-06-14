@@ -178,6 +178,11 @@
     }
   }
 
+  .manage-account-button {
+    font-size: 9px;
+    border-radius: 40px;
+  }
+
   .edit-contents-modal {
     .modal-body {
       width: 100%;
@@ -313,7 +318,7 @@
     height: 45px;
     width: 175px !important;
   }
-  
+
   .navbar-logo-auth {
     height: 45px;
     width: 175px !important;
