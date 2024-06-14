@@ -731,6 +731,8 @@ button.next img {
 .slider-background {
   background-position: center;
   width: 100% !important;
+  background-size: 100% 100%;
+  padding: 107px 0;
 }
 
 .modal-cross-button {
