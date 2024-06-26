@@ -664,6 +664,10 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .active-navbar-tab {
+    padding: 22px !important;
+  }
+
   .table-choice-vegetable-box {
     padding: 25px;
   }

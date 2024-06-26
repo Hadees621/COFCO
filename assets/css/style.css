@@ -1,13 +1,11 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf")
-    format("truetype");
+  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf")
-    format("truetype");
+  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 .navbar-tab {
@@ -16,20 +14,17 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
-.navbar-tab.shop:hover:hover,
-.navbar-tab.shop.show:hover {
+.navbar-tab.shop:hover:hover, .navbar-tab.shop.show:hover {
   border: 1px solid white;
   background-color: #c41230;
   color: black;
 }
-.navbar-tab.about-us:hover:hover,
-.navbar-tab.about-us.show:hover {
+.navbar-tab.about-us:hover:hover, .navbar-tab.about-us.show:hover {
   border: 1px solid white;
   background-color: #073b25;
   color: black;
 }
-.navbar-tab.sign-up:hover:hover,
-.navbar-tab.sign-up.show:hover {
+.navbar-tab.sign-up:hover:hover, .navbar-tab.sign-up.show:hover {
   border: 1px solid white;
   background-color: #7b5120;
   color: black;
@@ -42,8 +37,7 @@
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf")
-    format("truetype");
+  src: url("/assets/css//fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 * body {
@@ -1051,7 +1045,6 @@ select {
   height: 120px;
   overflow-y: auto;
   background-color: #fff;
-  margin-bottom: 0px;
 }
 
 .trap:nth-child(odd) {
@@ -1218,4 +1211,4 @@ ul {
 
 .underline-none {
   text-decoration: none !important;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
