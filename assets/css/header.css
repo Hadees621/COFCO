@@ -478,7 +478,7 @@
   }
 
   .main-container-details {
-    max-width: 1100px !important;
+    max-width: 1000px !important;
     margin: auto;
   }
 
@@ -524,7 +524,7 @@
   }
 
   .internal-navbar-search-icon {
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .internal-navbar-search::placeholder {
@@ -625,7 +625,7 @@
   }
 
   .main-container-details {
-    max-width: 1300px !important;
+    max-width: 1100px !important;
     margin: auto;
   }
 
@@ -664,7 +664,7 @@
   }
 
   .internal-navbar-search-icon {
-    margin: 1px 13px;
+    /* margin: 1px 13px; */
   }
 
   .internal-navbar-search::placeholder {
@@ -765,7 +765,15 @@
   }
 }
 
-@media (min-width: 1600px) and (max-width: 2560px) {
+@media (min-width: 1600px)  {
+  .auth-section-name {
+    font-size: 18px;
+  }
+
+  .auth-area-p {
+    font-size: 14px;
+  }
+
   .edit-contents-modal {
     .cancel-button {
       font-size: 12px;
@@ -793,7 +801,7 @@
   }
 
   .main-container-details {
-    max-width: 1850px !important;
+    max-width: 1550px !important;
     margin: auto;
   }
 
@@ -807,7 +815,7 @@
   }
 
   .slider-background {
-    padding: 120px 0px !important;
+    padding: 130px 0px !important;
   }
 
   .product-image {
@@ -838,10 +846,17 @@
     font-weight: 500;
   }
 
+  .internal-navbar-search-details {
+    width: 370px;
+    padding: 10px 21px 10px 50px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
   .internal-navbar-search-icon {
     width: 30px;
     height: 100px;
-    margin: 1px 6px;
+    margin: 1px;
   }
 
   .internal-navbar-search::placeholder {
@@ -879,8 +894,7 @@
   }
 
   .navbar-logo-auth {
-    height: 70px;
-    width: 280px !important;
+    height: 72px;
   }
 
   .navbar-search {
@@ -928,23 +942,24 @@
   .shop-tab {
     p {
       padding: 8px 0px;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 60px;
     }
   }
 
   .cart-dropdown {
-    width: 230px !important;
+    width: 270px !important;
     right: 0;
     top: 53px;
     left: auto;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     margin: 5px 10px;
+    justify-content: center !important;
   }
 
   .order-added {
-    font-size: 11px;
+    font-size: 140px !important;
     text-align: center;
   }
 
@@ -959,5 +974,11 @@
   .cart-image {
     width: 30px;
     border-radius: 0px;
+  }
+
+  .internal-cart {
+    border-radius: 30px;
+    height: 55px;
+    width: 55px;
   }
 }

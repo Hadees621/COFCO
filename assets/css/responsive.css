@@ -21,6 +21,14 @@
     font-size: 11px;
   }
 
+  .continue-shopping-button {
+    background-color: #c41230;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 22px;
+    font-size: 11px;
+  }
+
   .modal-input {
     width: 200px;
   }
@@ -220,6 +228,14 @@
     font-size: 11px;
   }
 
+  .continue-shopping-button {
+    background-color: #c41230;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 22px;
+    font-size: 11px;
+  }
+
   .modal-input {
     width: 200px;
   }
@@ -331,6 +347,14 @@
   }
 
   .add-to-order-button {
+    padding: 8px 42px;
+    font-size: 15px;
+  }
+
+  .continue-shopping-button {
+    background-color: #c41230;
+    border-radius: 30px;
+    border: none;
     padding: 8px 42px;
     font-size: 15px;
   }
@@ -448,6 +472,14 @@
     font-size: 15px;
   }
 
+  .continue-shopping-button {
+    background-color: #c41230;
+    border-radius: 30px;
+    border: none;
+    padding: 8px 22px;
+    font-size: 15px;
+  }
+
   .product-buttons-tab {
     font-size: 11px !important;
   }
@@ -534,6 +566,7 @@
     padding: 25px 0;
     flex-wrap: wrap;
   }
+
   button.next img {
     width: 125px;
     height: 216px;
@@ -571,6 +604,14 @@
   }
 
   .add-to-order-button {
+    padding: 6px 30px;
+    font-size: 18px;
+  }
+
+  .continue-shopping-button {
+    background-color: #c41230;
+    border-radius: 30px;
+    border: none;
     padding: 6px 30px;
     font-size: 18px;
   }
@@ -663,9 +704,19 @@
   }
 }
 
-@media (min-width: 1600px) and (max-width: 2560px) {
+@media (min-width: 1600px)  {
+  .slider-product-image {
+    width: 370px !important;
+    height: 230px !important;
+  }
+
+  .view-button {
+    padding: 10px 30px;
+    font-size: 20px !important;
+  }
+
   .active-navbar-tab {
-    padding: 22px !important;
+    padding: 24px !important;
   }
 
   .table-choice-vegetable-box {
@@ -707,11 +758,11 @@
   }
 
   .pointsAndShoppingTitle {
-    font-size: 65px;
+    font-size: 40px;
   }
 
   .LongUserName {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   .order-details-left-side {
@@ -739,7 +790,8 @@
   }
 
   .manage-account-button {
-    font-size: 22px;
+    font-size: 17px;
+    padding: 4px 30px;
     border-radius: 40px;
   }
 
@@ -766,27 +818,21 @@
     height: 130px !important;
   }
 
-  .points-button {
-    height: 45px;
-    width: 165px;
-    font-size: 22px;
-  }
-
   .edit-contents-button {
     padding: 8px 36px;
-    font-size: 25px;
+    font-size: 23px;
+    font-weight: bold;
     border-radius: 40px;
   }
 
   .Additional-Items {
-    font-size: 60px !important;
-    margin-top: 20px;
+    font-size: 50px !important;
   }
 
   .Based-on-your {
-    font-size: 30px !important;
-    margin: 30px;
-    margin-bottom: 60px;
+    font-size: 23px !important;
+    margin: 20px;
+    margin-bottom: 40px;
   }
 
   .product-price {
@@ -794,8 +840,8 @@
   }
 
   .add-to-order-button {
-    padding: 12px 56px;
-    font-size: 25px;
+    padding: 10px 56px;
+    font-size: 23px;
   }
 
   .quantity-selector {
@@ -811,8 +857,22 @@
 
   .in-stock-button {
     height: 45px;
-    width: 165px;
-    font-size: 22px;
+    width: 150px;
+    font-size: 20px;
+
+    .small-icons {
+      width: 21px;
+    }
+  }
+
+  .points-button {
+    height: 40px;
+    width: 135px;
+    font-size: 19px;
+
+    .small-icons {
+      width: 21px;
+    }
   }
 
   .products-buttons {
@@ -849,12 +909,14 @@
 
   .each-product-row {
     padding: 4px !important;
-    font-size: 25px !important;
+    font-size: 16px !important;
+    td {
+      padding: 0;
+    }
   }
 
   .product-table {
-    width: 500px;
-    margin: 0px 45px;
+    width: 400px;
   }
 
   .order-details-product-image {
@@ -871,7 +933,7 @@
   }
 
   .text-small {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .text-small-above {
@@ -879,12 +941,12 @@
   }
 
   .profile-icon {
-    width: 60px;
+    width: 50px;
   }
 
   .title-points-cart {
-    font-size: 30px;
-    font-weight: 200px;
+    font-size: 25px;
+    font-weight: 300;
     margin-top: 15px;
   }
 
@@ -894,8 +956,9 @@
       font-size: 23px !important;
       border-collapse: collapse;
     }
+
     td {
-      font-size: 25px;
+      font-size: 18px;
       padding: 5px;
       font-weight: bold;
     }
@@ -904,16 +967,13 @@
   .point-button {
     background-color: #c41230;
     border-radius: 30px;
-    font-size: 25px;
+    padding: 8px 20px;
+    font-size: 20px;
     border: none;
   }
 
   .points-value {
-    font-size: 25px;
-  }
-
-  .product-nested-description {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .product-detail-image {
@@ -933,26 +993,27 @@
   .product-nested-titles {
     font-weight: 600;
     font-size: 22px;
-    margin: 0px 10px;
   }
 
   .small-icons {
     width: 24px;
   }
 
-  .product-nested-titles {
-    font-weight: 700;
-    font-size: 26px;
-  }
-
   .product-nested-description {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
 
+  .text-below-table {
+    .product-nested-description {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
   .dropdown-checkout-button {
-    padding: 4px 20px;
-    font-size: 23px;
+    padding: 6px 23px;
+    font-size: 19px;
   }
 
   .tabs {
@@ -962,17 +1023,21 @@
 
   .search-results {
     font: bolder;
-    font-size: 70px;
-    padding: 30px 0px;
+    font-size: 55px;
+    padding: 40px 0px;
   }
 
   .refine-small-text {
     padding: 20px 0px;
-    font-size: 20px;
+    font-size: 14px;
+  }
+
+  .refine-small-text-img {
+    width: 25px !important;
   }
 
   .internal-tab {
-    font-size: 34px;
+    font-size: 22px;
     padding: 12px 55px;
   }
 
@@ -983,6 +1048,14 @@
   .product-image1 {
     width: 220px !important;
     height: 220px !important;
+  }
+
+  .continue-shopping-button {
+    background-color: #c41230;
+    padding: 10px 36px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
   }
 }
 

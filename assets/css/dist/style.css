@@ -1199,3 +1199,7 @@ ul {
 .underline-none {
   text-decoration: none !important;
 }
+
+.refine-small-text {
+  font-size: 15px;
+}
