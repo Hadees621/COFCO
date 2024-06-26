@@ -704,7 +704,7 @@
   }
 }
 
-@media (min-width: 1600px) and (max-width: 2560px) {
+@media (min-width: 1600px)  {
   .slider-product-image {
     width: 370px !important;
     height: 230px !important;

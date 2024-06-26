@@ -765,7 +765,7 @@
   }
 }
 
-@media (min-width: 1600px) and (max-width: 2560px) {
+@media (min-width: 1600px)  {
   .auth-section-name {
     font-size: 18px;
   }
