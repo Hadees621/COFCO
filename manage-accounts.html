@@ -1,0 +1,595 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.scss" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+
+
+    <title>COFCO</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark flex-middle">
+
+        <!-- Nav tabs -->
+        <div class="container main-container-details d-flex">
+
+            <!-- Offcanvas -->
+            <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon hide-on-large-screen"></span>
+                Menu
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
+                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header m-2 justify-content-end p-3">
+                    <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists underline-none">
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        New Customers
+                                    </p>
+                                </a>
+                                <a href="/Fruitandveg.html">
+                                    <p class="cursor-pointer">
+                                        Choice Veg Boxes
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Additional Fruit & Veg
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Fresh Goods
+                                    </p>
+                                </a>
+                                <a href="/product-detail.html">
+                                    <p class="cursor-pointer">
+                                        Groceries
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Drinks
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Household
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    How It Works
+                                </p>
+                                <p class="cursor-pointer">
+                                    Our Produce & Products Deliveries
+                                </p>
+                                <p class="cursor-pointer">
+                                    FAQs
+                                </p>
+                                <p class="cursor-pointer">
+                                    Why Choose Us?
+                                </p>
+                                <p class="cursor-pointer">
+                                    Our Ethics & Sourcing Latest News
+                                </p>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sign In / Up
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Additional Helpful Links
+                            </a>
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                <p class="cursor-pointer">
+                                    New Customers
+                                </p>
+                                <p class="cursor-pointer">
+                                    Choice Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Original Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    OriginalPLUS+ Veg Boxes
+                                </p>
+                                <p class="cursor-pointer">
+                                    Specific & Specialist Items
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <a href="/">
+                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo-auth" />
+            </a>
+
+            <div class="d-flex m-2 hide-on-small-screen ">
+
+                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2" id="myTab" role="tablist">
+
+                    <!-- Shop -->
+                    <li class="nav-item" role="presentation">
+                        <div class="rounded-pill text-white navbar-tab flex-middle nav-link shop active" id="home-tab"
+                            data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                            aria-selected="true">
+                            Shop
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                                <path fill="white" d="m7 10l5 5l5-5z" />
+                            </svg>
+                        </div>
+                    </li>
+
+                    <!-- About Us -->
+                    <li class="nav-item" role="presentation">
+                        <div class="rounded-pill text-white navbar-tab flex-middle about-us nav-link" id="profile-tab"
+                            data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                            aria-controls="profile" aria-selected="false">
+                            About Us
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                                <path fill="white" d="m7 10l5 5l5-5z" />
+                            </svg>
+                        </div>
+                    </li>
+
+                    <!-- search for lg screen  -->
+                    <li class="nav-item ">
+                        <div class="position-relative d-flex align-items-center hide-on-small-screen">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="internal-navbar-search-icon" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="#073b25"
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                                <path fill="none" d="M0 0h24v24H0z" />
+                            </svg>
+                            <input type="text" class="form-control rounded-pill ml-4 internal-navbar-search"
+                                placeholder="Search ">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Small Auth section  -->
+            <div class="d-flex gap-3 hide-on-large-screen">
+                <!-- cart -->
+                <a href="/order-details.html" aria-label="Order Details">
+                    <div class="text-white flex-middle position-relative cursor-pointer">
+                        <img src="assets/images/search-results/Asset 2.png" alt="Cart" class="internal-cart" />
+                    </div>
+                </a>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auth section  -->
+            <div class="d-flex gap-4 p-3 hide-on-small-screen" style="background-color: #042114;">
+
+                <div class="text-white flex-middle d-grid profile gap-2">
+                    <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
+                        <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                        <p class="w-100 cursor-pointer">
+                            LongUserName000999
+                        </p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/manage-accounts.html">
+                                    Manage Account
+                                </a>
+                            </p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/index.html">
+                                    sign out
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cart -->
+                <a href="/order-details.html" aria-label="Order Details">
+                    <div class="text-white flex-middle position-relative cursor-pointer">
+                        <img src="assets/images/search-results/Asset 2.png" alt="Cart" class="internal-cart" />
+                    </div>
+                </a>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Search bar for small screen  -->
+        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen">
+            <div class="position-absolute bottom-0 top-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon " width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#073b25"
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                    <path fill="none" d="M0 0h24v24H0z" />
+                </svg>
+            </div>
+            <input type="text" class="pl-3 form-control rounded-pill navbar-search" placeholder="Search for products">
+        </div>
+
+    </nav>
+
+    <!-- Tabs content -->
+    <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
+
+        <div class="tab-pane active main-container-details" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        New Customers
+                    </p>
+                </a>
+
+                <a href="/Fruitandveg.html">
+                    <p class="cursor-pointer detail-page-hover ">
+                        Choice Veg Boxes
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Additional Fruit & Veg
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Fresh Goods
+                    </p>
+                </a>
+
+                <a href="/product-detail-auth.html">
+                    <p class="cursor-pointer detail-page-hover">
+                        Groceries
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Drinks
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Household
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="tab-pane main-container-details" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
+                <p class="cursor-pointer">
+                    How It Works
+                </p>
+                <p class="cursor-pointer">
+                    Our Produce & Products Deliveries
+                </p>
+                <p class="cursor-pointer">
+                    FAQs
+                </p>
+                <p class="cursor-pointer">
+                    Why Choose Us?
+                </p>
+                <p class="cursor-pointer">
+                    Our Ethics & Sourcing Latest News
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- strip -->
+    <div class="red-strip flex-middle">
+        <p class="strip-content"> Monthly Special:
+            <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
+            </span>
+        </p>
+    </div>
+
+
+    <!-- breadcrumb -->
+    <div aria-label="breadcrumb" class="breadcrumb-position">
+        <ol class="d-flex text-bold main-container-details">
+            <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
+            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Manage Account</li>
+        </ol>
+    </div>
+
+    <!-- Middle -->
+    <section>
+        <div class="main-container-details mt-4">
+
+            <h1 class="text-bold text-center w-100 border-bottom pb-4 pointsAndShoppingTitle">
+                Manage Account
+            </h1>
+
+            <div class="grid-on-small-flex-on-large center-on-small gap-3 justify-content-between py-4 border-bottom">
+                <div class="flex-middle gap-3">
+                    <img src="/assets/images/order-details/Asset 1.png" class="profile-icon" alt="assets" />
+                    <h1 class="text-bold LongUserName">LongUserName000999</h1>
+                </div>
+                <div class="d-flex gap-4">
+                    <a href="/manage-accounts.html" class="manage-account-button flex-middle gap-2">
+                        <img src="/assets/images/order-details/Asset 2.png" class="small-icons" alt="assets" />
+                        <p class="text-bold">Manage Account</p>
+                    </a>
+                    <a href="/" class="manage-account-button flex-middle gap-2">
+                        <img src="/assets/images/order-details/Asset 3.png" class="small-icons" alt="assets" />
+                        <p class="text-bold">Sign Out</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="py-2 mt-5">
+                <div class="d-flex justify-content-between align-content-center grid-on-small-flex-on-large gap-3">
+                    <div class="d-flex justify-content-start gap-3 align-items-center">
+                        <img src="/assets/images/order-details/Asset 5.png" alt="assets" />
+                        <h4 class="text-bold title-points-cart mt-2">Shopping Cart</h4>
+                    </div>
+                    <div>
+                        <button class="point-button text-white">
+                            <p> View Shopping Cart(s)</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="points-container border-bottom pb-5 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <table class="points-info-table grid-on-small-flex-on-large">
+                            <tr>
+                                <td class="product-nested-description">Total Products In This Week’s Cart </td>
+                                <td><span class="points-value">2</span></td>
+                            </tr>
+                            <tr>
+                                <td class="product-nested-description">Total Future Scheduled Products In Cart </td>
+                                <td><span class="points-value">1</span></td>
+                                <td class="flex-middle text-bold gap-2 text-small">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small text-start w-100 cursor-pointer">View & Edit
+                                        Future
+                                        Shopping Cart</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="py-2 mt-5">
+                <div class="d-flex justify-content-between align-content-center grid-on-small-flex-on-large gap-3">
+                    <div class="d-flex justify-content- gap-3 align-items-center">
+                        <img src="/assets/images/manage-accounts/delivery.png" alt="assets" />
+                        <h4 class="text-bold title-points-cart mt-2">Deliveries</h4>
+                    </div>
+                    <div>
+                        <button class="manage-account-button flex-middle gap-2 mt-3">
+                            <img src="/assets/images/order-details/Asset 6.png" class="small-icons" alt="assets" />
+                            <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="points-container border-bottom pb-5 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <table class="points-info-table">
+                            <tr>
+                                <td class="product-nested-description">Total Planned Future Scheduled Delivery
+                                    Frequency
+                                </td>
+                                <td><span class="points-value">1 Per Week</span></td>
+
+                            </tr>
+                            <tr>
+                                <td class="product-nested-description">Total Undelivered Items </td>
+                                <td><span class="points-value">999,999</span></td>
+                            </tr>
+                            <tr>
+                                <td class="product-nested-description">Current Item Delivery Warnings / Issues </td>
+                                <td><span class="points-value">1</span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="py-2 mt-5">
+                <div class="d-flex justify-content-between align-content-center">
+                    <div class="d-flex justify-content- gap-3 align-items-center">
+                        <img src="/assets/images/manage-accounts/payment.png" alt="assets" />
+                        <h4 class="text-bold title-points-cart mt-2">Payments / Your Address(es) / Your Contact
+                            Details
+                        </h4>
+                    </div>
+
+                </div>
+
+                <div class="points-container border-bottom pb-2 mt-3">
+                    <div class="d-flex justify-content-between w-100">
+                        <table class="points-info-table w-100">
+                            <tr class="d-flex align-items-center justify-content-between grid-on-small-flex-on-large">
+                                <td class="product-nested-description">Payment Information
+                                </td>
+                                <td>
+                                    <span class="points-value">Direct Debit Account Ending XXXX XXXX XXXX
+                                        8504</span>
+                                </td>
+                                <td>
+                                    <button class="manage-account-button flex-middle gap-2 mt-3">
+                                        <img src="/assets/images/order-details/Asset 6.png" class="small-icons"
+                                            alt="assets" />
+                                        <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <div>
+                    <button class="point-button text-bold"
+                        style="background-color: white; border: 1px solid #C92540; color: #C92540;">
+                        <p>View Your Invoices</p>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Companies -->
+    <div class="main-container-details companies-container">
+        <div>
+            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
+        </div>
+        <div>
+            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
+        </div>
+        <div>
+            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
+        </div>
+        <div>
+            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
+        </div>
+        <div>
+            <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
+        </div>
+
+    </div>
+
+    <!-- Orange strip -->
+    <div class="orange-strip flex-middle">
+        <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main-container-details text-white d-flex justify-content-between tabs-padding">
+            <div>
+                <p>
+                    © Cambridge Organic Food Company Ltd
+                </p>
+            </div>
+            <div>
+                <p>
+                    Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
+                </p>
+            </div>
+            <div class="d-flex gap-2 justify-content-center">
+                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

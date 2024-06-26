@@ -7,115 +7,174 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/variables.scss">
+    <link rel="stylesheet" href="assets/css/mixins.scss">
 
     <title>COFCO</title>
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark flex-middle">
 
         <!-- Nav tabs -->
-        <div class="container gap-2 ">
+        <div class="container main-container d-flex ">
 
             <!-- Offcanvas -->
-            <button class="navbar-togler border flex-middle hamburger" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <span class="navbar-toggler-icon"></span>
-                Menu
-            </button>
-            <div class="offcanvas offcanvas-start text-bg-dark off-canvas w-75" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header m-2">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                    <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Shop
-                            </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    New Customers
+            <div>
+                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon hide-on-large-screen"></span>
+                    Menu
+                </button>
+                <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
+                    id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header m-2 justify-content-end p-3">
+                        <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <div class="d-flex gap-2 flex-middle pb-4 text-white" style="font-size: 12px;">
+                            <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                            <h7 class="w-100 cursor-pointer">
+                                LongUserName000999
+                            </h7>
+                        </div>
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <div
+                                    class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists underline-none">
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            New Customers
+                                        </p>
+                                    </a>
+                                    <a href="/Fruitandveg.html">
+                                        <p class="cursor-pointer">
+                                            Choice Veg Boxes
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Additional Fruit & Veg
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Fresh Goods
+                                        </p>
+                                    </a>
+                                    <a href="/product-detail.html">
+                                        <p class="cursor-pointer">
+                                            Groceries
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Drinks
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Household
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                    <p class="cursor-pointer">
+                                        How It Works
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Our Produce & Products Deliveries
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        FAQs
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Why Choose Us?
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Our Ethics & Sourcing Latest News
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sign In / Up
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Additional Helpful Links
+                                </a>
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                    <p class="cursor-pointer">
+                                        New Customers
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Choice Veg Boxes
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Original Veg Boxes
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        OriginalPLUS+ Veg Boxes
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Specific & Specialist Items
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex gap-5 py-4">
+                            <div class="d-flex gap-2">
+                                <img src="/assets/images/search-results/Asset 16.png" alt="assets"
+                                    style="width: 19px;" />
+                                <p class="underline cursor-pointer auth-area-p text-white">
+                                    <a href="/manage-accounts.html">
+                                        Manage Account
+                                    </a>
                                 </p>
-                                <p class="cursor-pointer">
-                                    Choice Veg Boxes
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="/assets/images/search-results/Asset 17.png" alt="assets"
+                                    style="width: 15px;" />
+                                <p class="underline cursor-pointer auth-area-p text-white">
+                                    <a href="/index.html">
+                                        sign out
+                                    </a>
                                 </p>
-                                <p class="cursor-pointer">
-                                    Original Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    OriginalPLUS+ Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    Specific & Specialist Items
-                                </p>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    How It Works
-                                </p>
-                                <p class="cursor-pointer">
-                                    Our Produce & Products Deliveries
-                                </p>
-                                <p class="cursor-pointer">
-                                    FAQs
-                                </p>
-                                <p class="cursor-pointer">
-                                    Why Choose Us?
-                                </p>
-                                <p class="cursor-pointer">
-                                    Our Ethics & Sourcing Latest News
-                                </p>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Sign In / Up
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Additional Helpful Links
-                            </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    New Customers
-                                </p>
-                                <p class="cursor-pointer">
-                                    Choice Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    Original Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    OriginalPLUS+ Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    Specific & Specialist Items
-                                </p>
-                            </ul>
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
+            <a href="/">
+                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
+            </a>
+
             <div class="d-flex m-2 hide-on-small-screen">
 
-                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs" id="myTab" role="tablist">
+                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2" id="myTab" role="tablist">
 
                     <!-- Shop -->
                     <li class="nav-item" role="presentation">
@@ -141,87 +200,183 @@
                         </div>
                     </li>
 
-                    <li>
-                        <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
+
+                    <!-- search for lg screen  -->
+                    <li class="nav-item">
+                        <div class="position-relative hide-on-small-screen">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="internal-navbar-search-icon" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="#073b25"
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                                <path fill="none" d="M0 0h24v24H0z" />
+                            </svg>
+                            <input type="text" class="form-control rounded-pill ml-4 internal-navbar-search"
+                                placeholder="Search ">
+                        </div>
                     </li>
+
                 </ul>
+
             </div>
 
-            <!-- search for lg screen  -->
-            <div class="position-relative d-flex align-items-center hide-on-small-screen">
-                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#073b25"
-                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-                    <path fill="none" d="M0 0h24v24H0z" />
-                </svg>
-                <input type="text" class="form-control rounded-pill ml-4 navbar-search"
-                    placeholder="Search for products">
-            </div>
+            <!-- Small Auth section  -->
+            <div class="d-flex gap-3 hide-on-large-screen">
 
-            <!-- cart -->
-            <div class="dropdown show">
-                <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/images/cart.png" alt="" class="cart-image" />
-                    <div class="position-absolute count">12</div>
+                <!-- cart -->
+                <div class="text-white flex-middle position-relative cursor-pointer">
+                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
                 </div>
-                <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
-                    <div class="d-grid">
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <h7>1x Fitzbilies Granola · 400g</h7>
-                        <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
-                        <div class="flex-middle m-3">
-                            <button class="dropdown-checkout-button text-white">
-                                checkout
-                            </button>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Auth section  -->
+            <div class="d-flex gap-4 p-3 hide-on-small-screen" style="background-color: #042114;">
+
+                <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
+                    <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
+                        <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                        <h7 class="w-100 cursor-pointer">
+                            LongUserName000999
+                        </h7>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/manage-accounts.html">
+                                    Manage Account
+                                </a>
+                            </p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/index.html">
+                                    sign out
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cart -->
+                <div class="text-white flex-middle position-relative cursor-pointer">
+                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
+                </div>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Search bar for small screen  -->
-        <div class="position-relative d-flex align-items-center w-100 hide-on-large-screen">
-            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#073b25"
-                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-                <path fill="none" d="M0 0h24v24H0z" />
-            </svg>
-            <input type="text" class="form-control rounded-pill ml-4 navbar-search" placeholder="Search for products">
+        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen">
+            <div class="position-absolute bottom-0 top-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon " width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#073b25"
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                    <path fill="none" d="M0 0h24v24H0z" />
+                </svg>
+            </div>
+            <input type="text" class="pl-3 form-control rounded-pill navbar-search" placeholder="Search for products">
         </div>
-
     </nav>
 
     <!-- Tabs content -->
-    <div class="tab-content  navbar__tab__content content-container hide-on-small-screen border-top">
-        <div class="w-100 tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle px-5">
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    New Customers
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Choice Veg Boxes
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Additional Fruit & Veg
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Fresh Goods
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Groceries
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Drinks
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Household
-                </p>
+    <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
+
+        <div class="tab-pane active main-container" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        New Customers
+                    </p>
+                </a>
+
+                <a href="/Fruitandveg.html">
+                    <p class="cursor-pointer active-navbar-tab">
+                        Choice Veg Boxes
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Additional Fruit & Veg
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Fresh Goods
+                    </p>
+                </a>
+
+                <a href="/product-detail-auth.html">
+                    <p class="cursor-pointer detail-page-hover">
+                        Groceries
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Drinks
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Household
+                    </p>
+                </a>
             </div>
         </div>
-        <div class="w-100 tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle pt-3 pb-3">
+        <div class="tab-pane main-container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
                 <p class="cursor-pointer">
                     How It Works
                 </p>
@@ -239,19 +394,21 @@
                 </p>
             </div>
         </div>
+
     </div>
 
     <!-- strip -->
     <div class="red-strip flex-middle">
-        <h7> Monthly Special:
-            <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
-            </h7>
-        </h7>
+        <p class="strip-content"> Monthly Special:
+            <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
+            </span>
+        </p>
     </div>
 
     <!-- breadcrumb -->
     <div aria-label="breadcrumb" class="breadcrumb-position">
-        <ol class="d-flex text-bold">
+        <ol class="d-flex text-bold main-container">
+
             <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
             <li class="breadcrumb-item bread border-none cursor-pointer">Shop</li>
             <li class="breadcrumb-item bread border-none cursor-pointer">Fruit & Veg Boxes</li>
@@ -260,613 +417,659 @@
     </div>
 
     <!-- Middle -->
-    <div class="d-flex content-container tabs-padding border-danger border-2 mt-4">
-        <div>
-            <img src="/assets/images/fruitandveg/Asset 1.png" class="product-image" />
-        </div>
-
-        <div class="w-full mr-l-5">
+    <section>
+        <div class="d-flex main-container tabs-padding border-2 mt-4">
             <div>
-                <p class="text-bold product-title cursor-pointer" data-target=".bd-example-modal-lg2"
-                    data-toggle="modal" style="border-color: #F7F8F7;">Choice Vegetable Box · S</p>
-            </div>
-            <div class="d-flex mt-2 mr-5 pr-5">
-                <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                    <img src="/assets/images/fruitandveg/Asset 13.png" class="small-icons" />
-                    <h6 class="mt-2 product-buttons-tab">Serves 2-3 People</h6>
-                </div>
-                <div class="d-flex gap-3 flex-middle border w-full products-buttons px-2 border">
-                    <img src="/assets/images/product-details/Asset 15.png" class="small-icons " />
-                    <h6 class="mt-2 text-start product-buttons-tab ">Source: UK & International</h6>
-                </div>
-                <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer">
-                    <img src="/assets/images/fruitandveg/Asset 15.png" class="small-icons" />
-
-                    <h6 class="mt-2 product-buttons-tab"> Free Delivery </h6>
-                </div>
-            </div>
-            <div class="border-bottom pb-3">
-                <p class="product-nested-titles mt-3">
-                    Choice Vegetable Box · Small
-                </p>
-                <p class="product-nested-description mt-1">
-                    Select your contents each week. Great for smaller households,
-                    especially if you don't want to cook every night.
-                </p>
-            </div>
-            <div>
-                <p class="product-nested-titles mt-3">
-                    Example Contents
-                </p>
-                <table class="product-table">
-                    <tr>
-                        <td class="product-nested-description">Potatoes (700g)</td>
-                        <td class="product-nested-description flex-middle gap-2">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            1 Points
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">Carrots (500g)</td>
-                        <td class="product-nested-description flex-middle gap-2">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            3 Points
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">Onions (100g)</td>
-                        <td class="product-nested-description flex-middle gap-2">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            5 Points
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">Butternut Squash (x1)</td>
-                        <td class="product-nested-description flex-middle gap-2">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            2 Points
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">French Beans (200g)</td>
-                        <td class="product-nested-description flex-middle gap-2">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            1 Points
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">Tomatoes (480g)</td>
-                        <td class="product-nested-description flex-middle gap-2">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            2 Points
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="d-flex gap-4 text-bold border-bottom pb-4 mt-4">
-                <p class="product-nested-description">Weights for guidance only.</p>
-                <p class="product-nested-description"> Example content will be delivered unless edited.
-            </div>
-            <div>
-                <p class="product-nested-titles mt-3">
-                    Allergy Advice
-                </p>
-                <p class="product-nested-description mt-1">
-                    Not applicable.
-                </p>
-            </div>
-            <div class="border-bottom pb-4">
-                <p class="product-nested-titles mt-3">
-                    Additional Information
-                </p>
-                <p class="product-nested-description mt-1">
-                    Please <a class="underline text-black "> click here to read more information </a> about this
-                    product.
-                </p>
-            </div>
-            <div class="d-flex gap-4">
-                <div class="in-stock-button text-white flex-middle gap-2 mt-4">
-                    <img src="/assets/images/product-details/Asset 13.png" class="small-icons" />
-                    In stock
-                </div>
-                <div class="points-button flex-middle gap-2 mt-4 text-bolder">
-                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                    10 points
-                </div>
-            </div>
-            <div class="mt-4 d-flex justify-content-between px-">
-                <div class="product-price p-1"> £12.25 </div>
-                <div>
-                    <button class="edit-contents-button" data-toggle="modal" data-target=".bd-example-modal-lg">
-                        Edit Contents
-                    </button>
-                </div>
-                <div>
-                    <button class="add-to-order-button text-white" data-toggle="modal"
-                        data-target="#findDeliveryDayModal">
-                        Add to your order
-                    </button>
-                </div>
+                <img src="/assets/images/fruitandveg/Asset 1.png" alt="asset" class="product-image" />
             </div>
 
-            <!-- Edit Contents Modal -->
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="EditContentsModal"
-                aria-hidden="true" style="margin: auto;">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content modal-contentt" style="background-color: #F2F2F2;">
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
-                                style="border-radius: 20px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    class="modal-cross-button">
-                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
-                                </svg>
-                            </button>
+            <div class="w-full">
+
+                <div class="product-details-area">
+                    <div>
+                        <p class="text-bold product-title" style="border-color: #F7F8F7;">Choice Vegetable
+                            Box · S</p>
+                    </div>
+                    <div class="products-detail-area">
+
+                        <div class="d-flex mt-2">
+                            <div class="d-flex gap-2 flex-middle border w-full products-buttons">
+                                <img src="/assets/images/fruitandveg/Asset 13.png" class="small-icons" alt="asset" />
+                                <h6 class="mt-2 product-buttons-tab">Serves 2-3 People</h6>
+                            </div>
+                            <div class="d-flex gap-3 flex-middle border w-full products-buttons px-2 border">
+                                <img src="/assets/images/product-details/Asset 15.png" class="small-icons "
+                                    alt="assets" />
+                                <h6 class="mt-2 text-start product-buttons-tab ">Source: UK & International</h6>
+                            </div>
+                            <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer">
+                                <img src="/assets/images/fruitandveg/Asset 15.png" class="small-icons" alt="assets" />
+
+                                <h6 class="mt-2 product-buttons-tab"> Free Delivery </h6>
+                            </div>
                         </div>
-                        <div class="modal-body" style="max-width: 700px; margin: auto;">
-                            <h1 class="text-bold" style="font-size: 35px;">
+                        <div class="border-bottom pb-3">
+                            <p class="product-nested-titles mt-3">
                                 Choice Vegetable Box · Small
-                            </h1>
-                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
-                                How many deliveries and how often?
-                            </h7>
-                            <div class="counter mt-3 flex-middle gap-5">
-                                <button style="border: none; background-color: transparent;">
-                                    <p class="cursor-poiter flex-middle counter-btn" id="decrement">-</p>
-                                </button>
-                                <span id="counter-value" class="mx-3"
-                                    style="font-size: 45px; font-weight: 600;">0</span>
-                                <button style="border: none; background-color: transparent;">
-                                    <p class="cursor-poiter flex-middle counter-btn" id="increment">+</p>
-                                </button>
+                            </p>
+                            <p class="product-nested-description mt-1">
+                                Select your contents each week. Great for smaller households,
+                                especially if you don't want to cook every night.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="product-nested-titles mt-3">
+                                Example Contents
+                            </p>
+                            <table class="product-table">
+                                <tr>
+                                    <td class="product-nested-description">Potatoes (700g)</td>
+                                    <td class="product-nested-description flex-middle gap-2">
+                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            alt="assets" />
+                                        1 Points
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-nested-description">Carrots (500g)</td>
+                                    <td class="product-nested-description flex-middle gap-2">
+                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            alt="assets" />
+                                        3 Points
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-nested-description">Onions (100g)</td>
+                                    <td class="product-nested-description flex-middle gap-2">
+                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            alt="assets" />
+                                        5 Points
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-nested-description">Butternut Squash (x1)</td>
+                                    <td class="product-nested-description flex-middle gap-2">
+                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            alt="assets" />
+                                        2 Points
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-nested-description">French Beans (200g)</td>
+                                    <td class="product-nested-description flex-middle gap-2">
+                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            alt="asset" />
+                                        1 Points
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-nested-description">Tomatoes (480g)</td>
+                                    <td class="product-nested-description flex-middle gap-2">
+                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            alt="assets" />
+                                        2 Points
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="d-flex gap-4 text-bold border-bottom pb-4 mt-4">
+                            <p class="product-nested-description">Weights for guidance only.</p>
+                            <p class="product-nested-description"> Example content will be delivered unless edited.
+                        </div>
+                        <div>
+                            <p class="product-nested-titles mt-3">
+                                Allergy Advice
+                            </p>
+                            <p class="product-nested-description mt-1">
+                                Not applicable.
+                            </p>
+                        </div>
+                        <div class="border-bottom pb-4">
+                            <p class="product-nested-titles mt-3">
+                                Additional Information
+                            </p>
+                            <p class="product-nested-description mt-1">
+                                Please <a class="underline text-black "> click here to read more information </a> about
+                                this
+                                product.
+                            </p>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <div class="in-stock-button text-white flex-middle gap-2 mt-4">
+                                <img src="/assets/images/product-details/Asset 13.png" class="small-icons"
+                                    alt="assets" />
+                                In stock
+                            </div>
+                            <div class="points-button flex-middle gap-2 mt-4 text-bolder">
+                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
+                                10 points
                             </div>
                         </div>
-                        <div class="d-flex mx-auto gap-3 green-buttons-container">
+                        <div class="mt-4 d-flex justify-content-between px-">
+                            <div class="product-price p-1"> £12.25 </div>
                             <div>
-                                <button class="green-modal-buttons">
-                                    Once Only
-                                </button>
-                            </div>
-                            <div>
-                                <button class="green-modal-buttons">
-                                    Every Week
-                                </button>
-                            </div>
-                            <div>
-                                <button class="green-modal-buttons">
-                                    Every 2 Weeks
-                                </button>
-                            </div>
-                        </div>
-                        <div class="mx-auto mt-5 mb-5">
-                            <h7 class="mt-5 mx-auto fst-italic"
-                                style="font-size: 13px; color: #C41230; max-width: 100px;">
-                                *The produce that you have previously edited will <br />
-                                <p class="underline"> only apply to your next Choice Vegetable Box </p>
-                            </h7>
-                        </div>
-                        <div class="d-flex mx-auto gap-4 mb-5">
-                            <div>
-                                <button class="cancel-button font-bold" data-toggle="modal"
-                                    data-target=".bd-example-modal-lg">
-                                    Cancel
+                                <button class="edit-contents-button" data-target=".edit-contents-modal"
+                                    data-toggle="modal">
+                                    Edit Contents
                                 </button>
                             </div>
                             <div>
                                 <button class="add-to-order-button text-white" data-toggle="modal"
-                                    data-target="#findDeliveryDayModal">
-                                    Confirm Selection
+                                    data-target=".add-to-with-counter-modal">
+                                    Add to your order
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
 
-            <!-- Monday Modal -->
-            <div class="modal fade" id="MondayModal" tabindex="-1" role="dialog" aria-labelledby="MondayModalTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content" style="background-color: #f0f0f0;">
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close"
-                                style="border-radius: 20px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    class="modal-cross-button">
-                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
-                            <img src="/assets/images/product-details/modal.png" />
-                            <h1 class="text-bold mt-4" style="font-size: 35px;">
-                                Monday
-                            </h1>
-                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
-                                We deliver to your area every Monday.
-                                The next time we can deliver to you is on DD / MM.s
-                            </h7>
-                            <br />
-                            <div class="mt-3 pb-5">
-                                <h7 class=" text-bold" style="font-size: 13px; color: #153D37;">
-                                    Check out by 00:00pm on DD / MM
-                                    and we’ll deliver the next day.
-                                </h7>
+                <!-- add-to-with-counter Modal -->
+                <div class="modal fade add-to-with-counter-modal" tabindex="-1" role="dialog"
+                    aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content modal-contentt" style="background-color: #F2F2F2;">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                    style="border-radius: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="modal-cross-button">
+                                        <path fill="none" stroke="white" stroke-linecap="round"
+                                            d="m6 6l12 12m0-12L6 18" />
+                                    </svg>
+                                </button>
                             </div>
-                            <br />
-                            <button class="add-to-order-button text-white pb-5" data-toggle="modal"
-                                data-target="#findDeliveryDayModal">
-                                Continue Shopping...
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add Choice Modal -->
-            <div class="modal Add-Choice-Modal fade bd-example-modal-lg2 border-danger" tabindex="-1" role="dialog"
-                aria-labelledby="AddChoiceModal" aria-hidden="true" style="margin: auto;">
-                <div class="modal-dialog modal-lg">
-                    <div class=" modal-body modal-content" style="background-color: #F2F2F2; margin: auto;">
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
-                                style="border-radius: 20px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    class="modal-cross-button">
-                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="p-5" style="max-width: 1200px;">
-
-                            <h1 class=" text-bold" style="font-size: 30px;">
-                                Your Choice Vegetable Box · Small
-                            </h1>
-                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
-                                Please select what you would like to change within your Small Veg Box (up to 10 points):
-                            </h7>
-
-                            <div class="mt-4">
-                                <div style="border: 2px solid #4B5943;">
-                                    <div class="d-flex justify-content-between p-3" style="background-color: #EBD7AD;">
-                                        <div class="d-flex w-100 align-items-center gap-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 20px;" />
-                                            <span class="text-bold">10 / 10 Points Used</span>
-                                        </div>
-                                        <button class="empty-selection-button">Empty Selection</button>
-                                    </div>
-                                    <table class="">
-                                        <tbody>
-                                            <tr class="">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">Remove <span
-                                                            class="sign"> −
-                                                        </span></button>
-                                                </td>
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr class="" style="background-color: #E6E6E6;">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">Remove <span
-                                                            class="sign"> −
-                                                        </span></button>
-                                                </td>
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">Remove <span
-                                                            class="sign"> −
-                                                        </span></button>
-                                                </td>
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr class="" style="background-color: #E6E6E6;">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">
-                                                        Remove
-                                                        <span class="sign"> − </span>
-                                                    </button>
-                                                </td>
-
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">Remove <span
-                                                            class="sign"> −
-                                                        </span></button>
-                                                </td>
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr class="" style="background-color: #E6E6E6;">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">Remove <span
-                                                            class="sign"> −
-                                                        </span></button>
-                                                </td>
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <td>Potatoes (700g)</td>
-                                                <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png"
-                                                        style="width: 15px;" />
-                                                    2 Points
-                                                </td>
-                                                <td>
-                                                    <button class="d-flex align-items-center remove-btn">Remove <span
-                                                            class="sign"> −
-                                                        </span></button>
-                                                </td>
-                                                <td>
-                                                    Quantity
-                                                    <select>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="modal-body" style="max-width: 700px; margin: auto;">
+                                <h1 class="text-bold" style="font-size: 35px;">
+                                    Choice Vegetable Box · Small
+                                </h1>
+                                <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                    How many deliveries and how often?
+                                </h7>
+                                <div class="counter mt-3 flex-middle gap-5">
+                                    <button style="border: none; background-color: transparent;">
+                                        <p class="cursor-poiter flex-middle counter-btn" id="decrement">-</p>
+                                    </button>
+                                    <span id="counter-value" class="mx-3"
+                                        style="font-size: 45px; font-weight: 600;">0</span>
+                                    <button style="border: none; background-color: transparent;">
+                                        <p class="cursor-poiter flex-middle counter-btn" id="increment">+</p>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="mt-3">
-                                <h7 class=" fst-italic" style="font-size: 13px; color: #C41230;">
-                                    *Firstly you must remove an unwanted item before you can add a new item.
+                            <div class="d-flex mx-auto gap-3 green-buttons-container">
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Once Only
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Every Week
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Every 2 Weeks
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mx-auto mt-5 mb-5">
+                                <h7 class="mt-5 mx-auto fst-italic"
+                                    style="font-size: 13px; color: #C41230; max-width: 100px;">
+                                    *The produce that you have previously edited will <br />
+                                    <p class="underline"> only apply to your next Choice Vegetable Box </p>
                                 </h7>
                             </div>
+                            <div class="d-flex mx-auto gap-4 mb-5">
+                                <div>
+                                    <button class="cancel-button font-bold" data-toggle="modal"
+                                        data-target=".bd-example-modal-lg">
+                                        Cancel
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="add-to-order-button text-white" data-toggle="modal"
+                                        data-target="#findDeliveryDayModal">
+                                        Confirm Selection
+                                    </button>
+                                </div>
+                            </div>
 
                         </div>
+                    </div>
+                </div>
 
-                        <h7 class="mt-1 text-bold" style="font-size: 13px; color: #153D37;">
-                            Select from this week’s produce below:
-                        </h7>
+                <!-- Monday Modal -->
+                <div class="modal fade" id="MondayModal" tabindex="-1" role="dialog" aria-labelledby="MondayModalTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content" style="background-color: #f0f0f0;">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close"
+                                    style="border-radius: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="modal-cross-button">
+                                        <path fill="none" stroke="white" stroke-linecap="round"
+                                            d="m6 6l12 12m0-12L6 18" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
+                                <img src="/assets/images/product-details/modal.png" alt="assets" />
+                                <h1 class="text-bold mt-4" style="font-size: 35px;">
+                                    Monday
+                                </h1>
+                                <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                    We deliver to your area every Monday.
+                                    The next time we can deliver to you is on DD / MM.s
+                                </h7>
+                                <br />
+                                <div class="mt-3 pb-5">
+                                    <h7 class=" text-bold" style="font-size: 13px; color: #153D37;">
+                                        Check out by 00:00pm on DD / MM
+                                        and we’ll deliver the next day.
+                                    </h7>
+                                </div>
+                                <br />
+                                <button class="add-to-order-button text-white" data-toggle="modal"
+                                    data-target="#findDeliveryDayModal">
+                                    Continue Shopping...
+                                </button>
 
-                        <div class="mx-auto table-container mt-4"
-                            style="max-width: 400px; height: 200px; background-color: #F2F2F2;">
-                            <table class="table-container" style="background-color: #F2F2F2;">
-                                <tbody>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="d-flex mx-auto gap-2 mb-5 border-danger border-2 mt-5">
-                            <div>
-                                <button class=" cancel-button close text-bold" data-dismiss="modal"
-                                    style="font-size: 12px; padding: 7px 36px;">
-                                    Cancel
+                <!-- Edit contents Modal -->
+                <div class="modal Add-Choice-Modal border fade edit-contents-modal" tabindex="-1" role="dialog"
+                    aria-labelledby="AddChoiceModal" aria-hidden="true" style="margin: auto; ">
+                    <div class="modal-dialog modal-lg" style="max-width: 950px !important;">
+                        <div class=" modal-body modal-content" style="background-color: #F2F2F2; margin: auto;">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                    style="border-radius: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        class="modal-cross-button">
+                                        <path fill="none" stroke="white" stroke-linecap="round"
+                                            d="m6 6l12 12m0-12L6 18" />
+                                    </svg>
                                 </button>
                             </div>
-                            <div>
-                                <button class="add-to-order-button text-white"
-                                    style="font-size: 13px;  padding: 7px 36px;">
-                                    Buy Extra Points
-                                </button>
+
+                            <!-- p-5 -->
+                            <div class="table-with-border">
+
+                                <h1 class=" text-bold" style="font-size: 30px;">
+                                    Your Choice Vegetable Box · Small
+                                </h1>
+                                <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                    Please select what you would like to change within your Small Veg Box (up to 10
+                                    points):
+                                </h7>
+
+                                <div class="mt-4">
+                                    <div style="border: 2px solid #4B5943;">
+                                        <div class="d-flex justify-content-between p-3"
+                                            style="background-color: #EBD7AD;">
+                                            <div class="d-flex w-100 align-items-center gap-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 20px;" />
+                                                <span class="text-bold">10 / 10 Points Used</span>
+                                            </div>
+                                            <button class="empty-selection-button">Empty Selection</button>
+                                        </div>
+                                        <table class="">
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">Remove
+                                                            <span class="sign"> −
+                                                            </span></button>
+                                                    </td>
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="" style="background-color: #E6E6E6;">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">Remove
+                                                            <span class="sign"> −
+                                                            </span></button>
+                                                    </td>
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">Remove
+                                                            <span class="sign"> −
+                                                            </span></button>
+                                                    </td>
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="" style="background-color: #E6E6E6;">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">
+                                                            Remove
+                                                            <span class="sign"> − </span>
+                                                        </button>
+                                                    </td>
+
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">Remove
+                                                            <span class="sign"> −
+                                                            </span></button>
+                                                    </td>
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="" style="background-color: #E6E6E6;">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">Remove
+                                                            <span class="sign"> −
+                                                            </span></button>
+                                                    </td>
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>Potatoes (700g)</td>
+                                                    <td class="d-flex gap-2 align-items-center mt-2">
+                                                        <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                            style="width: 15px;" />
+                                                        2 Points
+                                                    </td>
+                                                    <td>
+                                                        <button class="d-flex align-items-center remove-btn">Remove
+                                                            <span class="sign"> −
+                                                            </span></button>
+                                                    </td>
+                                                    <td class="d-flex justify-content-center">
+                                                        Quantity
+                                                        <select>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h7 class=" fst-italic" style="font-size: 13px; color: #C41230;">
+                                        *Firstly you must remove an unwanted item before you can add a new item.
+                                    </h7>
+                                </div>
+
                             </div>
-                            <div>
-                                <button class="add-to-order-button text-white"
-                                    style="font-size: 13px;  padding: 7px 36px;">
-                                    Update this week’s Veg Box contents
-                                </button>
+
+                            <h7 class="mt-1 text-bold" style="font-size: 13px; color: #153D37;">
+                                Select from this week’s produce below:
+                            </h7>
+
+                            <div class="mx-auto table-container mt-4 border" style="width: 400px; height: 200px;"
+                                background-color: #F2F2F2;">
+                                <table class="table-container border" style="background-color: #F2F2F2;">
+                                    <tbody>
+                                        <tr class=" trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="trap">
+                                            <td>Potatoes (700g)</td>
+                                            <td class="d-flex gap-2 align-items-center mt-2">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    style="width: 15px;" />
+                                                2 Points
+                                            </td>
+                                            <td>
+                                                <button class="d-flex align-items-center remove-btn">Add<span
+                                                        class="sign">
+                                                        +
+                                                    </span></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
+
+                            <!-- d-flex mx-auto -->
+                            <div class=" gap-2 mb-5 mt-5 button-container">
+                                <div>
+                                    <!-- style="font-size: 12px; padding: 7px 36px;" -->
+                                    <button class=" cancel-button close text-bold" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                </div>
+                                <div>
+                                    <!-- style="" -->
+                                    <button class="add-to-order-button text-white">
+                                        Buy Extra Points
+                                    </button>
+                                </div>
+                                <div>
+                                    <!-- style="" -->
+                                    <button class="add-to-order-button text-white">
+                                        Update this week’s Veg Box contents
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Slider area -->
-    <div class="slider-background"
+    <div class="pt-5 slider-background"
         style="background-image: url('/assets/images/product-details/Asset 5.png'); background-size: cover;">
-        <div class="text-center">
-            <h1 class=" text-bold Additional-Items">Additional Items of Interest</h1>
+        <div class="text-center main-container">
+            <h1 class="pt-4 text-bold Additional-Items">Additional Items of Interest</h1>
             <h5 class="text-bold Based-on-your">Based on your selection, see what other products may be of interest to
                 you:
             </h5>
@@ -879,9 +1082,11 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
+                            <a href="/product-detail-auth.html">
+                                <button class="view-button text-white mt-3">
+                                    View more...
+                                </button>
+                            </a>
                         </div>
                         <div class="slide">
                             <img src="/assets/images/product-details/Asset 3.png" alt="Product 2"
@@ -889,9 +1094,11 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
+                            <a href="/product-detail-auth.html">
+                                <button class="view-button text-white mt-3">
+                                    View more...
+                                </button>
+                            </a>
                         </div>
                         <div class="slide">
                             <img src="/assets/images/product-details/Asset 4.png" alt="Product 3"
@@ -899,9 +1106,11 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
+                            <a href="/product-detail-auth.html">
+                                <button class="view-button text-white mt-3">
+                                    View more...
+                                </button>
+                            </a>
                         </div>
                         <div class="slide">
                             <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
@@ -909,9 +1118,11 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
+                            <a href="/product-detail-auth.html">
+                                <button class="view-button text-white mt-3">
+                                    View more...
+                                </button>
+                            </a>
                         </div>
                         <div class="slide">
                             <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
@@ -919,9 +1130,11 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
+                            <a href="/product-detail-auth.html">
+                                <button class="view-button text-white mt-3">
+                                    View more...
+                                </button>
+                            </a>
                         </div>
                         <div class="slide">
                             <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
@@ -929,9 +1142,11 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
+                            <a href="/product-detail-auth.html">
+                                <button class="view-button text-white mt-3">
+                                    View more...
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -945,109 +1160,59 @@
     </div>
 
     <!-- Companies -->
-    <div class="d-flex content-container m-auto gap-5 justify-content-between tabs-padding py-5">
+    <div class="main-container companies-container">
         <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
         </div>
 
     </div>
 
     <!-- Orange strip -->
     <div class="orange-strip flex-middle">
-        <h7 class="underline cursor-pointer"> Sign Up To The Cambridge Organic Food Mailing List
-        </h7>
+        <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
+        </p>
     </div>
 
     <!-- Footer -->
-    <div class="footer footer-padding d-flex text-white justify-content-between flex-middle tabs-padding">
-        <div>
-            <p>
-                © Cambridge Organic Food Company Ltd
-            </p>
+    <footer class="footer">
+        <div class="main-container text-white d-flex justify-content-between tabs-padding">
+            <div>
+                <p>
+                    © Cambridge Organic Food Company Ltd
+                </p>
+            </div>
+            <div>
+                <p>
+                    Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
+                </p>
+            </div>
+            <div class="d-flex gap-2 justify-content-center">
+                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
+            </div>
         </div>
-        <div>
-            <p>
-                Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-            </p>
-        </div>
-        <div class="d-flex gap-2">
-            <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" />
-            <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" />
-            <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" />
-        </div>
-    </div>
+    </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.querySelector('.navbar-tab');
-            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-            menuButton.addEventListener('click', function () {
-                dropdownMenus.forEach(menu => menu.classList.toggle('active'));
-            });
-        });
-    </script>
-    <script>
-        let currentSlide = 0;
-
-        function moveSlide(direction) {
-            const slides = document.querySelectorAll('.slide');
-            const totalSlides = slides.length;
-            const sliderWrapper = document.querySelector('.slider-wrapper');
-
-            currentSlide += direction;
-
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-
-            const offset = -currentSlide * 100 / 3;
-            sliderWrapper.style.transform = `translateX(${offset}%)`;
-        }
-
-
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var counterValue = document.getElementById('counter-value');
-            var incrementButton = document.getElementById('increment');
-            var decrementButton = document.getElementById('decrement');
-
-            var count = 0;
-
-            incrementButton.addEventListener('click', function () {
-                count++;
-                counterValue.textContent = count;
-            });
-
-            decrementButton.addEventListener('click', function () {
-                if (count > 0) {
-                    count--;
-                    counterValue.textContent = count;
-                }
-            });
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

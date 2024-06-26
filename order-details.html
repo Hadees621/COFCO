@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+
     <title>COFCO</title>
 </head>
 
@@ -14,20 +16,19 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark flex-middle">
+
         <!-- Nav tabs -->
-        <div class="container gap-2">
+        <div class="container main-container-details d-flex">
 
             <!-- Offcanvas -->
-
-            <button class="navbar-togler border flex-middle hamburger" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon hide-on-large-screen"></span>
                 Menu
             </button>
-            <div class="offcanvas offcanvas-start text-bg-dark off-canvas w-75" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header m-2">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+            <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
+                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header m-2 justify-content-end p-3">
                     <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -38,36 +39,50 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Shop
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    New Customers
-                                </p>
-                                <p class="cursor-pointer">
-                                    Fruit & Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    Additional Fruit & Veg
-                                </p>
-                                <p class="cursor-pointer">
-                                    Fresh Goods
-                                </p>
-                                <p class="cursor-pointer">
-                                    Groceries
-                                </p>
-                                <p class="cursor-pointer">
-                                    Drinks
-                                </p>
-                                <p class="cursor-pointer">
-                                    Household
-                                </p>
-                            </ul>
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists underline-none">
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        New Customers
+                                    </p>
+                                </a>
+                                <a href="/Fruitandveg.html">
+                                    <p class="cursor-pointer">
+                                        Choice Veg Boxes
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Additional Fruit & Veg
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Fresh Goods
+                                    </p>
+                                </a>
+                                <a href="/product-detail.html">
+                                    <p class="cursor-pointer">
+                                        Groceries
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Drinks
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p class="cursor-pointer">
+                                        Household
+                                    </p>
+                                </a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     How It Works
                                 </p>
@@ -83,7 +98,7 @@
                                 <p class="cursor-pointer">
                                     Our Ethics & Sourcing Latest News
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
@@ -96,7 +111,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Additional Helpful Links
                             </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                            <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
                                 <p class="cursor-pointer">
                                     New Customers
                                 </p>
@@ -112,20 +127,20 @@
                                 <p class="cursor-pointer">
                                     Specific & Specialist Items
                                 </p>
-                            </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Offcanvas Ends -->
 
-            <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
+            <a href="/">
+                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo-auth" />
+            </a>
 
-            <!-- Tabs -->
+            <div class="d-flex m-2 hide-on-small-screen ">
 
-            <div class="d-flex m-2 hide-on-small-screen flex-middle">
-                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2 " id="myTab" role="tablist">
+                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2" id="myTab" role="tablist">
 
                     <!-- Shop -->
                     <li class="nav-item" role="presentation">
@@ -152,10 +167,10 @@
                     </li>
 
                     <!-- search for lg screen  -->
-                    <li class="nav-item mt-2">
+                    <li class="nav-item ">
                         <div class="position-relative d-flex align-items-center hide-on-small-screen">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24"
-                                viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="internal-navbar-search-icon" width="24"
+                                height="24" viewBox="0 0 24 24">
                                 <path fill="#073b25"
                                     d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
                                 <path fill="none" d="M0 0h24v24H0z" />
@@ -166,55 +181,99 @@
                     </li>
 
                 </ul>
+
             </div>
 
-            <div class="d-flex gap-4 p-3" style="background-color: #042114;">
-
-                <div class="text-white flex-middle d-grid profile gap-2">
-                    <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
-                        <img src="/assets/images/search-results/Asset 15.png" />
-                        <h7 class="w-100">
-                            LongUserName000999
-                        </h7>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <div>
-                            <img src="/assets/images/search-results/Asset 16.png" />
-                            <h7 class="underline">
-                                Manage Account
-                            </h7>
-                        </div>
-                        <div>
-                            <img src="/assets/images/search-results/Asset 17.png" />
-                            <h7 class="underline">
-                                sign out
-                            </h7>
-                        </div>
-                    </div>
-                </div>
-
+            <!-- Small Auth section  -->
+            <div class="d-flex gap-3 hide-on-large-screen">
                 <!-- cart -->
-                <div class="text-white flex-middle position-relative cursor-pointer">
-                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
-                </div>
+                <a href="/order-details.html" aria-label="Order Details">
+                    <div class="text-white flex-middle position-relative cursor-pointer">
+                        <img src="assets/images/search-results/Asset 2.png" alt="Cart" class="internal-cart" />
+                    </div>
+                </a>
 
                 <!-- cart -->
                 <div class="dropdown show">
-                    <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/cart.png" alt="" class="" />
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                         <div class="position-absolute count">12</div>
-                    </div>
+                    </a>
                     <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
                         <div class="d-grid">
-                            <h7>1x Fitzbilies Granola · 400g</h7>
-                            <h7>1x Fitzbilies Granola · 400g</h7>
-                            <h7>1x Fitzbilies Granola · 400g</h7>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
                             <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
                             <div class="flex-middle m-3">
-                                <button class="dropdown-checkout-button text-white">
-                                    checkout
-                                </button>
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auth section  -->
+            <div class="d-flex gap-4 p-3 hide-on-small-screen" style="background-color: #042114;">
+
+                <div class="text-white flex-middle d-grid profile gap-2">
+                    <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
+                        <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                        <p class="w-100 cursor-pointer">
+                            LongUserName000999
+                        </p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/manage-accounts.html">
+                                    Manage Account
+                                </a>
+                            </p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/index.html">
+                                    sign out
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cart -->
+                <a href="/order-details.html" aria-label="Order Details">
+                    <div class="text-white flex-middle position-relative cursor-pointer">
+                        <img src="assets/images/search-results/Asset 2.png" alt="Cart" class="internal-cart" />
+                    </div>
+                </a>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -222,37 +281,71 @@
             </div>
 
         </div>
+
+        <!-- Search bar for small screen  -->
+        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen">
+            <div class="position-absolute bottom-0 top-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon " width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#073b25"
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                    <path fill="none" d="M0 0h24v24H0z" />
+                </svg>
+            </div>
+            <input type="text" class="pl-3 form-control rounded-pill navbar-search" placeholder="Search for products">
+        </div>
+
     </nav>
 
     <!-- Tabs content -->
-    <div class="tab-content  navbar__tab__content content-container hide-on-small-screen border-top">
-        <div class="w-100 tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle px-5">
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    New Customers
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Choice Veg Boxes
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Additional Fruit & Veg
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Fresh Goods
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Groceries
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Drinks
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Household
-                </p>
+    <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
+
+        <div class="tab-pane active main-container-details" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        New Customers
+                    </p>
+                </a>
+
+                <a href="/Fruitandveg.html">
+                    <p class="cursor-pointer detail-page-hover ">
+                        Choice Veg Boxes
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Additional Fruit & Veg
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Fresh Goods
+                    </p>
+                </a>
+
+                <a href="/product-detail-auth.html">
+                    <p class="cursor-pointer detail-page-hover">
+                        Groceries
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Drinks
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Household
+                    </p>
+                </a>
             </div>
         </div>
-        <div class="w-100 tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle pt-3 pb-3">
+        <div class="tab-pane main-container-details" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
                 <p class="cursor-pointer">
                     How It Works
                 </p>
@@ -270,568 +363,1205 @@
                 </p>
             </div>
         </div>
+
     </div>
 
     <!-- strip -->
     <div class="red-strip flex-middle">
-        <h7> Monthly Special:
-            <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
-            </h7>
-        </h7>
+        <p class="strip-content"> Monthly Special:
+            <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
+            </span>
+        </p>
     </div>
 
     <!-- breadcrumb -->
-    <div aria-label="breadcrumb" class="breadcrumb-position">
-        <ol class="d-flex text-bold">
+    <div class="breadcrumb-position">
+        <ol class="d-flex text-bold main-container-details">
             <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
-            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Points & Shopping Cart Overview</li>
+            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Points & Shopping Cart Overview
+            </li>
         </ol>
     </div>
 
     <!-- Middle -->
-    <div class="content-container tabs-padding mt-4">
-        <h1 class="text-bold text-center w-100 border-bottom pb-4 pointsAndShoppingTitle">
-            Points & Shopping Cart Overview
-        </h1>
+    <section>
+        <div class="main-container-details mt-4">
+            <h1 class="text-bold text-center w-100 border-bottom py-4 pointsAndShoppingTitle">
+                Points & Shopping Cart Overview
+            </h1>
 
-        <div class="d-flex justify-content-between py-4 border-bottom">
-            <div class="flex-middle gap-3">
-                <img src="/assets/images/order-details/Asset 1.png" class="profile-icon" />
-                <h1 class="text-bold LongUserName">LongUserName000999</h1>
-            </div>
-            <div class="d-flex gap-4">
-                <button class="manage-account-button flex-middle gap-2">
-                    <img src="/assets/images/order-details/Asset 2.png" class="small-icons" />
-                    <p class="text-bold">Manage Account</p>
-                </button>
-                <button class="manage-account-button flex-middle gap-2">
-                    <img src="/assets/images/order-details/Asset 3.png" class="small-icons" />
-                    <p class="text-bold">Sign Out</p>
-                </button>
-            </div>
-        </div>
-
-        <div class="py-5">
-            <div class="d-flex justify-content-start gap-3 align-content-center">
-                <img src="/assets/images/order-details/Asset 4.png" class="profile-icon" />
-                <h4 class="text-bold flex-middle title-points-cart ">Points</h4>
-            </div>
-
-            <div class="points-container border-bottom pb-5 mt-3">
-                <table class="points-info-table">
-                    <tr>
-                        <td class="product-nested-description">Total Allocated For This Month (MM/YYYY):</td>
-                        <td><span class="points-value">123</span></td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">Total Unused This Month (MM/YYYY):</td>
-                        <td><span class="points-value">66</span></td>
-                    </tr>
-                    <tr>
-                        <td class="product-nested-description">Total Points Accrued Since Account Activation:</td>
-                        <td>
-                            <span class="points-value">999,999 · Active Since DD/MM/YYY
-                            </span>
-                        </td>
-                    </tr>
-                </table>
-                <div>
-                    <button class="point-button text-white">
-                        <p>Purchase More Points</p>
-                    </button>
+            <div class="grid-on-small-flex-on-large center-on-small gap-3 justify-content-between py-4 border-bottom">
+                <div class="flex-middle gap-3">
+                    <img src="/assets/images/order-details/Asset 1.png" class="profile-icon" alt="assets" />
+                    <h1 class="text-bold LongUserName">LongUserName000999</h1>
+                </div>
+                <div class="d-flex gap-4">
+                    <a href="/manage-accounts.html" class="manage-account-button flex-middle gap-2">
+                        <img src="/assets/images/order-details/Asset 2.png" class="small-icons" alt="assets" />
+                        <p class="text-bold">Manage Account</p>
+                    </a>
+                    <a href="/" class="manage-account-button flex-middle gap-2">
+                        <img src="/assets/images/order-details/Asset 3.png" class="small-icons" alt="assets" />
+                        <p class="text-bold">Sign Out</p>
+                    </a>
                 </div>
             </div>
 
-        </div>
-
-        <div class="py-2">
-            <div class="d-flex justify-content-between align-content-center">
-                <div class="d-flex justify-content-start gap-3 align-items-center">
-                    <img src="/assets/images/order-details/Asset 5.png" />
-                    <h4 class="text-bold title-points-cart mt-2">Shopping Cart</h4>
+            <!-- first box -->
+            <div class="py-5">
+                <div class="d-flex justify-content-start gap-3  align-content-center center-on-smal details-page-table">
+                    <img src="/assets/images/order-details/Asset 4.png" class="profile-icon" alt="assets" />
+                    <h4 class="text-bold flex-middle title-points-cart center-on-small ">Points</h4>
                 </div>
-                <div>
-                    <button class="point-button text-white">
-                        <p> View Scheduled Future Shopping Cart Items </p>
-                    </button>
-                </div>
-            </div>
 
-            <div class="points-container border-bottom pb-5 mt-3">
-                <div class="d-flex justify-content-between">
+                <div
+                    class="points-container center-on-small border-bottom pb-5 mt-3 grid-on-small-flex-on-large gap-3 details-page-table mx-3">
                     <table class="points-info-table">
                         <tr>
-                            <td class="product-nested-description">Your Shopping Cart For This Week</td>
-                            <td><span class="points-value">From DD/MM/YYYY To DD/MM/YYYY</span></td>
+                            <td class="product-nested-description">Total Allocated For This Month (MM/YYYY):</td>
+                            <td><span class="points-value">123</span></td>
+                        </tr>
+                        <tr>
+                            <td class="product-nested-description">Total Unused This Month (MM/YYYY):</td>
+                            <td><span class="points-value">66</span></td>
+                        </tr>
+                        <tr>
+                            <td class="product-nested-description">Total Points Accrued Since Account Activation:</td>
+                            <td>
+                                <span class="points-value">999,999 · Active Since DD/MM/YYY
+                                </span>
+                            </td>
                         </tr>
                     </table>
+                    <div class="center-on-small">
+                        <button class="point-button text-white">
+                            <p>Purchase More Points</p>
+                        </button>
+                    </div>
                 </div>
-                <button class="manage-account-button flex-middle gap-2 mt-3">
-                    <img src="/assets/images/order-details/Asset 6.png" class="small-icons" />
-                    <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
-                </button>
             </div>
 
-
-            <div class="p-5" style="background-color: #F2F2F2;">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex gap-3">
-                        <div>
-                            <p class="product-nested-titles"> Choice Vegetable Box · Small </p>
-                        </div>
-                        <div class="points-button flex-middle gap-2 text-bolder" style="background-color: white;">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            10 points
-                        </div>
+            <div class="py-2 ">
+                <div
+                    class="d-flex center-on-small justify-content-between align-content-center grid-on-small-flex-on-large gap-3">
+                    <div class="d-flex justify-content-start gap-3 align-items-center">
+                        <img src="/assets/images/order-details/Asset 5.png" alt="assets" />
+                        <h4 class="text-bold title-points-cart mt-2">Shopping Cart</h4>
                     </div>
-                    <div class="flex-middle text-small gap-2 text-bold">
-                        <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                        <p class="underline">Remove This Item From My Shopping Cart For This Week Only</p>
+                    <div class="mt-4">
+                        <button class="point-button text-white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            <p> View Scheduled Future Shopping Cart Items </p>
+                        </button>
                     </div>
                 </div>
 
-                <div class="mt-3">
-                    <table class="quantity-table gap-2 m-4">
-                        <tr>
-                            <td>
-                                <p class="product-nested-description text-bold">Quantity</p>
-                            </td>
-                            <td>
-                                <p class="points-value">1x</p>
-                            </td>
-                            <td class="flex-middle text-bold gap-2 text-small">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small text-start w-100">Edit Quantity</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="product-nested-description text-bold">Delivery Frequency</p>
-                            </td>
-                            <td>
-                                <p class="points-value">1 Per Week</p>
-                            </td>
-                            <td class="flex-middle text-small text-bold gap-2">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small text-start w-100">Edit The Delivery
-                                    Frequency</p>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="points-container border-bottom pb-5 center-on-small mt-3 grid-on-small-flex-on-large">
+                    <div class="d-flex justify-content-between">
+                        <table class="points-info-table ">
+                            <tr class="center-on-small">
+                                <td class="product-nested-description">
+                                    Your Shopping Cart For This Week
+                                </td>
+                                <td>
+                                    <span class="points-value">From DD/MM/YYYY To DD/MM/YYYY</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="manage-account-button flex-middle gap-2 mt-3">
+                        <img src="/assets/images/order-details/Asset 6.png" class="small-icons" alt="assets" />
+                        <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
+                    </button>
                 </div>
 
-                <div class="" style="background-color: white;">
-                    <div class="w-full d-flex py-3">
+                <div class="table-choice-vegetable-box" style="background-color: #F2F2F2;">
 
-                        <div class="">
-                            <img src="/assets/images/fruitandveg/Asset 1.png" class="order-details-product-image" />
+                    <!-- Table -->
+                    <div class="d-flex justify-content-between grid-on-small-flex-on-large center-on-small gap-3 py-2">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <p class="product-nested-titles"> Choice Vegetable Box · Small </p>
+                            </div>
+                            <div class="points-button flex-middle gap-2 text-bolder" style="background-color: white;">
+                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
+                                10 points
+                            </div>
+                        </div>
+                        <div class="flex-middle text-small gap-2 text-bold " data-toggle="modal"
+                            data-target=".select-future-box-modal">
+                            <img src=" /assets/images/order-details/Asset 2.png" class="setting-icons" alt="assets" />
+                            <p class="underline cursor-pointer">Remove This Item From My Shopping Cart For This Week
+                                Only
+                            </p>
+                        </div>
+                    </div>
 
-                            <div class="d-flex m-2 gap-2">
-                                <div class="">
-                                    <img src="/assets/images/order-details/Asset 9.png" class="small-icons"
-                                        style="color: #808080;">
+                    <div class="mt-3 center-on-small">
+                        <table class="quantity-table gap-2 m-4 grid-on-small-flex-on-large center-on-small">
+                            <tr class="w-100">
+                                <td>
+                                    <p class="product-nested-description text-bold">Quantity</p>
+                                </td>
+                                <td>
+                                    <p class="points-value">1x</p>
+                                </td>
+                                <td class="flex-middle text-bold gap-2 text-small cursor-pointer"
+                                    data-target=".edit-contents-modal" data-toggle="modal">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small text-start w-100">Edit Quantity</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="product-nested-description text-bold">Delivery Frequency</p>
+                                </td>
+                                <td>
+                                    <p class="points-value">1 Per Week</p>
+                                </td>
+                                <td class="flex-middle text-small text-bold gap-2">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small text-start w-100 cursor-pointer" data-toggle="modal"
+                                        data-target="#deliveryFrequencyModal">
+                                        Edit The Delivery Frequency
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grid-on-small-flex-on-large center-on-small gap-3" style="background-color: white;">
+                        <div class="w-full d-flex py-3 grid-on-small-flex-on-large center-on-small gap-3">
+
+                            <div class="">
+                                <img src="/assets/images/fruitandveg/Asset 1.png" class="order-details-product-image"
+                                    alt="assets" />
+
+                                <div class="d-flex m-2 gap-2">
+                                    <div class="">
+                                        <img src="/assets/images/order-details/Asset 9.png" class="small-icons"
+                                            alt="assets" style="color: #808080;">
+                                    </div>
+                                    <p class="text-small text-start fst-italic" style="color: #808080;">
+                                        The above image is the default suggested <br />
+                                        contents and may not represent the actual <br />
+                                        Veg Box contents that you have defined
+                                    </p>
                                 </div>
-                                <p class="text-small text-start fst-italic" style="color: #808080;">
-                                    The above image is the default suggested <br />
-                                    contents and may not represent the actual <br />
-                                    Veg Box contents that you have defined
+                            </div>
+
+                            <div class="grid-on-small-flex-on-large center-on-small gap-3">
+
+                                <div class="mx-4 border-and-padding">
+                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                        <img src="/assets/images/order-details/Asset 8.png"
+                                            class="order-details-product" alt="assets" />
+                                        <p class="product-nested-description defined-content mt-3">
+                                            Defined Contents
+                                        </p>
+                                    </div>
+                                    <table class="product-table mt-3">
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row">Potatoes (700g)</td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+
+                                        <tr class="each-product-row">
+                                            <td class="product-nested-description each-product-row ">Potatoes (700g)
+                                            </td>
+                                            <td class="product-nested-description flex-middle gap-2 each-product-row">
+                                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                                    alt="assets" />
+                                                1 Points
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="order-details-left-side d-grid">
+                                <div class="d-flex gap-3 align-items-center my-2">
+                                    <img src="/assets/images/order-details/Asset 6.png" style="height: 14px;"
+                                        alt="assets" />
+                                    <p class="product-nested-description text-bold each-product-row ">Date Of
+                                        Delivery
+                                    </p>
+                                </div>
+                                <p class="product-nested-description my-2 text-bold each-product-row "
+                                    style="color:#C51633;">Monday
+                                    DD/MM/YYYY Between 8am &
+                                    12pm
                                 </p>
+                                <div data-target="#findDeliveryDayModal" data-toggle="modal"
+                                    class="d-flex align-items-center align-items-center text-small gap-2 text-bold my-2">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small each-product-row cursor-pointer">Manage This
+                                        Delivery
+                                        Date & Time
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="mx-4 border-end pr-5">
-                            <div class="d-flex justify-content-start align-items-center gap-2">
-                                <img src="/assets/images/order-details/Asset 8.png" class="order-details-product" />
-                                <p class="product-nested-description defined-content mt-3">
-                                    Defined Contents
-                                </p>
+                    </div>
+
+                    <div class="mt-4 d-flex gap-5 py-4 grid-on-small-flex-on-large center-on-small gap-3">
+                        <div>
+                            <button class="edit-contents-button" data-target=".edit-contents-modal" data-toggle="modal"
+                                style="background-color: white;">
+                                Edit Contents
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div>
+                                <div class="d-flex gap-3 align-items-cente">
+                                    <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;"
+                                        alt="assets">
+                                    <p class="product-nested-description  text-bold">
+                                        If you wish to edit the Contents of this Delivery, the Date of Delivery, or the
+                                        Specified
+                                        Delivery Location, <br />
+                                        please do so before
+                                        <a class="text-small" style="color: #C51633;"> DD/MM/YYYY 00:00 </a> as to
+                                        guarantee
+                                        the delivery of your modified
+                                        choices.
+                                    </p>
+                                </div>
+                                <div class="d-flex gap-3 mt-3">
+                                    <img src="/assets/images/order-details/Asset 2.png" style="height: 19px;"
+                                        alt="assets" />
+                                    <p class="underline product-nested-description w-100 text-bold">Permanently Remove
+                                        This
+                                        Item From Future Deliveries</p>
+                                </div>
                             </div>
-                            <table class="product-table mt-3">
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
+                        </div>
+                    </div>
 
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
 
-                                <tr class="each-product-row">
-                                    <td class="product-nested-description each-product-row ">Potatoes (700g)</td>
-                                    <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                        <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                                        1 Points
-                                    </td>
-                                </tr>
+                </div>
+            </div>
+            <!-- first box ends-->
+
+            <!-- second box -->
+            <div class="py-2">
+                <div class="table-choice-vegetable-box" style="background-color: #F2F2F2;">
+
+                    <!-- Table -->
+                    <div class="d-flex justify-content-between grid-on-small-flex-on-large center-on-small gap-3 py-2">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <p class="product-nested-titles"> Fitzbilies Granola · 400g </p>
+                            </div>
+                            <div class="points-button flex-middle gap-2 text-bolder" style="background-color: white;">
+                                <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
+                                10 points
+                            </div>
+                        </div>
+                        <div class="flex-middle text-small gap-2 text-bold " data-toggle="modal"
+                            data-target=".select-future-box-modal">
+                            <img src=" /assets/images/order-details/Asset 2.png" class="setting-icons" alt="assets" />
+                            <p class="underline cursor-pointer">Remove This Item From My Shopping Cart For This Week
+                                Only
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 center-on-small">
+                        <table class="quantity-table gap-2 m-4 grid-on-small-flex-on-large center-on-small">
+                            <tr class="w-100">
+                                <td>
+                                    <p class="product-nested-description text-bold">Quantity</p>
+                                </td>
+                                <td>
+                                    <p class="points-value">1x</p>
+                                </td>
+                                <td class="flex-middle text-bold gap-2 text-small cursor-pointer"
+                                    data-target=".edit-contents-modal" data-toggle="modal">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small text-start w-100">Manage the Quantity</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="product-nested-description text-bold">Delivery Frequency</p>
+                                </td>
+                                <td>
+                                    <p class="points-value">1 Per Week</p>
+                                </td>
+                                <td class="flex-middle text-small text-bold gap-2">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small text-start w-100 cursor-pointer" data-toggle="modal"
+                                        data-target="#deliveryFrequencyModal">
+                                        Manage The Delivery Frequency
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grid-on-small-flex-on-large center-on-small gap-3" style="background-color: white;">
+                        <div class="w-full d-flex py-3 grid-on-small-flex-on-large center-on-small gap-3">
+
+                            <div>
+                                <img src="/assets/images/fruitandveg/Asset 4.png" alt="assets"
+                                    class="order-details-product-image2" />
+                            </div>
+
+                            <div class="grid-on-small-flex-on-large center-on-small gap-3">
+                                <div class="mx-4 border-and-padding">
+
+                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                        <img src="/assets/images/order-details/Asset 8.png"
+                                            class="order-details-product" alt="assets" />
+                                        <p class="product-nested-description defined-content mt-3">
+                                            Product Overview
+                                        </p>
+                                    </div>
+
+                                    <div class="mt-3 product-table" style="font-weight: 700;">
+                                        <p class="product-nested-decription text-small">Ingredients</p>
+                                        <p class="product-nested-escripion text-small">
+                                            Rolled gluten-free oats, vine fruits (sultanas <br />
+                                            [sulphites] and currants), Fitzbillies Chelsea <br />
+                                            Bun syrup, sunflower seeds, pumpkin seeds, <br />
+                                            flaked almonds, vegetable oil, cinnamon and salt.
+                                        </p>
+                                    </div>
+                                    <div class="mt-3 product-table" style="font-weight: 700;">
+                                        <p class="product-nested-desciption text-small">Allergy Advice</p>
+                                        <p class="product-nested-descrption text-small">
+                                            Warning, may contain: Nuts, Wheat, Gluton, Egg, Dairy
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-details-left-side d-grid">
+                                <div class="d-flex gap-3 align-items-center my-2">
+                                    <img src="/assets/images/order-details/Asset 6.png" style="height: 14px;"
+                                        alt="assets" />
+                                    <p class="product-nested-description text-bold each-product-row ">Date Of
+                                        Delivery
+                                    </p>
+                                </div>
+                                <p class="product-nested-description my-2 text-bold each-product-row "
+                                    style="color:#C51633;">Monday
+                                    DD/MM/YYYY Between 8am &
+                                    12pm
+                                </p>
+                                <div data-target="#findDeliveryDayModal" data-toggle="modal"
+                                    class="d-flex align-items-center align-items-center text-small gap-2 text-bold my-2">
+                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                        alt="assets" />
+                                    <p class="underline text-small each-product-row cursor-pointer">Manage This
+                                        Delivery
+                                        Date & Time
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4 d-flex gap-5 py-4 grid-on-small-flex-on-large center-on-small gap-3">
+                        <div>
+                            <button class="edit-contents-button" data-target=".edit-contents-modal" data-toggle="modal"
+                                style="background-color: white;">
+                                Edit Contents
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;"
+                                        alt="assets">
+                                    <p class="product-nested-description  text-bold">
+                                        If you wish to edit the Contents of this Delivery, the Date of Delivery, or the
+                                        Specified
+                                        Delivery Location, <br />
+                                        please do so before
+                                        <a class="text-small" style="color: #C51633;"> DD/MM/YYYY 00:00 </a> as to
+                                        guarantee
+                                        the delivery of your modified
+                                        choices.
+                                    </p>
+                                </div>
+                                <div class="d-flex gap-3 mt-3">
+                                    <img src="/assets/images/order-details/Asset 2.png" style="height: 19px;"
+                                        alt="assets" />
+                                    <p class="underline product-nested-description w-100 text-bold">Permanently Remove
+                                        This
+                                        Item From Future Deliveries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second box ends-->
+            </div>
+            <!-- second box -->
+
+            <!-- MODALS -->
+
+            <!-- add-to-with-counter Modal -->
+            <div class="modal fade add-to-with-counter-modal" id="deliveryFrequencyModal" tabindex="-1" role="dialog"
+                aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content modal-contentt" style="background-color: #F2F2F2;">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="max-width: 700px; margin: auto;">
+                            <h1 class="text-bold" style="font-size: 35px;">
+                                Choice Vegetable Box · Small
+                            </h1>
+                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                How many deliveries and how often?
+                            </h7>
+                            <div class="counter mt-3 flex-middle gap-5">
+                                <button style="border: none; background-color: transparent;">
+                                    <p class="cursor-poiter flex-middle counter-btn" id="decrement">-</p>
+                                </button>
+                                <span id="counter-value" class="mx-3"
+                                    style="font-size: 45px; font-weight: 600;">0</span>
+                                <button style="border: none; background-color: transparent;">
+                                    <p class="cursor-poiter flex-middle counter-btn" id="increment">+</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-auto gap-3 green-buttons-container">
+                            <div>
+                                <button class="green-modal-buttons">
+                                    Once Only
+                                </button>
+                            </div>
+                            <div>
+                                <button class="green-modal-buttons">
+                                    Every Week
+                                </button>
+                            </div>
+                            <div>
+                                <button class="green-modal-buttons">
+                                    Every 2 Weeks
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mx-auto mt-5 mb-5">
+                            <h7 class="mt-5 mx-auto fst-italic"
+                                style="font-size: 13px; color: #C41230; max-width: 100px;">
+                                *The produce that you have previously edited will <br />
+                                <p class="underline"> only apply to your next Choice Vegetable Box </p>
+                            </h7>
+                        </div>
+                        <div class="d-flex mx-auto gap-4 mb-5">
+                            <div>
+                                <button class="cancel-button font-bold" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div>
+                                <button class="add-to-order-button text-white" data-toggle="modal"
+                                    data-target="#findDeliveryDayModal">
+                                    Confirm Selection
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit contents Modal -->
+            <div class="modal Add-Choice-Modal border fade edit-contents-modal" tabindex="-1" role="dialog"
+                aria-labelledby="AddChoiceModal" aria-hidden="true" style="margin: auto; ">
+                <div class="modal-dialog modal-lg" style="max-width: 950px !important;">
+                    <div class=" modal-body modal-content" style="background-color: #F2F2F2; margin: auto;">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- p-5 -->
+                        <div class="table-with-border">
+
+                            <h1 class=" text-bold" style="font-size: 30px;">
+                                Your Choice Vegetable Box · Small
+                            </h1>
+                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                Please select what you would like to change within your Small Veg Box (up to 10
+                                points):
+                            </h7>
+
+                            <div class="mt-4">
+                                <div style="border: 2px solid #4B5943;">
+                                    <div class="d-flex justify-content-between p-3" style="background-color: #EBD7AD;">
+                                        <div class="d-flex w-100 align-items-center gap-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 20px;" />
+                                            <span class="text-bold">10 / 10 Points Used</span>
+                                        </div>
+                                        <button class="empty-selection-button">Empty Selection</button>
+                                    </div>
+                                    <table class="">
+                                        <tbody>
+                                            <tr class="">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">Remove
+                                                        <span class="sign"> −
+                                                        </span></button>
+                                                </td>
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="" style="background-color: #E6E6E6;">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">Remove
+                                                        <span class="sign"> −
+                                                        </span></button>
+                                                </td>
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">Remove
+                                                        <span class="sign"> −
+                                                        </span></button>
+                                                </td>
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="" style="background-color: #E6E6E6;">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">
+                                                        Remove
+                                                        <span class="sign"> − </span>
+                                                    </button>
+                                                </td>
+
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">Remove
+                                                        <span class="sign"> −
+                                                        </span></button>
+                                                </td>
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="" style="background-color: #E6E6E6;">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">Remove
+                                                        <span class="sign"> −
+                                                        </span></button>
+                                                </td>
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>Potatoes (700g)</td>
+                                                <td class="d-flex gap-2 align-items-center mt-2">
+                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                        style="width: 15px;" />
+                                                    2 Points
+                                                </td>
+                                                <td>
+                                                    <button class="d-flex align-items-center remove-btn">Remove
+                                                        <span class="sign"> −
+                                                        </span></button>
+                                                </td>
+                                                <td class="d-flex justify-content-center">
+                                                    Quantity
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <h7 class=" fst-italic" style="font-size: 13px; color: #C41230;">
+                                    *Firstly you must remove an unwanted item before you can add a new item.
+                                </h7>
+                            </div>
+
+                        </div>
+
+                        <h7 class="mt-1 text-bold" style="font-size: 13px; color: #153D37;">
+                            Select from this week’s produce below:
+                        </h7>
+
+                        <div class="mx-auto table-container mt-4 border" style="width: 400px; height: 200px;"
+                            background-color: #F2F2F2;">
+                            <table class="table-container border" style="background-color: #F2F2F2;">
+                                <tbody>
+                                    <tr class=" trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
 
-                        <div class="order-details-left-side">
-                            <div class="d-flex gap-3 align-items-center my-2">
-                                <img src="/assets/images/order-details/Asset 6.png" style="height: 14px;" />
-                                <p class="product-nested-description text-bold each-product-row ">Date Of Delivery</p>
-                            </div>
-                            <p class="product-nested-description my-2 text-bold each-product-row "
-                                style="color:#C51633;">Monday
-                                DD/MM/YYYY Between 8am &
-                                12pm</p>
-
-                            <div class="d-flex align-items-center align-items-center text-small gap-2 text-bold my-2">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small each-product-row ">Manage This Delivery Date & Time</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="mt-4 d-flex gap-5 py-4">
-                    <div>
-                        <button class="edit-contents-button" data-toggle="modal" data-target=".bd-example-modal-lg"
-                            style="background-color: white;">
-                            Edit Contents
-                        </button>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <div>
-                            <div class="d-flex gap-3 align-items-cente">
-                                <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;">
-                                <p class="product-nested-description  text-bold">
-                                    If you wish to edit the Contents of this Delivery, the Date of Delivery, or the
-                                    Specified
-                                    Delivery Location, <br />
-                                    please do so before
-                                    <a class="text-small" style="color: #C51633;"> DD/MM/YYYY 00:00 </a> as to guarantee
-                                    the delivery of your modified
-                                    choices.
-                                </p>
-                            </div>
-                            <div class="d-flex gap-3 mt-3">
-                                <img src="/assets/images/order-details/Asset 2.png" style="height: 19px;" />
-                                <p class="underline product-nested-description w-100 text-bold">Permanently Remove This
-                                    Item From Future Deliveries</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                    aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content order-details-edit-modal-content modal-contentt"
-                            style="background-color: #F2F2F2;">
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
-                                    style="border-radius: 20px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                        class="modal-cross-button">
-                                        <path fill="none" stroke="white" stroke-linecap="round"
-                                            d="m6 6l12 12m0-12L6 18" />
-                                    </svg>
+                        <!-- d-flex mx-auto -->
+                        <div class=" gap-2 mb-5 mt-5 button-container">
+                            <div>
+                                <!-- style="font-size: 12px; padding: 7px 36px;" -->
+                                <button class=" cancel-button close text-bold" data-dismiss="modal">
+                                    Cancel
                                 </button>
                             </div>
-                            <div class="modal-body" style="max-width: 700px; margin: auto;">
-                                <h1 class="text-bold" style="font-size: 35px;">
-                                    Select Scheduled Future <br />
-                                    Shopping Cart Items
-                                </h1>
-                                <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
-                                    Firstly select the month, then the week, to view your future deliveries:
+                            <div>
+                                <!-- style="" -->
+                                <button class="add-to-order-button text-white">
+                                    Buy Extra Points
+                                </button>
+                            </div>
+                            <div>
+                                <!-- style="" -->
+                                <button class="add-to-order-button text-white">
+                                    Update this week’s Veg Box contents
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Find Delivery Day Modal -->
+            <div class="modal fade" id="findDeliveryDayModal" tabindex="-1" role="dialog"
+                aria-labelledby="findDeliveryDayModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="background-color: #f0f0f0;">
+                        <div class="modal-heaer d-flex justify-content-end">
+                            <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
+
+                            <img src="/assets/images/product-details/modal.png" alt="assets" />
+                            <h1 class="text-bold mt-4" style="font-size: 35px;">
+                                Find out your <br />
+                                delivery day
+                            </h1>
+                            <p class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                Enter your Postcode below and discover when <br />
+                                our delivery team are in your area:
+                            </p>
+                            <input type="text" class="modal-input mt-3"
+                                placeholder="Enter your postcode (e.g. CB2 VEG)">
+                            <br />
+                            <br />
+                            <button class="add-to-order-button text-white" data-toggle="modal"
+                                data-target="#MondayModal" data-dismiss="modal" aria-label="Close">
+                                Enter
+                            </button>
+                            <br />
+                            <br />
+
+                            <h7 class="mt-4 text-bold" style="font-size: 13px; color: #153D37;">
+                                Or <a class="underline"> sign in</a> to your account
+                            </h7>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monday Modal -->
+            <div class="modal fade" id="MondayModal" tabindex="-1" role="dialog" aria-labelledby="MondayModalTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="background-color: #f0f0f0;">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
+                            <img src="/assets/images/product-details/modal.png" alt="assets" />
+                            <h1 class="text-bold mt-4" style="font-size: 35px;">
+                                Monday
+                            </h1>
+                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                We deliver to your area every Monday.
+                                The next time we can deliver to you is on DD / MM.s
+                            </h7>
+                            <br />
+                            <div class="mt-3 pb-5">
+                                <h7 class=" text-bold" style="font-size: 13px; color: #153D37;">
+                                    Check out by 00:00pm on DD / MM
+                                    and we’ll deliver the next day.
                                 </h7>
-                                <div class="month-selector">
-                                    <button class="month-nav" id="prevMonth">&lt;</button>
-                                    <span class="month-display">July 2024</span>
-                                    <button class="month-nav" id="nextMonth">&gt;</button>
-                                </div>
-                                <div class="week-selector">
-                                    <button class="week-option">Monday DD to Saturday DD</button>
-                                    <button class="week-option">Monday DD to Saturday DD</button>
-                                    <button class="week-option">Monday DD to Saturday DD</button>
-                                    <button class="week-option">Monday DD to Saturday DD</button>
-                                </div>
+                            </div>
+                            <br />
+                            <button class="add-to-order-button text-white" data-toggle="modal"
+                                data-target="#findDeliveryDayModal">
+                                Continue Shopping...
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select future box Modal -->
+            <div class="modal fade select-future-box-modal" tabindex="-1" role="dialog"
+                aria-labelledby="EditContentsModal" aria-hidden="true" style="margin: auto;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content order-details-edit-modal-content modal-contentt"
+                        style="background-color: #F2F2F2;">
+
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="modal-body" style="max-width: 600px; margin: auto;">
+                            <h1 class="text-bold modal-title" style="font-size: 35px;">
+                                Please select your future <br />
+                                Choice Box contents
+                            </h1>
+                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #C61A37;">
+                                Please follow the link below to confirm your Choice Box contents
+                            </h7>
+
+                            <div class="d-flex gap- align-items-start mr-l-3 mt-4" style="max-width: 400px;">
+                                <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;" alt="asset">
+                                <p class="product-nested-description text-bold text-center">
+                                    You will be asked two working days before your next
+                                    Vegetable Box delivery for confirmation of content.
+                                </p>
                             </div>
 
-                            <div class="d-flex mx-auto gap-4 my-3">
-                                <div>
-                                    <button class="cancel-button font-bold" data-toggle="modal"
-                                        data-target=".bd-example-modal-lg">
-                                        Cancel
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="add-to-order-button text-white" data-toggle="modal"
-                                        data-target="#findDeliveryDayModal">
-                                        Confirm Selection
-                                    </button>
-                                </div>
-                            </div>
+                        </div>
 
+                        <div class="d-flex mx-auto gap-2 my-3">
+                            <div>
+                                <button class="cancel-button font-bold" data-dismiss="modal" aria-label="Close">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div>
+                                <button class="add-to-order-button text-white" data-toggle="modal"
+                                    data-target="edit-contents-modal">
+                                    Modify Choice Box
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Scheduled  -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="EditContentsModal"
+                aria-hidden="true" style="margin: auto;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content order-details-edit-modal-content modal-contentt"
+                        style="background-color: #F2F2F2;">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="close mt-3 mr-3" data-dismiss="modal" aria-label="Close"
+                                style="border-radius: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    class="modal-cross-button">
+                                    <path fill="none" stroke="white" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="max-width: 700px; margin: auto;">
+                            <h1 class="text-bold" style="font-size: 35px;">
+                                Select Scheduled Future <br />
+                                Shopping Cart Items
+                            </h1>
+                            <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
+                                Firstly select the month, then the week, to view your future deliveries:
+                            </h7>
+                            <div class="month-selector">
+                                <button class="month-nav" id="prevMonth">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" class="rotate-right">
+                                        <path fill="white" d="m7 10l5 5l5-5z" />
+                                        </sv>
+                                </button>
+                                <span class="month-display" id="monthDisplay">January 2024</span>
+                                <button class="month-nav" id="nextMonth">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" class="rotate-left">
+                                        <path fill="white" d="m7 10l5 5l5-5z" />
+                                        </sv>
+                                </button>
+                            </div>
+                            <div class="week-selector" id="weekSelector">
+                            </div>
+                        </div>
+
+                        <div class="d-flex mx-auto gap-2 my-3 view-modal">
+                            <div>
+                                <button class="cancel-button font-bold" data-dismiss="modal">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div>
+                                <button class="add-to-order-button text-white">
+                                    Confirm Selection
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="py-2 mt-4">
-            <div class="p-5" style="background-color: #F2F2F2;">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex gap-3">
-                        <div>
-                            <p class="product-nested-titles"> Choice Vegetable Box · Small </p>
-                        </div>
-                        <div class="points-button flex-middle gap-2 text-bolder" style="background-color: white;">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" />
-                            10 points
-                        </div>
-                    </div>
-                    <div class="flex-middle gap-2 text-bold">
-                        <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                        <p class="underline product-nested-description">Remove This Item From My Shopping Cart </p>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <table class="quantity-table gap-2 m-4">
-                        <tr>
-                            <td>
-                                <p class="product-nested-description text-bold">Manage The Quantity</p>
-                            </td>
-                            <td>
-                                <p class="points-value">1x</p>
-                            </td>
-                            <td class="flex-middle text-bold gap-2 text-small">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small text-start w-100">Edit Quantity</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="product-nested-description text-bold">Delivery Frequency</p>
-                            </td>
-                            <td>
-                                <p class="points-value">1 Per Week</p>
-                            </td>
-                            <td class="flex-middle text-small text-bold gap-2">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small text-start w-100">Manage The Delivery Frequency Of This
-                                    Item</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="" style="background-color: white;">
-                    <div class="w-full d-flex py-3">
-
-                        <div>
-                            <img src="/assets/images/fruitandveg/Asset 4.png" class="order-details-product-image2" />
-                        </div>
-
-                        <div class="mx-4 border-end pr-5">
-
-                            <div class="d-flex justify-content-start align-items-center gap-2">
-                                <img src="/assets/images/order-details/Asset 8.png" class="order-details-product" />
-                                <p class="product-nested-description defined-content mt-3">
-                                    Product Overview
-                                </p>
-                            </div>
-
-                            <div class="mt-3 product-table" style="font-weight: 700;">
-                                <p class="product-nested-decription text-small">Ingredients</p>
-                                <p class="product-nested-escripion text-small">
-                                    Rolled gluten-free oats, vine fruits (sultanas <br />
-                                    [sulphites] and currants), Fitzbillies Chelsea <br />
-                                    Bun syrup, sunflower seeds, pumpkin seeds, <br />
-                                    flaked almonds, vegetable oil, cinnamon and salt.
-                                </p>
-                            </div>
-                            <div class="mt-3 product-table" style="font-weight: 700;">
-                                <p class="product-nested-desciption text-small">Allergy Advice</p>
-                                <p class="product-nested-descrption text-small">
-                                    Warning, may contain: Nuts, Wheat, Gluton, Egg, Dairy
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="order-details-left-side">
-                            <div class="d-flex gap-3 align-items-center my-2">
-                                <img src="/assets/images/order-details/Asset 6.png" style="height: 14px;" />
-                                <p class="product-nested-description text-bold each-product-row ">Date Of Delivery</p>
-                            </div>
-                            <p class="product-nested-description my-2 text-bold each-product-row "
-                                style="color:#C51633;">Monday
-                                DD/MM/YYYY Between 8am &
-                                12pm</p>
-
-                            <div class="d-flex align-items-center align-items-center text-small gap-2 text-bold my-2">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons" />
-                                <p class="underline text-small each-product-row ">Manage This Delivery Date & Time</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="mt-4 d-flex gap-5 py-4">
-                    <div class="d-flex gap-3 align-items-start">
-                        <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;">
-                        <p class="product-nested-description text-small">
-                            If you wish to edit the Contents of this Delivery, the Date of Delivery, or the
-                            Specified
-                            Delivery Location,
-                            please do so before DD/MM/YYYY 00:00 as to guarantee the delivery of your modified
-                            choices.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Companies -->
-    <div class="d-flex content-container m-auto gap-5 justify-content-between tabs-padding py-5">
+    <div class="main-container-details companies-container">
         <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
         </div>
 
     </div>
 
     <!-- Orange strip -->
     <div class="orange-strip flex-middle">
-        <h7 class="underline cursor-pointer"> Sign Up To The Cambridge Organic Food Mailing List
-        </h7>
+        <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
+        </p>
     </div>
 
     <!-- Footer -->
-    <div class="footer footer-padding d-flex text-white justify-content-between flex-middle tabs-padding">
-        <div>
-            <p>
-                © Cambridge Organic Food Company Ltd
-            </p>
+    <footer class="footer">
+        <div class="main-container-details text-white d-flex justify-content-between tabs-padding">
+            <div>
+                <p>
+                    © Cambridge Organic Food Company Ltd
+                </p>
+            </div>
+            <div>
+                <p>
+                    Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
+                </p>
+            </div>
+            <div class="d-flex gap-2 justify-content-center">
+                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
+            </div>
         </div>
-        <div>
-            <p>
-                Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-            </p>
-        </div>
-        <div class="d-flex gap-2">
-            <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" />
-            <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" />
-            <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" />
-        </div>
-    </div>
+    </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.querySelector('.navbar-tab');
-            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-            menuButton.addEventListener('click', function () {
-                dropdownMenus.forEach(menu => menu.classList.toggle('active'));
-            });
-        });
-    </script>
-    <script>
-        let currentSlide = 0;
-
-        function moveSlide(direction) {
-            const slides = document.querySelectorAll('.slide');
-            const totalSlides = slides.length;
-            const sliderWrapper = document.querySelector('.slider-wrapper');
-
-            currentSlide += direction;
-
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-
-            const offset = -currentSlide * 100 / 3;
-            sliderWrapper.style.transform = `translateX(${offset}%)`;
-        }
-
-
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var counterValue = document.getElementById('counter-value');
-            var incrementButton = document.getElementById('increment');
-            var decrementButton = document.getElementById('decrement');
-
-            var count = 0;
-
-            incrementButton.addEventListener('click', function () {
-                count++;
-                counterValue.textContent = count;
-            });
-
-            decrementButton.addEventListener('click', function () {
-                if (count > 0) {
-                    count--;
-                    counterValue.textContent = count;
-                }
-            });
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 

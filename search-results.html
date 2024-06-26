@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+
 
     <title>COFCO</title>
 </head>
@@ -15,118 +17,163 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark flex-middle">
+
         <!-- Nav tabs -->
-        <div class="container gap-2">
+        <div class="container main-container d-flex ">
 
             <!-- Offcanvas -->
+            <div>
+                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon hide-on-large-screen"></span>
+                    Menu
+                </button>
+                <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
+                    id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header m-2 justify-content-end p-3">
+                        <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
 
-            <button class="navbar-togler border flex-middle hamburger" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <span class="navbar-toggler-icon"></span>
-                Menu
-            </button>
-            <div class="offcanvas offcanvas-start text-bg-dark off-canvas w-75" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header m-2">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                    <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Shop
-                            </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    New Customers
+                        <div class="d-flex gap-2 flex-middle pb-4 text-white" style="font-size: 12px;">
+                            <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                            <h7 class="w-100 cursor-pointer">
+                                LongUserName000999
+                            </h7>
+                        </div>
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <div
+                                    class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists underline-none">
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            New Customers
+                                        </p>
+                                    </a>
+                                    <a href="/Fruitandveg.html">
+                                        <p class="cursor-pointer">
+                                            Choice Veg Boxes
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Additional Fruit & Veg
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Fresh Goods
+                                        </p>
+                                    </a>
+                                    <a href="/product-detail.html">
+                                        <p class="cursor-pointer">
+                                            Groceries
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Drinks
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="cursor-pointer">
+                                            Household
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                    <p class="cursor-pointer">
+                                        How It Works
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Our Produce & Products Deliveries
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        FAQs
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Why Choose Us?
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Our Ethics & Sourcing Latest News
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sign In / Up
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Additional Helpful Links
+                                </a>
+                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
+                                    <p class="cursor-pointer">
+                                        New Customers
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Choice Veg Boxes
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Original Veg Boxes
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        OriginalPLUS+ Veg Boxes
+                                    </p>
+                                    <p class="cursor-pointer">
+                                        Specific & Specialist Items
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex gap-5 py-4">
+                            <div class="d-flex gap-2">
+                                <img src="/assets/images/search-results/Asset 16.png" alt="assets"
+                                    style="width: 19px;" />
+                                <p class="underline cursor-pointer auth-area-p text-white">
+                                    <a href="/manage-accounts.html">
+                                        Manage Account
+                                    </a>
                                 </p>
-                                <p class="cursor-pointer">
-                                    Fruit & Veg Boxes
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="/assets/images/search-results/Asset 17.png" alt="assets"
+                                    style="width: 15px;" />
+                                <p class="underline cursor-pointer auth-area-p text-white">
+                                    <a href="/index.html">
+                                        sign out
+                                    </a>
                                 </p>
-                                <p class="cursor-pointer">
-                                    Additional Fruit & Veg
-                                </p>
-                                <p class="cursor-pointer">
-                                    Fresh Goods
-                                </p>
-                                <p class="cursor-pointer">
-                                    Groceries
-                                </p>
-                                <p class="cursor-pointer">
-                                    Drinks
-                                </p>
-                                <p class="cursor-pointer">
-                                    Household
-                                </p>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    How It Works
-                                </p>
-                                <p class="cursor-pointer">
-                                    Our Produce & Products Deliveries
-                                </p>
-                                <p class="cursor-pointer">
-                                    FAQs
-                                </p>
-                                <p class="cursor-pointer">
-                                    Why Choose Us?
-                                </p>
-                                <p class="cursor-pointer">
-                                    Our Ethics & Sourcing Latest News
-                                </p>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Sign In / Up
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Additional Helpful Links
-                            </a>
-                            <ul class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                <p class="cursor-pointer">
-                                    New Customers
-                                </p>
-                                <p class="cursor-pointer">
-                                    Choice Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    Original Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    OriginalPLUS+ Veg Boxes
-                                </p>
-                                <p class="cursor-pointer">
-                                    Specific & Specialist Items
-                                </p>
-                            </ul>
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Offcanvas Ends -->
+            <a href="/">
+                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
+            </a>
 
-            <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
+            <div class="d-flex m-2 hide-on-small-screen">
 
-            <!-- Tabs -->
-
-            <div class="d-flex m-2 hide-on-small-screen flex-middle">
-                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2 " id="myTab" role="tablist">
+                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2" id="myTab" role="tablist">
 
                     <!-- Shop -->
                     <li class="nav-item" role="presentation">
@@ -152,11 +199,12 @@
                         </div>
                     </li>
 
+
                     <!-- search for lg screen  -->
-                    <li class="nav-item mt-2">
+                    <li class="nav-item ">
                         <div class="position-relative d-flex align-items-center hide-on-small-screen">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24"
-                                viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="internal-navbar-search-icon" width="24"
+                                height="24" viewBox="0 0 24 24">
                                 <path fill="#073b25"
                                     d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
                                 <path fill="none" d="M0 0h24v24H0z" />
@@ -167,29 +215,68 @@
                     </li>
 
                 </ul>
+
             </div>
 
-            <div class="d-flex gap-4 p-3" style="background-color: #042114;">
+            <!-- Small Auth section  -->
+            <div class="d-flex gap-3 hide-on-large-screen">
 
-                <div class="text-white flex-middle d-grid profile gap-2">
+                <!-- cart -->
+                <div class="text-white flex-middle position-relative cursor-pointer">
+                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
+                </div>
+
+                <!-- cart -->
+                <div class="dropdown show">
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                        <div class="position-absolute count">12</div>
+                    </a>
+                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                        <div class="d-grid">
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <div class="flex-middle m-3">
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auth section  -->
+            <div class="d-flex gap-4 p-3 hide-on-small-screen" style="background-color: #042114;">
+
+                <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
-                        <img src="/assets/images/search-results/Asset 15.png" />
-                        <h7 class="w-100">
+                        <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                        <h7 class="w-100 cursor-pointer">
                             LongUserName000999
                         </h7>
                     </div>
                     <div class="d-flex gap-2">
-                        <div>
-                            <img src="/assets/images/search-results/Asset 16.png" />
-                            <h7 class="underline">
-                                Manage Account
-                            </h7>
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/manage-accounts.html">
+                                    Manage Account
+                                </a>
+                            </p>
                         </div>
-                        <div>
-                            <img src="/assets/images/search-results/Asset 17.png" />
-                            <h7 class="underline">
-                                sign out
-                            </h7>
+                        <div class="d-flex gap-1">
+                            <img src="/assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
+                            <p class="underline cursor-pointer auth-area-p">
+                                <a href="/index.html">
+                                    sign out
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -201,21 +288,23 @@
 
                 <!-- cart -->
                 <div class="dropdown show">
-                    <div class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
+                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/cart.png" alt="" class="" />
+                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                         <div class="position-absolute count">12</div>
-                    </div>
+                    </a>
                     <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
                         <div class="d-grid">
-                            <h7>1x Fitzbilies Granola · 400g</h7>
-                            <h7>1x Fitzbilies Granola · 400g</h7>
-                            <h7>1x Fitzbilies Granola · 400g</h7>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
+                            <p>1x Fitzbilies Granola · 400g</p>
                             <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
                             <div class="flex-middle m-3">
-                                <button class="dropdown-checkout-button text-white">
-                                    checkout
-                                </button>
+                                <a href="/order-details.html">
+                                    <button class="dropdown-checkout-button text-white">
+                                        checkout
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -223,38 +312,70 @@
             </div>
 
         </div>
+
+        <!-- Search bar for small screen  -->
+        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen">
+            <div class="position-absolute bottom-0 top-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon " width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#073b25"
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                    <path fill="none" d="M0 0h24v24H0z" />
+                </svg>
+            </div>
+            <input type="text" class="pl-3 form-control rounded-pill navbar-search" placeholder="Search for products">
+        </div>
     </nav>
 
-
     <!-- Tabs content -->
-    <div class="tab-content  navbar__tab__content content-container hide-on-small-screen border-top">
-        <div class="w-100 tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle px-5">
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    New Customers
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Choice Veg Boxes
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Additional Fruit & Veg
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Fresh Goods
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Groceries
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Drinks
-                </p>
-                <p class="cursor-pointer detail-page-hover pt-3 pb-3">
-                    Household
-                </p>
+    <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
+
+        <div class="tab-pane active main-container" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        New Customers
+                    </p>
+                </a>
+
+                <a href="/Fruitandveg.html">
+                    <p class="cursor-pointer detail-page-hover ">
+                        Choice Veg Boxes
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Additional Fruit & Veg
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Fresh Goods
+                    </p>
+                </a>
+
+                <a href="/product-detail-auth.html">
+                    <p class="cursor-pointer detail-page-hover">
+                        Groceries
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Drinks
+                    </p>
+                </a>
+
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
+                        Household
+                    </p>
+                </a>
             </div>
         </div>
-        <div class="w-100 tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle pt-3 pb-3">
+        <div class="tab-pane main-container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
                 <p class="cursor-pointer">
                     How It Works
                 </p>
@@ -272,37 +393,38 @@
                 </p>
             </div>
         </div>
-    </div>
 
+    </div>
 
     <!-- strip -->
     <div class="red-strip flex-middle">
-        <h7> Monthly Special:
-            <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
-            </h7>
-        </h7>
+        <p class="strip-content"> Monthly Special:
+            <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
+            </span>
+        </p>
     </div>
 
     <!-- breadcrumb -->
     <div class="breadcrumb-position">
-        <ol class="d-flex text-bold ">
+        <ol class="d-flex text-bold main-container">
             <li class="breadcrumb-item cursor-pointer"><a href="#">Home</a></li>
             <li class="cursor-pointer underline breadcrumb-item bread border-none">Library</li>
         </ol>
     </div>
 
     <!-- Middle -->
-    <div class="content-container">
+    <section class="main-container">
+
         <h1 class="flex-middle search-results text-bold">Search Results: “Carrot”</h1>
 
-        <div class="d-flex align-items-center border-top pt-4 tabs-padding">
-            <img src="/assets/images/search-results/ex.png" style="width: 15px;" />
+        <div class="d-flex align-items-center border-top pt-4">
+            <img src="/assets/images/search-results/ex.png" style="width: 15px;" alt="assets" />
             <p class="text-small refine-small-text text-w-600 m-2">Please use the filters below to refine your search
             </p>
         </div>
 
         <!-- Tabs -->
-        <ul class="nav nav-tabs d-flex flex-middle hide-on-small-screen tabs internal-tabs-container" id="myTab"
+        <ul class="nav nav-tabs d-flex justify-content-between tabs internal-tabs-container my-4" id="myTab"
             role="tablist">
             <li class="nav-item" role="presentation">
                 <div class="nav-link rounded-pill flex-middle text-black internal-tab" id="products-tab"
@@ -334,109 +456,122 @@
         </ul>
 
         <!-- Tabs content -->
-        <div class="tab-content hide-on-small-screen p-3 border-bottom">
-            <div class="w-100 tab-pane active tabs-padding" id="products" role="tabpanel"
-                aria-labelledby="products-tab">
+        <div class="tab-content  pb-4 border-bottom">
+            <div class="w-100 tab-pane active " id="products" role="tabpanel" aria-labelledby="products-tab">
                 <div class="d-flex justify-content-between active flex-middle pt-3 text-black">
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots </h5>
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <button class="view-product ">
-                                View Product
-                            </button>
+                            <a href="/product-detail.html">
+                                <button class="view-product ">
+                                    View Product
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-100 tab-pane tabs-padding" id="growers" role="tabpanel" aria-labelledby="growers-tab">
+            <div class="w-100 tab-pane " id="growers" role="tabpanel" aria-labelledby="growers-tab">
                 <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
                     <div class="d-grid gap-3">
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <a href="/product-detail.html"><button class="view-product ">
+                                            View Product
+                                        </button>
+                                    </a></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-100 tab-pane tabs-padding" id="veg" role="tabpanel" aria-labelledby="veg-tab">
+            <div class="w-100 tab-pane" id="veg" role="tabpanel" aria-labelledby="veg-tab">
                 <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
                     <div class="d-grid gap-3">
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -444,114 +579,116 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 tab-pane tabs-padding" id="news" role="tabpanel" aria-labelledby="news-tab">
+            <div class="w-100 tab-pane " id="news" role="tabpanel" aria-labelledby="news-tab">
                 <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
 
                     <div class="d-grid gap-3">
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex tab-content-products">
-                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" />
+                            <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                             <div class="p-3">
                                 <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                                 </h5>
                                 <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                     information...</h6>
                                 <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                                <button class="view-product ">
-                                    View Product
-                                </button>
+                                <a href="/product-detail.html">
+                                    <button class="view-product ">
+                                        View Product
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Common Footer Area -->
+    </section>
 
     <!-- Companies -->
-    <div class="d-flex content-container m-auto gap-5 justify-content-between tabs-padding py-5">
+    <div class="main-container companies-container">
         <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
         </div>
         <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images">
+            <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
         </div>
 
     </div>
 
     <!-- Orange strip -->
     <div class="orange-strip flex-middle">
-        <h7 class="underline cursor-pointer"> Sign Up To The Cambridge Organic Food Mailing List
-        </h7>
+        <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
+        </p>
     </div>
 
     <!-- Footer -->
-    <div class="footer footer-padding d-flex text-white justify-content-between flex-middle p-4 tabs-padding">
-        <div>
-            <p>
-                © Cambridge Organic Food Company Ltd
-            </p>
+    <footer class="footer">
+        <div class="main-container text-white d-flex justify-content-between tabs-padding">
+            <div>
+                <p>
+                    © Cambridge Organic Food Company Ltd
+                </p>
+            </div>
+            <div>
+                <p>
+                    Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
+                </p>
+            </div>
+            <div class="d-flex gap-2 justify-content-center">
+                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
+                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
+            </div>
         </div>
-        <div>
-            <p>
-                Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-            </p>
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" />
-            <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" />
-            <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" />
-        </div>
-    </div>
+    </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.querySelector('.navbar-tab');
-            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-            menuButton.addEventListener('click', function () {
-                dropdownMenus.forEach(menu => menu.classList.toggle('active'));
-            });
-        });
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 
