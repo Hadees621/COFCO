@@ -766,6 +766,14 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .auth-section-name {
+    font-size: 18px;
+  }
+
+  .auth-area-p {
+    font-size: 14px;
+  }
+
   .edit-contents-modal {
     .cancel-button {
       font-size: 12px;
@@ -879,8 +887,7 @@
   }
 
   .navbar-logo-auth {
-    height: 70px;
-    width: 280px !important;
+    height: 72px;
   }
 
   .navbar-search {
@@ -934,17 +941,18 @@
   }
 
   .cart-dropdown {
-    width: 230px !important;
+    width: 270px !important;
     right: 0;
     top: 53px;
     left: auto;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     margin: 5px 10px;
+    justify-content: center !important;
   }
 
   .order-added {
-    font-size: 11px;
+    font-size: 140px !important;
     text-align: center;
   }
 
@@ -959,5 +967,11 @@
   .cart-image {
     width: 30px;
     border-radius: 0px;
+  }
+
+  .internal-cart {
+    border-radius: 30px;
+    height: 55px;
+    width: 55px;
   }
 }
