@@ -664,6 +664,11 @@
 }
 
 @media (min-width: 1600px) and (max-width: 2560px) {
+  .view-button {
+    padding: 14px 32px;
+    font-size: 20px !important;
+  }
+
   .active-navbar-tab {
     padding: 24px !important;
   }
@@ -766,12 +771,6 @@
     height: 130px !important;
   }
 
-  .points-button {
-    height: 45px;
-    width: 165px;
-    font-size: 22px;
-  }
-
   .edit-contents-button {
     padding: 8px 36px;
     font-size: 25px;
@@ -811,8 +810,22 @@
 
   .in-stock-button {
     height: 45px;
-    width: 165px;
-    font-size: 22px;
+    width: 150px;
+    font-size: 20px;
+
+    .small-icons {
+      width: 21px;
+    }
+  }
+
+  .points-button {
+    height: 40px;
+    width: 135px;
+    font-size: 19px;
+
+    .small-icons {
+      width: 21px;
+    }
   }
 
   .products-buttons {
@@ -912,10 +925,6 @@
     font-size: 25px;
   }
 
-  .product-nested-description {
-    font-size: 20px;
-  }
-
   .product-detail-image {
     width: 700px !important;
     height: 600px !important;
@@ -933,20 +942,14 @@
   .product-nested-titles {
     font-weight: 600;
     font-size: 22px;
-    margin: 0px 10px;
   }
 
   .small-icons {
     width: 24px;
   }
 
-  .product-nested-titles {
-    font-weight: 700;
-    font-size: 26px;
-  }
-
   .product-nested-description {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
 
