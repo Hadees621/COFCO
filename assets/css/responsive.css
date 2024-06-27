@@ -402,6 +402,10 @@
     font-size: 12px;
     padding: 7px 20px;
   }
+
+  .border-and-padding {
+    border-right: 1px solid #ccc;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -575,6 +579,10 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1599px) {
+  .border-and-padding {
+    border-right: 1px solid #ccc;
+  }
+
   .table-choice-vegetable-box {
     padding: 25px;
   }
@@ -729,6 +737,10 @@
   .slider-product-image {
     width: 320px !important;
     height: 190px !important;
+  }
+
+  .border-and-padding {
+    border-right: 1px solid #ccc;
   }
 
   .view-button {
@@ -926,8 +938,8 @@
   }
 
   .each-product-row {
-    padding: 4px !important;
-    font-size: 16px !important;
+    padding: 2px !important;
+    font-size: 14px !important;
     td {
       padding: 0;
     }
@@ -938,20 +950,20 @@
   }
 
   .order-details-product-image {
-    width: 550px !important;
-    height: 400px !important;
+    width: 500px !important;
+    height: 350px !important;
     margin-top: 5px;
     margin: 20px !important;
   }
 
   .order-details-product-image2 {
-    width: 600px !important;
-    height: 400px !important;
+    width: 500px !important;
+    height: 350px !important;
     margin-top: 5px;
   }
 
   .text-small {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .text-small-above {
@@ -1031,7 +1043,7 @@
 
   .text-below-table {
     .product-nested-description {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
     }
   }

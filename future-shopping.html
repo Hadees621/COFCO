@@ -18,14 +18,13 @@
     <nav class="navbar navbar-dark bg-dark flex-middle">
 
         <!-- Nav tabs -->
-        <div class="container main-container-details d-flex">
+        <div class="container main-container d-flex ">
 
             <!-- Offcanvas -->
-            <div>
-                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-                    aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon hide-on-large-screen"></span>
+            <div class="hide-on-large-screen">
+                <button class="navbar-togler flex-middle hamburger "" type=" button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
                     Menu
                 </button>
                 <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
@@ -144,7 +143,8 @@
 
                         <div class="d-flex gap-5 py-4">
                             <div class="d-flex gap-2">
-                                <img src="/assets/images/search-results/Asset 16.png" alt="assets" />
+                                <img src="/assets/images/search-results/Asset 16.png" alt="assets"
+                                    style="width: 19px;" />
                                 <p class="underline cursor-pointer auth-area-p text-white">
                                     <a href="/manage-accounts.html">
                                         Manage Account
@@ -165,7 +165,7 @@
                 </div>
             </div>
 
-            <a class="" href="/">
+            <a href="/">
                 <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
             </a>
 
@@ -197,6 +197,7 @@
                         </div>
                     </li>
 
+
                     <!-- search for lg screen  -->
                     <li class="nav-item">
                         <div class="position-relative hide-on-small-screen">
@@ -206,7 +207,7 @@
                                     d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
                                 <path fill="none" d="M0 0h24v24H0z" />
                             </svg>
-                            <input type="text" class="form-control rounded-pill ml-4 internal-navbar-search-details"
+                            <input type="text" class="form-control rounded-pill ml-4 internal-navbar-search"
                                 placeholder="Search ">
                         </div>
                     </li>
@@ -219,11 +220,9 @@
             <div class="d-flex gap-3 hide-on-large-screen">
 
                 <!-- cart -->
-                <a href="/order-details.html"
-                    class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
-                    <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
-                </a>
-
+                <div class="text-white flex-middle position-relative cursor-pointer">
+                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
+                </div>
 
                 <!-- cart -->
                 <div class="dropdown show">
@@ -298,7 +297,7 @@
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
-                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
                             <div class="flex-middle m-3">
                                 <a href="/order-details.html">
                                     <button class="dropdown-checkout-button text-white">
