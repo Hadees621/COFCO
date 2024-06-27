@@ -704,19 +704,19 @@
   }
 }
 
-@media (min-width: 1600px)  {
+@media (min-width: 1600px) {
   .slider-product-image {
-    width: 370px !important;
-    height: 230px !important;
+    width: 320px !important;
+    height: 190px !important;
   }
 
   .view-button {
-    padding: 10px 30px;
-    font-size: 20px !important;
+    padding: 8px 25px;
+    font-size: 15px !important;
   }
 
   .active-navbar-tab {
-    padding: 24px !important;
+    padding: 20px !important;
   }
 
   .table-choice-vegetable-box {
@@ -738,19 +738,16 @@
   }
 
   .product-details-area {
+    max-width: 700px;
     margin-left: 25px;
   }
 
   .products-detail-area {
-    max-width: 950px;
+    max-width: 800px;
   }
 
   .products-buttons {
     height: 45px;
-  }
-
-  .product-price {
-    font-size: 34px;
   }
 
   .content-container-search-results {
@@ -819,29 +816,29 @@
   }
 
   .edit-contents-button {
-    padding: 8px 36px;
-    font-size: 23px;
+    padding: 8px 30px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 40px;
   }
 
   .Additional-Items {
-    font-size: 50px !important;
+    font-size: 45px !important;
   }
 
   .Based-on-your {
-    font-size: 23px !important;
-    margin: 20px;
+    font-size: 20px !important;
+    margin: 10px;
     margin-bottom: 40px;
   }
 
   .product-price {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .add-to-order-button {
-    padding: 10px 56px;
-    font-size: 23px;
+    padding: 10px 50px;
+    font-size: 20px;
   }
 
   .quantity-selector {
@@ -876,7 +873,7 @@
   }
 
   .products-buttons {
-    height: 45px;
+    height: 42px;
   }
 
   .tabs-padding-prod {
@@ -992,16 +989,23 @@
 
   .product-nested-titles {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  .product-nested-description {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .slide {
+    .product-nested-titles {
+      font-weight: 600;
+      font-size: 17px;
+    }
   }
 
   .small-icons {
     width: 24px;
-  }
-
-  .product-nested-description {
-    font-size: 18px;
-    font-weight: 600;
   }
 
   .text-below-table {
@@ -1012,8 +1016,8 @@
   }
 
   .dropdown-checkout-button {
-    padding: 6px 23px;
-    font-size: 19px;
+    padding: 6px 20px;
+    font-size: 16px;
   }
 
   .tabs {
