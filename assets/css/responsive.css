@@ -1083,7 +1083,7 @@
 }
 
 .hide-on-large-screen {
-  display: flex;
+  display: block;
 
   @media (min-width: 1024px) {
     display: none !important;
