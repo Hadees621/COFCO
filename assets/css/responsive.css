@@ -405,6 +405,27 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .slider-product-image {
+    width: 270px !important;
+    height: 160px !important;
+  }
+
+  .slide {
+    .product-nested-titles {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .product-price {
+      font-size: 17px;
+    }
+  }
+
+  .view-button {
+    padding: 8px 25px;
+    font-size: 12px !important;
+  }
+
   .border-and-padding {
     border-right: 1px solid #ccc;
     padding-right: 25px;
