@@ -749,6 +749,7 @@ button.next img {
   width: 190px;
   right: 0;
   left: auto;
+  box-shadow: #000000;
 }
 
 .cart-dropdown::before {
