@@ -520,11 +520,6 @@
     padding-left: 40px;
     font-size: 14px;
     font-weight: 500;
-    margin: 2px 30px;
-  }
-
-  .internal-navbar-search-icon {
-    /* margin-left: 30px; */
   }
 
   .internal-navbar-search::placeholder {
@@ -660,11 +655,6 @@
     padding-left: 40px;
     font-size: 18px;
     font-weight: 500;
-    margin: 0px 15px;
-  }
-
-  .internal-navbar-search-icon {
-    /* margin: 1px 13px; */
   }
 
   .internal-navbar-search::placeholder {
