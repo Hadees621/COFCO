@@ -1085,26 +1085,34 @@
 }
 
 .homepage-banner {
-  background-image: url("/assets/images/Asset 4.png");
-  background-size: cover;
-  background-position: start;
-  position: relative;
-  opacity: 2.9;
-
   @media (max-width: 768px) {
-    background-position: center;
+    height: 100%;
   }
 
   .text-overlay {
-    position: absolute;
     color: white;
     text-align: start;
-    display: inline-block;
   }
 }
 
+.banner {
+  background-color: #ffffff;
+  padding: 100px 0px;
+  gap: 70px;
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+    gap: 30px;
+  }
+}
+
+.slide {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+}
+
 .hide-on-large-screen {
-  display: block;
+  display: flex;
 
   @media (min-width: 1024px) {
     display: none !important;
@@ -1159,22 +1167,6 @@
   @media (min-width: 1600px) {
     height: 180px;
   }
-}
-
-.banner {
-  background-color: #ffffff;
-  padding: 100px 0px;
-  gap: 70px;
-
-  @media (max-width: 768px) {
-    padding: 50px 20px;
-    gap: 30px;
-  }
-}
-
-.slide {
-  width: calc(100% / 3);
-  box-sizing: border-box;
 }
 
 @media (min-width: 312px) and (max-width: 768px) {
