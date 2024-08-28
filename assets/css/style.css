@@ -93,7 +93,7 @@ p {
 }
 
 .navbar {
-  background-image: url("/assets/images/Asset 5.png");
+  background-image: url("../images/Asset 5.png");
   background-size: cover;
   background-position: center;
 }
@@ -155,7 +155,7 @@ p {
 }
 
 .navbar__tab__content {
-  background-image: url("/assets/images/Asset 6.png");
+  background-image: url("../images/Asset 6.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1220,7 +1220,7 @@ ul {
 }
 
 .homepage-banner {
-  background-image: url("/assets/images/Asset 4.png");
+  background-image: url("../images/Asset 4.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -1230,3 +1230,37 @@ ul {
 table {
   margin-bottom: 0px !important;
 }/*# sourceMappingURL=style.css.map */
+
+.step-form>.steps>.step {
+  display: none;
+}
+
+.step-form>.steps>.step.active {
+  display: block;
+}
+
+#customerForm{
+  padding-bottom: 30px;
+}
+#customerForm .step-form-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 0;
+  background: #fff;
+  border-top: 1px dashed gainsboro;
+}
+#customerForm .step-form-footer button.step-btn-next, #customerForm .step-form-footer .step-btn-complete{
+  margin-right: 50px;
+}
+#customerForm  table th{
+  white-space: nowrap;
+}
+
+#customerForm h4.form-step-count {
+  position: absolute;
+  bottom: 13px;
+  z-index: 1;
+  left: 45px;
+}
