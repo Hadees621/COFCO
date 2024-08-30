@@ -1231,7 +1231,6 @@ table {
   margin-bottom: 0px !important;
 }
 
-/* Ensure consistent styling for inputs */
 .form-control {
   background-color: #f2f2f2;
   border-radius: 50px;
@@ -1244,7 +1243,6 @@ table {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/* Button styling */
 .btn-primary {
   background-color: #073b25;
   border-color: #073b25;
@@ -1256,4 +1254,10 @@ table {
 .btn-primary:hover {
   background-color: #055b1e;
   border-color: #055b1e;
+}
+
+.navbar-tab.active {
+  border: 1px solid white;
+  background-color: #055b1e;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=style.css.map */

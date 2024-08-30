@@ -168,13 +168,13 @@
                         </div>
                     </li>
 
-                    <li>
-                        <div class="rounded-pill text-white navbar-tab flex-middle nav-link sign-u">
-                            <a href="sign-up.php">
-                                Sign In / Up
-                            </a>
-                        </div>
+                    <li style="text-decoration: none;">
+                        <button type="button" class="rounded-pill text-white navbar-tab flex-middle nav-link sign-up"
+                            onclick="window.location.href='sign-up.php';">
+                            Sign In / Up
+                        </button>
                     </li>
+
                 </ul>
 
             </div>

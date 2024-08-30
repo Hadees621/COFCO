@@ -156,14 +156,20 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li style="text-decoration: none; ">
+                        <button type="button" class="rounded-pill text-white navbar-tab flex-middle nav-link sign-up active"
+                            onclick="window.location.href='sign-up.php';" style="border: 1px solid white">
+                            Sign In / Up
+                        </button>
+                    </li>
+                    <!-- <li>
                         <div class="rounded-pill text-white navbar-tab flex-middle nav-link sign-up active"
                             style="border: 1px solid white">
                             <a href="sign-up.php" style="color: white !important; font-size: 15px;">
                                 Sign In / Up
                             </a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>
