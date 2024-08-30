@@ -1,28 +1,14 @@
 <?php include_once './components/header.php' ?>
 
-<!-- strip -->
-<div class="red-strip flex-middle">
-    <p class="strip-content"> Monthly Special:
-        <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
-        </span>
-    </p>
-</div>
+<?php include_once './components/red-strip.php' ?>
 
-<!-- breadcrumb -->
-<div aria-label="breadcrumb" class="breadcrumb-position">
-    <ol class="d-flex text-bold main-container">
-        <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
-        <li class="breadcrumb-item bread border-none cursor-pointer">Shop</li>
-        <li class="breadcrumb-item bread border-none cursor-pointer">Fruit & Veg Boxes</li>
-        <li class="cursor-pointer underline breadcrumb-item bread  border-none">Choice Veg Box Small</li>
-    </ol>
-</div>
+<?php include_once './components/breadcrumb.php' ?>
 
 <!-- Middle -->
 <section>
     <div class="d-flex main-container tabs-padding border-2 mt-4">
         <div>
-            <img src="/assets/images/fruitandveg/Asset 1.png" alt="asset" class="product-image" />
+            <img src="./assets/images/fruitandveg/Asset 1.png" alt="asset" class="product-image" />
         </div>
 
         <div class="w-full">
@@ -36,15 +22,15 @@
 
                     <div class="d-flex mt-2">
                         <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                            <img src="/assets/images/fruitandveg/Asset 13.png" class="small-icons" alt="asset" />
+                            <img src="./assets/images/fruitandveg/Asset 13.png" class="small-icons" alt="asset" />
                             <h6 class="mt-2 product-buttons-tab">Serves 2-3 People</h6>
                         </div>
                         <div class="d-flex gap-3 flex-middle border w-full products-buttons px-2 border">
-                            <img src="/assets/images/product-details/Asset 15.png" class="small-icons " alt="assets" />
+                            <img src="./assets/images/product-details/Asset 15.png" class="small-icons " alt="assets" />
                             <h6 class="mt-2 text-start product-buttons-tab ">Source: UK & International</h6>
                         </div>
                         <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer">
-                            <img src="/assets/images/fruitandveg/Asset 15.png" class="small-icons" alt="assets" />
+                            <img src="./assets/images/fruitandveg/Asset 15.png" class="small-icons" alt="assets" />
 
                             <h6 class="mt-2 product-buttons-tab"> Free Delivery </h6>
                         </div>
@@ -66,7 +52,7 @@
                             <tr>
                                 <td class="product-nested-description">Potatoes (700g)</td>
                                 <td class="product-nested-description flex-middle gap-2">
-                                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                    <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
                                     1 Points
                                 </td>
@@ -74,7 +60,7 @@
                             <tr>
                                 <td class="product-nested-description">Carrots (500g)</td>
                                 <td class="product-nested-description flex-middle gap-2">
-                                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                    <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
                                     3 Points
                                 </td>
@@ -82,7 +68,7 @@
                             <tr>
                                 <td class="product-nested-description">Onions (100g)</td>
                                 <td class="product-nested-description flex-middle gap-2">
-                                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                    <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
                                     5 Points
                                 </td>
@@ -90,7 +76,7 @@
                             <tr>
                                 <td class="product-nested-description">Butternut Squash (x1)</td>
                                 <td class="product-nested-description flex-middle gap-2">
-                                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                    <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
                                     2 Points
                                 </td>
@@ -98,14 +84,15 @@
                             <tr>
                                 <td class="product-nested-description">French Beans (200g)</td>
                                 <td class="product-nested-description flex-middle gap-2">
-                                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="asset" />
+                                    <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                        alt="asset" />
                                     1 Points
                                 </td>
                             </tr>
                             <tr>
                                 <td class="product-nested-description">Tomatoes (480g)</td>
                                 <td class="product-nested-description flex-middle gap-2">
-                                    <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                    <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
                                     2 Points
                                 </td>
@@ -136,11 +123,11 @@
                     </div>
                     <div class="d-flex gap-4">
                         <div class="in-stock-button text-white flex-middle gap-2 mt-4">
-                            <img src="/assets/images/product-details/Asset 13.png" class="small-icons" alt="assets" />
+                            <img src="./assets/images/product-details/Asset 13.png" class="small-icons" alt="assets" />
                             In stock
                         </div>
                         <div class="points-button flex-middle gap-2 mt-4 text-bolder">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
+                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
                             10 points
                         </div>
                     </div>
@@ -251,7 +238,7 @@
                             </button>
                         </div>
                         <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
-                            <img src="/assets/images/product-details/modal.png" alt="assets" />
+                            <img src="./assets/images/product-details/modal.png" alt="assets" />
                             <h1 class="text-bold mt-4" style="font-size: 35px;">
                                 Monday
                             </h1>
@@ -307,7 +294,7 @@
                                 <div style="border: 2px solid #4B5943;">
                                     <div class="d-flex justify-content-between p-3" style="background-color: #EBD7AD;">
                                         <div class="d-flex w-100 align-items-center gap-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 20px;" />
                                             <span class="text-bold">10 / 10 Points Used</span>
                                         </div>
@@ -318,7 +305,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -340,7 +327,7 @@
                                             <tr class="" style="background-color: #E6E6E6;">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -359,7 +346,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -381,7 +368,7 @@
                                             <tr class="" style="background-color: #E6E6E6;">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -402,7 +389,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -424,7 +411,7 @@
                                             <tr class="" style="background-color: #E6E6E6;">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -443,7 +430,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -485,7 +472,7 @@
                                     <tr class=" trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -498,7 +485,7 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -511,7 +498,7 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -524,73 +511,7 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -604,7 +525,73 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -649,145 +636,6 @@
     </div>
 </section>
 
-<!-- Slider area -->
-<div class="pt-5 slider-background"
-    style="background-image: url('/assets/images/product-details/Asset 5.png'); background-size: cover;">
-    <div class="text-center main-container">
-        <h1 class="pt-4 text-bold Additional-Items">Additional Items of Interest</h1>
-        <h5 class="text-bold Based-on-your">Based on your selection, see what other products may be of interest to
-            you:
-        </h5>
-        <div class="slider-container d-flex mt-5" style="align-items: start;">
-            <div class="slider ">
-                <div class="slider-wrapper d-flex">
-                    <div class="slide">
-                        <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
-                            class="slider-product-image">
-                        <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
-                            Sourdough Breadrolls</h3>
-                        <p class="product-price">£4.40</p>
-                        <a href="/product-detail-auth.html">
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="/assets/images/product-details/Asset 3.png" alt="Product 2"
-                            class="slider-product-image">
-                        <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
-                            Sourdough Breadrolls</h3>
-                        <p class="product-price">£4.40</p>
-                        <a href="/product-detail-auth.html">
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="/assets/images/product-details/Asset 4.png" alt="Product 3"
-                            class="slider-product-image">
-                        <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
-                            Sourdough Breadrolls</h3>
-                        <p class="product-price">£4.40</p>
-                        <a href="/product-detail-auth.html">
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
-                            class="slider-product-image">
-                        <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
-                            Sourdough Breadrolls</h3>
-                        <p class="product-price">£4.40</p>
-                        <a href="/product-detail-auth.html">
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
-                            class="slider-product-image">
-                        <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
-                            Sourdough Breadrolls</h3>
-                        <p class="product-price">£4.40</p>
-                        <a href="/product-detail-auth.html">
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"
-                            class="slider-product-image">
-                        <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
-                            Sourdough Breadrolls</h3>
-                        <p class="product-price">£4.40</p>
-                        <a href="/product-detail-auth.html">
-                            <button class="view-button text-white mt-3">
-                                View more...
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="button-container">
-                <button class="next" onclick="moveSlide(1)">
-                    <img src="/assets/images/product-details/Asset 6.png" alt="Next" class="mt-3" />
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Companies -->
-<div class="main-container companies-container">
-    <div>
-        <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
-    </div>
-
-</div>
-
-<!-- Orange strip -->
-<div class="orange-strip flex-middle">
-    <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
-    </p>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="main-container text-white d-flex justify-content-between tabs-padding">
-        <div>
-            <p>
-                © Cambridge Organic Food Company Ltd
-            </p>
-        </div>
-        <div>
-            <p>
-                Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-            </p>
-        </div>
-        <div class="d-flex gap-2 justify-content-center">
-            <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
-            <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
-            <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
-        </div>
-    </div>
-</footer>
+<?php include_once './components/slider.php' ?>
 
 <?php include_once './components/footer.php' ?>

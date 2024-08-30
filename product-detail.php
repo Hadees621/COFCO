@@ -23,7 +23,7 @@
 <section>
     <div class="d-flex main-container tabs-padding mt-4">
         <div>
-            <img src="/assets/images/product-details/Asset 1.png" class="product-image" alt="assets" />
+            <img src="./assets/images/product-details/Asset 1.png" class="product-image" alt="assets" />
         </div>
 
         <!-- mr-l-5 -->
@@ -304,6 +304,7 @@
     </div>
 
 </div>
+
 <!-- Orange strip -->
 <div class="orange-strip flex-middle">
     <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
