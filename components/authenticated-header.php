@@ -17,10 +17,10 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark flex-middle">
+    <nav class="navbar navbar-dark bg-dark flex-middl border justify-content-between">
 
         <!-- Nav tabs -->
-        <div class="container main-container d-flex ">
+        <div class="container main-container d-flex">
 
             <!-- Offcanvas -->
             <div>
@@ -168,7 +168,7 @@
                 </div>
             </div>
 
-            <a href="/">
+            <a href="/cofco/index.php">
                 <img src="./assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
             </a>
 
@@ -361,7 +361,7 @@
                 </a>
 
                 <a href="/product-detail-auth.php">
-                    <p class="cursor-pointer active-navbar-tab ">
+                    <p class="cursor-pointer">
                         Groceries
                     </p>
                 </a>

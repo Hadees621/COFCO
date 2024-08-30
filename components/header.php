@@ -34,7 +34,7 @@
         <div class="container main-container d-flex  mx-2">
 
             <!-- Offcanvas -->
-            <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+            <button class="navbar-togler flex-middle hamburger hide-on-large-screen" type=" button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon hide-on-large-screen"></span>
                 Menu
@@ -136,7 +136,7 @@
                 </div>
             </div>
 
-            <a href="/">
+            <a href="/cofco/index.php">
                 <img src="./assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
             </a>
 
@@ -169,7 +169,7 @@
                     </li>
 
                     <li>
-                        <div class="rounded-pill text-white navbar-tab flex-middle sign-up">
+                        <div class="rounded-pill text-white navbar-tab flex-middle nav-link sign-u">
                             <a href="sign-up.php">
                                 Sign In / Up
                             </a>
@@ -288,4 +288,4 @@
 
     </div>
 
-</body> 
+</body>
