@@ -17,7 +17,7 @@
                 <h1 class="text-bold LongUserName">LongUserName000999</h1>
             </div>
             <div class="d-flex gap-4">
-                <a href="/manage-accounts.html" class="manage-account-button flex-middle gap-2">
+                <a href="manage-accounts.php" class="manage-account-button flex-middle gap-2">
                     <img src="./assets/images/order-details/Asset 2.png" class="small-icons" alt="assets" />
                     <p class="text-bold">Manage Account</p>
                 </a>
@@ -27,7 +27,6 @@
                 </a>
             </div>
         </div>
-
 
         <div class="py-2 mt-5">
             <div class="d-flex justify-content-between align-content-center grid-on-small-flex-on-large gap-3">
@@ -154,7 +153,5 @@
 
     </div>
 </section>
-
-<?php include_once './components/slider.php' ?>
 
 <?php include_once './components/footer.php' ?>

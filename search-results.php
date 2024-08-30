@@ -54,7 +54,7 @@
                         <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                             information...</h6>
                         <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                        <a href="/product-detail.html">
+                        <a href="product-detail.php">
                             <button class="view-product ">
                                 View Product
                             </button>
@@ -74,7 +74,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -89,8 +89,8 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
-                                <a href="/product-detail.html"><button class="view-product ">
+                            <a href="product-detail.php">
+                                <a href="product-detail.php"><button class="view-product ">
                                         View Product
                                     </button>
                                 </a></a>
@@ -110,7 +110,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -125,7 +125,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -140,7 +140,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -155,7 +155,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -179,7 +179,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -194,7 +194,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>
@@ -209,7 +209,7 @@
                             <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
                                 information...</h6>
                             <h3 class="text-bold tab-content-products-description p-3"> £2.25 </h3>
-                            <a href="/product-detail.html">
+                            <a href="product-detail.php">
                                 <button class="view-product ">
                                     View Product
                                 </button>

@@ -16,7 +16,7 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <a href="/product-detail-auth.html">
+                            <a href="/product-detail-auth.php">
                                 <button class="view-button text-white mt-3">
                                     View more...
                                 </button>
@@ -28,7 +28,7 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <a href="/product-detail-auth.html">
+                            <a href="/product-detail-auth.php">
                                 <button class="view-button text-white mt-3">
                                     View more...
                                 </button>
@@ -40,7 +40,7 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <a href="/product-detail-auth.html">
+                            <a href="/product-detail-auth.php">
                                 <button class="view-button text-white mt-3">
                                     View more...
                                 </button>
@@ -52,7 +52,7 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <a href="/product-detail-auth.html">
+                            <a href="/product-detail-auth.php">
                                 <button class="view-button text-white mt-3">
                                     View more...
                                 </button>
@@ -64,7 +64,7 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <a href="/product-detail-auth.html">
+                            <a href="/product-detail-auth.php">
                                 <button class="view-button text-white mt-3">
                                     View more...
                                 </button>
@@ -76,7 +76,7 @@
                             <h3 class="product-nested-titles mt-3">Fitzbillies · Cambridge Seeded
                                 Sourdough Breadrolls</h3>
                             <p class="product-price">£4.40</p>
-                            <a href="/product-detail-auth.html">
+                            <a href="/product-detail-auth.php">
                                 <button class="view-button text-white mt-3">
                                     View more...
                                 </button>

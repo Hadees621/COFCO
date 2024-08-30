@@ -58,7 +58,7 @@
                                         New Customers
                                     </p>
                                 </a>
-                                <a href="Fruitandveg.php">
+                                <a href="fruit-veg.php">
                                     <p class="cursor-pointer">
                                         Choice Veg Boxes
                                     </p>
@@ -170,7 +170,7 @@
 
                     <li>
                         <div class="rounded-pill text-white navbar-tab flex-middle sign-up">
-                            <a href="SignUp.php">
+                            <a href="sign-up.php">
                                 Sign In / Up
                             </a>
                         </div>
@@ -240,7 +240,7 @@
                     </p>
                 </a>
 
-                <a href="Fruitandveg.php">
+                <a href="fruit-veg.php">
                     <p class="cursor-pointer">
                         Choice Veg Boxes
                     </p>

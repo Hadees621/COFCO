@@ -58,7 +58,7 @@
                                             New Customers
                                         </p>
                                     </a>
-                                    <a href="/Fruitandveg.html">
+                                    <a href="fruit-veg.php">
                                         <p class="cursor-pointer">
                                             Choice Veg Boxes
                                         </p>
@@ -73,7 +73,7 @@
                                             Fresh Goods
                                         </p>
                                     </a>
-                                    <a href="/product-detail.html">
+                                    <a href="product-detail.php">
                                         <p class="cursor-pointer">
                                             Groceries
                                         </p>
@@ -149,7 +149,7 @@
                                 <img src="./assets/images/search-results/Asset 16.png" alt="assets"
                                     style="width: 19px;" />
                                 <p class="underline cursor-pointer auth-area-p text-white">
-                                    <a href="/manage-accounts.html">
+                                    <a href="/manage-accounts.php">
                                         Manage Account
                                     </a>
                                 </p>
@@ -158,7 +158,7 @@
                                 <img src="./assets/images/search-results/Asset 17.png" alt="assets"
                                     style="width: 15px;" />
                                 <p class="underline cursor-pointer auth-area-p text-white">
-                                    <a href="/index.html">
+                                    <a href="/index.php">
                                         sign out
                                     </a>
                                 </p>
@@ -223,7 +223,7 @@
             <div class="d-flex gap-3 hide-on-large-screen">
 
                 <!-- cart -->
-                <a href="/order-details.html"
+                <a href="order-details.php"
                     class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
                     <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
                     <span class="sr-only">Order details</span>
@@ -244,7 +244,7 @@
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p class="m-2 has-been text-center">Has been added to your order</p>
                             <div class="flex-middle m-3">
-                                <a href="/order-details.html">
+                                <a href="/cofco/order-details.php">
                                     <button class="dropdown-checkout-button text-white">
                                         Checkout
                                     </button>
@@ -269,7 +269,7 @@
                         <div class="d-flex gap-1">
                             <img src="./assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
                             <p class="underline cursor-pointer auth-area-p">
-                                <a href="/manage-accounts.html">
+                                <a href="/cofco/manage-accounts.php">
                                     Manage Account
                                 </a>
                             </p>
@@ -277,7 +277,7 @@
                         <div class="d-flex gap-1">
                             <img src="./assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
                             <p class="underline cursor-pointer auth-area-p">
-                                <a href="/index.html">
+                                <a href="/cofco/index.php">
                                     sign out
                                 </a>
                             </p>
@@ -286,7 +286,7 @@
                 </div>
 
                 <!-- cart -->
-                <a href="/order-details.html"
+                <a href="/order-details.php"
                     class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
                     <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
                 </a>
@@ -305,7 +305,7 @@
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
                             <div class="flex-middle m-3">
-                                <a href="/order-details.html">
+                                <a href="order-details.php">
                                     <button class="dropdown-checkout-button text-white">
                                         checkout
                                     </button>
@@ -342,7 +342,7 @@
                     </p>
                 </a>
 
-                <a href="/Fruitandveg.html">
+                <a href="fruit-veg.php">
                     <p class="cursor-pointer detail-page-hover ">
                         Choice Veg Boxes
                     </p>
@@ -360,7 +360,7 @@
                     </p>
                 </a>
 
-                <a href="/product-detail-auth.html">
+                <a href="/product-detail-auth.php">
                     <p class="cursor-pointer active-navbar-tab ">
                         Groceries
                     </p>
