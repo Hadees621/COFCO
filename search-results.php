@@ -1,28 +1,15 @@
-<?php include_once './components/header.php' ?>
+<?php include_once './components/authenticated-header.php' ?>
 
-<!-- strip -->
-<div class="red-strip flex-middle">
-    <p class="strip-content"> Monthly Special:
-        <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
-        </span>
-    </p>
-</div>
+<?php include_once './components/red-strip.php' ?>
 
-<!-- breadcrumb -->
-<div class="breadcrumb-position">
-    <ol class="d-flex text-bold main-container">
-        <li class="breadcrumb-item cursor-pointer"><a href="#">Home</a></li>
-        <li class="cursor-pointer underline breadcrumb-item bread border-none">Library</li>
-    </ol>
-</div>
+<?php include_once './components/breadcrumb.php' ?>
 
-<!-- Middle -->
 <section class="main-container">
 
     <h1 class="flex-middle search-results text-bold">Search Results: “Carrot”</h1>
 
     <div class="d-flex align-items-center border-top pt-4">
-        <img class="refine-small-text-img" src="/assets/images/search-results/ex.png" alt="assets" />
+        <img class="refine-small-text-img" src="./assets/images/search-results/ex.png" alt="assets" />
         <p class="text-small refine-small-text text-w-600 m-2">Please use the filters below to refine your search
         </p>
     </div>
@@ -61,7 +48,7 @@
         <div class="w-100 tab-pane active " id="products" role="tabpanel" aria-labelledby="products-tab">
             <div class="d-flex justify-content-between active flex-middle pt-3 text-black">
                 <div class="d-flex tab-content-products">
-                    <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                    <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                     <div class="p-3">
                         <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots </h5>
                         <h6 class="text-bold  tab-content-products-description mt-1"> One sentence of product
@@ -80,7 +67,7 @@
             <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
                 <div class="d-grid gap-3">
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -95,7 +82,7 @@
                         </div>
                     </div>
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -116,7 +103,7 @@
             <div class="d-flex justify-content-between  flex-middle pt-3 text-black">
                 <div class="d-grid gap-3">
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -131,7 +118,7 @@
                         </div>
                     </div>
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -146,7 +133,7 @@
                         </div>
                     </div>
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -161,7 +148,7 @@
                         </div>
                     </div>
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -185,7 +172,7 @@
 
                 <div class="d-grid gap-3">
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -200,7 +187,7 @@
                         </div>
                     </div>
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -215,7 +202,7 @@
                         </div>
                     </div>
                     <div class="d-flex tab-content-products">
-                        <img src="/assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 6.png" class="product-image1" alt="assets" />
                         <div class="p-3">
                             <h5 class="text-bold tab-content-products-description"> Bunched (non-organic) Carrots
                             </h5>
@@ -235,52 +222,5 @@
     </div>
 
 </section>
-
-<!-- Companies -->
-<div class="main-container companies-container">
-    <div>
-        <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
-    </div>
-    <div>
-        <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
-    </div>
-
-</div>
-
-<!-- Orange strip -->
-<div class="orange-strip flex-middle">
-    <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
-    </p>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="main-container text-white d-flex justify-content-between tabs-padding">
-        <div>
-            <p>
-                © Cambridge Organic Food Company Ltd
-            </p>
-        </div>
-        <div>
-            <p>
-                Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-            </p>
-        </div>
-        <div class="d-flex gap-2 justify-content-center">
-            <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
-            <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
-            <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
-        </div>
-    </div>
-</footer>
 
 <?php include_once './components/footer.php' ?>

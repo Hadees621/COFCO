@@ -4,7 +4,6 @@
 
 <?php include_once './components/breadcrumb.php' ?>
 
-<!-- Middle -->
 <section>
     <div class="d-flex main-container tabs-padding border-2 mt-4">
         <div>
