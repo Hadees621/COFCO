@@ -23,11 +23,10 @@
         <div class="container main-container d-flex ">
 
             <!-- Offcanvas -->
-            <div>
-                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-                    aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon hide-on-large-screen"></span>
+            <div class="hide-on-large-screen">
+                <button class="navbar-togler flex-middle hamburger "" type=" button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
                     Menu
                 </button>
                 <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
@@ -234,16 +233,16 @@
                         <img src="assets/images/cart.png" alt="cart" class="cart-image" />
                         <div class="position-absolute count">12</div>
                     </a>
-                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu p-3 cart-dropdown border" aria-labelledby="dropdownMenuLink">
                         <div class="d-grid">
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
-                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <p class="m-2 has-been text-center">Has been added to your order</p>
                             <div class="flex-middle m-3">
                                 <a href="/order-details.html">
                                     <button class="dropdown-checkout-button text-white">
-                                        checkout
+                                        Checkout
                                     </button>
                                 </a>
                             </div>
@@ -258,9 +257,9 @@
                 <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
                         <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
-                        <h7 class="w-100 cursor-pointer">
+                        <p class="w-100 cursor-pointer auth-section-name">
                             LongUserName000999
-                        </h7>
+                        </p>
                     </div>
                     <div class="d-flex gap-2">
                         <div class="d-flex gap-1">
@@ -283,9 +282,10 @@
                 </div>
 
                 <!-- cart -->
-                <div class="text-white flex-middle position-relative cursor-pointer">
-                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
-                </div>
+                <a href="/order-details.html"
+                    class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
+                    <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
+                </a>
 
                 <!-- cart -->
                 <div class="dropdown show">
@@ -299,7 +299,7 @@
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
-                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
+                            <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
                             <div class="flex-middle m-3">
                                 <a href="/order-details.html">
                                     <button class="dropdown-checkout-button text-white">
@@ -408,7 +408,6 @@
     <!-- breadcrumb -->
     <div aria-label="breadcrumb" class="breadcrumb-position">
         <ol class="d-flex text-bold main-container">
-
             <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
             <li class="breadcrumb-item bread border-none cursor-pointer">Shop</li>
             <li class="breadcrumb-item bread border-none cursor-pointer">Fruit & Veg Boxes</li>
@@ -1074,7 +1073,7 @@
                 you:
             </h5>
             <div class="slider-container d-flex mt-5" style="align-items: start;">
-                <div class="slider">
+                <div class="slider ">
                     <div class="slider-wrapper d-flex">
                         <div class="slide">
                             <img src="/assets/images/product-details/Asset 2.png" alt="Product 1"

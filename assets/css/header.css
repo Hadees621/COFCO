@@ -105,14 +105,6 @@
     margin: 10px;
   }
 
-  .text-overlay {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 90%;
-  }
-
   .search-icon {
     margin: 1px 8px;
   }
@@ -219,7 +211,6 @@
   }
 
   .navbar-logo-auth {
-    /* height: 55px; */
     width: 190px !important;
   }
 
@@ -277,9 +268,6 @@
   }
 
   .text-overlay {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     max-width: 90%;
   }
@@ -473,7 +461,7 @@
   }
 
   .main-container {
-    max-width: 1050px !important;
+    max-width: 1100px !important;
     margin: auto;
   }
 
@@ -520,11 +508,6 @@
     padding-left: 40px;
     font-size: 14px;
     font-weight: 500;
-    margin: 2px 30px;
-  }
-
-  .internal-navbar-search-icon {
-    margin-left: 30px;
   }
 
   .internal-navbar-search::placeholder {
@@ -542,10 +525,16 @@
   }
 
   .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(20%);
     max-width: 280px;
-    top: 10%;
-    left: 11%;
     font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .navbar-logo {
@@ -625,7 +614,7 @@
   }
 
   .main-container-details {
-    max-width: 1300px !important;
+    max-width: 1200px !important;
     margin: auto;
   }
 
@@ -660,11 +649,6 @@
     padding-left: 40px;
     font-size: 18px;
     font-weight: 500;
-    margin: 0px 15px;
-  }
-
-  .internal-navbar-search-icon {
-    margin: 1px 13px;
   }
 
   .internal-navbar-search::placeholder {
@@ -675,19 +659,21 @@
   }
 
   .banner-overlay-heading1 {
-    font-size: 42px !important;
+    font-size: 37px !important;
     font-weight: 500;
   }
 
   .banner-overlay-text {
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 500;
   }
 
   .text-overlay {
-    max-width: 450px;
-    top: 10%;
-    left: 11%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(5%);
+    max-width: 400px;
     font-size: 24px;
   }
 
@@ -765,7 +751,15 @@
   }
 }
 
-@media (min-width: 1600px) and (max-width: 2560px) {
+@media (min-width: 1600px) {
+  .auth-section-name {
+    font-size: 16px;
+  }
+
+  .auth-area-p {
+    font-size: 13px;
+  }
+
   .edit-contents-modal {
     .cancel-button {
       font-size: 12px;
@@ -793,21 +787,21 @@
   }
 
   .main-container-details {
-    max-width: 1850px !important;
+    max-width: 1400px !important;
     margin: auto;
   }
 
   .product-buttons-tab {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .product-title {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .slider-background {
-    padding: 120px 0px !important;
+    padding: 80px 0px !important;
   }
 
   .product-image {
@@ -816,7 +810,7 @@
   }
 
   .breadcrumb-position {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500px;
     padding: 8px 0px !important;
     border-bottom: 1px solid black;
@@ -838,10 +832,17 @@
     font-weight: 500;
   }
 
+  .internal-navbar-search-details {
+    width: 370px;
+    padding: 10px 21px 10px 50px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
   .internal-navbar-search-icon {
     width: 30px;
     height: 100px;
-    margin: 1px 6px;
+    margin: 1px;
   }
 
   .internal-navbar-search::placeholder {
@@ -852,20 +853,22 @@
   }
 
   .banner-overlay-heading1 {
-    font-size: 48px !important;
+    font-size: 40px !important;
     font-weight: 500;
   }
 
   .banner-overlay-text {
-    font-size: 18px !important;
+    font-size: 14px !important;
     font-weight: 500;
   }
 
   .text-overlay {
-    max-width: 450px;
-    top: 10%;
-    left: 23%;
-    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(14%);
+    max-width: 400px;
+    font-size: 2px;
   }
 
   .navbar-logo {
@@ -875,12 +878,11 @@
 
   .detail-page-hover {
     transition: background-color 0.3s ease;
-    padding: 25px !important;
+    padding: 20px !important;
   }
 
   .navbar-logo-auth {
-    height: 70px;
-    width: 280px !important;
+    height: 72px;
   }
 
   .navbar-search {
@@ -919,17 +921,16 @@
   }
 
   .strip-content {
-    font-size: 15px !important;
-    font-size: 15px !important;
+    font-size: 13px !important;
     font-weight: 600;
     padding-top: 3px;
   }
 
   .shop-tab {
     p {
-      padding: 8px 0px;
-      font-size: 18px;
-      font-weight: 60px;
+      padding: 6px 0px;
+      font-size: 17px;
+      font-weight: 300;
     }
   }
 
@@ -941,10 +942,11 @@
     font-size: 15px;
     font-weight: 600;
     margin: 5px 10px;
+    justify-content: center !important;
   }
 
   .order-added {
-    font-size: 11px;
+    font-size: 12px !important;
     text-align: center;
   }
 
@@ -959,5 +961,11 @@
   .cart-image {
     width: 30px;
     border-radius: 0px;
+  }
+
+  .internal-cart {
+    border-radius: 30px;
+    height: 55px;
+    width: 55px;
   }
 }

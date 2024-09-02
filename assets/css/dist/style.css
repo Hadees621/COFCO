@@ -749,6 +749,7 @@ button.next img {
   width: 190px;
   right: 0;
   left: auto;
+  box-shadow: #000000;
 }
 
 .cart-dropdown::before {
@@ -924,6 +925,7 @@ button.next img {
     width: 30px;
   }
 }
+
 .text-start {
   text-align: start;
 }
@@ -1198,4 +1200,20 @@ ul {
 
 .underline-none {
   text-decoration: none !important;
+}
+
+.refine-small-text {
+  font-size: 15px;
+}
+
+.homepage-banner {
+  background-image: url("/assets/images/Asset 4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  margin-bottom: 0px !important;
 }
