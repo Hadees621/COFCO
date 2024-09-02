@@ -21,17 +21,18 @@
 
                     <div class="d-flex mt-2">
                         <div class="d-flex gap-2 flex-middle border w-full products-buttons">
-                            <img src="./assets/images/fruitandveg/Asset 13.png" class="small-icons" alt="asset" />
-                            <h6 class="mt-2 product-buttons-tab">Serves 2-3 People</h6>
+                            <img src="./assets/images/fruitandveg/Asset 13.png" style="height: 12px; width: 18px;"
+                                alt="asset" />
+                            <h6 class="mt-2 product-buttons-tab text-bold">Serves 2-3 People</h6>
                         </div>
                         <div class="d-flex gap-3 flex-middle border w-full products-buttons px-2 border">
-                            <img src="./assets/images/product-details/Asset 15.png" class="small-icons " alt="assets" />
-                            <h6 class="mt-2 text-start product-buttons-tab ">Source: UK & International</h6>
+                            <img src="./assets/images/uk.png" alt="assets" style="height: 15px; width: 20px;" />
+                            <h6 class="mt-2 text-start product-buttons-tab text-bold ">Entirely British Produce</h6>
                         </div>
                         <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer">
-                            <img src="./assets/images/fruitandveg/Asset 15.png" class="small-icons" alt="assets" />
-
-                            <h6 class="mt-2 product-buttons-tab"> Free Delivery </h6>
+                            <img src="./assets/images/fruitandveg/Asset 15.png" style="height: 12px; width: 18px;"
+                                alt="assets" />
+                            <h6 class="mt-2 product-buttons-tab text-bold"> Free EV Delivery </h6>
                         </div>
                     </div>
                     <div class="border-bottom pb-3">
@@ -45,11 +46,15 @@
                     </div>
                     <div>
                         <p class="product-nested-titles mt-3">
-                            Example Contents
+                            Suggested Contents
                         </p>
                         <table class="product-table">
                             <tr>
-                                <td class="product-nested-description">Potatoes (700g)</td>
+                                <td class="product-nested-description">
+                                    <img src="./assets/images/uk.png" alt="assets"
+                                        style="height: 12px; width: 18px;  margin-right: 5px;" />
+                                    Potatoes (700g)
+                                </td>
                                 <td class="product-nested-description flex-middle gap-2">
                                     <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
@@ -57,7 +62,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="product-nested-description">Carrots (500g)</td>
+                                <td class="product-nested-description">
+                                    <img src="./assets/images/uk.png" alt="assets"
+                                        style="height: 12px; width: 18px; margin-right: 5px;" />
+                                    Carrots (500g)
+                                </td>
                                 <td class="product-nested-description flex-middle gap-2">
                                     <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
@@ -65,7 +74,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="product-nested-description">Onions (100g)</td>
+                                <td class="product-nested-description">
+                                    <img src="./assets/images/uk.png" alt="assets"
+                                        style="height: 12px; width: 18px; margin-right: 5px;" />
+                                    Onions (100g)
+                                </td>
                                 <td class="product-nested-description flex-middle gap-2">
                                     <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
@@ -73,7 +86,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="product-nested-description">Butternut Squash (x1)</td>
+                                <td class="product-nested-description">
+                                    <img src="./assets/images/uk.png" alt="assets"
+                                        style="height: 12px; width: 18px; margin-right: 5px;" />
+                                    Butternut Squash (x1)
+                                </td>
                                 <td class="product-nested-description flex-middle gap-2">
                                     <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
@@ -81,7 +98,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="product-nested-description">French Beans (200g)</td>
+                                <td class="product-nested-description">
+                                    <img src="./assets/images/uk.png" alt="assets"
+                                        style="height: 12px; width: 18px; margin-right: 5px;" />
+                                    French Beans (200g)
+                                </td>
                                 <td class="product-nested-description flex-middle gap-2">
                                     <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="asset" />
@@ -89,7 +110,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="product-nested-description">Tomatoes (480g)</td>
+                                <td class="product-nested-description">
+                                    <img src="./assets/images/uk.png" alt="assets"
+                                        style="height: 12px; width: 18px; margin-right: 5px;" />
+                                    Tomatoes (480g)
+                                </td>
                                 <td class="product-nested-description flex-middle gap-2">
                                     <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                         alt="assets" />
@@ -102,14 +127,14 @@
                         <p class="product-nested-description">Weights for guidance only.</p>
                         <p class="product-nested-description"> Example content will be delivered unless edited.
                     </div>
-                    <div>
+                    <!-- <div>
                         <p class="product-nested-titles mt-3">
                             Allergy Advice
                         </p>
                         <p class="product-nested-description mt-1">
                             Not applicable.
                         </p>
-                    </div>
+                    </div> 
                     <div class="border-bottom pb-4">
                         <p class="product-nested-titles mt-3">
                             Additional Information
@@ -119,7 +144,7 @@
                             this
                             product.
                         </p>
-                    </div>
+                    </div> -->
                     <div class="d-flex gap-4">
                         <div class="in-stock-button text-white flex-middle gap-2 mt-4">
                             <img src="./assets/images/product-details/Asset 13.png" class="small-icons" alt="assets" />
@@ -179,37 +204,6 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- <div class="d-grid mx-auto gap-3 green-buttons-container">
-                            <div class="d-flex justify-content-center gap-3">
-                                <div>
-                                    <button class="green-modal-buttons">
-                                        Once Only
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="green-modal-buttons">
-                                        Every Week
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="green-modal-buttons">
-                                        Every 2 Weeks
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center gap-3">
-                                <div>
-                                    <button class="green-modal-buttons">
-                                        Every 3 Weeks
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="green-modal-buttons">
-                                        Every 4 Weeks
-                                    </button>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="d-grid mx-auto gap-3 green-buttons-container">
                             <div class="d-flex justify-content-center gap-3">
                                 <div>
