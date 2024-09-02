@@ -1,7 +1,7 @@
 <?php include_once './components/header.php' ?>
 
 <div class="main-container">
-    <form class="w-50 my-5" style="margin: auto;">
+    <form class="w-50 my-5" style="margin: auto;" onsubmit="submitSigninForm(event)">
         <h1 class="text-bold" style="text-align: center;">Sign in</h1>
         <div class="form-group">
             <label for="email">Email</label>
@@ -12,7 +12,7 @@
             <input type="password" id="Password" name="Password" required>
         </div>
         <div class="d-flex justify-content-end align-items-end w-100" style="align-items: center;">
-            <button type="button" class="submit-btn">
+            <button type="submit" class="submit-btn">
                 Sign In
             </button>
         </div>

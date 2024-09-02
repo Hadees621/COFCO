@@ -52,3 +52,48 @@ function submitForm(event) {
     toastError.show();
   });
 }
+
+function submitSigninForm() {
+  var email = $("#email").val();
+  var password = $("#password").val();
+  fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signin', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      // Sending JSON data
+      'Accept': 'application/json' // Expecting JSON response
+
+    },
+    body: JSON.stringify({
+      Email: email,
+      Password: password
+    })
+  }).then(function (response) {
+    if (!response.ok) {
+      // If the response is not OK, parse the response to JSON to get error details
+      return response.json().then(function (err) {
+        // Extract and format the error message
+        var errorMessage = err.message || "Incorrect Credentials";
+
+        if (err.errors) {
+          for (var key in err.errors) {
+            if (err.errors[key] && err.errors[key].length > 0) {
+              errorMessage += " ".concat(err.errors[key].join(' '));
+            }
+          }
+        }
+
+        throw new Error(errorMessage); // Throw error with formatted message
+      });
+    }
+
+    return response.json(); // Convert response to JSON
+  }).then(function (data) {
+    var token = data.token;
+    var userinfo = data.user;
+    console.log(token, userinfo);
+  })["catch"](function (error) {
+    console.error(error);
+  });
+  event.preventDefault();
+}

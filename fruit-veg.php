@@ -127,24 +127,6 @@
                         <p class="product-nested-description">Weights for guidance only.</p>
                         <p class="product-nested-description"> Example content will be delivered unless edited.
                     </div>
-                    <!-- <div>
-                        <p class="product-nested-titles mt-3">
-                            Allergy Advice
-                        </p>
-                        <p class="product-nested-description mt-1">
-                            Not applicable.
-                        </p>
-                    </div> 
-                    <div class="border-bottom pb-4">
-                        <p class="product-nested-titles mt-3">
-                            Additional Information
-                        </p>
-                        <p class="product-nested-description mt-1">
-                            Please <a class="underline text-black "> click here to read more information </a> about
-                            this
-                            product.
-                        </p>
-                    </div> -->
                     <div class="d-flex gap-4">
                         <div class="in-stock-button text-white flex-middle gap-2 mt-4">
                             <img src="./assets/images/product-details/Asset 13.png" class="small-icons" alt="assets" />
@@ -679,3 +661,4 @@
 <?php include_once './components/footer.php' ?>
 
 <script src="./assets/js/choice-veg.js"></script>
+<script src="./assets/js/authentication.js"></script>

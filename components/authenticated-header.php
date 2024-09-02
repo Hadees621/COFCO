@@ -24,7 +24,7 @@
 
             <!-- Offcanvas -->
             <div>
-                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                <button class="navbar-togler flex-middle hamburger hide-on-large-screen" type=" button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                     aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon hide-on-large-screen"></span>
@@ -385,3 +385,4 @@
     </div>
 
 </body>
+<script src="./assets/js/authentication.js"></script>
