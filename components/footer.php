@@ -55,4 +55,4 @@
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>

@@ -837,8 +837,15 @@ button.next img {
   border: 1px solid #55733b;
   padding: 10px 20px;
   color: black;
+  cursor: pointer; /* Cursor indicates button-like behavior */
 }
+
 .green-modal-buttons:hover {
+  background-color: #55733b;
+  color: white;
+}
+
+.green-modal-buttons.selected {
   background-color: #55733b;
   color: white;
 }

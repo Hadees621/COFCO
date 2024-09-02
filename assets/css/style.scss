@@ -737,17 +737,36 @@ button.next img {
   margin: auto;
 }
 
+// .green-modal-buttons {
+//   font-size: 13px;
+//   background-color: transparent;
+//   border: 1px solid #55733b;
+//   padding: 10px 20px;
+//   color: black;
+
+//   &:hover {
+//     background-color: #55733b;
+//     color: white;
+//   }
+// }
+
 .green-modal-buttons {
   font-size: 13px;
   background-color: transparent;
   border: 1px solid #55733b;
   padding: 10px 20px;
   color: black;
+  cursor: pointer; /* Cursor indicates button-like behavior */
+}
 
-  &:hover {
-    background-color: #55733b;
-    color: white;
-  }
+.green-modal-buttons:hover {
+  background-color: #55733b;
+  color: white;
+}
+
+.green-modal-buttons.selected {
+  background-color: #55733b;
+  color: white;
 }
 
 .cancel-button {

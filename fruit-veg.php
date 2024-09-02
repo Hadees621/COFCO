@@ -1,4 +1,4 @@
-<?php include_once './components/header.php' ?>
+<?php include_once './components/authenticated-header.php' ?>
 
 <?php include_once './components/red-strip.php' ?>
 
@@ -162,7 +162,7 @@
                             </button>
                         </div>
                         <div class="modal-body" style="max-width: 700px; margin: auto;">
-                            <h1 class="text-bold" style="font-size: 35px;">
+                            <h1 class="text-bold" style="font-size: 35px; color: #0D2515;">
                                 Choice Vegetable Box · Small
                             </h1>
                             <h7 class="mt-5 text-bold" style="font-size: 13px; color: #153D37;">
@@ -173,40 +173,85 @@
                                     <p class="cursor-poiter flex-middle counter-btn" id="decrement">-</p>
                                 </button>
                                 <span id="counter-value" class="mx-3"
-                                    style="font-size: 45px; font-weight: 600;">0</span>
+                                    style="font-size: 40px; font-weight: 600; color: #042116;">1</span>
                                 <button style="border: none; background-color: transparent;">
-                                    <p class="cursor-poiter flex-middle counter-btn" id="increment">+</p>
+                                    <p class="cursor-pointer flex-middle counter-btn" id="increment">+</p>
                                 </button>
                             </div>
                         </div>
-                        <div class="d-flex mx-auto gap-3 green-buttons-container">
-                            <div>
-                                <button class="green-modal-buttons">
-                                    Once Only
-                                </button>
+                        <!-- <div class="d-grid mx-auto gap-3 green-buttons-container">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Once Only
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Every Week
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Every 2 Weeks
+                                    </button>
+                                </div>
                             </div>
-                            <div>
-                                <button class="green-modal-buttons">
-                                    Every Week
-                                </button>
+                            <div class="d-flex justify-content-center gap-3">
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Every 3 Weeks
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">
+                                        Every 4 Weeks
+                                    </button>
+                                </div>
                             </div>
-                            <div>
-                                <button class="green-modal-buttons">
-                                    Every 2 Weeks
-                                </button>
+                        </div> -->
+                        <div class="d-grid mx-auto gap-3 green-buttons-container">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div>
+                                    <button class="green-modal-buttons">Once Only</button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">Every Week</button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">Every 2 Weeks</button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center gap-3">
+                                <div>
+                                    <button class="green-modal-buttons">Every 3 Weeks</button>
+                                </div>
+                                <div>
+                                    <button class="green-modal-buttons">Every 4 Weeks</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="mx-auto mt-5 mb-5">
-                            <h7 class="mt-5 mx-auto fst-italic"
-                                style="font-size: 13px; color: #C41230; max-width: 100px;">
-                                *The produce that you have previously edited will <br />
-                                <p class="underline"> only apply to your next Choice Vegetable Box </p>
-                            </h7>
+
+                        <div class="mx-auto">
+                            <div class="d-flex justify-content-center">
+                                <h6 class="mt-5 mx-auto fst-italic"
+                                    style="font-size: 13px; color: #C41230; max-width: 600px;">
+                                    *The produce that you have previously edited will <br />
+                                    <p class="underline cursor-pointer"> only apply to your next Choice Vegetable Box
+                                    </p>
+                                </h6>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center my-4">
+                                <img src="./assets/images/order-details/Asset 9.png" style="height: 19px;" alt="assets">
+                                <p class="product-nested-description text-bold" style="color: #153D37;">
+                                    You will be asked two working days before your next <br />
+                                    Vegetable Box delivery for confirmation of content.
+                                </p>
+                            </div>
                         </div>
                         <div class="d-flex mx-auto gap-4 mb-5">
                             <div>
-                                <button class="cancel-button font-bold" data-toggle="modal"
-                                    data-target=".bd-example-modal-lg">
+                                <button class="cancel-button font-bold" data-dismiss="modal" aria-label="Close">
                                     Cancel
                                 </button>
                             </div>
@@ -638,3 +683,5 @@
 <?php include_once './components/slider.php' ?>
 
 <?php include_once './components/footer.php' ?>
+
+<script src="./assets/js/choice-veg.js"></script>
