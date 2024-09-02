@@ -4,15 +4,16 @@
     <form class="w-50 my-5" style="margin: auto;">
         <h1 class="text-bold" style="text-align: center;">Sign in</h1>
         <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
         </div>
         <div class="form-group">
             <label for="Password">Password</label>
             <input type="password" id="Password" name="Password" required>
         </div>
+        <!-- onclick="window.location.href='auth-user-profile.php';" -->
         <div class="d-flex justify-content-end align-items-end w-100" style="align-items: center;">
-            <button type="button" class="submit-btn" onclick="window.location.href='auth-user-profile.php';">
+            <button type="button" class="submit-btn">
                 Sign In
             </button>
         </div>
@@ -87,14 +88,14 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script>
-function submitForm(event) {
-    var firstname = $("#firstName").val();
-    var secondname = $("#secondName").val();
-    var email = $("#email").val();
-    var password = $("#password").val();
-    event.preventDefault();
+    function submitForm(event) {
+        var firstname = $("#firstName").val();
+        var secondname = $("#secondName").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+        event.preventDefault();
 
-    fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signup', {
+        fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', // Sending JSON data
@@ -107,38 +108,38 @@ function submitForm(event) {
                 Password: password
             })
         })
-        .then(response => {
-            if (!response.ok) {
-                // If the response is not OK, parse the response to JSON to get error details
-                return response.json().then(err => {
-                    // Extract and format the error message
-                    let errorMessage = err.message || "Something went wrong!";
-                    if (err.errors) {
-                        for (let key in err.errors) {
-                            if (err.errors[key] && err.errors[key].length > 0) {
-                                errorMessage += ` ${err.errors[key].join(' ')}`;
+            .then(response => {
+                if (!response.ok) {
+                    // If the response is not OK, parse the response to JSON to get error details
+                    return response.json().then(err => {
+                        // Extract and format the error message
+                        let errorMessage = err.message || "Something went wrong!";
+                        if (err.errors) {
+                            for (let key in err.errors) {
+                                if (err.errors[key] && err.errors[key].length > 0) {
+                                    errorMessage += ` ${err.errors[key].join(' ')}`;
+                                }
                             }
                         }
-                    }
-                    throw new Error(errorMessage); // Throw error with formatted message
-                });
-            }
-            return response.json(); // Convert response to JSON
-        })
-        .then(data => {
-            var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
-            toastSuccess.show();
-            $('#signupModal').hide();
-            $('.modal-backdrop').hide();
-        })
-        .catch(error => {
-            // Show error toast with the concatenated message
-            var toastError = new bootstrap.Toast(document.getElementById('toastError'));
-            document.querySelector('#toastError .toast-body').innerText = error.message;
-            toastError.show();
-        });
+                        throw new Error(errorMessage); // Throw error with formatted message
+                    });
+                }
+                return response.json(); // Convert response to JSON
+            })
+            .then(data => {
+                var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
+                toastSuccess.show();
+                $('#signupModal').hide();
+                $('.modal-backdrop').hide();
+            })
+            .catch(error => {
+                // Show error toast with the concatenated message
+                var toastError = new bootstrap.Toast(document.getElementById('toastError'));
+                document.querySelector('#toastError .toast-body').innerText = error.message;
+                toastError.show();
+            });
 
-}
+    }
 </script>
 </body>
 
