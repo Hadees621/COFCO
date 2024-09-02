@@ -65,27 +65,17 @@
                                     </a>
                                     <a href="#">
                                         <p class="cursor-pointer">
-                                            Additional Fruit & Veg
+                                            Original Veg Boxes
                                         </p>
                                     </a>
                                     <a href="#">
                                         <p class="cursor-pointer">
-                                            Fresh Goods
+                                            OriginalPLUS+ Veg Boxes
                                         </p>
                                     </a>
-                                    <a href="product-detail.php">
+                                    <a href="/cofco/fruit-veg.php">
                                         <p class="cursor-pointer">
-                                            Groceries
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Drinks
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Household
+                                            Specific & Specialist Items
                                         </p>
                                     </a>
                                 </div>

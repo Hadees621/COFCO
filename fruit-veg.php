@@ -27,7 +27,7 @@
                         </div>
                         <div class="d-flex gap-3 flex-middle border w-full products-buttons px-2 border">
                             <img src="./assets/images/uk.png" alt="assets" style="height: 15px; width: 20px;" />
-                            <h6 class="mt-2 text-start product-buttons-tab text-bold ">Entirely British Produce</h6>
+                            <h6 class="mt-2 text-start product-buttons-tab text-bold">Entirely British Produce</h6>
                         </div>
                         <div class="d-flex gap-2 flex-middle border w-full products-buttons cursor-pointer">
                             <img src="./assets/images/fruitandveg/Asset 15.png" style="height: 12px; width: 18px;"
