@@ -275,10 +275,16 @@
                     </div>
                 </div>
 
-                <!-- cart -->
-                <a href="/order-details.php"
-                    class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
-                    <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
+                <!-- points -->
+                <a href="#" class="text-white flex-middle cart position-relative px-3">
+                    <div>
+                        <p class="text-bold" style="font-size: 12px;"> 115</p>
+                        <p class="text-bold text-center" style="font-size: 8px;"> /15</p>
+                    </div>
+                    <div class="position-absolute point" style="background-color: white;">
+                        <img src="assets/images/search-results/Asset 2.png" alt="cart" class="point-image"
+                            style="right: 100px; width: 24px; padding: 1px" />
+                    </div>
                 </a>
 
                 <!-- cart -->
@@ -331,7 +337,6 @@
                         New Customers
                     </p>
                 </a>
-
                 <a href="#">
                     <p class="cursor-pointer detail-page-hover">
                         Choice Veg Boxes
