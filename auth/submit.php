@@ -22,6 +22,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = mysqli_real_escape_string($conn, $email);
     $password = mysqli_real_escape_string($conn, $password);
 
+    // Check if the email already exists
+    $checkEmailStmt = $conn->prepare("SELECT Email FROM customers WHERE Email = ?");
+    $checkEmailStmt->bind_param("s", $email);
+    $checkEmailStmt->execute();
+    $checkEmailStmt->store_result();
+
+    if ($checkEmailStmt->num_rows > 0) {
+        echo "Error: Email already exists.";
+        $checkEmailStmt->close();
+        $conn->close();
+        exit;
+    }
+
+    $checkEmailStmt->close();
+
     // Hash the password
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 

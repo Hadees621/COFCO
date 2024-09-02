@@ -56,7 +56,17 @@
                     </div>
                 </form>
             </div>
-
+            <div aria-live="polite" aria-atomic="true" class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="toastError">
+                    <div class="toast-header">
+                        <strong class="me-auto">Notification</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body text-danger">
+                        Something went wrong!
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -69,16 +79,6 @@
         </div>
         <div class="toast-body">
             Successfully Created Account
-        </div>
-    </div>
-
-    <div id="toastError" class="toast align-items-center text-white bg-danger border-0" role="alert"
-        aria-live="assertive" aria-atomic="true">
-        <div class="d-flex">
-            <div class="toast-body">
-                Something went wrong!
-            </div>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
     </div>
 </div>
@@ -107,19 +107,29 @@ function submitForm(event) {
                 password: password
             })
         })
-        .then(response => response.text())
+        .then(response => response.text()) // Convert response to text
         .then(data => {
-            // Show success toast
-            var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
-            toastSuccess.show();
-            $('#signupModal').hide();
-            $('.modal-backdrop').hide();
+            console.log("data", data);
+
+            if (data.startsWith("Error:")) { // Check if the response starts with "Error:"
+                // Show error toast
+                var toastError = new bootstrap.Toast(document.getElementById('toastError'));
+                document.querySelector('#toastError .toast-body').innerText = data; // Set error message
+                toastError.show();
+            } else {
+                // Show success toast
+                var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
+                toastSuccess.show();
+                $('#signupModal').hide();
+                $('.modal-backdrop').hide();
+            }
         })
         .catch(error => {
             // Show error toast
             var toastError = new bootstrap.Toast(document.getElementById('toastError'));
+            document.querySelector('#toastError .toast-body').innerText =
+                "Something went wrong!"; // Default error message
             toastError.show();
-            // console.error('Error:', error);
         });
 }
 </script>
