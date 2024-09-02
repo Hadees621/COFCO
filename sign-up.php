@@ -39,8 +39,8 @@
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="lastName">Second Name</label>
+                        <input type="text" id="secondName" name="secondName" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -89,7 +89,7 @@
 <script>
 function submitForm(event) {
     var firstname = $("#firstName").val();
-    var lastname = $("#lastName").val();
+    var secondname = $("#secondName").val();
     var email = $("#email").val();
     var password = $("#password").val();
     event.preventDefault();
@@ -97,16 +97,34 @@ function submitForm(event) {
     fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signup', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json', // Sending JSON data
+                'Accept': 'application/json' // Expecting JSON response
             },
-            body: new URLSearchParams({
+            body: JSON.stringify({
                 FirstName: firstname,
-                SecondName: lastname,
+                SecondName: secondname,
                 Email: email,
                 Password: password
             })
         })
-        .then(response => response.text()) // Convert response to text
+        .then(response => {
+            if (!response.ok) {
+                // If the response is not OK, parse the response to JSON to get error details
+                return response.json().then(err => {
+                    // Extract and format the error message
+                    let errorMessage = err.message || "Something went wrong!";
+                    if (err.errors) {
+                        for (let key in err.errors) {
+                            if (err.errors[key] && err.errors[key].length > 0) {
+                                errorMessage += ` ${err.errors[key].join(' ')}`;
+                            }
+                        }
+                    }
+                    throw new Error(errorMessage); // Throw error with formatted message
+                });
+            }
+            return response.json(); // Convert response to JSON
+        })
         .then(data => {
             var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
             toastSuccess.show();
@@ -114,12 +132,12 @@ function submitForm(event) {
             $('.modal-backdrop').hide();
         })
         .catch(error => {
-            // Show error toast
+            // Show error toast with the concatenated message
             var toastError = new bootstrap.Toast(document.getElementById('toastError'));
-            document.querySelector('#toastError .toast-body').innerText =
-                "Something went wrong!"; // Default error message
+            document.querySelector('#toastError .toast-body').innerText = error.message;
             toastError.show();
         });
+
 }
 </script>
 </body>
