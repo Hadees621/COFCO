@@ -1,6 +1,5 @@
 <?php include_once './components/header.php' ?>
-<?php include_once './auth/db.php' ?>
-<?php include_once './auth/submit.php' ?>
+
 <div class="main-container">
     <form class="w-50 my-5" style="margin: auto;">
         <h1 class="text-bold" style="text-align: center;">Sign in</h1>
@@ -95,34 +94,24 @@ function submitForm(event) {
     var password = $("#password").val();
     event.preventDefault();
 
-    fetch('auth/submit.php', {
+    fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: new URLSearchParams({
-                firstName: firstname,
-                lastName: lastname,
-                email: email,
-                password: password
+                FirstName: firstname,
+                SecondName: lastname,
+                Email: email,
+                Password: password
             })
         })
         .then(response => response.text()) // Convert response to text
         .then(data => {
-            console.log("data", data);
-
-            if (data.startsWith("Error:")) { // Check if the response starts with "Error:"
-                // Show error toast
-                var toastError = new bootstrap.Toast(document.getElementById('toastError'));
-                document.querySelector('#toastError .toast-body').innerText = data; // Set error message
-                toastError.show();
-            } else {
-                // Show success toast
-                var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
-                toastSuccess.show();
-                $('#signupModal').hide();
-                $('.modal-backdrop').hide();
-            }
+            var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
+            toastSuccess.show();
+            $('#signupModal').hide();
+            $('.modal-backdrop').hide();
         })
         .catch(error => {
             // Show error toast
