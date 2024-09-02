@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style.scss" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.scss" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <title>COFCO</title>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark flex-middle">
+    <nav class="navbar navbar-dark bg-dark flex-middl border justify-content-between">
 
         <!-- Nav tabs -->
-        <div class="container main-container d-flex ">
+        <div class="container main-container d-flex">
 
             <!-- Offcanvas -->
-            <div class="hide-on-large-screen">
-                <button class="navbar-togler flex-middle hamburger "" type=" button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
+            <div>
+                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon hide-on-large-screen"></span>
                     Menu
                 </button>
                 <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
@@ -36,7 +39,7 @@
                     <div class="offcanvas-body">
 
                         <div class="d-flex gap-2 flex-middle pb-4 text-white" style="font-size: 12px;">
-                            <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                            <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
                             <h7 class="w-100 cursor-pointer">
                                 LongUserName000999
                             </h7>
@@ -55,34 +58,24 @@
                                             New Customers
                                         </p>
                                     </a>
-                                    <a href="/Fruitandveg.html">
+                                    <a href="fruit-veg.php">
                                         <p class="cursor-pointer">
                                             Choice Veg Boxes
                                         </p>
                                     </a>
                                     <a href="#">
                                         <p class="cursor-pointer">
-                                            Additional Fruit & Veg
+                                            Original Veg Boxes
                                         </p>
                                     </a>
                                     <a href="#">
                                         <p class="cursor-pointer">
-                                            Fresh Goods
+                                            OriginalPLUS+ Veg Boxes
                                         </p>
                                     </a>
-                                    <a href="/product-detail.html">
+                                    <a href="/cofco/fruit-veg.php">
                                         <p class="cursor-pointer">
-                                            Groceries
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Drinks
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Household
+                                            Specific & Specialist Items
                                         </p>
                                     </a>
                                 </div>
@@ -143,19 +136,19 @@
 
                         <div class="d-flex gap-5 py-4">
                             <div class="d-flex gap-2">
-                                <img src="/assets/images/search-results/Asset 16.png" alt="assets"
+                                <img src="./assets/images/search-results/Asset 16.png" alt="assets"
                                     style="width: 19px;" />
                                 <p class="underline cursor-pointer auth-area-p text-white">
-                                    <a href="/manage-accounts.html">
+                                    <a href="/manage-accounts.php">
                                         Manage Account
                                     </a>
                                 </p>
                             </div>
                             <div class="d-flex gap-2">
-                                <img src="/assets/images/search-results/Asset 17.png" alt="assets"
+                                <img src="./assets/images/search-results/Asset 17.png" alt="assets"
                                     style="width: 15px;" />
                                 <p class="underline cursor-pointer auth-area-p text-white">
-                                    <a href="/index.html">
+                                    <a href="/index.php">
                                         sign out
                                     </a>
                                 </p>
@@ -165,8 +158,8 @@
                 </div>
             </div>
 
-            <a href="/">
-                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
+            <a href="/cofco/index.php">
+                <img src="./assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
             </a>
 
             <div class="d-flex m-2 hide-on-small-screen">
@@ -220,9 +213,12 @@
             <div class="d-flex gap-3 hide-on-large-screen">
 
                 <!-- cart -->
-                <div class="text-white flex-middle position-relative cursor-pointer">
-                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
-                </div>
+                <a href="order-details.php"
+                    class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
+                    <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
+                    <span class="sr-only">Order details</span>
+                </a>
+
 
                 <!-- cart -->
                 <div class="dropdown show">
@@ -238,7 +234,7 @@
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p class="m-2 has-been text-center">Has been added to your order</p>
                             <div class="flex-middle m-3">
-                                <a href="/order-details.html">
+                                <a href="/cofco/order-details.php">
                                     <button class="dropdown-checkout-button text-white">
                                         Checkout
                                     </button>
@@ -254,24 +250,24 @@
 
                 <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
-                        <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
+                        <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
                         <p class="w-100 cursor-pointer auth-section-name">
                             LongUserName000999
                         </p>
                     </div>
                     <div class="d-flex gap-2">
                         <div class="d-flex gap-1">
-                            <img src="/assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
+                            <img src="./assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
                             <p class="underline cursor-pointer auth-area-p">
-                                <a href="/manage-accounts.html">
+                                <a href="/cofco/manage-accounts.php">
                                     Manage Account
                                 </a>
                             </p>
                         </div>
                         <div class="d-flex gap-1">
-                            <img src="/assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
+                            <img src="./assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
                             <p class="underline cursor-pointer auth-area-p">
-                                <a href="/index.html">
+                                <a href="/cofco/index.php">
                                     sign out
                                 </a>
                             </p>
@@ -279,10 +275,16 @@
                     </div>
                 </div>
 
-                <!-- cart -->
-                <a href="/order-details.html"
-                    class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
-                    <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
+                <!-- points -->
+                <a href="#" class="text-white flex-middle cart position-relative px-3">
+                    <div>
+                        <p class="text-bold" style="font-size: 12px;"> 115</p>
+                        <p class="text-bold text-center" style="font-size: 8px;"> /15</p>
+                    </div>
+                    <div class="position-absolute point" style="background-color: white;">
+                        <img src="assets/images/search-results/Asset 2.png" alt="cart" class="point-image"
+                            style="right: 100px; width: 24px; padding: 1px" />
+                    </div>
                 </a>
 
                 <!-- cart -->
@@ -297,9 +299,9 @@
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
                             <p>1x Fitzbilies Granola · 400g</p>
-                            <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
+                            <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
                             <div class="flex-middle m-3">
-                                <a href="/order-details.html">
+                                <a href="order-details.php">
                                     <button class="dropdown-checkout-button text-white">
                                         checkout
                                     </button>
@@ -328,52 +330,39 @@
     <!-- Tabs content -->
     <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
 
-        <div class="tab-pane active main-container-details" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="tab-pane active main-container" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
                 <a href="#">
                     <p class="cursor-pointer detail-page-hover">
                         New Customers
                     </p>
                 </a>
-
-                <a href="/Fruitandveg.html">
-                    <p class="cursor-pointer detail-page-hover ">
+                <a href="#">
+                    <p class="cursor-pointer detail-page-hover">
                         Choice Veg Boxes
                     </p>
                 </a>
 
                 <a href="#">
                     <p class="cursor-pointer detail-page-hover">
-                        Additional Fruit & Veg
+                        Original Veg Boxes
                     </p>
                 </a>
 
                 <a href="#">
                     <p class="cursor-pointer detail-page-hover">
-                        Fresh Goods
+                        OriginalPLUS+ Veg Boxes
                     </p>
                 </a>
 
-                <a href="/product-detail-auth.html">
+                <a href="/cofco/fruit-veg.php">
                     <p class="cursor-pointer detail-page-hover">
-                        Groceries
-                    </p>
-                </a>
-
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        Drinks
-                    </p>
-                </a>
-
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        Household
+                        Specific & Specialist Items
                     </p>
                 </a>
             </div>
         </div>
-        <div class="tab-pane main-container-details" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="tab-pane main-container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
                 <p class="cursor-pointer">
                     How It Works
@@ -395,228 +384,4 @@
 
     </div>
 
-    <!-- strip -->
-    <div class="red-strip flex-middle">
-        <p class="strip-content"> Monthly Special:
-            <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
-            </span>
-        </p>
-    </div>
-
-    <!-- breadcrumb -->
-    <div aria-label="breadcrumb" class="breadcrumb-position">
-        <ol class="d-flex text-bold main-container-details">
-            <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
-            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Manage Account</li>
-        </ol>
-    </div>
-
-    <!-- Middle -->
-    <section>
-        <div class="main-container-details mt-4">
-
-            <h1 class="text-bold text-center w-100 border-bottom pb-4 pointsAndShoppingTitle">
-                Manage Account
-            </h1>
-
-            <div class="grid-on-small-flex-on-large center-on-small gap-3 justify-content-between py-4 border-bottom">
-                <div class="flex-middle gap-3">
-                    <img src="/assets/images/order-details/Asset 1.png" class="profile-icon" alt="assets" />
-                    <h1 class="text-bold LongUserName">LongUserName000999</h1>
-                </div>
-                <div class="d-flex gap-4">
-                    <a href="/manage-accounts.html" class="manage-account-button flex-middle gap-2">
-                        <img src="/assets/images/order-details/Asset 2.png" class="small-icons" alt="assets" />
-                        <p class="text-bold">Manage Account</p>
-                    </a>
-                    <a href="/" class="manage-account-button flex-middle gap-2">
-                        <img src="/assets/images/order-details/Asset 3.png" class="small-icons" alt="assets" />
-                        <p class="text-bold">Sign Out</p>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="py-2 mt-5">
-                <div class="d-flex justify-content-between align-content-center grid-on-small-flex-on-large gap-3">
-                    <div class="d-flex justify-content-start gap-3 align-items-center">
-                        <img src="/assets/images/order-details/Asset 5.png" alt="assets" />
-                        <h4 class="text-bold title-points-cart mt-2">Shopping Cart</h4>
-                    </div>
-                    <div>
-                        <button class="point-button text-white">
-                            <p> View Shopping Cart(s)</p>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="points-container border-bottom pb-5 mt-3">
-                    <div class="d-flex justify-content-between">
-                        <table class="points-info-table grid-on-small-flex-on-large">
-                            <tr>
-                                <td class="product-nested-description">Total Products In This Week’s Cart </td>
-                                <td><span class="points-value">2</span></td>
-                            </tr>
-                            <tr>
-                                <td class="product-nested-description">Total Future Scheduled Products In Cart </td>
-                                <td><span class="points-value">1</span></td>
-                                <td class="flex-middle text-bold gap-2 text-small">
-                                    <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
-                                        alt="assets" />
-                                    <p class="underline text-small text-start w-100 cursor-pointer">View & Edit
-                                        Future
-                                        Shopping Cart</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="py-2 mt-5">
-                <div class="d-flex justify-content-between align-content-center grid-on-small-flex-on-large gap-3">
-                    <div class="d-flex justify-content- gap-3 align-items-center">
-                        <img src="/assets/images/manage-accounts/delivery.png" alt="assets" />
-                        <h4 class="text-bold title-points-cart mt-2">Deliveries</h4>
-                    </div>
-                    <div>
-                        <button class="manage-account-button flex-middle gap-2 mt-3">
-                            <img src="/assets/images/order-details/Asset 6.png" class="small-icons" alt="assets" />
-                            <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="points-container border-bottom pb-5 mt-3">
-                    <div class="d-flex justify-content-between">
-                        <table class="points-info-table">
-                            <tr>
-                                <td class="product-nested-description">Total Planned Future Scheduled Delivery
-                                    Frequency
-                                </td>
-                                <td><span class="points-value">1 Per Week</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="product-nested-description">Total Undelivered Items </td>
-                                <td><span class="points-value">999,999</span></td>
-                            </tr>
-                            <tr>
-                                <td class="product-nested-description">Current Item Delivery Warnings / Issues </td>
-                                <td><span class="points-value">1</span></td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="py-2 mt-5">
-                <div class="d-flex justify-content-between align-content-center">
-                    <div class="d-flex justify-content- gap-3 align-items-center">
-                        <img src="/assets/images/manage-accounts/payment.png" alt="assets" />
-                        <h4 class="text-bold title-points-cart mt-2">Payments / Your Address(es) / Your Contact
-                            Details
-                        </h4>
-                    </div>
-
-                </div>
-
-                <div class="points-container border-bottom pb-2 mt-3">
-                    <div class="d-flex justify-content-between w-100">
-                        <table class="points-info-table w-100">
-                            <tr class="d-flex align-items-center justify-content-between grid-on-small-flex-on-large">
-                                <td class="product-nested-description">Payment Information
-                                </td>
-                                <td>
-                                    <span class="points-value">Direct Debit Account Ending XXXX XXXX XXXX
-                                        8504</span>
-                                </td>
-                                <td>
-                                    <button class="manage-account-button flex-middle gap-2 mt-3">
-                                        <img src="/assets/images/order-details/Asset 6.png" class="small-icons"
-                                            alt="assets" />
-                                        <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
-                                    </button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="mt-5">
-                <div>
-                    <button class="point-button text-bold"
-                        style="background-color: white; border: 1px solid #C92540; color: #C92540;">
-                        <p>View Your Invoices</p>
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Companies -->
-    <div class="main-container-details companies-container">
-        <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
-        </div>
-
-    </div>
-
-    <!-- Orange strip -->
-    <div class="orange-strip flex-middle">
-        <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
-        </p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="main-container-details text-white d-flex justify-content-between tabs-padding">
-            <div>
-                <p>
-                    © Cambridge Organic Food Company Ltd
-                </p>
-            </div>
-            <div>
-                <p>
-                    Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-                </p>
-            </div>
-            <div class="d-flex gap-2 justify-content-center">
-                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
-                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
-                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script src="assets/js/script.js"></script>
 </body>
-
-</html>

@@ -186,3 +186,5 @@ document.getElementById("nextMonth").addEventListener("click", () => {
 });
 
 updateMonthDisplay();
+
+

@@ -546,7 +546,7 @@
 
   .product-table {
     font-size: 20px;
-    width: 230px;
+    width: 270px;
     margin: 0px 1px;
   }
 
@@ -695,7 +695,7 @@
   }
 
   .product-table {
-    width: 330px;
+    width: 370px;
     margin: 0px 1px;
   }
 
@@ -946,7 +946,7 @@
   }
 
   .product-table {
-    width: 400px;
+    width: 440px;
   }
 
   .order-details-product-image {
@@ -1229,4 +1229,78 @@
   .slide {
     width: 100%;
   }
+}
+
+/* signup */
+
+.responsive-form {
+  display: grid;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .responsive-form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    font-size: 8px;
+  }
+
+  .form-group input,
+  .submit-btn {
+    font-size: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.form-group input,
+.submit-btn {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 7px;
+  font-size: 14px;
+  width: 40%;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 117, 0);
+}
+
+.navbar-tab.sign-up.active {
+  background-color: #6f4f28; /* Brown color */
+  color: white; /* White text color */
+  border: 2px solid #5a3e1b; /* Optional: darker border for emphasis */
+  border-radius: 50px; /* Optional: rounded corners */
+  padding: 5px 15px; /* Optional: padding */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Smooth transition */
 }

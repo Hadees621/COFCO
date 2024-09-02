@@ -1,417 +1,10 @@
-<html lang="en">
+<?php include_once './components/authenticated-header.php' ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style.scss" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
+<?php include_once './components/red-strip.php' ?>
 
-    <title>COFCO</title>
-</head>
+<?php include_once './components/breadcrumb.php' ?>
 
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark flex-middle">
-
-        <!-- Nav tabs -->
-        <div class="container main-container d-flex ">
-
-            <!-- Offcanvas -->
-            <div class="hide-on-large-screen">
-                <button class="navbar-togler flex-middle hamburger "" type=" button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                    Menu
-                </button>
-                <div class="offcanvas offcanvas-start text-bg-dark off-canvas off-canvas-width" tabindex="-1"
-                    id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header m-2 justify-content-end p-3">
-                        <button type="button" class="btn-close btn-close-white p-1" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-
-                        <div class="d-flex gap-2 flex-middle pb-4 text-white" style="font-size: 12px;">
-                            <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
-                            <h7 class="w-100 cursor-pointer">
-                                LongUserName000999
-                            </h7>
-                        </div>
-
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Shop
-                                </a>
-                                <div
-                                    class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists underline-none">
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            New Customers
-                                        </p>
-                                    </a>
-                                    <a href="/Fruitandveg.html">
-                                        <p class="cursor-pointer">
-                                            Choice Veg Boxes
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Additional Fruit & Veg
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Fresh Goods
-                                        </p>
-                                    </a>
-                                    <a href="/product-detail.html">
-                                        <p class="cursor-pointer">
-                                            Groceries
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Drinks
-                                        </p>
-                                    </a>
-                                    <a href="#">
-                                        <p class="cursor-pointer">
-                                            Household
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About Us
-                                </a>
-                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                    <p class="cursor-pointer">
-                                        How It Works
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Our Produce & Products Deliveries
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        FAQs
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Why Choose Us?
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Our Ethics & Sourcing Latest News
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Sign In / Up
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Additional Helpful Links
-                                </a>
-                                <div class="dropdown-menu bg-dropdown-bg-green text-white off-canvas-lists">
-                                    <p class="cursor-pointer">
-                                        New Customers
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Choice Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Original Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        OriginalPLUS+ Veg Boxes
-                                    </p>
-                                    <p class="cursor-pointer">
-                                        Specific & Specialist Items
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="d-flex gap-5 py-4">
-                            <div class="d-flex gap-2">
-                                <img src="/assets/images/search-results/Asset 16.png" alt="assets"
-                                    style="width: 19px;" />
-                                <p class="underline cursor-pointer auth-area-p text-white">
-                                    <a href="/manage-accounts.html">
-                                        Manage Account
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <img src="/assets/images/search-results/Asset 17.png" alt="assets"
-                                    style="width: 15px;" />
-                                <p class="underline cursor-pointer auth-area-p text-white">
-                                    <a href="/index.html">
-                                        sign out
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a href="/">
-                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 navbar-logo-auth" />
-            </a>
-
-            <div class="d-flex m-2 hide-on-small-screen">
-
-                <ul class="nav nav-tabs d-flex m-2 hide-on-small-screen tabs gap-2" id="myTab" role="tablist">
-
-                    <!-- Shop -->
-                    <li class="nav-item" role="presentation">
-                        <div class="rounded-pill text-white navbar-tab flex-middle nav-link shop active" id="home-tab"
-                            data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                            aria-selected="true">
-                            Shop
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
-                                <path fill="white" d="m7 10l5 5l5-5z" />
-                            </svg>
-                        </div>
-                    </li>
-
-                    <!-- About Us -->
-                    <li class="nav-item" role="presentation">
-                        <div class="rounded-pill text-white navbar-tab flex-middle about-us nav-link" id="profile-tab"
-                            data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
-                            aria-controls="profile" aria-selected="false">
-                            About Us
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
-                                <path fill="white" d="m7 10l5 5l5-5z" />
-                            </svg>
-                        </div>
-                    </li>
-
-
-                    <!-- search for lg screen  -->
-                    <li class="nav-item">
-                        <div class="position-relative hide-on-small-screen">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="internal-navbar-search-icon" width="24"
-                                height="24" viewBox="0 0 24 24">
-                                <path fill="#073b25"
-                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-                                <path fill="none" d="M0 0h24v24H0z" />
-                            </svg>
-                            <input type="text" class="form-control rounded-pill ml-4 internal-navbar-search"
-                                placeholder="Search ">
-                        </div>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- Small Auth section  -->
-            <div class="d-flex gap-3 hide-on-large-screen">
-
-                <!-- cart -->
-                <div class="text-white flex-middle position-relative cursor-pointer">
-                    <img src="assets/images/search-results/Asset 2.png" alt="" class="internal-cart" />
-                </div>
-
-                <!-- cart -->
-                <div class="dropdown show">
-                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
-                        <div class="position-absolute count">12</div>
-                    </a>
-                    <div class="dropdown-menu p-3 cart-dropdown border" aria-labelledby="dropdownMenuLink">
-                        <div class="d-grid">
-                            <p>1x Fitzbilies Granola · 400g</p>
-                            <p>1x Fitzbilies Granola · 400g</p>
-                            <p>1x Fitzbilies Granola · 400g</p>
-                            <p class="m-2 has-been text-center">Has been added to your order</p>
-                            <div class="flex-middle m-3">
-                                <a href="/order-details.html">
-                                    <button class="dropdown-checkout-button text-white">
-                                        Checkout
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Auth section  -->
-            <div class="d-flex gap-4 p-3 hide-on-small-screen" style="background-color: #042114;">
-
-                <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
-                    <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
-                        <img src="/assets/images/search-results/Asset 15.png" alt="assets" />
-                        <p class="w-100 cursor-pointer auth-section-name">
-                            LongUserName000999
-                        </p>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <div class="d-flex gap-1">
-                            <img src="/assets/images/search-results/Asset 16.png" alt="assets" style="width: 16px;" />
-                            <p class="underline cursor-pointer auth-area-p">
-                                <a href="/manage-accounts.html">
-                                    Manage Account
-                                </a>
-                            </p>
-                        </div>
-                        <div class="d-flex gap-1">
-                            <img src="/assets/images/search-results/Asset 17.png" alt="assets" style="width: 13px;" />
-                            <p class="underline cursor-pointer auth-area-p">
-                                <a href="/index.html">
-                                    sign out
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- cart -->
-                <a href="/order-details.html"
-                    class="text-white flex-middle position-relative cursor-pointer d-inline-flex align-items-center">
-                    <img src="assets/images/search-results/Asset 2.png" alt="Order details" class="internal-cart" />
-                </a>
-
-                <!-- cart -->
-                <div class="dropdown show">
-                    <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/cart.png" alt="cart" class="cart-image" />
-                        <div class="position-absolute count">12</div>
-                    </a>
-                    <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
-                        <div class="d-grid">
-                            <p>1x Fitzbilies Granola · 400g</p>
-                            <p>1x Fitzbilies Granola · 400g</p>
-                            <p>1x Fitzbilies Granola · 400g</p>
-                            <p class="m-2 order-added" style="color: #af102b;">Has been added to your order</p>
-                            <div class="flex-middle m-3">
-                                <a href="/order-details.html">
-                                    <button class="dropdown-checkout-button text-white">
-                                        checkout
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Search bar for small screen  -->
-        <div class="position-relative -flex align-items-center w-100 hide-on-large-screen">
-            <div class="position-absolute bottom-0 top-0">
-                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon " width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#073b25"
-                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91    3 9.5S5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99l1.49-1.49l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-                    <path fill="none" d="M0 0h24v24H0z" />
-                </svg>
-            </div>
-            <input type="text" class="pl-3 form-control rounded-pill navbar-search" placeholder="Search for products">
-        </div>
-    </nav>
-
-    <!-- Tabs content -->
-    <div class="tab-content navbar__tab__content hide-on-small-screen border-top">
-
-        <div class="tab-pane active main-container-details" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab">
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        New Customers
-                    </p>
-                </a>
-
-                <a href="/Fruitandveg.html">
-                    <p class="cursor-pointer detail-page-hover ">
-                        Choice Veg Boxes
-                    </p>
-                </a>
-
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        Additional Fruit & Veg
-                    </p>
-                </a>
-
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        Fresh Goods
-                    </p>
-                </a>
-
-                <a href="/product-detail-auth.html">
-                    <p class="cursor-pointer detail-page-hover">
-                        Groceries
-                    </p>
-                </a>
-
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        Drinks
-                    </p>
-                </a>
-
-                <a href="#">
-                    <p class="cursor-pointer detail-page-hover">
-                        Household
-                    </p>
-                </a>
-            </div>
-        </div>
-        <div class="tab-pane main-container-details" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="d-flex justify-content-between tab-content active flex-middle shop-tab" style="padding: 15px;">
-                <p class="cursor-pointer">
-                    How It Works
-                </p>
-                <p class="cursor-pointer">
-                    Our Produce & Products Deliveries
-                </p>
-                <p class="cursor-pointer">
-                    FAQs
-                </p>
-                <p class="cursor-pointer">
-                    Why Choose Us?
-                </p>
-                <p class="cursor-pointer">
-                    Our Ethics & Sourcing Latest News
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- strip -->
-    <div class="red-strip flex-middle">
-        <p class="strip-content"> Monthly Special:
-            <span class="underline cursor-pointer "> Local honey from two Cambridgeshire producers...
-            </span>
-        </p>
-    </div>
-
-    <!-- breadcrumb -->
-    <div class="breadcrumb-position">
-        <ol class="d-flex text-bold main-container-details">
-            <li class="breadcrumb-item cursor-pointer"><a href="#"> Start</a></li>
-            <li class="cursor-pointer underline breadcrumb-item bread  border-none">Points & Shopping Cart Overview</li>
-        </ol>
-    </div>
-
-    <!-- Middle -->
+<section>
     <div class="main-container-details tabs-padding mt-4">
         <h1 class="text-bold text-center w-100 pointsAndShoppingTitle">
             Your Scheduled Future Shopping Cart
@@ -421,7 +14,7 @@
             <div
                 class="d-flex justify-content-between align-content-center grid-on-small-flex-on-large gap-4 center-on-small">
                 <div class="d-flex justify-content-start gap-3 align-items-center">
-                    <img src="/assets/images/order-details/Asset 5.png" alt="asset" />
+                    <img src="./assets/images/order-details/Asset 5.png" alt="asset" />
                     <h4 class="text-bold title-points-cart mt-2">Shopping Cart</h4>
                 </div>
                 <div>
@@ -441,7 +34,7 @@
                     </table>
                 </div>
                 <button class="manage-account-button flex-middle gap-2 mt-3">
-                    <img src="/assets/images/order-details/Asset 6.png" class="small-icons" alt="asset" />
+                    <img src="./assets/images/order-details/Asset 6.png" class="small-icons" alt="asset" />
                     <p class="text-bold" style="padding: 6px 0px;">Delivery Address</p>
                 </button>
             </div>
@@ -456,13 +49,13 @@
                             <p class="product-nested-titles"> Choice Vegetable Box · Small </p>
                         </div>
                         <div class="points-button flex-middle gap-2 text-bolder" style="background-color: white;">
-                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
+                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons" alt="assets" />
                             10 points
                         </div>
                     </div>
                     <div class="flex-middle text-small gap-2 text-bold " data-toggle="modal"
                         data-target=".select-future-box-modal">
-                        <img src=" /assets/images/order-details/Asset 2.png" class="setting-icons" alt="assets" />
+                        <img src=" ./assets/images/order-details/Asset 2.png" class="setting-icons" alt="assets" />
                         <p class="underline cursor-pointer">Remove This Item From My Shopping Cart For This Week
                             Only
                         </p>
@@ -480,7 +73,7 @@
                             </td>
                             <td class="flex-middle text-bold gap-2 text-small cursor-pointer"
                                 data-target=".edit-contents-modal" data-toggle="modal">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                <img src="./assets/images/order-details/Asset 2.png" class="setting-icons"
                                     alt="assets" />
                                 <p class="underline text-small text-start w-100">Edit Quantity</p>
                             </td>
@@ -493,7 +86,7 @@
                                 <p class="points-value">1 Per Week</p>
                             </td>
                             <td class="flex-middle text-small text-bold gap-2">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                <img src="./assets/images/order-details/Asset 2.png" class="setting-icons"
                                     alt="assets" />
                                 <p class="underline text-small text-start w-100 cursor-pointer" data-toggle="modal"
                                     data-target="#deliveryFrequencyModal">
@@ -508,13 +101,13 @@
                     <div class="w-full d-flex py-3 grid-on-small-flex-on-large center-on-small gap-3">
 
                         <div class="">
-                            <img src="/assets/images/fruitandveg/Asset 1.png" class="order-details-product-image"
+                            <img src="./assets/images/fruitandveg/Asset 1.png" class="order-details-product-image"
                                 alt="assets" />
 
                             <div class="d-flex m-2 gap-2">
                                 <div class="">
-                                    <img src="/assets/images/order-details/Asset 9.png" class="small-icons" alt="assets"
-                                        style="color: #808080;">
+                                    <img src="./assets/images/order-details/Asset 9.png" class="small-icons"
+                                        alt="assets" style="color: #808080;">
                                 </div>
                                 <p class="text-small text-start fst-italic" style="color: #808080;">
                                     The above image is the default suggested <br />
@@ -528,7 +121,7 @@
 
                             <div class="mx-4 border-and-padding">
                                 <div class="d-flex justify-content-start align-items-center gap-2">
-                                    <img src="/assets/images/order-details/Asset 8.png" class="order-details-product"
+                                    <img src="./assets/images/order-details/Asset 8.png" class="order-details-product"
                                         alt="assets" />
                                     <p class="product-nested-description defined-content mt-3">
                                         Defined Contents
@@ -538,7 +131,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -546,7 +139,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -554,7 +147,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -562,7 +155,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -570,7 +163,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -578,7 +171,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -587,7 +180,7 @@
                                     <tr class="each-product-row">
                                         <td class="product-nested-description each-product-row">Potatoes (700g)</td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -597,7 +190,7 @@
                                         <td class="product-nested-description each-product-row ">Potatoes (700g)
                                         </td>
                                         <td class="product-nested-description flex-middle gap-2 each-product-row">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" class="small-icons"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" class="small-icons"
                                                 alt="assets" />
                                             1 Points
                                         </td>
@@ -608,20 +201,21 @@
                         </div>
                         <div class="order-details-left-side d-grid">
                             <div class="d-flex gap-3 align-items-center my-2">
-                                <img src="/assets/images/order-details/Asset 6.png" style="height: 14px;"
+                                <img src="./assets/images/order-details/Asset 6.png" style="height: 14px;"
                                     alt="assets" />
                                 <p class="product-nested-description text-bold each-product-row ">Date Of
                                     Delivery
                                 </p>
                             </div>
                             <p class="product-nested-description my-2 text-bold each-product-row "
-                                style="color:#C51633;">Monday
+                                style="color:#C51633;">
+                                Monday
                                 DD/MM/YYYY Between 8am &
                                 12pm
                             </p>
                             <div data-target="#findDeliveryDayModal" data-toggle="modal"
                                 class="d-flex align-items-center align-items-center text-small gap-2 text-bold my-2">
-                                <img src="/assets/images/order-details/Asset 2.png" class="setting-icons"
+                                <img src="./assets/images/order-details/Asset 2.png" class="setting-icons"
                                     alt="assets" />
                                 <p class="underline text-small each-product-row cursor-pointer">Manage This
                                     Delivery
@@ -643,7 +237,7 @@
                     <div class="d-flex gap-2">
                         <div>
                             <div class="d-flex gap-3 align-items-cente">
-                                <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;" alt="assets">
+                                <img src="./assets/images/order-details/Asset 9.png" style="height: 19px;" alt="assets">
                                 <p class="product-nested-description  text-bold">
                                     If you wish to edit the Contents of this Delivery, the Date of Delivery, or the
                                     Specified
@@ -656,7 +250,7 @@
                                 </p>
                             </div>
                             <div class="d-flex gap-3 mt-3">
-                                <img src="/assets/images/order-details/Asset 2.png" style="height: 19px;"
+                                <img src="./assets/images/order-details/Asset 2.png" style="height: 19px;"
                                     alt="assets" />
                                 <p class="underline product-nested-description w-100 text-bold">Permanently Remove
                                     This
@@ -776,7 +370,7 @@
                                 <div style="border: 2px solid #4B5943;">
                                     <div class="d-flex justify-content-between p-3" style="background-color: #EBD7AD;">
                                         <div class="d-flex w-100 align-items-center gap-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 20px;" />
                                             <span class="text-bold">10 / 10 Points Used</span>
                                         </div>
@@ -787,7 +381,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -809,7 +403,7 @@
                                             <tr class="" style="background-color: #E6E6E6;">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -828,7 +422,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -850,7 +444,7 @@
                                             <tr class="" style="background-color: #E6E6E6;">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -871,7 +465,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -893,7 +487,7 @@
                                             <tr class="" style="background-color: #E6E6E6;">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -912,7 +506,7 @@
                                             <tr class="">
                                                 <td>Potatoes (700g)</td>
                                                 <td class="d-flex gap-2 align-items-center mt-2">
-                                                    <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                    <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                         style="width: 15px;" />
                                                     2 Points
                                                 </td>
@@ -954,7 +548,7 @@
                                     <tr class=" trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -967,7 +561,7 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -980,7 +574,7 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -993,73 +587,7 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
-                                                style="width: 15px;" />
-                                            2 Points
-                                        </td>
-                                        <td>
-                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
-                                                    +
-                                                </span></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="trap">
-                                        <td>Potatoes (700g)</td>
-                                        <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -1073,7 +601,73 @@
                                     <tr class="trap">
                                         <td>Potatoes (700g)</td>
                                         <td class="d-flex gap-2 align-items-center mt-2">
-                                            <img src="/assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
+                                                style="width: 15px;" />
+                                            2 Points
+                                        </td>
+                                        <td>
+                                            <button class="d-flex align-items-center remove-btn">Add<span class="sign">
+                                                    +
+                                                </span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="trap">
+                                        <td>Potatoes (700g)</td>
+                                        <td class="d-flex gap-2 align-items-center mt-2">
+                                            <img src="./assets/images/fruitandveg/Asset 2.png" alt="assets"
                                                 style="width: 15px;" />
                                             2 Points
                                         </td>
@@ -1131,7 +725,7 @@
                         </div>
                         <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
 
-                            <img src="/assets/images/product-details/modal.png" alt="assets" />
+                            <img src="./assets/images/product-details/modal.png" alt="assets" />
                             <h1 class="text-bold mt-4 modal-main-heading">
                                 Find out your <br />
                                 delivery day
@@ -1175,7 +769,7 @@
                             </button>
                         </div>
                         <div class="modal-body p-5" style="max-width: 400px; margin: auto;">
-                            <img src="/assets/images/product-details/modal.png" alt="assets" />
+                            <img src="./assets/images/product-details/modal.png" alt="assets" />
                             <h1 class="text-bold mt-4" style="font-size: 35px;">
                                 Monday
                             </h1>
@@ -1226,7 +820,7 @@
                             </h7>
 
                             <div class="d-flex gap- align-items-start mr-l-3 mt-4" style="max-width: 400px;">
-                                <img src="/assets/images/order-details/Asset 9.png" style="height: 19px;" alt="asset">
+                                <img src="./assets/images/order-details/Asset 9.png" style="height: 19px;" alt="asset">
                                 <p class="product-nested-description text-bold text-center">
                                     You will be asked two working days before your next
                                     Vegetable Box delivery for confirmation of content.
@@ -1338,62 +932,10 @@
 
             </div>
         </div>
-    </div>
-
-    <!-- Companies -->
-    <div class="main-container-details companies-container">
-        <div>
-            <img src="/assets/images/search-results/Asset 7.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 8.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 9.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 10.png" class="last-images" alt="assets">
-        </div>
-        <div>
-            <img src="/assets/images/search-results/Asset 11.png" class="last-images " alt="assets">
-        </div>
 
     </div>
+</section>
 
-    <!-- Orange strip -->
-    <div class="orange-strip flex-middle">
-        <p class="strip-content"> Sign Up To The Cambridge Organic Food Mailing List
-        </p>
-    </div>
+<?php include_once './components/slider.php' ?>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="main-container-details text-white d-flex justify-content-between tabs-padding">
-            <div>
-                <p>
-                    © Cambridge Organic Food Company Ltd
-                </p>
-            </div>
-            <div>
-                <p>
-                    Registered in England #123456 | Terms & Conditions | Privacy Information | Cookie Policy
-                </p>
-            </div>
-            <div class="d-flex gap-2 justify-content-center">
-                <img src="/assets/images/search-results/Asset 12.png" class="footer-logos" alt="assets" />
-                <img src="/assets/images/search-results/Asset 13.png" class="footer-logos" alt="assets" />
-                <img src="/assets/images/search-results/Asset 14.png" class="footer-logos" alt="assets" />
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+<?php include_once './components/footer.php' ?>

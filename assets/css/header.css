@@ -568,6 +568,12 @@
     border-radius: 30px;
   }
 
+  .point {
+    font-size: 8px;
+    right: 35px;
+    border-radius: 30px;
+  }
+
   .strip-content {
     font-size: 11px !important;
     font-weight: 600;
@@ -961,6 +967,12 @@
   .cart-image {
     width: 30px;
     border-radius: 0px;
+  }
+
+  .point-image {
+    width: 30px;
+    border-radius: 0px;
+    border: 1px solid white;
   }
 
   .internal-cart {

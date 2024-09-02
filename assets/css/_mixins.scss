@@ -8,7 +8,7 @@ $color-values: (
   $strip-green: #55733b,
   $button-green: #073b25,
   $sidebar-green: #062e1d,
-  $brown: #7b5120,
+  $brown: #7b5120
 );
 
 @mixin hoverEffect($hoverBgColor) {
@@ -23,7 +23,10 @@ $color-values: (
   padding: 8px 20px;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border 0.3s;
 
   &.shop:hover,
   &.shop.show {

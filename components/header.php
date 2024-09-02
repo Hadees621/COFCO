@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style.scss" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.scss" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <title>COFCO</title>
 </head>
@@ -31,7 +34,7 @@
         <div class="container main-container d-flex  mx-2">
 
             <!-- Offcanvas -->
-            <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+            <button class="navbar-togler flex-middle hamburger hide-on-large-screen" type=" button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon hide-on-large-screen"></span>
                 Menu
@@ -55,7 +58,7 @@
                                         New Customers
                                     </p>
                                 </a>
-                                <a href="/Fruitandveg.html">
+                                <a href="fruit-veg.php">
                                     <p class="cursor-pointer">
                                         Choice Veg Boxes
                                     </p>
@@ -70,7 +73,7 @@
                                         OriginalPLUS+ Veg Boxes
                                     </p>
                                 </a>
-                                <a href="/product-detail.html">
+                                <a href="/cofco/fruit-veg.php">
                                     <p class="cursor-pointer">
                                         Specific & Specialist Items
                                     </p>
@@ -124,17 +127,19 @@
                                 <p class="cursor-pointer">
                                     OriginalPLUS+ Veg Boxes
                                 </p>
-                                <p class="cursor-pointer">
-                                    Specific & Specialist Items
-                                </p>
+                                <a href="/cofco/fruit-veg.php">
+                                    <p class="cursor-pointer">
+                                        Specific & Specialist Items
+                                    </p>
+                                </a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <a href="/">
-                <img src="/assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
+            <a href="/cofco/index.php">
+                <img src="./assets/images/Asset 3.png" alt="logo" class="my-3 w-50 navbar-logo" />
             </a>
 
             <div class="d-flex m-2 hide-on-small-screen ">
@@ -165,9 +170,13 @@
                         </div>
                     </li>
 
-                    <li>
-                        <div class="rounded-pill text-white navbar-tab flex-middle sign-up">Sign In / Up</div>
+                    <li style="text-decoration: none;">
+                        <button type="button" class="rounded-pill text-white navbar-tab flex-middle nav-link sign-up"
+                            onclick="window.location.href='sign-up.php';">
+                            Sign In / Up
+                        </button>
                     </li>
+
                 </ul>
 
             </div>
@@ -187,7 +196,7 @@
             <div class="dropdown show shadow-lg">
                 <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/images/cart.png" alt="cart" class="cart-image" />
+                    <img src="./assets/images/cart.png" alt="cart" class="cart-image" />
                     <div class="position-absolute count">12</div>
                 </a>
                 <div class="dropdown-menu p-3 cart-dropdown" aria-labelledby="dropdownMenuLink">
@@ -197,7 +206,7 @@
                         <p>1x Fitzbilies Granola · 400g</p>
                         <p class="m-2" style="color: #af102b; font-size: 10px;">Has been added to your order</p>
                         <div class="flex-middle m-3">
-                            <a href="/order-details.html">
+                            <a href="order-details.php">
                                 <button class="dropdown-checkout-button text-white">
                                     checkout
                                 </button>
@@ -233,7 +242,7 @@
                     </p>
                 </a>
 
-                <a href="/Fruitandveg.html">
+                <a href="fruit-veg.php">
                     <p class="cursor-pointer">
                         Choice Veg Boxes
                     </p>
@@ -251,7 +260,7 @@
                     </p>
                 </a>
 
-                <a href="#">
+                <a href="/cofco/fruit-veg.php">
                     <p class="cursor-pointer">
                         Specific & Specialist Items
                     </p>
@@ -281,51 +290,4 @@
 
     </div>
 
-    <!-- strip -->
-    <div class="strip flex-middle">
-        <h7> Monthly Special:
-            <h7 class="underline cursor-pointer"> Local honey from two Cambridgeshire producers...
-            </h7>
-        </h7>
-    </div>
-
-    <!-- Banner -->
-    <div class="homepage-banner">
-        <div class="main-container position-relative">
-
-            <div class="text-overlay hide-on-small-screen">
-                <h1 class="banner-overlay-heading1">
-                    Sustainably Grown
-                    Locally Delivered
-                    Organic Vegetables
-                </h1>
-                <div class="banner-overlay-text d-inline-block hidden">
-                    Welcome to Cambridge Organic - Delivering Organic
-                    <span class="underline">Veg Boxes</span> in the Cambridgeshire area, with
-                    <span class="underline">sustainably sourced produce </span> from
-                    <span class="underline">local farms</span>.
-                </div>
-
-                <div class="google-reviews align-content-start">
-                    <img src="/assets/images/google.png" class="" alt="assets" />
-                </div>
-
-                <button class="banner-overlay-button flex-middle gap-2">
-                    <img src="assets/images/cart.png" alt="" />
-                    <div class="flex-middle"> Start Shopping</div>
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script src="assets/js/script.js"></script>
 </body>
-
-</html>
