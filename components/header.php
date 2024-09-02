@@ -73,7 +73,7 @@
                                         OriginalPLUS+ Veg Boxes
                                     </p>
                                 </a>
-                                <a href="product-detail.php">
+                                <a href="/cofco/fruit-veg.php">
                                     <p class="cursor-pointer">
                                         Specific & Specialist Items
                                     </p>
@@ -127,9 +127,11 @@
                                 <p class="cursor-pointer">
                                     OriginalPLUS+ Veg Boxes
                                 </p>
-                                <p class="cursor-pointer">
-                                    Specific & Specialist Items
-                                </p>
+                                <a href="/cofco/fruit-veg.php">
+                                    <p class="cursor-pointer">
+                                        Specific & Specialist Items
+                                    </p>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -258,7 +260,7 @@
                     </p>
                 </a>
 
-                <a href="#">
+                <a href="/cofco/fruit-veg.php">
                     <p class="cursor-pointer">
                         Specific & Specialist Items
                     </p>
