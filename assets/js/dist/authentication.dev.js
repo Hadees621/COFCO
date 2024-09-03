@@ -51,8 +51,7 @@ function submitForm(event) {
 function submitSigninForm(event) {
   var email = $("#email").val();
   var password = $("#password").val();
-  event.preventDefault(); // console.log('LOGGED IN ')
-
+  event.preventDefault();
   fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signin', {
     method: 'POST',
     headers: {
@@ -99,9 +98,23 @@ function submitSigninForm(event) {
       },
       error: function error(xhr, status, _error) {
         console.error('AJAX request failed:', status, _error);
+        showToast('AJAX request failed: ' + _error); // Show toast on AJAX error
       }
     });
   })["catch"](function (error) {
     console.error(error);
+    showToast(error.message); // Show toast on fetch error
   });
+}
+
+function showToast(message) {
+  var toast = document.getElementById('toast');
+  toast.textContent = message; // Set the message
+
+  toast.className = 'toast show'; // Show the toast
+  // Hide the toast after 3 seconds
+
+  setTimeout(function () {
+    toast.className = 'toast';
+  }, 3000);
 }

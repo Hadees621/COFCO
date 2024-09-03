@@ -24,6 +24,9 @@
     </form>
 </div>
 
+<!-- Toast Container -->
+<div id="toast" class="toast hidden"></div>
+
 <!-- Signup Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
