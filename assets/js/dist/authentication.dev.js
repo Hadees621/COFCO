@@ -53,16 +53,15 @@ function submitForm(event) {
   });
 }
 
-function submitSigninForm() {
+function submitSigninForm(event) {
+  event.preventDefault();
   var email = $("#email").val();
   var password = $("#password").val();
   fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signin', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      // Sending JSON data
-      'Accept': 'application/json' // Expecting JSON response
-
+      'Accept': 'application/json'
     },
     body: JSON.stringify({
       Email: email,
@@ -70,9 +69,7 @@ function submitSigninForm() {
     })
   }).then(function (response) {
     if (!response.ok) {
-      // If the response is not OK, parse the response to JSON to get error details
       return response.json().then(function (err) {
-        // Extract and format the error message
         var errorMessage = err.message || "Incorrect Credentials";
 
         if (err.errors) {
@@ -83,17 +80,30 @@ function submitSigninForm() {
           }
         }
 
-        throw new Error(errorMessage); // Throw error with formatted message
+        throw new Error(errorMessage);
       });
     }
 
-    return response.json(); // Convert response to JSON
+    return response.json();
   }).then(function (data) {
     var token = data.token;
-    var userinfo = data.user;
-    console.log(token, userinfo);
+    var user = data.user;
+    $.ajax({
+      url: 'session.php',
+      method: 'post',
+      data: {
+        token: token,
+        user: user
+      },
+      success: function success(response) {
+        console.log(response);
+        window.location.href = '/cofco/auth-user-profile.php';
+      },
+      error: function error(xhr, status, _error) {
+        console.error('AJAX request failed:', status, _error);
+      }
+    });
   })["catch"](function (error) {
     console.error(error);
   });
-  event.preventDefault();
 }
