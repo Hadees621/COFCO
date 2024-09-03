@@ -226,7 +226,6 @@ $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
                     <span class="sr-only">Order details</span>
                 </a>
 
-
                 <!-- cart -->
                 <div class="dropdown show">
                     <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
@@ -250,6 +249,7 @@ $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- Auth section  -->
