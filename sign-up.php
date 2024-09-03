@@ -24,8 +24,6 @@
     </form>
 </div>
 
-<!-- onclick="window.location.href='auth-user-profile.php';" -->
-
 <!-- Signup Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -72,7 +70,7 @@
     </div>
 </div>
 
-<div aria-live="polite" aria-atomic="true" class="toast-container position-fixed bottom-0 end-0 p-3">
+<div aria-live="polite" aria-atomic="true" class="toast-container position-fixed bottom-0 end-0 p-3 m-auto">
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="toastSuccess">
         <div class="toast-header">
             <strong class="me-auto">Notification</strong>

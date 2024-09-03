@@ -48,10 +48,12 @@ function submitForm(event) {
 }
 
 function submitSigninForm(event) {
-    event.preventDefault();
-
     var email = $("#email").val();
     var password = $("#password").val();
+
+    event.preventDefault();
+
+    // console.log('LOGGED IN ')
 
     fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signin', {
         method: 'POST',
@@ -95,6 +97,8 @@ function submitSigninForm(event) {
                 success: function (response) {
                     console.log(response);
                     window.location.href = '/cofco/auth-user-profile.php';
+                    console.log('success', response);
+
                 },
                 error: function (xhr, status, error) {
                     console.error('AJAX request failed:', status, error);
