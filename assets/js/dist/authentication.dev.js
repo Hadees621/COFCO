@@ -109,11 +109,8 @@ function submitSigninForm(event) {
 
 function showToast(message) {
   var toast = document.getElementById('toast');
-  toast.textContent = message; // Set the message
-
-  toast.className = 'toast show'; // Show the toast
-  // Hide the toast after 3 seconds
-
+  toast.textContent = message;
+  toast.className = 'toast show';
   setTimeout(function () {
     toast.className = 'toast';
   }, 3000);
