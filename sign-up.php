@@ -4,12 +4,12 @@
     <form class="w-50 my-5" style="margin: auto;" onsubmit="submitSigninForm(event)">
         <h1 class="text-bold" style="text-align: center;">Sign in</h1>
         <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username">
+            <label for="emaillogin">Email</label>
+            <input type="email" id="emaillogin" name="emaillogin">
         </div>
         <div class="form-group">
-            <label for="Password">Password</label>
-            <input type="password" id="Password" name="Password" required>
+            <label for="Passwordlogin">Password</label>
+            <input type="password" id="Passwordlogin" name="Passwordlogin" required>
         </div>
         <div class="d-flex justify-content-end align-items-end w-100" style="align-items: center;">
             <button type="submit" class="submit-btn">

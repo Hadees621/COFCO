@@ -48,8 +48,10 @@ function submitForm(event) {
 }
 
 function submitSigninForm(event) {
-    var email = $("#email").val();
-    var password = $("#password").val();
+    console.log('submitSigninForm');
+
+    var email = $("#emaillogin").val();
+    var password = $("#Passwordlogin").val();
 
     event.preventDefault();
 
