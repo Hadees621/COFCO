@@ -99,14 +99,14 @@ function submitSigninForm(event) {
                 },
                 error: function (xhr, status, error) {
                     console.error('AJAX request failed:', status, error);
-                    showToast('AJAX request failed: ' + error); // Show toast on AJAX error
+                    showToast('AJAX request failed: ' + error);
                 }
             });
 
         })
         .catch(error => {
             console.error(error);
-            showToast(error.message); // Show toast on fetch error
+            showToast(error.message);
         });
 }
 
@@ -172,11 +172,12 @@ function submitUserProfileForm(event, id) {
             return response.json();
         })
         .then(data => {
-            console.log("Data submitted successfully", data); // For debugging
+            console.log("Data submitted successfully", data);
             showToast('Profile submitted successfully');
         })
         .catch(error => {
-            showToast('error: ' + error.message);
+            console.error(error);
+            showToast(error.message);
         });
 }
 

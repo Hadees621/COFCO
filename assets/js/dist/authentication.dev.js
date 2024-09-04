@@ -98,12 +98,12 @@ function submitSigninForm(event) {
       },
       error: function error(xhr, status, _error) {
         console.error('AJAX request failed:', status, _error);
-        showToast('AJAX request failed: ' + _error); // Show toast on AJAX error
+        showToast('AJAX request failed: ' + _error);
       }
     });
   })["catch"](function (error) {
     console.error(error);
-    showToast(error.message); // Show toast on fetch error
+    showToast(error.message);
   });
 }
 
@@ -165,11 +165,11 @@ function submitUserProfileForm(event, id) {
 
     return response.json();
   }).then(function (data) {
-    console.log("Data submitted successfully", data); // For debugging
-
+    console.log("Data submitted successfully", data);
     showToast('Profile submitted successfully');
   })["catch"](function (error) {
-    showToast('error: ' + error.message);
+    console.error(error);
+    showToast(error.message);
   });
 } // function submitUserProfileForm(event, id) {
 //     event.preventDefault();
