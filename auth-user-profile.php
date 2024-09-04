@@ -7,7 +7,7 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 
 <section>
     <div class="main-container my-5">
-        <h2 class="text-bold">User Profile : <?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?></h2>
+        <h2 class="text-bold">User Profile </h2>
         <form id="userprofileform" class="my-5"
             onsubmit="submitUserProfileForm(event,<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>)">
 

@@ -122,7 +122,6 @@ function showToast(message) {
 }
 
 function submitUserProfileForm(event, id) {
-    console.log("from submitted", id)
 
     event.preventDefault();
 
@@ -147,7 +146,7 @@ function submitUserProfileForm(event, id) {
         billing_gps: document.getElementById('billinggps').value
     };
 
-    fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/${id}`, {
+    fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',

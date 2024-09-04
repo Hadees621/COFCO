@@ -117,7 +117,6 @@ function showToast(message) {
 }
 
 function submitUserProfileForm(event, id) {
-  console.log("from submitted", id);
   event.preventDefault();
   var formData = {
     Title: document.getElementById('Title').value,
@@ -139,7 +138,7 @@ function submitUserProfileForm(event, id) {
     billing_postcode: document.getElementById('billingpostcode').value,
     billing_gps: document.getElementById('billinggps').value
   };
-  fetch("https://dev.zeeteck.com/projects/cofco/api/v1/".concat(id), {
+  fetch("https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/".concat(id), {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
