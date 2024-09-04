@@ -1,34 +1,18 @@
+<?php
+
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
+
+?>
+
 <?php include_once './components/authenticated-header.php' ?>
 
 <section>
     <div class="main-container my-5">
         <h1 class="text-bold">User Profile</h1>
-        <form class="responsive-form my-5">
-
-
+        <form class="responsive-form my-5" onload="">
             <div class="form-group">
                 <label for="Title">Title</label>
                 <input type="text" id="Title" name="Title">
-            </div>
-
-            <div class="form-group">
-                <label for="FirstName">First Name</label>
-                <input type="text" id="FirstName" name="FirstName" required>
-            </div>
-
-            <div class="form-group">
-                <label for="SecondName">Second Name</label>
-                <input type="text" id="SecondName" name="SecondName">
-            </div>
-
-            <div class="form-group">
-                <label for="Password">Password</label>
-                <input type="password" id="Password" name="Password" required>
-            </div>
-
-            <div class="form-group">
-                <label for="Email">Email</label>
-                <input type="email" id="Email" name="Email" required>
             </div>
 
             <div class="form-group">
@@ -84,11 +68,6 @@
                 <label for="EmailTemplate1">Email Template 1</label>
                 <textarea rows="2" type="text" id="EmailTemplate1" name="EmailTemplate1"></textarea>
             </div>
-
-            <!-- <div class="form-group">
-                <label for="EmailSent">Email Sent</label>
-                <input type="checkbox" id="EmailSent" name="EmailSent">
-            </div> -->
 
             <div class="form-group">
                 <label for="CRMTicketID">CRM Ticket ID</label>

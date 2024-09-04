@@ -3,7 +3,7 @@ session_start();
 
 $token = isset($_SESSION['token']) ? $_SESSION['token'] : null;
 $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
-
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 ?>
 
 <html lang="en">
@@ -261,6 +261,7 @@ $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
                         <p class="w-100 cursor-pointer auth-section-name">
                             <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
                         </p>
+                       
                     </div>
                     <div class="d-flex gap-2">
                         <div class="d-flex gap-1">

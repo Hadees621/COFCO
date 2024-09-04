@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+$token = isset($_SESSION['token']) ? $_SESSION['token'] : null;
+$user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
+
+?>
+
 <?php include_once './components/authenticated-header.php' ?>
 
 <?php include_once './components/red-strip.php' ?>

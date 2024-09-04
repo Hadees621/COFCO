@@ -10,7 +10,9 @@
     <div class="grid-on-small-flex-on-large center-on-small gap-3 justify-content-between py-4 border-bottom">
         <div class="flex-middle gap-3">
             <img src="./assets/images/order-details/Asset 1.png" class="profile-icon" alt="assets" />
-            <h1 class="text-bold LongUserName">LongUserName000999</h1>
+            <h1 class="text-bold LongUserName">
+                <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
+            </h1>
         </div>
         <div class="d-flex gap-4">
             <a href="/manage-accounts.php" class="manage-account-button flex-middle gap-2">

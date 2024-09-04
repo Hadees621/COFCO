@@ -110,7 +110,6 @@ function submitSigninForm(event) {
         });
 }
 
-
 function showToast(message) {
     var toast = document.getElementById('toast');
     toast.textContent = message;
@@ -120,3 +119,6 @@ function showToast(message) {
         toast.className = 'toast';
     }, 3000);
 }
+
+
+

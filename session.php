@@ -4,6 +4,8 @@ session_start();
 if (isset($_POST['token']) && isset($_POST['user'])) {
     $_SESSION['token'] = $_POST['token'];
     $_SESSION['user'] = $_POST['user'];
+    $_SESSION['id'] = $_POST['id'];
+
 
     echo json_encode(['status' => 'success', 'message' => 'Session data stored successfully']);
 } else {
