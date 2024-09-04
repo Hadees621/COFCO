@@ -8,7 +8,10 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 <section>
     <div class="main-container my-5">
         <h2 class="text-bold">User Profile</h2>
-        <form class="responsve-form my-5">
+        <script>
+            const userId = <?php echo json_encode($id); ?>;
+        </script>
+        <form id="userprofileform" class="my-5" onsubmit="submitUserProfileForm(event, 5)">
 
             <div class="grid-cols-2">
                 <div class="form-group">
@@ -87,33 +90,33 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 
             <div class="grid-cols-2">
                 <div class="form-group">
-                    <label for="housenumber">Billing House Number</label>
-                    <input type="text" id="housenumber" name="housenumber" required>
+                    <label for="billinghousenumber">Billing House Number</label>
+                    <input type="text" id="billinghousenumber" name="billinghousenumber" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="housename">Billing House Name</label>
-                    <input type="text" id="housename" name="housename" required maxlength="255">
+                    <label for="billinghousename">Billing House Name</label>
+                    <input type="text" id="billinghousename" name="billinghousename" required maxlength="255">
                 </div>
 
                 <div class="form-group">
-                    <label for="streetname">Billing Street Name</label>
-                    <input type="text" id="streetname" name="streetname" maxlength="255">
+                    <label for="billingstreetname">Billing Street Name</label>
+                    <input type="text" id="billingstreetname" name="billingstreetname" maxlength="255">
                 </div>
 
                 <div class="form-group">
-                    <label for="cityname">Billing City Name</label>
-                    <input type="text" id="cityname" name="cityname" required maxlength="255">
+                    <label for="billingcityname">Billing City Name</label>
+                    <input type="text" id="billingcityname" name="billingcityname" required maxlength="255">
                 </div>
 
                 <div class="form-group">
-                    <label for="postcode">Billing Postcode</label>
-                    <input type="text" id="postcode" name="postcode" required maxlength="20">
+                    <label for="billingpostcode">Billing Postcode</label>
+                    <input type="text" id="billingpostcode" name="billingpostcode" required maxlength="20">
                 </div>
 
                 <div class="form-group">
-                    <label for="gps">Billing GPS</label>
-                    <input type="text" id="gps" name="gps" maxlength="50">
+                    <label for="billinggps">Billing GPS</label>
+                    <input type="text" id="billinggps" name="billinggps" maxlength="50">
                 </div>
             </div>
 
@@ -122,6 +125,8 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
             </div>
 
         </form>
+        <div id="toast" class="toast hidden"></div>
+
     </div>
 </section>
 

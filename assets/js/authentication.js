@@ -120,7 +120,106 @@ function showToast(message) {
     }, 3000);
 }
 
+function submitUserProfileForm(event, id) {
+    console.log("from submiutted")
 
-function submitUserProfileForm(event) {
+    event.preventDefault();
 
+    const formData = {
+        Title: document.getElementById('Title').value,
+        EmailSecondary: document.getElementById('EmailSecondary').value,
+        Tel: document.getElementById('Tel').value,
+        TelSecondary: document.getElementById('TelSecondary').value,
+        Mobile: document.getElementById('Mobile').value,
+        PaymentMethod: document.getElementById('PaymentMethod').value,
+        housenumber: document.getElementById('housenumber').value,
+        housename: document.getElementById('housename').value,
+        streetname: document.getElementById('streetname').value,
+        cityname: document.getElementById('cityname').value,
+        postcode: document.getElementById('postcode').value,
+        gps: document.getElementById('gps').value,
+        billing_housenumber: document.getElementById('billinghousenumber').value,
+        billing_housename: document.getElementById('billinghousename').value,
+        billing_streetname: document.getElementById('billingstreetname').value,
+        billing_cityname: document.getElementById('billingcityname').value,
+        billing_postcode: document.getElementById('billingpostcode').value,
+        billing_gps: document.getElementById('billinggps').value
+    };
+
+
+    fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/${id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    let errorMessage = err.message || "Something went wrong!";
+                    if (err.errors) {
+                        for (let key in err.errors) {
+                            if (err.errors[key] && err.errors[key].length > 0) {
+                                errorMessage += ` ${err.errors[key].join(' ')}`;
+                            }
+                        }
+                    }
+                    throw new Error(errorMessage);
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data submitted successfully", data); // For debugging
+            showToast('Profile submitted successfully');
+        })
+        .catch(error => {
+            showToast('error: ' + error.message);
+        });
 }
+
+
+
+// function submitUserProfileForm(event, id) {
+//     event.preventDefault();
+
+//     fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/${id}`, {
+//         method: 'PATCH',
+//         headers: {
+//             'Content-Type': 'application/json',
+//             'Accept': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             FirstName: firstname,
+//             SecondName: secondname,
+//             Email: email,
+//             Password: password
+//         })
+//     })
+//         .then(response => {
+//             if (!response.ok) {
+//                 return response.json().then(err => {
+//                     let errorMessage = err.message || "Something went wrong!";
+//                     if (err.errors) {
+//                         for (let key in err.errors) {
+//                             if (err.errors[key] && err.errors[key].length > 0) {
+//                                 errorMessage += ` ${err.errors[key].join(' ')}`;
+//                             }
+//                         }
+//                     }
+//                     throw new Error(errorMessage);
+//                 });
+//             }
+//             var response = response.json()
+//             console.log(response);
+//             return response;
+//         })
+
+//         .catch(error => {
+//             var toastError = new bootstrap.Toast(document.getElementById('toastError'));
+//             document.querySelector('#toastError .toast-body').innerText = error.message;
+//             toastError.show();
+//         });
+// }
