@@ -117,7 +117,7 @@ function showToast(message) {
 }
 
 function submitUserProfileForm(event, id) {
-  console.log("from submiutted");
+  console.log("from submitted", id);
   event.preventDefault();
   var formData = {
     Title: document.getElementById('Title').value,
@@ -165,8 +165,7 @@ function submitUserProfileForm(event, id) {
 
     return response.json();
   }).then(function (data) {
-    console.log("Data submitted successfully", data); // For debugging
-
+    console.log("Data submitted successfully", data);
     showToast('Profile submitted successfully');
   })["catch"](function (error) {
     showToast('error: ' + error.message);

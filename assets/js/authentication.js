@@ -122,7 +122,7 @@ function showToast(message) {
 }
 
 function submitUserProfileForm(event, id) {
-    console.log("from submiutted")
+    console.log("from submitted", id)
 
     event.preventDefault();
 
@@ -146,7 +146,6 @@ function submitUserProfileForm(event, id) {
         billing_postcode: document.getElementById('billingpostcode').value,
         billing_gps: document.getElementById('billinggps').value
     };
-
 
     fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/${id}`, {
         method: 'PATCH',
@@ -173,7 +172,7 @@ function submitUserProfileForm(event, id) {
             return response.json();
         })
         .then(data => {
-            console.log("Data submitted successfully", data); // For debugging
+            console.log("Data submitted successfully", data);
             showToast('Profile submitted successfully');
         })
         .catch(error => {

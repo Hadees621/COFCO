@@ -395,3 +395,4 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
 </body>
 
 <script src="./assets/js/authentication.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
