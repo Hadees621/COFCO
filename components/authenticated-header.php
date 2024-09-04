@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+$token = isset($_SESSION['token']) ? $_SESSION['token'] : null;
+$user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
+?>
+
 <html lang="en">
 
 <head>
@@ -12,7 +20,6 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <title>COFCO</title>
 </head>
 
@@ -25,7 +32,7 @@
 
             <!-- Offcanvas -->
             <div>
-                <button class="navbar-togler flex-middle hamburger hide-on-large-screen"" type=" button"
+                <button class="navbar-togler flex-middle hamburger hide-on-large-screen" type=" button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                     aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon hide-on-large-screen"></span>
@@ -41,9 +48,9 @@
 
                         <div class="d-flex gap-2 flex-middle pb-4 text-white" style="font-size: 12px;">
                             <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
-                            <h7 class="w-100 cursor-pointer">
-                                LongUserName000999
-                            </h7>
+                            <h6 class="w-100 cursor-pointer">
+                                <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
+                            </h6>
                         </div>
 
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -191,7 +198,6 @@
                         </div>
                     </li>
 
-
                     <!-- search for lg screen  -->
                     <li class="nav-item">
                         <div class="position-relative hide-on-small-screen">
@@ -220,7 +226,6 @@
                     <span class="sr-only">Order details</span>
                 </a>
 
-
                 <!-- cart -->
                 <div class="dropdown show">
                     <a href="#" class="text-white flex-middle cart position-relative" id="dropdownMenuLink"
@@ -244,6 +249,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- Auth section  -->
@@ -253,8 +259,9 @@
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
                         <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
                         <p class="w-100 cursor-pointer auth-section-name">
-                            LongUserName000999
+                            <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
                         </p>
+
                     </div>
                     <div class="d-flex gap-2">
                         <div class="d-flex gap-1">
@@ -386,3 +393,5 @@
     </div>
 
 </body>
+
+<script src="./assets/js/authentication.js"></script>
