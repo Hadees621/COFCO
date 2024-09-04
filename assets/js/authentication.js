@@ -48,7 +48,6 @@ function submitForm(event) {
 }
 
 function submitSigninForm(event) {
-    console.log('submitSigninForm');
 
     var email = $("#emaillogin").val();
     var password = $("#Passwordlogin").val();
@@ -101,14 +100,14 @@ function submitSigninForm(event) {
                 },
                 error: function (xhr, status, error) {
                     console.error('AJAX request failed:', status, error);
-                    showToast('AJAX request failed: ' + error); // Show toast on AJAX error
+                    showToast('AJAX request failed: ' + error);
                 }
             });
 
         })
         .catch(error => {
             console.error(error);
-            showToast(error.message); // Show toast on fetch error
+            showToast(error.message);
         });
 }
 
@@ -181,47 +180,3 @@ function submitUserProfileForm(event, id) {
             showToast('error: ' + error.message);
         });
 }
-
-
-
-// function submitUserProfileForm(event, id) {
-//     event.preventDefault();
-
-//     fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/${id}`, {
-//         method: 'PATCH',
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'Accept': 'application/json'
-//         },
-//         body: JSON.stringify({
-//             FirstName: firstname,
-//             SecondName: secondname,
-//             Email: email,
-//             Password: password
-//         })
-//     })
-//         .then(response => {
-//             if (!response.ok) {
-//                 return response.json().then(err => {
-//                     let errorMessage = err.message || "Something went wrong!";
-//                     if (err.errors) {
-//                         for (let key in err.errors) {
-//                             if (err.errors[key] && err.errors[key].length > 0) {
-//                                 errorMessage += ` ${err.errors[key].join(' ')}`;
-//                             }
-//                         }
-//                     }
-//                     throw new Error(errorMessage);
-//                 });
-//             }
-//             var response = response.json()
-//             console.log(response);
-//             return response;
-//         })
-
-//         .catch(error => {
-//             var toastError = new bootstrap.Toast(document.getElementById('toastError'));
-//             document.querySelector('#toastError .toast-body').innerText = error.message;
-//             toastError.show();
-//         });
-// }
