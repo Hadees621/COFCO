@@ -121,4 +121,6 @@ function showToast(message) {
 }
 
 
+function submitUserProfileForm(event) {
 
+}

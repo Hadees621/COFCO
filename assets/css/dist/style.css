@@ -1285,3 +1285,9 @@ table {
   visibility: visible;
   opacity: 1;
 }
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}

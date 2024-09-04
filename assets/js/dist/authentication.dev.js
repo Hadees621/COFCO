@@ -115,3 +115,5 @@ function showToast(message) {
     toast.className = 'toast';
   }, 3000);
 }
+
+function submitUserProfileForm(event) {}
