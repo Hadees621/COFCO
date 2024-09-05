@@ -197,12 +197,6 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
                         </div>
                     </li>
 
-                    <!-- <li class="nav-item">
-                        <div class="rounded-pill text-white navbar-tab flex-middle about-us nav-link">
-                            profile
-                        </div>
-                    </li> -->
-
                     <!-- search for lg screen  -->
                     <li class="nav-item">
                         <div class="position-relative hide-on-small-screen">
