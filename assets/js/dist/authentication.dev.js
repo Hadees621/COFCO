@@ -38,11 +38,19 @@ function submitSignupForm(event) {
     return response.json();
   }).then(function (data) {
     $('#signupModal').hide();
-    showToast('User Registrated Successfully ', 'success');
+    $('.modal-backdrop').hide();
+    Swal.fire({
+      title: "Good job!",
+      text: "Successfully Created Account",
+      icon: "success"
+    });
   })["catch"](function (error) {
-    showToast(error.message, 'error');
     $('#signupModal').hide();
     $('.modal-backdrop').hide();
+    Swal.fire({
+      text: "".concat(error.message),
+      icon: "error"
+    });
   });
 }
 
@@ -84,7 +92,6 @@ function submitSigninForm(event) {
   }).then(function (data) {
     var token = data.token;
     var user = data.user;
-    console.log(token, user);
     $.ajax({
       url: 'session.php',
       method: 'post',
@@ -93,17 +100,17 @@ function submitSigninForm(event) {
         user: user
       },
       success: function success(response) {
-        console.log(response);
         window.location.href = '/cofco/auth-user-profile.php';
-        console.log('success', response);
       },
       error: function error(xhr, status, _error) {
         console.error('AJAX request failed:', status, _error);
       }
     });
   })["catch"](function (error) {
-    console.error(error);
-    showToast(error.message, 'error');
+    Swal.fire({
+      text: "".concat(error.message),
+      icon: "error"
+    });
   })["finally"](function () {
     signinButton.disabled = false;
     signinButton.textContent = 'Sign In';
@@ -162,14 +169,19 @@ function submitUserProfileForm(event, id) {
 
     return response.json();
   }).then(function (data) {
-    showToast('Profile Updated successfully', 'success');
+    Swal.fire({
+      text: "User Information Updated",
+      icon: "success"
+    });
   })["catch"](function (error) {
-    showToast(error.message, 'error');
+    Swal.fire({
+      text: "".concat(error.message),
+      icon: "error"
+    });
   });
 }
 
 function getUserById(userId) {
-  console.log('getUserById called');
   fetch("https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/".concat(userId)).then(function (response) {
     return response.json();
   }).then(function (data) {
@@ -213,19 +225,4 @@ function populateUserProfileForm(data) {
     document.getElementById('billingpostcode').value = data.BillingAddress.postcode || '';
     document.getElementById('billinggps').value = data.BillingAddress.gps || '';
   }
-}
-
-function showToast(message) {
-  var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'info';
-  var alertBox = document.getElementById('customAlert');
-  var alertMessage = document.getElementById('alertMessage');
-  alertMessage.textContent = message;
-  alertBox.className = "custom-alert ".concat(type);
-  alertBox.style.display = 'block';
-  setTimeout(hideCustomAlert, 5000);
-}
-
-function hideCustomAlert() {
-  var alertBox = document.getElementById('customAlert');
-  alertBox.style.display = 'none';
 }

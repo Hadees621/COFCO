@@ -44,8 +44,12 @@ function submitSignupForm(event) {
             });
         })
         .catch(error => {
-            
-            
+            $('#signupModal').hide();
+            $('.modal-backdrop').hide();
+            Swal.fire({
+                text: `${error.message}`,
+                icon: "error"
+            });
         });
 }
 
@@ -89,7 +93,7 @@ function submitSigninForm(event) {
         .then(data => {
             var token = data.token;
             var user = data.user;
-            
+
             $.ajax({
                 url: 'session.php',
                 method: 'post',
@@ -107,7 +111,10 @@ function submitSigninForm(event) {
 
         })
         .catch(error => {
-            
+            Swal.fire({
+                text: `${error.message}`,
+                icon: "error"
+            });
         })
         .finally(() => {
             signinButton.disabled = false;
@@ -150,33 +157,35 @@ function submitUserProfileForm(event, id) {
             'Accept': 'application/json'
         },
         body: JSON.stringify(formData)
-    })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(err => {
-                    let errorMessage = err.message || "Something went wrong!";
-                    if (err.errors) {
-                        for (let key in err.errors) {
-                            if (err.errors[key] && err.errors[key].length > 0) {
-                                errorMessage += ` ${err.errors[key].join(' ')}`;
-                            }
+    }).then(response => {
+        if (!response.ok) {
+            return response.json().then(err => {
+                let errorMessage = err.message || "Something went wrong!";
+                if (err.errors) {
+                    for (let key in err.errors) {
+                        if (err.errors[key] && err.errors[key].length > 0) {
+                            errorMessage += ` ${err.errors[key].join(' ')}`;
                         }
                     }
-                    throw new Error(errorMessage);
-                });
-            }
-            return response.json();
-        })
-        .then(data => {
-            
-        })
-        .catch(error => {
-            
+                }
+                throw new Error(errorMessage);
+            });
+        }
+        return response.json();
+    }).then(data => {
+        Swal.fire({
+            text: "User Information Updated",
+            icon: "success"
         });
+    }).catch(error => {
+        Swal.fire({
+            text: `${error.message}`,
+            icon: "error"
+        });
+    });
 }
 
 function getUserById(userId) {
-    console.log('getUserById called');
     fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/${userId}`)
         .then(response => response.json())
         .then(data => {
