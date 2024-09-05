@@ -1247,3 +1247,13 @@ table {
   margin-left: 10px;
   cursor: pointer;
 }
+
+.auth-section-name {
+  color: white;
+  font-weight: bold;
+  cursor: pointer; /* Change cursor to a pointer when hovering to indicate it's clickable */
+}
+
+.auth-section-name:hover {
+  color: #3498db; /* Example: Light blue color on hover */
+}

@@ -263,7 +263,7 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
                 <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
                         <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
-                        <a href="/cofco/edit-user-information.php" class="w-100 cursor-pointer auth-section-name">
+                        <a href="/cofco/user-profile.php" class="w-100 auth-section-name">
                             <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
                         </a>
 
