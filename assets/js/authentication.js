@@ -3,6 +3,7 @@ function submitSignupForm(event) {
     var secondname = $("#secondName").val();
     var email = $("#email").val();
     var password = $("#password").val();
+
     event.preventDefault();
 
     fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signup', {
@@ -17,36 +18,37 @@ function submitSignupForm(event) {
             Email: email,
             Password: password
         })
-    })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(err => {
-                    let errorMessage = err.message || "Something went wrong!";
-                    if (err.errors) {
-                        for (let key in err.errors) {
-                            if (err.errors[key] && err.errors[key].length > 0) {
-                                errorMessage += ` ${err.errors[key].join(' ')}`;
-                            }
+    }).then(response => {
+        if (!response.ok) {
+            return response.json().then(err => {
+                let errorMessage = err.message || "Something went wrong!";
+                if (err.errors) {
+                    for (let key in err.errors) {
+                        if (err.errors[key] && err.errors[key].length > 0) {
+                            errorMessage += ` ${err.errors[key].join(' ')}`;
                         }
                     }
-                    throw new Error(errorMessage);
-                });
-            }
-            return response.json();
-        })
-        .then(data => {
-            $('#signupModal').hide();
-            $('.modal-backdrop').hide();
-            Swal.fire({
-                title: "Good job!",
-                text: "Successfully Created Account",
-                icon: "success"
+                }
+                throw new Error(errorMessage);
             });
-        })
-        .catch(error => {
-            
-            
+        }
+        return response.json();
+    }).then(() => {
+        $('#signupModal').hide();
+        $('.modal-backdrop').hide();
+        Swal.fire({
+            title: "Good job!",
+            text: "Successfully Created Account",
+            icon: "success"
         });
+    }).catch(error => {
+        $('#signupModal').hide();
+        $('.modal-backdrop').hide();
+        Swal.fire({
+            text: `${error.message}`,
+            icon: "error"
+        });
+    });
 }
 
 function submitSigninForm(event) {
@@ -69,50 +71,49 @@ function submitSigninForm(event) {
             Email: email,
             Password: password
         })
-    })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(err => {
-                    let errorMessage = err.message || "Incorrect Credentials";
-                    if (err.errors) {
-                        for (let key in err.errors) {
-                            if (err.errors[key] && err.errors[key].length > 0) {
-                                errorMessage += ` ${err.errors[key].join(' ')}`;
-                            }
+    }).then(response => {
+        if (!response.ok) {
+            return response.json().then(err => {
+                let errorMessage = err.message || "Incorrect Credentials";
+                if (err.errors) {
+                    for (let key in err.errors) {
+                        if (err.errors[key] && err.errors[key].length > 0) {
+                            errorMessage += ` ${err.errors[key].join(' ')}`;
                         }
                     }
-                    throw new Error(errorMessage);
-                });
-            }
-            return response.json();
-        })
-        .then(data => {
-            var token = data.token;
-            var user = data.user;
-            
-            $.ajax({
-                url: 'session.php',
-                method: 'post',
-                data: {
-                    token: token,
-                    user: user
-                },
-                success: function (response) {
-                    window.location.href = '/cofco/auth-user-profile.php';
-                },
-                error: function (xhr, status, error) {
-                    console.error('AJAX request failed:', status, error);
                 }
+                throw new Error(errorMessage);
             });
+        }
+        return response.json();
+    }).then(data => {
+        var token = data.token;
+        var user = data.user;
 
-        })
-        .catch(error => {
-            
-        })
-        .finally(() => {
-            signinButton.disabled = false;
-            signinButton.textContent = 'Sign In';
+        $.ajax({
+            url: 'session.php',
+            method: 'post',
+            data: {
+                token: token,
+                user: user
+            },
+            success: function (response) {
+                window.location.href = '/cofco/auth-user-profile.php';
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX request failed:', status, error);
+            }
         });
+
+    }).catch(error => {
+        Swal.fire({
+            text: `${error.message}`,
+            icon: "error"
+        });
+    }).finally(() => {
+        signinButton.disabled = false;
+        signinButton.textContent = 'Sign In';
+    });
 }
 
 function submitUserProfileForm(event, id) {
@@ -150,33 +151,35 @@ function submitUserProfileForm(event, id) {
             'Accept': 'application/json'
         },
         body: JSON.stringify(formData)
-    })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(err => {
-                    let errorMessage = err.message || "Something went wrong!";
-                    if (err.errors) {
-                        for (let key in err.errors) {
-                            if (err.errors[key] && err.errors[key].length > 0) {
-                                errorMessage += ` ${err.errors[key].join(' ')}`;
-                            }
+    }).then(response => {
+        if (!response.ok) {
+            return response.json().then(err => {
+                let errorMessage = err.message || "Something went wrong!";
+                if (err.errors) {
+                    for (let key in err.errors) {
+                        if (err.errors[key] && err.errors[key].length > 0) {
+                            errorMessage += ` ${err.errors[key].join(' ')}`;
                         }
                     }
-                    throw new Error(errorMessage);
-                });
-            }
-            return response.json();
-        })
-        .then(data => {
-            
-        })
-        .catch(error => {
-            
+                }
+                throw new Error(errorMessage);
+            });
+        }
+        return response.json();
+    }).then(() => {
+        Swal.fire({
+            text: "User Information Updated",
+            icon: "success"
         });
+    }).catch(error => {
+        Swal.fire({
+            text: `${error.message}`,
+            icon: "error"
+        });
+    });
 }
 
 function getUserById(userId) {
-    console.log('getUserById called');
     fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/${userId}`)
         .then(response => response.json())
         .then(data => {
