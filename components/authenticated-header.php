@@ -264,7 +264,7 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
                         <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
                         <a href="/cofco/user-profile.php" class="w-100 auth-section-name">
-                            <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
+                            <?php echo isset($user) ? htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8') : 'User Not Logged In'; ?>
                         </a>
 
                     </div>
