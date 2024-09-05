@@ -36,7 +36,7 @@ function submitSignupForm(event) {
     }
 
     return response.json();
-  }).then(function (data) {
+  }).then(function () {
     $('#signupModal').hide();
     $('.modal-backdrop').hide();
     Swal.fire({
@@ -168,7 +168,7 @@ function submitUserProfileForm(event, id) {
     }
 
     return response.json();
-  }).then(function (data) {
+  }).then(function () {
     Swal.fire({
       text: "User Information Updated",
       icon: "success"
