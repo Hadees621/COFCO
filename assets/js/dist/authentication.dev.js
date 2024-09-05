@@ -100,7 +100,7 @@ function submitSigninForm(event) {
         user: user
       },
       success: function success(response) {
-        window.location.href = '/cofco/auth-user-profile.php';
+        window.location.href = '/cofco/edit-user-information.php';
       },
       error: function error(xhr, status, _error) {
         console.error('AJAX request failed:', status, _error);

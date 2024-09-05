@@ -98,7 +98,7 @@ function submitSigninForm(event) {
                 user: user
             },
             success: function (response) {
-                window.location.href = '/cofco/auth-user-profile.php';
+                window.location.href = '/cofco/edit-user-information.php';
             },
             error: function (xhr, status, error) {
                 console.error('AJAX request failed:', status, error);

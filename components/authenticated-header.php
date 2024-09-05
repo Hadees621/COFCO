@@ -1,6 +1,4 @@
-<?php
-session_start();
-
+<?php session_start();
 $token = isset($_SESSION['token']) ? $_SESSION['token'] : null;
 $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
@@ -199,6 +197,12 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
                         </div>
                     </li>
 
+                    <!-- <li class="nav-item">
+                        <div class="rounded-pill text-white navbar-tab flex-middle about-us nav-link">
+                            profile
+                        </div>
+                    </li> -->
+
                     <!-- search for lg screen  -->
                     <li class="nav-item">
                         <div class="position-relative hide-on-small-screen">
@@ -259,9 +263,9 @@ $id = isset($_SESSION['id']) ? $_SESSION['id'] : null;
                 <div class="text-white flex-middle d-grid profile gap-2 hide-on-small-screen">
                     <div class="d-flex gap-2 flex-middle" style="font-size: 12px;">
                         <img src="./assets/images/search-results/Asset 15.png" alt="assets" />
-                        <p class="w-100 cursor-pointer auth-section-name">
+                        <a href="/cofco/edit-user-information.php" class="w-100 cursor-pointer auth-section-name">
                             <?php echo htmlspecialchars($user['FirstName'] . ' ' . $user['SecondName'], ENT_QUOTES, 'UTF-8'); ?>
-                        </p>
+                        </a>
 
                     </div>
                     <div class="d-flex gap-2">
