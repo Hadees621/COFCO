@@ -120,6 +120,10 @@ function submitUserProfileForm(event, id) {
   event.preventDefault();
   var formData = {
     Title: document.getElementById('Title').value,
+    FirstName: document.getElementById('firstName').value,
+    SecondName: document.getElementById('secondName').value,
+    Password: document.getElementById('password').value,
+    Email: document.getElementById('email').value,
     EmailSecondary: document.getElementById('EmailSecondary').value,
     Tel: document.getElementById('Tel').value,
     TelSecondary: document.getElementById('TelSecondary').value,
@@ -200,20 +204,20 @@ function populateFormFields(data) {
   document.getElementById('PaymentMethod').value = data.PaymentMethod || '';
 
   if (data.DeliveryAddress) {
-    document.getElementById('housenumber').value = data.DeliveryAddress.HouseNumber || '';
-    document.getElementById('housename').value = data.DeliveryAddress.HouseName || '';
-    document.getElementById('streetname').value = data.DeliveryAddress.StreetName || '';
-    document.getElementById('cityname').value = data.DeliveryAddress.City || '';
-    document.getElementById('postcode').value = data.DeliveryAddress.Postcode || '';
-    document.getElementById('gps').value = data.DeliveryAddress.GPS || '';
+    document.getElementById('housenumber').value = data.DeliveryAddress.housenumber || '';
+    document.getElementById('housename').value = data.DeliveryAddress.housename || '';
+    document.getElementById('streetname').value = data.DeliveryAddress.streetname || '';
+    document.getElementById('cityname').value = data.DeliveryAddress.cityname || '';
+    document.getElementById('postcode').value = data.DeliveryAddress.postcode || '';
+    document.getElementById('gps').value = data.DeliveryAddress.gps || '';
   }
 
   if (data.BillingAddress) {
-    document.getElementById('billinghousenumber').value = data.BillingAddress.HouseNumber || '';
-    document.getElementById('billinghousename').value = data.BillingAddress.HouseName || '';
-    document.getElementById('billingstreetname').value = data.BillingAddress.StreetName || '';
-    document.getElementById('billingcityname').value = data.BillingAddress.City || '';
-    document.getElementById('billingpostcode').value = data.BillingAddress.Postcode || '';
-    document.getElementById('billinggps').value = data.BillingAddress.GPS || '';
+    document.getElementById('billinghousenumber').value = data.BillingAddress.housenumber || '';
+    document.getElementById('billinghousename').value = data.BillingAddress.housename || '';
+    document.getElementById('billingstreetname').value = data.BillingAddress.streetname || '';
+    document.getElementById('billingcityname').value = data.BillingAddress.streetname || '';
+    document.getElementById('billingpostcode').value = data.BillingAddress.postcode || '';
+    document.getElementById('billinggps').value = data.BillingAddress.gps || '';
   }
 }
