@@ -30,22 +30,22 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="firstName">First Name</label>
+                        <label for="firstName">First Name*</label>
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="lastName">Second Name</label>
+                        <label for="lastName">Second Name*</label>
                         <input type="text" id="secondName" name="secondName" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email*</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password">Password*</label>
                         <input type="password" id="password" name="password" required>
                     </div>
 
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="Tel">Telephone</label>
+                        <label for="Tel">Telephone*</label>
                         <input type="text" id="Tel" name="Tel" required>
                     </div>
 
@@ -80,27 +80,27 @@
 
                 <div class="grid-cols-2">
                     <div class="form-group">
-                        <label for="housenumber">House Number</label>
+                        <label for="housenumber">House Number*</label>
                         <input type="text" id="housenumber" name="housenumber" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="housename">House Name</label>
+                        <label for="housename">House Name*</label>
                         <input type="text" id="housename" name="housename" required maxlength="255">
                     </div>
 
                     <div class="form-group">
-                        <label for="streetname">Street Name</label>
+                        <label for="streetname">Street Name*</label>
                         <input type="text" id="streetname" name="streetname" maxlength="255">
                     </div>
 
                     <div class="form-group">
-                        <label for="cityname">City Name</label>
+                        <label for="cityname">City Name*</label>
                         <input type="text" id="cityname" name="cityname" required maxlength="255">
                     </div>
 
                     <div class="form-group">
-                        <label for="postcode">Postcode</label>
+                        <label for="postcode">Postcode*</label>
                         <input type="text" id="postcode" name="postcode" required maxlength="20">
                     </div>
 
@@ -151,7 +151,7 @@
             </form>
         </div>
     </section>
-    
+
 </body>
 
 <?php include_once './components/footer.php' ?>

@@ -226,3 +226,18 @@ function populateUserProfileForm(data) {
     document.getElementById('billinggps').value = data.BillingAddress.gps || '';
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('userprofileform');
+  var submitButton = document.getElementById('edit-btn'); // Initially disable the submit button
+
+  submitButton.disabled = true; // Get all input and select elements in the form
+
+  var formElements = form.querySelectorAll('input, select'); // Add change event listeners to all form elements
+
+  formElements.forEach(function (element) {
+    element.addEventListener('change', function () {
+      submitButton.disabled = false;
+    });
+  });
+});
