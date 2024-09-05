@@ -240,4 +240,5 @@ document.addEventListener('DOMContentLoaded', function () {
       submitButton.disabled = false;
     });
   });
+  submitButton.disabled = true;
 });

@@ -4,11 +4,6 @@
 
 <body onload="getUserById(<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>)">
 
-    <div id="customAlert" class="custom-alert">
-        <span id="alertMessage"></span>
-        <button onclick="hideCustomAlert()" class="close-alert">x</button>
-    </div>
-
     <section>
         <div class="main-container my-5">
             <h2 class="text-bold">Edit User Profile</h2>

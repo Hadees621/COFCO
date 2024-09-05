@@ -235,11 +235,14 @@ document.addEventListener('DOMContentLoaded', function () {
     submitButton.disabled = true;
     // Get all input and select elements in the form
     const formElements = form.querySelectorAll('input, select');
-    
+
     // Add change event listeners to all form elements
     formElements.forEach(element => {
         element.addEventListener('change', function () {
             submitButton.disabled = false;
         });
     });
+
+    submitButton.disabled = true;
+
 });
