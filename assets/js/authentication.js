@@ -1,4 +1,4 @@
-function submitForm(event) {
+function submitSignupForm(event) {
     var firstname = $("#firstName").val();
     var secondname = $("#secondName").val();
     var email = $("#email").val();
@@ -35,15 +35,13 @@ function submitForm(event) {
             return response.json();
         })
         .then(data => {
-            var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
-            toastSuccess.show();
             $('#signupModal').hide();
-            $('.modal-backdrop').hide();
+            showToast('User Registrated Successfully ', 'success');
         })
         .catch(error => {
-            var toastError = new bootstrap.Toast(document.getElementById('toastError'));
-            document.querySelector('#toastError .toast-body').innerText = error.message;
-            toastError.show();
+            showToast(error.message, 'error');
+            $('#signupModal').hide();
+            $('.modal-backdrop').hide();
         });
 }
 
@@ -177,7 +175,7 @@ function getUserById(userId) {
         .then(response => response.json())
         .then(data => {
             if (data.id) {
-                populateFormFields(data);
+                populateUserProfileForm(data);
                 console.log(data);
             } else {
                 console.error('User data not found:', data);
@@ -186,7 +184,7 @@ function getUserById(userId) {
         .catch(error => console.error('Error fetching user data:', error));
 }
 
-function populateFormFields(data) {
+function populateUserProfileForm(data) {
     document.getElementById('Title').value = data.Title || '';
     document.getElementById('firstName').value = data.FirstName || '';
     document.getElementById('secondName').value = data.SecondName || '';
@@ -223,7 +221,6 @@ function showToast(message, type = 'info') {
 
     alertMessage.textContent = message;
     alertBox.className = `custom-alert ${type}`;
-
     alertBox.style.display = 'block';
 
     setTimeout(hideCustomAlert, 5000);
@@ -233,4 +230,3 @@ function hideCustomAlert() {
     var alertBox = document.getElementById('customAlert');
     alertBox.style.display = 'none';
 }
-

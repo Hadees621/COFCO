@@ -24,16 +24,22 @@
     </form>
 </div>
 
+<div id="customAlert" class="custom-alert">
+    <span id="alertMessage"></span>
+    <button onclick="hideCustomAlert()" class="close-alert">x</button>
+</div>
+
+
 <!-- Signup Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-2">
             <div class="modal-header">
                 <h3 class="modal-title text-bold" id="signupModalLabel">Sign Up</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" aria-label="Close"></button>
             </div>
             <div class="p-3 ">
-                <form id="signupForm" class="w-100" onsubmit="submitForm(event)">
+                <form id="signupForm" class="w-100" onsubmit="submitSignupForm(event)">
                     <div class="form-group">
                         <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required>

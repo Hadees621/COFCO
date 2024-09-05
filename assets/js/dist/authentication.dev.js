@@ -1,6 +1,6 @@
 "use strict";
 
-function submitForm(event) {
+function submitSignupForm(event) {
   var firstname = $("#firstName").val();
   var secondname = $("#secondName").val();
   var email = $("#email").val();
@@ -37,14 +37,12 @@ function submitForm(event) {
 
     return response.json();
   }).then(function (data) {
-    var toastSuccess = new bootstrap.Toast(document.getElementById('toastSuccess'));
-    toastSuccess.show();
+    $('#signupModal').hide();
+    showToast('User Registrated Successfully ', 'success');
+  })["catch"](function (error) {
+    showToast(error.message, 'error');
     $('#signupModal').hide();
     $('.modal-backdrop').hide();
-  })["catch"](function (error) {
-    var toastError = new bootstrap.Toast(document.getElementById('toastError'));
-    document.querySelector('#toastError .toast-body').innerText = error.message;
-    toastError.show();
   });
 }
 
@@ -171,7 +169,7 @@ function getUserById(userId) {
     return response.json();
   }).then(function (data) {
     if (data.id) {
-      populateFormFields(data);
+      populateUserProfileForm(data);
       console.log(data);
     } else {
       console.error('User data not found:', data);
@@ -181,7 +179,7 @@ function getUserById(userId) {
   });
 }
 
-function populateFormFields(data) {
+function populateUserProfileForm(data) {
   document.getElementById('Title').value = data.Title || '';
   document.getElementById('firstName').value = data.FirstName || '';
   document.getElementById('secondName').value = data.SecondName || '';

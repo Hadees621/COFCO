@@ -1267,7 +1267,7 @@ table {
   gap: 10px;
 }
 
-/* CSS for the custom alert */
+/* custom alert */
 .custom-alert {
   display: none;
   position: fixed;
