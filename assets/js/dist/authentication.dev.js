@@ -96,12 +96,11 @@ function submitSigninForm(event) {
       },
       error: function error(xhr, status, _error) {
         console.error('AJAX request failed:', status, _error);
-        showToast('AJAX request failed: ' + _error);
       }
     });
   })["catch"](function (error) {
     console.error(error);
-    showToast(error.message);
+    showToast(error.message, 'error');
   });
 }
 

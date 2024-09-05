@@ -29,7 +29,6 @@
     <button onclick="hideCustomAlert()" class="close-alert">x</button>
 </div>
 
-
 <!-- Signup Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
