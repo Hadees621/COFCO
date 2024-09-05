@@ -35,7 +35,7 @@
         <div class="modal-content p-2">
             <div class="modal-header">
                 <h3 class="modal-title text-bold" id="signupModalLabel">Sign Up</h3>
-                <button type="button" class="btn-close" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="p-3 ">
                 <form id="signupForm" class="w-100" onsubmit="submitSignupForm(event)">
