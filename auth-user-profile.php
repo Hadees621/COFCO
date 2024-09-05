@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="submit-btn w-25">Submit</button>
+                    <button type="submit" id="edit-btn" class="submit-btn w-25" disabled>Submit</button>
                 </div>
 
             </form>
