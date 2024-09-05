@@ -36,12 +36,16 @@ function submitSignupForm(event) {
         })
         .then(data => {
             $('#signupModal').hide();
-            showToast('User Registrated Successfully ', 'success');
+            $('.modal-backdrop').hide();
+            Swal.fire({
+                title: "Good job!",
+                text: "Successfully Created Account",
+                icon: "success"
+            });
         })
         .catch(error => {
-            showToast(error.message, 'error');
-            $('#signupModal').hide();
-            $('.modal-backdrop').hide();
+            
+            
         });
 }
 
@@ -85,8 +89,7 @@ function submitSigninForm(event) {
         .then(data => {
             var token = data.token;
             var user = data.user;
-
-            console.log(token, user);
+            
             $.ajax({
                 url: 'session.php',
                 method: 'post',
@@ -95,9 +98,7 @@ function submitSigninForm(event) {
                     user: user
                 },
                 success: function (response) {
-                    console.log(response);
                     window.location.href = '/cofco/auth-user-profile.php';
-                    console.log('success', response);
                 },
                 error: function (xhr, status, error) {
                     console.error('AJAX request failed:', status, error);
@@ -106,8 +107,7 @@ function submitSigninForm(event) {
 
         })
         .catch(error => {
-            console.error(error);
-            showToast(error.message, 'error');
+            
         })
         .finally(() => {
             signinButton.disabled = false;
@@ -168,10 +168,10 @@ function submitUserProfileForm(event, id) {
             return response.json();
         })
         .then(data => {
-            showToast('Profile Updated successfully', 'success');
+            
         })
         .catch(error => {
-            showToast(error.message, 'error');
+            
         });
 }
 
@@ -221,18 +221,6 @@ function populateUserProfileForm(data) {
     }
 }
 
-function showToast(message, type = 'info') {
-    var alertBox = document.getElementById('customAlert');
-    var alertMessage = document.getElementById('alertMessage');
 
-    alertMessage.textContent = message;
-    alertBox.className = `custom-alert ${type}`;
-    alertBox.style.display = 'block';
 
-    setTimeout(hideCustomAlert, 5000);
-}
 
-function hideCustomAlert() {
-    var alertBox = document.getElementById('customAlert');
-    alertBox.style.display = 'none';
-}
