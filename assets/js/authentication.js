@@ -46,11 +46,14 @@ function submitSignupForm(event) {
 }
 
 function submitSigninForm(event) {
+    event.preventDefault();
 
     var email = $("#emaillogin").val();
     var password = $("#Passwordlogin").val();
 
-    event.preventDefault();
+    var signinButton = document.querySelector('button[type="submit"]');
+    signinButton.disabled = true;
+    signinButton.textContent = 'Signing In...';
 
     fetch('https://dev.zeeteck.com/projects/cofco/api/v1/signin', {
         method: 'POST',
@@ -105,6 +108,10 @@ function submitSigninForm(event) {
         .catch(error => {
             console.error(error);
             showToast(error.message, 'error');
+        })
+        .finally(() => {
+            signinButton.disabled = false;
+            signinButton.textContent = 'Sign In';
         });
 }
 
