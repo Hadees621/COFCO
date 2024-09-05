@@ -1267,4 +1267,14 @@ table {
   border: 1px solid white;
   background-color: #055b1e;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.point {
+  background-color: red;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

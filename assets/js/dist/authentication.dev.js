@@ -170,3 +170,50 @@ function submitUserProfileForm(event, id) {
     showToast('error: ' + error.message);
   });
 }
+
+function getUserById(userId) {
+  console.log('getUserById called');
+  fetch("https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/".concat(userId)).then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    if (data.id) {
+      populateFormFields(data);
+      console.log(data);
+    } else {
+      console.error('User data not found:', data);
+    }
+  })["catch"](function (error) {
+    return console.error('Error fetching user data:', error);
+  });
+}
+
+function populateFormFields(data) {
+  document.getElementById('Title').value = data.Title || '';
+  document.getElementById('firstName').value = data.FirstName || '';
+  document.getElementById('secondName').value = data.SecondName || '';
+  document.getElementById('email').value = data.Email || '';
+  document.getElementById('EmailSecondary').value = data.EmailSecondary || '';
+  document.getElementById('Tel').value = data.Tel || '';
+  document.getElementById('TelSecondary').value = data.TelSecondary || '';
+  document.getElementById('Mobile').value = data.Mobile || '';
+  document.getElementById('password').value = data.Password || '';
+  document.getElementById('PaymentMethod').value = data.PaymentMethod || '';
+
+  if (data.DeliveryAddress) {
+    document.getElementById('housenumber').value = data.DeliveryAddress.HouseNumber || '';
+    document.getElementById('housename').value = data.DeliveryAddress.HouseName || '';
+    document.getElementById('streetname').value = data.DeliveryAddress.StreetName || '';
+    document.getElementById('cityname').value = data.DeliveryAddress.City || '';
+    document.getElementById('postcode').value = data.DeliveryAddress.Postcode || '';
+    document.getElementById('gps').value = data.DeliveryAddress.GPS || '';
+  }
+
+  if (data.BillingAddress) {
+    document.getElementById('billinghousenumber').value = data.BillingAddress.HouseNumber || '';
+    document.getElementById('billinghousename').value = data.BillingAddress.HouseName || '';
+    document.getElementById('billingstreetname').value = data.BillingAddress.StreetName || '';
+    document.getElementById('billingcityname').value = data.BillingAddress.City || '';
+    document.getElementById('billingpostcode').value = data.BillingAddress.Postcode || '';
+    document.getElementById('billinggps').value = data.BillingAddress.GPS || '';
+  }
+}
