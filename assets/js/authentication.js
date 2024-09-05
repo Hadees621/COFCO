@@ -111,18 +111,7 @@ function submitSigninForm(event) {
         });
 }
 
-function showToast(message) {
-    var toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.className = 'toast show';
-
-    setTimeout(function () {
-        toast.className = 'toast';
-    }, 3000);
-}
-
 function submitUserProfileForm(event, id) {
-
     event.preventDefault();
 
     const formData = {
@@ -175,11 +164,10 @@ function submitUserProfileForm(event, id) {
             return response.json();
         })
         .then(data => {
-            console.log("Data submitted successfully", data);
-            showToast('Profile submitted successfully');
+            showToast('Profile Updated successfully', 'success');
         })
         .catch(error => {
-            showToast('error: ' + error.message);
+            showToast(error.message, 'error');
         });
 }
 
@@ -228,3 +216,21 @@ function populateFormFields(data) {
         document.getElementById('billinggps').value = data.BillingAddress.gps || '';
     }
 }
+
+function showToast(message, type = 'info') {
+    var alertBox = document.getElementById('customAlert');
+    var alertMessage = document.getElementById('alertMessage');
+
+    alertMessage.textContent = message;
+    alertBox.className = `custom-alert ${type}`;
+
+    alertBox.style.display = 'block';
+
+    setTimeout(hideCustomAlert, 5000);
+}
+
+function hideCustomAlert() {
+    var alertBox = document.getElementById('customAlert');
+    alertBox.style.display = 'none';
+}
+

@@ -3,6 +3,12 @@
 <?php include_once './components/authenticated-header.php' ?>
 
 <body onload="getUserById(<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>)">
+
+    <div id="customAlert" class="custom-alert">
+        <span id="alertMessage"></span>
+        <button onclick="hideCustomAlert()" class="close-alert">x</button>
+    </div>
+
     <section>
         <div class="main-container my-5">
             <h2 class="text-bold">User Profile <?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?> </h2>
@@ -143,8 +149,6 @@
                 </div>
 
             </form>
-            <div id="toast" class="toast hidden"></div>
-
         </div>
     </section>
 </body>
