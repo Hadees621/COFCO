@@ -180,17 +180,40 @@ function submitUserProfileForm(event, id) {
 }
 
 function getUserById(userId) {
+    console.log('getUserById called');
+
     fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/${userId}`)
-        .then(response => response.json())
+        .then(response => {
+            console.log('Response:', response);
+            return response.json();
+        })
         .then(data => {
+            console.log('API Response:', data);
             if (data.id) {
                 populateUserProfileForm(data);
+                populateUserProfileData(data);
                 console.log(data);
             } else {
                 console.error('User data not found:', data);
             }
         })
         .catch(error => console.error('Error fetching user data:', error));
+
+    //  fetch(`https://dev.zeeteck.com/projects/cofco/api/v1/userinfo/${userId}`)
+    //     .then(response => response.json())
+    //     .then(data => {
+    // if (data.id) {
+    //     populateUserProfileForm(data);
+    //     populateUserProfileData(data);
+    //     console.log(data);
+    // } else {
+    //     console.error('User data not found:', data);
+    // }
+    //     })
+    //     .catch(error => console.error('Error fetching user data:', error));
+
+    console.log('getUserById called end');
+
 }
 
 function populateUserProfileForm(data) {
@@ -224,19 +247,42 @@ function populateUserProfileForm(data) {
     }
 }
 
+function populateUserProfileData(data) {
+    document.getElementById('Title').textContent = data.Title || '-';
+    document.getElementById('firstName').textContent = data.FirstName || '-';
+    document.getElementById('secondName').textContent = data.SecondName || '-';
+    document.getElementById('email').textContent = data.Email || '-';
+    document.getElementById('EmailSecondary').textContent = data.EmailSecondary || '-';
+    document.getElementById('Tel').textContent = data.Tel || '-';
+    document.getElementById('TelSecondary').textContent = data.TelSecondary || '-';
+    document.getElementById('Mobile').textContent = data.Mobile || '-';
+    document.getElementById('PaymentMethod').textContent = data.PaymentMethod || '-';
 
+    // Add these lines for Delivery Address
+    document.getElementById('housenumber').textContent = data.housenumber || '-';
+    document.getElementById('housename').textContent = data.housename || '-';
+    document.getElementById('streetname').textContent = data.streetname || '-';
+    document.getElementById('cityname').textContent = data.cityname || '-';
+    document.getElementById('postcode').textContent = data.postcode || '-';
+    document.getElementById('gps').textContent = data.gps || '-';
+
+    // Add these lines for Billing Address
+    document.getElementById('billinghousenumber').textContent = data.billing_housenumber || '-';
+    document.getElementById('billinghousename').textContent = data.billing_housename || '-';
+    document.getElementById('billingstreetname').textContent = data.billing_streetname || '-';
+    document.getElementById('billingcityname').textContent = data.billing_cityname || '-';
+    document.getElementById('billingpostcode').textContent = data.billing_postcode || '-';
+    document.getElementById('billinggps').textContent = data.billing_gps || '-';
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('userprofileform');
     const submitButton = document.getElementById('edit-btn');
 
-    // Initially disable the submit button
     submitButton.disabled = true;
-    // Get all input and select elements in the form
     const formElements = form.querySelectorAll('input, select');
 
-    // Add change event listeners to all form elements
     formElements.forEach(element => {
         element.addEventListener('change', function () {
             submitButton.disabled = false;
